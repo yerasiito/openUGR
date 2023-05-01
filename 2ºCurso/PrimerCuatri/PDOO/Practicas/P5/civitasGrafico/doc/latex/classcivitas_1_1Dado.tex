@@ -1,0 +1,67 @@
+\hypertarget{classcivitas_1_1Dado}{}\doxysection{civitas.\+Dado Class Reference}
+\label{classcivitas_1_1Dado}\index{civitas.Dado@{civitas.Dado}}
+
+
+Clase \mbox{\hyperlink{classcivitas_1_1Dado}{Dado}} que gestiona las posiciones del jugador en el tablero. Devuelve numeros pseudoaleatorios. Es un singleton por lo que no puede ser instanciada(\+No hay constructor) Igualmente se pueden crear objetos dado para no escribir dado.\+get\+Instance() Puede ponerse en modo debug para que siempre tire 1.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcivitas_1_1Dado_aa12af1adaeed10bfb47e314712bf3b7f}{set\+Debug}} (boolean d)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classcivitas_1_1Dado}{Dado}} \mbox{\hyperlink{classcivitas_1_1Dado_a09462f46d46e9555b8cc92ba6a3adc92}{get\+Instance}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase \mbox{\hyperlink{classcivitas_1_1Dado}{Dado}} que gestiona las posiciones del jugador en el tablero. Devuelve numeros pseudoaleatorios. Es un singleton por lo que no puede ser instanciada(\+No hay constructor) Igualmente se pueden crear objetos dado para no escribir dado.\+get\+Instance() Puede ponerse en modo debug para que siempre tire 1. 
+
+Definition at line \mbox{\hyperlink{Dado_8java_source_l00017}{17}} of file \mbox{\hyperlink{Dado_8java_source}{Dado.\+java}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcivitas_1_1Dado_a09462f46d46e9555b8cc92ba6a3adc92}\label{classcivitas_1_1Dado_a09462f46d46e9555b8cc92ba6a3adc92}} 
+\index{civitas.Dado@{civitas.Dado}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!civitas.Dado@{civitas.Dado}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcivitas_1_1Dado}{Dado}} civitas.\+Dado.\+get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{Dado_8java_source_l00032}{32}} of file \mbox{\hyperlink{Dado_8java_source}{Dado.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Dado_l00032}00032                                     \{}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Dado_l00033}00033         \textcolor{keywordflow}{return} instance;}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Dado_l00034}00034     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcivitas_1_1Dado_aa12af1adaeed10bfb47e314712bf3b7f}\label{classcivitas_1_1Dado_aa12af1adaeed10bfb47e314712bf3b7f}} 
+\index{civitas.Dado@{civitas.Dado}!setDebug@{setDebug}}
+\index{setDebug@{setDebug}!civitas.Dado@{civitas.Dado}}
+\doxysubsubsection{\texorpdfstring{setDebug()}{setDebug()}}
+{\footnotesize\ttfamily void civitas.\+Dado.\+set\+Debug (\begin{DoxyParamCaption}\item[{boolean}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{Dado_8java_source_l00044}{44}} of file \mbox{\hyperlink{Dado_8java_source}{Dado.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Dado_l00044}00044                                    \{}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Dado_l00045}00045         debug = d;}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Dado_l00046}00046         Diario.getInstance().ocurreEvento(\textcolor{stringliteral}{"{}El Dado ha cambiado debug a "{}} + debug);}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Dado_l00047}00047     \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/civitas/\mbox{\hyperlink{Dado_8java}{Dado.\+java}}\end{DoxyCompactItemize}

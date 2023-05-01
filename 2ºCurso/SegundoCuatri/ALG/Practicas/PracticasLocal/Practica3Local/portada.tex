@@ -1,0 +1,103 @@
+\documentclass[12pt, spanish]{article}
+\usepackage[spanish]{babel}
+\selectlanguage{spanish}
+\usepackage{natbib}
+\usepackage{url}
+\usepackage[utf8x]{inputenc}
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\usepackage{array}
+\usepackage{float}
+\usepackage{siunitx}
+\usepackage[table,xcdraw,dvipsnames]{xcolor}
+\usepackage{longtable}
+\usepackage{parskip}
+\usepackage{fancyhdr}
+\usepackage{vmargin}
+\usepackage{listings}
+\usepackage{adjustbox}
+\usepackage{subfig}
+\usepackage{minted}
+\usepackage[shortlabels]{enumitem}
+\setlist[enumerate]{
+labelsep=8pt,
+labelindent=0.3\parindent,
+itemindent=0pt,
+leftmargin=*,
+before=\setlength{\listparindent}{-\leftmargin},
+}
+
+\def\code#1{\texttt{#1}}
+\usepackage[default]{sourcesanspro}
+\usepackage{tcolorbox}
+\usepackage{etoolbox}
+\BeforeBeginEnvironment{minted}{\begin{tcolorbox}}%
+\AfterEndEnvironment{minted}{\end{tcolorbox}}%
+
+\setmarginsrb{2 cm}{1 cm}{2 cm}{2 cm}{1 cm}{1.5 cm}{1 cm}{1.5 cm}
+
+\title{Práctica 3: Algoritmos Voraces (Greedy)\hspace{0.05cm} }
+\date{}
+\author{
+Yunkai Lin Pan: 20\% \\
+Alfonso Jesús Piñera Herrera: 20\% \\
+Álvaro Hernández Coronel: 20\%  \\
+Jaime Castillo Uclés: 20\% \\
+Yeray López Ramírez: 20\% \\
+}
+
+\renewcommand*\contentsname{hola}
+
+\makeatletter
+\let\thetitle\@title
+\let\theauthor\@author
+\let\thedate\@date
+\makeatother
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{}
+\chead{\thedate}
+\lhead{\thetitle}
+\cfoot{\thepage}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{titlepage}
+  \centering
+  \vspace*{0.5 cm}
+  \includegraphics[scale = 0.50]{ugr.png}\\[1.0 cm]
+  %\textsc{\LARGE Universidad de Granada}\\[2.0 cm]   
+  \textsc{\huge Grado en Ingeniería Informática}\\[0.5 cm]
+  \rule{\linewidth}{0.2 mm} \\[0.4 cm]
+  { \huge \bfseries \thetitle}\\
+  \rule{\linewidth}{0.2 mm} \\[1.5 cm]
+  
+  \begin{minipage}{0.4\textwidth}
+    \begin{flushleft} \large
+        \emph{Autores:}\\
+
+        \small \theauthor
+        \end{flushleft}
+        \end{minipage}~
+        \begin{minipage}{0.4\textwidth}
+        \begin{flushright} \large
+        \emph{Curso:2ºC \\
+        Asignatura: Algorítmica \\
+        Fecha: 22 de Marzo de 2022 \\
+        Grupo de prácticas: C2 \\
+        Número de grupo: 3}
+    \end{flushright}
+\end{minipage}\\[1 cm]
+
+
+\vfill
+  
+\end{titlepage}
+
+\vspace{5cm}
+ \bibliographystyle{plain}
+ \bibliography{biblist}
+
+
+\end{document}

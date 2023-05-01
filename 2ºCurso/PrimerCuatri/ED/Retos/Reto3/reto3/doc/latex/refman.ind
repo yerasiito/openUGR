@@ -1,0 +1,83 @@
+\begin{theindex}
+
+  \item {borrar}
+    \subitem {MyListaPila}, \hyperpage{5}
+
+  \indexspace
+
+  \item {ejercicio16.cpp}
+    \subitem {main}, \hyperpage{8}
+  \item {ejercicio19.cpp}
+    \subitem {imprimir}, \hyperpage{9}
+    \subitem {introduce}, \hyperpage{10}
+    \subitem {main}, \hyperpage{10}
+    \subitem {transformarpila}, \hyperpage{10}
+  \item {ejercicio20.cpp}
+    \subitem {imprimir}, \hyperpage{11}
+    \subitem {introduce}, \hyperpage{11}
+    \subitem {main}, \hyperpage{12}
+    \subitem {rotacion}, \hyperpage{12}
+  \item {ejercicio21.cpp}
+    \subitem {esmatrizbiordenada}, \hyperpage{13}
+    \subitem {imprimir}, \hyperpage{13}
+    \subitem {introduce}, \hyperpage{14}
+    \subitem {main}, \hyperpage{14}
+  \item {ejercicio24.cpp}
+    \subitem {imprimir}, \hyperpage{15}
+    \subitem {introduce}, \hyperpage{15}
+    \subitem {main}, \hyperpage{16}
+    \subitem {posintercalar}, \hyperpage{16}
+  \item {esmatrizbiordenada}
+    \subitem {ejercicio21.cpp}, \hyperpage{13}
+
+  \indexspace
+
+  \item {imprimir}
+    \subitem {ejercicio19.cpp}, \hyperpage{9}
+    \subitem {ejercicio20.cpp}, \hyperpage{11}
+    \subitem {ejercicio21.cpp}, \hyperpage{13}
+    \subitem {ejercicio24.cpp}, \hyperpage{15}
+  \item {insertar}
+    \subitem {MyListaPila}, \hyperpage{6}
+  \item {introduce}
+    \subitem {ejercicio19.cpp}, \hyperpage{10}
+    \subitem {ejercicio20.cpp}, \hyperpage{11}
+    \subitem {ejercicio21.cpp}, \hyperpage{14}
+    \subitem {ejercicio24.cpp}, \hyperpage{15}
+
+  \indexspace
+
+  \item {main}
+    \subitem {ejercicio16.cpp}, \hyperpage{8}
+    \subitem {ejercicio19.cpp}, \hyperpage{10}
+    \subitem {ejercicio20.cpp}, \hyperpage{12}
+    \subitem {ejercicio21.cpp}, \hyperpage{14}
+    \subitem {ejercicio24.cpp}, \hyperpage{16}
+  \item {MyListaPila}, \hyperpage{5}
+    \subitem {borrar}, \hyperpage{5}
+    \subitem {insertar}, \hyperpage{6}
+
+  \indexspace
+
+  \item {posintercalar}
+    \subitem {ejercicio24.cpp}, \hyperpage{16}
+
+  \indexspace
+
+  \item {rotacion}
+    \subitem {ejercicio20.cpp}, \hyperpage{12}
+
+  \indexspace
+
+  \item {src/ejercicio16.cpp}, \hyperpage{7}
+  \item {src/ejercicio19.cpp}, \hyperpage{8}
+  \item {src/ejercicio20.cpp}, \hyperpage{10}
+  \item {src/ejercicio21.cpp}, \hyperpage{12}
+  \item {src/ejercicio24.cpp}, \hyperpage{14}
+
+  \indexspace
+
+  \item {transformarpila}
+    \subitem {ejercicio19.cpp}, \hyperpage{10}
+
+\end{theindex}

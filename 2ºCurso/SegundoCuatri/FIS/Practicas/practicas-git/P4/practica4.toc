@@ -1,0 +1,8 @@
+\babel@toc {spanish}{}\relax 
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Diagramas de Comunicaci\IeC {\'o}n}{2}{}%
+\contentsline {subsection}{\numberline {1.1}Diagramas de Martina \IeC {\'A}lvarez Lorenzo}{2}{}%
+\contentsline {subsection}{\numberline {1.2}Diagramas de David Guti\IeC {\'e}rrez P\IeC {\'e}rez}{6}{}%
+\contentsline {subsection}{\numberline {1.3}Diagramas de Pablo Ariza Garc\IeC {\'\i }a}{9}{}%
+\contentsline {subsection}{\numberline {1.4}Diagramas de Yeray L\IeC {\'o}pez Ram\IeC {\'\i }rez}{11}{}%
+\contentsline {section}{\numberline {2}Diagrama de clases}{13}{}%

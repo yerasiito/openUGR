@@ -1,0 +1,35 @@
+\hypertarget{Sorpresa_8java_source}{}\doxysection{Sorpresa.\+java}
+\label{Sorpresa_8java_source}\index{src/civitas/Sorpresa.java@{src/civitas/Sorpresa.java}}
+\mbox{\hyperlink{Sorpresa_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{Sorpresa_8java_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{Sorpresa_8java_source_l00007}00007 \textcolor{keyword}{package }civitas;}
+\DoxyCodeLine{\Hypertarget{Sorpresa_8java_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{Sorpresa_8java_source_l00009}00009 \textcolor{keyword}{import} java.util.ArrayList;}
+\DoxyCodeLine{\Hypertarget{Sorpresa_8java_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{Sorpresa_8java_source_l00018}\mbox{\hyperlink{classcivitas_1_1Sorpresa}{00018}} \textcolor{keyword}{public} \textcolor{keyword}{abstract} \textcolor{keyword}{class }\mbox{\hyperlink{classcivitas_1_1Sorpresa}{Sorpresa}} \{}
+\DoxyCodeLine{\Hypertarget{Sorpresa_8java_source_l00019}00019     \textcolor{keyword}{final} \textcolor{keyword}{private} String texto;}
+\DoxyCodeLine{\Hypertarget{Sorpresa_8java_source_l00020}00020     \textcolor{keyword}{final} \textcolor{keywordtype}{int} valor;}
+\DoxyCodeLine{\Hypertarget{Sorpresa_8java_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{Sorpresa_8java_source_l00022}00022     \mbox{\hyperlink{classcivitas_1_1Sorpresa}{Sorpresa}}(String texto, \textcolor{keywordtype}{int} valor) \{}
+\DoxyCodeLine{\Hypertarget{Sorpresa_8java_source_l00023}00023         this.texto = texto;}
+\DoxyCodeLine{\Hypertarget{Sorpresa_8java_source_l00024}00024         this.valor = valor;}
+\DoxyCodeLine{\Hypertarget{Sorpresa_8java_source_l00025}00025     \}}
+\DoxyCodeLine{\Hypertarget{Sorpresa_8java_source_l00026}00026     }
+\DoxyCodeLine{\Hypertarget{Sorpresa_8java_source_l00027}00027     \textcolor{keyword}{abstract} \textcolor{keywordtype}{void} aplicarAJugador(\textcolor{keywordtype}{int} actual, ArrayList<Jugador> todos);}
+\DoxyCodeLine{\Hypertarget{Sorpresa_8java_source_l00028}00028     }
+\DoxyCodeLine{\Hypertarget{Sorpresa_8java_source_l00029}00029     \textcolor{keyword}{abstract} \textcolor{keywordtype}{void} informe(\textcolor{keywordtype}{int} actual, ArrayList<Jugador> todos);}
+\DoxyCodeLine{\Hypertarget{Sorpresa_8java_source_l00030}00030     }
+\DoxyCodeLine{\Hypertarget{Sorpresa_8java_source_l00031}00031     @Override}
+\DoxyCodeLine{\Hypertarget{Sorpresa_8java_source_l00032}00032     \textcolor{keyword}{public} String toString()\{}
+\DoxyCodeLine{\Hypertarget{Sorpresa_8java_source_l00033}00033         \textcolor{keywordflow}{if}(valor > 0)\{}
+\DoxyCodeLine{\Hypertarget{Sorpresa_8java_source_l00034}00034             \textcolor{keywordflow}{return} texto + \textcolor{stringliteral}{"{} Ganas "{}} + valor + \textcolor{stringliteral}{"{}€"{}};}
+\DoxyCodeLine{\Hypertarget{Sorpresa_8java_source_l00035}00035         \}}
+\DoxyCodeLine{\Hypertarget{Sorpresa_8java_source_l00036}00036         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(valor < 0)}
+\DoxyCodeLine{\Hypertarget{Sorpresa_8java_source_l00037}00037             \textcolor{keywordflow}{return} texto + \textcolor{stringliteral}{"{} Pierdes "{}} + valor + \textcolor{stringliteral}{"{}€"{}};}
+\DoxyCodeLine{\Hypertarget{Sorpresa_8java_source_l00038}00038         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{Sorpresa_8java_source_l00039}00039             \textcolor{keywordflow}{return} texto;}
+\DoxyCodeLine{\Hypertarget{Sorpresa_8java_source_l00040}00040     \}}
+\DoxyCodeLine{\Hypertarget{Sorpresa_8java_source_l00041}00041 \}}
+
+\end{DoxyCode}

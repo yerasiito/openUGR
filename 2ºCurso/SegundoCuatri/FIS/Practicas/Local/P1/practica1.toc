@@ -1,0 +1,14 @@
+\babel@toc {spanish}{}\relax 
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Objetivos}{2}{}%
+\contentsline {section}{\numberline {2}Descripci\IeC {\'o}n de los implicados y usuarios finales}{2}{}%
+\contentsline {section}{\numberline {3}Requisitos funcionales}{8}{}%
+\contentsline {section}{\numberline {4}Requisitos no funcionales}{9}{}%
+\contentsline {paragraph}{Usabilidad}{9}{}%
+\contentsline {paragraph}{Fiabilidad}{9}{}%
+\contentsline {paragraph}{Rendimiento}{9}{}%
+\contentsline {paragraph}{Soporte}{9}{}%
+\contentsline {paragraph}{Restricciones de implementaci\IeC {\'o}n}{9}{}%
+\contentsline {paragraph}{Restricciones de interfaz}{10}{}%
+\contentsline {paragraph}{Requisitos f\IeC {\'\i }sicos}{10}{}%
+\contentsline {section}{\numberline {5}Requisitos de informaci\IeC {\'o}n}{10}{}%

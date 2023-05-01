@@ -1,0 +1,60 @@
+\hypertarget{classcivitas_1_1Sorpresa}{}\doxysection{civitas.\+Sorpresa Class Reference}
+\label{classcivitas_1_1Sorpresa}\index{civitas.Sorpresa@{civitas.Sorpresa}}
+
+
+Clase ABSTRACTA sorpresa que hace de base para los 3 tipos de sorpresa. Hay 3 tipos de sorpresas hasta la fecha\+: -\/PAGARCOBRAR\+: paga o cobra una cantidad fija -\/PORCASAHOTEL\+: paga o cobra una cantidad en funcion de sus propiedades -\/CONVERTIRME\+: convierte un jugador en especulador.  
+
+
+
+
+Inheritance diagram for civitas.\+Sorpresa\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcivitas_1_1Sorpresa__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+String \mbox{\hyperlink{classcivitas_1_1Sorpresa_ad2b9c7fd5bcc4ea986fac9ad8c9605e3}{to\+String}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase ABSTRACTA sorpresa que hace de base para los 3 tipos de sorpresa. Hay 3 tipos de sorpresas hasta la fecha\+: -\/PAGARCOBRAR\+: paga o cobra una cantidad fija -\/PORCASAHOTEL\+: paga o cobra una cantidad en funcion de sus propiedades -\/CONVERTIRME\+: convierte un jugador en especulador. 
+
+Definition at line \mbox{\hyperlink{Sorpresa_8java_source_l00018}{18}} of file \mbox{\hyperlink{Sorpresa_8java_source}{Sorpresa.\+java}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcivitas_1_1Sorpresa_ad2b9c7fd5bcc4ea986fac9ad8c9605e3}\label{classcivitas_1_1Sorpresa_ad2b9c7fd5bcc4ea986fac9ad8c9605e3}} 
+\index{civitas.Sorpresa@{civitas.Sorpresa}!toString@{toString}}
+\index{toString@{toString}!civitas.Sorpresa@{civitas.Sorpresa}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String civitas.\+Sorpresa.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{Sorpresa_8java_source_l00032}{32}} of file \mbox{\hyperlink{Sorpresa_8java_source}{Sorpresa.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Sorpresa_l00032}00032                             \{}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Sorpresa_l00033}00033         \textcolor{keywordflow}{if}(valor > 0)\{}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Sorpresa_l00034}00034             \textcolor{keywordflow}{return} texto + \textcolor{stringliteral}{"{} Ganas "{}} + valor + \textcolor{stringliteral}{"{}€"{}};}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Sorpresa_l00035}00035         \}}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Sorpresa_l00036}00036         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(valor < 0)}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Sorpresa_l00037}00037             \textcolor{keywordflow}{return} texto + \textcolor{stringliteral}{"{} Pierdes "{}} + valor + \textcolor{stringliteral}{"{}€"{}};}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Sorpresa_l00038}00038         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Sorpresa_l00039}00039             \textcolor{keywordflow}{return} texto;}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Sorpresa_l00040}00040     \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/civitas/\mbox{\hyperlink{Sorpresa_8java}{Sorpresa.\+java}}\end{DoxyCompactItemize}

@@ -1,0 +1,30 @@
+
+
+*******************************************************************************
+Wed Apr  6 21:26:48 2022
+
+
+FIT:    data read from 'compraventaCHRONO.dat'
+        format = z
+        #datapoints = 60
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a*x*log(x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a            
+   0 3.9294770510e+16   0.00e+00  2.56e+07    1.000000e+00
+   5 1.8569685620e-03  -2.34e-11  2.56e+02    6.099294e-09
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.00185697
+rel. change during last iteration : -2.33542e-16
+
+degrees of freedom    (FIT_NDF)                        : 59
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00561017
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.1474e-05
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 6.09929e-09      +/- 2.83e-11     (0.464%)

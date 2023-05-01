@@ -1,0 +1,82 @@
+\hypertarget{_bloques_matriz_8h_source}{}\doxysection{Bloques\+Matriz.\+h}
+\label{_bloques_matriz_8h_source}\index{include/BloquesMatriz.h@{include/BloquesMatriz.h}}
+\mbox{\hyperlink{_bloques_matriz_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#ifndef BLOQUESMATRIZ\_H}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#define BLOQUESMATRIZ\_H}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_casilla_8h}{Casilla.h}}"{}}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#define TAMA\_MAX = 5}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{25 \textcolor{keyword}{class }\mbox{\hyperlink{class_bloque}{Bloque}}\{}
+\DoxyCodeLine{26     \textcolor{keyword}{private}:}
+\DoxyCodeLine{27         \textcolor{keywordtype}{int} tama, suma; \textcolor{comment}{//tamaño de bloque y la suma de sus valores}}
+\DoxyCodeLine{28         vector<pair> casillas; \textcolor{comment}{//vector de pares de posiciones de casillas(fil, col)}}
+\DoxyCodeLine{29     }
+\DoxyCodeLine{30     \textcolor{keyword}{public}:}
+\DoxyCodeLine{31         }
+\DoxyCodeLine{35         \mbox{\hyperlink{class_bloque_a3ea37861f40b57e2790fcd220a640ac7}{Bloque}}();}
+\DoxyCodeLine{36         }
+\DoxyCodeLine{41         \mbox{\hyperlink{class_bloque_a0f440ffbe43b4dabfc2d2e4f5b184ed3}{Bloque}}(\textcolor{keywordtype}{int} tam);}
+\DoxyCodeLine{42         }
+\DoxyCodeLine{47         \mbox{\hyperlink{class_bloque_a1bff2374493ff006016c6fd99cc07224}{Bloque}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_bloque}{Bloque}} \&b);}
+\DoxyCodeLine{48         }
+\DoxyCodeLine{53         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_bloque_a06bcf2578f817b91e66a80957a500c29}{getTamanio}}();}
+\DoxyCodeLine{54         }
+\DoxyCodeLine{59         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_bloque_accc4b84ebad376dceaf6e0266795d58a}{getSumaBloque}}();}
+\DoxyCodeLine{60         }
+\DoxyCodeLine{66         \mbox{\hyperlink{class_casilla}{Casilla}} \mbox{\hyperlink{class_bloque_a1d350ad864c09535aa2bc75d32d37e51}{getCasilla}}(\textcolor{keywordtype}{int} i);}
+\DoxyCodeLine{67         }
+\DoxyCodeLine{75         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_bloque_a828590f76163833678ffe3bde916ee3c}{setCasilla}}(\textcolor{keywordtype}{int} i, \textcolor{keywordtype}{int} fil, \textcolor{keywordtype}{int} col, \textcolor{keywordtype}{int} val);}
+\DoxyCodeLine{76         }
+\DoxyCodeLine{87         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_bloque_aa63f81eb9cc5e7fad7d69dc34500db29}{aniadirCasilla}}(\textcolor{keywordtype}{int} val, \textcolor{keywordtype}{int} fil, \textcolor{keywordtype}{int} col);}
+\DoxyCodeLine{88         }
+\DoxyCodeLine{95         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_bloque_acb1e1d1438eeebd2e35ad63501f92839}{eliminarCasilla}}(\textcolor{keywordtype}{int} i);}
+\DoxyCodeLine{96         }
+\DoxyCodeLine{104         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_bloque_a959450745a65ae7b5afe7b99fb7710d8}{esCasillaContigua}}(\mbox{\hyperlink{class_casilla}{Casilla}} nueva);}
+\DoxyCodeLine{105         }
+\DoxyCodeLine{110         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_bloque_a1d718fa55711f4ccb36c8ab52f56551c}{sumaValores}}();}
+\DoxyCodeLine{111         }
+\DoxyCodeLine{112         }
+\DoxyCodeLine{113 \};}
+\DoxyCodeLine{114 }
+\DoxyCodeLine{120 \textcolor{keyword}{class }\mbox{\hyperlink{class_bloques_sudoku}{BloquesSudoku}}\{}
+\DoxyCodeLine{121     \textcolor{keyword}{private}:}
+\DoxyCodeLine{122         \textcolor{keywordtype}{int} numBloques;}
+\DoxyCodeLine{123         vector<Bloque> BloquesMatriz; \textcolor{comment}{//vector de bloques}}
+\DoxyCodeLine{124     \textcolor{keyword}{public}:}
+\DoxyCodeLine{125         }
+\DoxyCodeLine{129         \mbox{\hyperlink{class_bloques_sudoku_a20964ba619a47f7d54aa30ab707dc9f3}{BloquesSudoku}}();}
+\DoxyCodeLine{130         }
+\DoxyCodeLine{135         \mbox{\hyperlink{class_bloques_sudoku_a7f2ff074f362f1c52df4369a463dd80c}{BloquesSudoku}}(\textcolor{keywordtype}{int} num);}
+\DoxyCodeLine{136         }
+\DoxyCodeLine{142         \mbox{\hyperlink{class_bloque}{Bloque}} \mbox{\hyperlink{class_bloques_sudoku_ad16bc2b2750b47cd2a7f6043fea7a0b5}{getBloquesMatriz}}(\textcolor{keywordtype}{int} i);}
+\DoxyCodeLine{143         }
+\DoxyCodeLine{149         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_bloques_sudoku_a29240fc8dc82b81b40c32885d0d68e14}{setBloquesMatriz}}(\textcolor{keywordtype}{int} i, \mbox{\hyperlink{class_bloque}{Bloque}} b);}
+\DoxyCodeLine{150         }
+\DoxyCodeLine{156         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_bloques_sudoku_a00f0d3d854655744fba7de4d3b1ec541}{setBloquesMatriz}}(\textcolor{keywordtype}{int} i, vector<Casilla>);}
+\DoxyCodeLine{157         }
+\DoxyCodeLine{163         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_bloques_sudoku_a3db4e5b24b16ce1d814a32ae6a3e3412}{aniadirBloque}}(\mbox{\hyperlink{class_bloque}{Bloque}} b);}
+\DoxyCodeLine{164         }
+\DoxyCodeLine{170         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_bloques_sudoku_ab57b35eda00054b58ae71931208895ad}{eliminarBloque}}(\textcolor{keywordtype}{int} i);}
+\DoxyCodeLine{171         }
+\DoxyCodeLine{177         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_bloques_sudoku_a81138ce70d7db1903317edb749d44b93}{sumaBloques}}(vector<int> ibloques);}
+\DoxyCodeLine{178         }
+\DoxyCodeLine{179     }
+\DoxyCodeLine{180 \};}
+\DoxyCodeLine{181 }
+\DoxyCodeLine{188 \textcolor{keywordtype}{bool} \mbox{\hyperlink{_bloques_matriz_8h_a192922a3f82f49d05b913e496bf66e68}{seSolapaBloques}}(\mbox{\hyperlink{class_bloque}{Bloque}} izq, \mbox{\hyperlink{class_bloque}{Bloque}} dcha);}
+\DoxyCodeLine{189 }
+\DoxyCodeLine{196 \textcolor{keywordtype}{bool} \mbox{\hyperlink{_bloques_matriz_8h_a86c81c014f5776a37c238444cfcc58f8}{esMismoBloque}}(\mbox{\hyperlink{class_bloque}{Bloque}} izq, \mbox{\hyperlink{class_bloque}{Bloque}} dcha);}
+\DoxyCodeLine{197 }
+\DoxyCodeLine{198     }
+\DoxyCodeLine{199 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* BLOQUESMATRIZ\_H */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{200 }
+
+\end{DoxyCode}

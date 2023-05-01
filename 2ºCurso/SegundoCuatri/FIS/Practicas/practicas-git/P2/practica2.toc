@@ -1,0 +1,7 @@
+\babel@toc {spanish}{}
+\babel@toc {spanish}{}
+\contentsline {section}{\numberline {1}Descripci\IeC {\'o}n de actores y sus objetivos}{2}%
+\contentsline {section}{\numberline {2}Diagramas del modelo de casos de uso}{7}%
+\contentsline {subsection}{\numberline {2.1}Diagramas de casos de uso}{7}%
+\contentsline {subsection}{\numberline {2.2}Diagrama de paquetes}{11}%
+\contentsline {section}{\numberline {3}Descripci\IeC {\'o}n breve de los casos de uso}{11}%

@@ -1,0 +1,4 @@
+Crear archivos:
+	servidor.c
+	proxy.c
+Leer sesion 7 y buscar en wuolah

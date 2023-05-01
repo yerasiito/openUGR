@@ -1,0 +1,40 @@
+\hypertarget{_resolver_sudoku_killer_8h_source}{}\doxysection{Resolver\+Sudoku\+Killer.\+h}
+\label{_resolver_sudoku_killer_8h_source}\index{include/ResolverSudokuKiller.h@{include/ResolverSudokuKiller.h}}
+\mbox{\hyperlink{_resolver_sudoku_killer_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#ifndef RESOLVERSUDOKUKILLER\_H}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#define RESOLVERSUDOKUKILLER\_H}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <\mbox{\hyperlink{_sudoku_killer_8h}{SudokuKiller.h}}>}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{19 \textcolor{keyword}{class }\mbox{\hyperlink{class_resolver_sudoku_killer}{ResolverSudokuKiller}}\{}
+\DoxyCodeLine{20     \textcolor{keyword}{private}:}
+\DoxyCodeLine{21         \textcolor{keywordtype}{int} ***sudoku; \textcolor{comment}{//Matriz tridimensional ya que cada casilla contendrá un vector de posibles valores}}
+\DoxyCodeLine{22         \mbox{\hyperlink{class_bloques_sudoku}{BloquesSudoku}} caja;}
+\DoxyCodeLine{23         \mbox{\hyperlink{class_bloques_sudoku}{BloquesSudoku}} bloquesKiller;}
+\DoxyCodeLine{24     \textcolor{keyword}{public}:}
+\DoxyCodeLine{25         }
+\DoxyCodeLine{29         \mbox{\hyperlink{class_resolver_sudoku_killer_a71a86509da8a8b8a621fd53983871cf4}{ResolverSudokuKiller}}();}
+\DoxyCodeLine{30         }
+\DoxyCodeLine{37         \mbox{\hyperlink{class_sudoku_killer}{SudokuKiller}} \mbox{\hyperlink{class_resolver_sudoku_killer_aa181d7c556e6a92e3cd0c7ed41317527}{ResuelveSudoku}}(\mbox{\hyperlink{class_sudoku_killer}{SudokuKiller}} aResolver);}
+\DoxyCodeLine{38         }
+\DoxyCodeLine{46         vector<int> \mbox{\hyperlink{class_resolver_sudoku_killer_a0f2df1aba23ad50cda4926ea4249f761}{SecuenciaCaja}}(\textcolor{keywordtype}{int} i);}
+\DoxyCodeLine{47                 }
+\DoxyCodeLine{56         vector<int> \mbox{\hyperlink{class_resolver_sudoku_killer_aa9ea66d4f706b51abc09969c80d4517a}{SecuenciaBloqueKiller}}(\textcolor{keywordtype}{int} i);}
+\DoxyCodeLine{57         }
+\DoxyCodeLine{65         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_resolver_sudoku_killer_a04bd8f1c433bfc5118293a9bc7341244}{BuscaSecuenciasUnicas}}();}
+\DoxyCodeLine{66         }
+\DoxyCodeLine{72         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_resolver_sudoku_killer_ae3e3b7734d45b584cc16caf063967558}{Regla45}}();}
+\DoxyCodeLine{73         }
+\DoxyCodeLine{79         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_resolver_sudoku_killer_afb0e2bcaf10ffa72aa9a12923fe40de7}{DescartaSecuencias}}(\textcolor{keywordtype}{int} i);}
+\DoxyCodeLine{80         }
+\DoxyCodeLine{88         vector<int> \mbox{\hyperlink{class_resolver_sudoku_killer_ad3b1cb19059683fbde0e7d11b0d71982}{SecuenciasPosibles}}(\textcolor{keywordtype}{int} valor, \textcolor{keywordtype}{int} tama);}
+\DoxyCodeLine{89     }
+\DoxyCodeLine{90 \};}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{92 }
+\DoxyCodeLine{93 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* RESOLVERSUDOKUKILLER\_H */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{94 }
+
+\end{DoxyCode}

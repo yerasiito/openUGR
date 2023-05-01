@@ -1,0 +1,29 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+
+FIT:    data read from \PYGZsq{}quicksort.dat\PYGZsq{}
+        format = z
+        \PYGZsh{}datapoints = 25
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a*x*log(x) + b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b
+   0 6.6724879056e\PYGZhy{}05   0.00e+00  1.96e\PYGZhy{}01    2.710439e\PYGZhy{}08   2.021386e\PYGZhy{}03
+   1 6.6724879056e\PYGZhy{}05   0.00e+00  1.96e+00    2.710439e\PYGZhy{}08   2.021386e\PYGZhy{}03
+
+After 1 iterations the fit converged.
+final sum of squares of residuals : 6.67249e\PYGZhy{}05
+rel. change during last iteration : 0
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 2.71044e\PYGZhy{}08      +/\PYGZhy{} 6.623e\PYGZhy{}11    (0.2444\PYGZpc{})
+b               = 0.00202139       +/\PYGZhy{} 0.0006759    (33.44\PYGZpc{})
+
+correlation matrix of the fit parameters:
+                a      b
+a               1.000
+b              \PYGZhy{}0.864  1.000
+\end{Verbatim}

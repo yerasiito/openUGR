@@ -1,0 +1,188 @@
+\hypertarget{classcivitas_1_1Tablero}{}\doxysection{Referencia de la Clase civitas.\+Tablero}
+\label{classcivitas_1_1Tablero}\index{civitas.Tablero@{civitas.Tablero}}
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+boolean \mbox{\hyperlink{classcivitas_1_1Tablero_aebb4379522451b91edf39a8eb80ae005}{get\+Paso\+Por\+Salida}} ()
+\item 
+boolean \mbox{\hyperlink{classcivitas_1_1Tablero_abe88bfd23851da8b2fb4fac8c21214b7}{correcto}} (int num\+Casilla)
+\item 
+boolean \mbox{\hyperlink{classcivitas_1_1Tablero_a7de457233656145feec7e18cdbffbac0}{computar\+Paso\+Por\+Salida}} ()
+\item 
+void \mbox{\hyperlink{classcivitas_1_1Tablero_a4906b7f7c6d5b1130868c89ba490fb97}{aniade\+Casilla}} (\mbox{\hyperlink{classcivitas_1_1Casilla}{Casilla}} casilla)
+\item 
+Array\+List$<$ \mbox{\hyperlink{classcivitas_1_1Casilla}{Casilla}} $>$ \mbox{\hyperlink{classcivitas_1_1Tablero_ac8c06aaa2663e389e2e0a97ad25a4925}{get\+Casillas}} ()
+\item 
+\mbox{\hyperlink{classcivitas_1_1Casilla}{Casilla}} \mbox{\hyperlink{classcivitas_1_1Tablero_a3e8d442ecab08ad5735bb82ed191cebb}{get\+Casilla}} (int num\+Casilla)
+\item 
+int \mbox{\hyperlink{classcivitas_1_1Tablero_a7eb232ed041b08dcbf44ce53ae0acc64}{nueva\+Posicion}} (int actual, int tirada)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+\begin{DoxyAuthor}{Autor}
+ylope 
+\end{DoxyAuthor}
+
+
+Definición en la línea \mbox{\hyperlink{Tablero_8java_source_l00012}{12}} del archivo \mbox{\hyperlink{Tablero_8java_source}{Tablero.\+java}}.
+
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classcivitas_1_1Tablero_a155fcd33e95b6b43c1720b91da169a1f}\label{classcivitas_1_1Tablero_a155fcd33e95b6b43c1720b91da169a1f}} 
+\index{civitas.Tablero@{civitas.Tablero}!Tablero@{Tablero}}
+\index{Tablero@{Tablero}!civitas.Tablero@{civitas.Tablero}}
+\doxysubsubsection{\texorpdfstring{Tablero()}{Tablero()}}
+{\footnotesize\ttfamily civitas.\+Tablero.\+Tablero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{Tablero_8java_source_l00016}{16}} del archivo \mbox{\hyperlink{Tablero_8java_source}{Tablero.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00016}00016                     \{}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00017}00017         casillas = \textcolor{keyword}{new} ArrayList<>();}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00018}00018         porSalida = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00019}00019     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classcivitas_1_1Tablero_a4906b7f7c6d5b1130868c89ba490fb97}\label{classcivitas_1_1Tablero_a4906b7f7c6d5b1130868c89ba490fb97}} 
+\index{civitas.Tablero@{civitas.Tablero}!aniadeCasilla@{aniadeCasilla}}
+\index{aniadeCasilla@{aniadeCasilla}!civitas.Tablero@{civitas.Tablero}}
+\doxysubsubsection{\texorpdfstring{aniadeCasilla()}{aniadeCasilla()}}
+{\footnotesize\ttfamily void civitas.\+Tablero.\+aniade\+Casilla (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcivitas_1_1Casilla}{Casilla}}}]{casilla }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{Tablero_8java_source_l00037}{37}} del archivo \mbox{\hyperlink{Tablero_8java_source}{Tablero.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00037}00037                                               \{}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00038}00038         casillas.add(casilla);}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00039}00039     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcivitas_1_1Tablero_a7de457233656145feec7e18cdbffbac0}\label{classcivitas_1_1Tablero_a7de457233656145feec7e18cdbffbac0}} 
+\index{civitas.Tablero@{civitas.Tablero}!computarPasoPorSalida@{computarPasoPorSalida}}
+\index{computarPasoPorSalida@{computarPasoPorSalida}!civitas.Tablero@{civitas.Tablero}}
+\doxysubsubsection{\texorpdfstring{computarPasoPorSalida()}{computarPasoPorSalida()}}
+{\footnotesize\ttfamily boolean civitas.\+Tablero.\+computar\+Paso\+Por\+Salida (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{Tablero_8java_source_l00033}{33}} del archivo \mbox{\hyperlink{Tablero_8java_source}{Tablero.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00033}00033                                            \{}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00034}00034         \textcolor{keywordflow}{return} porSalida = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00035}00035     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcivitas_1_1Tablero_abe88bfd23851da8b2fb4fac8c21214b7}\label{classcivitas_1_1Tablero_abe88bfd23851da8b2fb4fac8c21214b7}} 
+\index{civitas.Tablero@{civitas.Tablero}!correcto@{correcto}}
+\index{correcto@{correcto}!civitas.Tablero@{civitas.Tablero}}
+\doxysubsubsection{\texorpdfstring{correcto()}{correcto()}}
+{\footnotesize\ttfamily boolean civitas.\+Tablero.\+correcto (\begin{DoxyParamCaption}\item[{int}]{num\+Casilla }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{Tablero_8java_source_l00025}{25}} del archivo \mbox{\hyperlink{Tablero_8java_source}{Tablero.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00025}00025                                            \{}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00026}00026         \textcolor{keywordtype}{boolean} esCorrecto = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00027}00027         \textcolor{keywordflow}{if}(numCasilla > -\/1 \&\& numCasilla < casillas.size())}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00028}00028             esCorrecto = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00029}00029         }
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00030}00030         \textcolor{keywordflow}{return} esCorrecto;}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00031}00031     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcivitas_1_1Tablero_a3e8d442ecab08ad5735bb82ed191cebb}\label{classcivitas_1_1Tablero_a3e8d442ecab08ad5735bb82ed191cebb}} 
+\index{civitas.Tablero@{civitas.Tablero}!getCasilla@{getCasilla}}
+\index{getCasilla@{getCasilla}!civitas.Tablero@{civitas.Tablero}}
+\doxysubsubsection{\texorpdfstring{getCasilla()}{getCasilla()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcivitas_1_1Casilla}{Casilla}} civitas.\+Tablero.\+get\+Casilla (\begin{DoxyParamCaption}\item[{int}]{num\+Casilla }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{Tablero_8java_source_l00045}{45}} del archivo \mbox{\hyperlink{Tablero_8java_source}{Tablero.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00045}00045                                              \{}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00046}00046         \textcolor{keywordflow}{if}(correcto(numCasilla))}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00047}00047             \textcolor{keywordflow}{return} casillas.get(numCasilla);}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00048}00048         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00049}00049             \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00050}00050     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcivitas_1_1Tablero_ac8c06aaa2663e389e2e0a97ad25a4925}\label{classcivitas_1_1Tablero_ac8c06aaa2663e389e2e0a97ad25a4925}} 
+\index{civitas.Tablero@{civitas.Tablero}!getCasillas@{getCasillas}}
+\index{getCasillas@{getCasillas}!civitas.Tablero@{civitas.Tablero}}
+\doxysubsubsection{\texorpdfstring{getCasillas()}{getCasillas()}}
+{\footnotesize\ttfamily Array\+List$<$ \mbox{\hyperlink{classcivitas_1_1Casilla}{Casilla}} $>$ civitas.\+Tablero.\+get\+Casillas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{Tablero_8java_source_l00041}{41}} del archivo \mbox{\hyperlink{Tablero_8java_source}{Tablero.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00041}00041                                             \{}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00042}00042         \textcolor{keywordflow}{return} casillas;}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00043}00043     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcivitas_1_1Tablero_aebb4379522451b91edf39a8eb80ae005}\label{classcivitas_1_1Tablero_aebb4379522451b91edf39a8eb80ae005}} 
+\index{civitas.Tablero@{civitas.Tablero}!getPasoPorSalida@{getPasoPorSalida}}
+\index{getPasoPorSalida@{getPasoPorSalida}!civitas.Tablero@{civitas.Tablero}}
+\doxysubsubsection{\texorpdfstring{getPasoPorSalida()}{getPasoPorSalida()}}
+{\footnotesize\ttfamily boolean civitas.\+Tablero.\+get\+Paso\+Por\+Salida (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{Tablero_8java_source_l00021}{21}} del archivo \mbox{\hyperlink{Tablero_8java_source}{Tablero.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00021}00021                                      \{}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00022}00022         \textcolor{keywordflow}{return} porSalida;}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00023}00023     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcivitas_1_1Tablero_a7eb232ed041b08dcbf44ce53ae0acc64}\label{classcivitas_1_1Tablero_a7eb232ed041b08dcbf44ce53ae0acc64}} 
+\index{civitas.Tablero@{civitas.Tablero}!nuevaPosicion@{nuevaPosicion}}
+\index{nuevaPosicion@{nuevaPosicion}!civitas.Tablero@{civitas.Tablero}}
+\doxysubsubsection{\texorpdfstring{nuevaPosicion()}{nuevaPosicion()}}
+{\footnotesize\ttfamily int civitas.\+Tablero.\+nueva\+Posicion (\begin{DoxyParamCaption}\item[{int}]{actual,  }\item[{int}]{tirada }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{Tablero_8java_source_l00052}{52}} del archivo \mbox{\hyperlink{Tablero_8java_source}{Tablero.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00052}00052                                                      \{}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00053}00053         \textcolor{keywordtype}{int} nueva = (actual+tirada)\%CivitasJuego.TAMANIOTABLERO;}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00054}00054         \textcolor{keywordflow}{if}(nueva != actual+tirada)\{}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00055}00055             porSalida = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00056}00056         \}}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00057}00057         \textcolor{keywordflow}{return} nueva;}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00058}00058     \}}
+
+\end{DoxyCode}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+src/civitas/Tablero.\+java\end{DoxyCompactItemize}

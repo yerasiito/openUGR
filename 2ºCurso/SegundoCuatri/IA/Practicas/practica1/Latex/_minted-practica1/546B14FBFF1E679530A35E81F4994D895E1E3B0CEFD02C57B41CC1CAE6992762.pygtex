@@ -1,0 +1,25 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+ch}{\PYGZsh{}!/bin/bash}
+
+\PYG{n+nv}{DIRECTORIO}\PYG{o}{=}\PYG{l+s+s2}{\PYGZdq{}Resultados\PYGZdq{}}
+\PYG{n+nv}{output}\PYG{o}{=}\PYG{n+nv}{\PYGZdl{}DIRECTORIO}/resultados
+
+\PYG{c+c1}{\PYGZsh{}./practica1SG mapa semilla nivel fila columna sentido}
+
+
+\PYG{n+nb}{echo} \PYGZhy{}e \PYG{l+s+s2}{\PYGZdq{}\PYGZbs{}nMapa: ./mapas/mapaEspecial.map\PYGZdq{}} \PYGZgt{}\PYGZgt{} \PYG{n+nv}{\PYGZdl{}output}.dat
+\PYG{k}{for} \PYG{o}{((} \PYG{n+nv}{c}\PYG{o}{=}\PYG{l+m}{0}\PYG{p}{;} c\PYGZlt{}\PYG{o}{=}\PYG{l+m}{4}\PYG{p}{;} \PYG{n+nv}{c}\PYG{o}{+=}\PYG{l+m}{1} \PYG{o}{))}
+\PYG{k}{do}
+	\PYG{n+nb}{echo} \PYGZhy{}e \PYGZhy{}n \PYG{l+s+s2}{\PYGZdq{}Nivel }\PYG{n+nv}{\PYGZdl{}c}\PYG{l+s+s2}{: \PYGZdq{}} \PYGZgt{}\PYGZgt{} \PYG{n+nv}{\PYGZdl{}output}.dat
+    ./practica1SG ./mapas/cuadricula.map \PYG{l+m}{0} \PYG{n+nv}{\PYGZdl{}c} \PYG{l+m}{50} \PYG{l+m}{20} \PYG{l+m}{0} \PYG{p}{|} tail \PYGZhy{}n1 \PYGZgt{}\PYGZgt{} \PYG{n+nv}{\PYGZdl{}output}.dat
+\PYG{k}{done}
+
+\PYG{n+nb}{echo} \PYG{l+s+s2}{\PYGZdq{}Mapa: ./mapas/mapaXX.map\PYGZdq{}} \PYGZgt{}\PYGZgt{} \PYG{n+nv}{\PYGZdl{}output}.dat
+\PYG{k}{for} \PYG{o}{((} \PYG{n+nv}{c}\PYG{o}{=}\PYG{l+m}{0}\PYG{p}{;} c\PYGZlt{}\PYG{o}{=}\PYG{l+m}{4}\PYG{p}{;} \PYG{n+nv}{c}\PYG{o}{+=}\PYG{l+m}{1} \PYG{o}{))}
+\PYG{k}{do}
+	\PYG{n+nb}{echo} \PYGZhy{}e \PYGZhy{}n \PYG{l+s+s2}{\PYGZdq{}Nivel }\PYG{n+nv}{\PYGZdl{}c}\PYG{l+s+s2}{: \PYGZdq{}} \PYGZgt{}\PYGZgt{} \PYG{n+nv}{\PYGZdl{}output}.dat
+    ./practica1SG ./mapas/mapa30.map \PYG{l+m}{0} \PYG{n+nv}{\PYGZdl{}c} \PYG{l+m}{10} \PYG{l+m}{20} \PYG{l+m}{0} \PYG{p}{|} tail \PYGZhy{}n1 \PYGZgt{}\PYGZgt{} \PYG{n+nv}{\PYGZdl{}output}.dat
+\PYG{k}{done}
+
+...
+\end{Verbatim}

@@ -1,0 +1,64 @@
+\hypertarget{_sudoku_killer_8h_source}{}\doxysection{Sudoku\+Killer.\+h}
+\label{_sudoku_killer_8h_source}\index{include/SudokuKiller.h@{include/SudokuKiller.h}}
+\mbox{\hyperlink{_sudoku_killer_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#ifndef SUDOKUKILLER\_H}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#define SUDOKUKILLER\_H}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_matriz_8h}{Matriz.h}}"{}}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{22 \textcolor{keyword}{class }\mbox{\hyperlink{class_sudoku}{Sudoku}}}
+\DoxyCodeLine{23 \{}
+\DoxyCodeLine{24     \textcolor{keyword}{private}:}
+\DoxyCodeLine{25         \mbox{\hyperlink{class_matriz}{Matriz}} sudoku();}
+\DoxyCodeLine{26         \mbox{\hyperlink{class_bloques_sudoku}{BloquesSudoku}} cajas;}
+\DoxyCodeLine{27         }
+\DoxyCodeLine{31         \textcolor{keywordtype}{void} init();}
+\DoxyCodeLine{32     \textcolor{keyword}{public}:}
+\DoxyCodeLine{37         \mbox{\hyperlink{class_sudoku_a5fc6547fe577e8eca24a7e86d2fa0ff8}{Sudoku}}();}
+\DoxyCodeLine{38         }
+\DoxyCodeLine{44         \mbox{\hyperlink{class_sudoku_aabbce9609c3d4d191b2e491b632108a3}{Sudoku}}(\mbox{\hyperlink{class_matriz}{Matriz}} m);}
+\DoxyCodeLine{45         }
+\DoxyCodeLine{52         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_sudoku_a40b8afb9d16d2c7c91057cdcdfe83519}{getValorCasilla}}(\textcolor{keywordtype}{int} fil, \textcolor{keywordtype}{int} col);}
+\DoxyCodeLine{53         }
+\DoxyCodeLine{58         \mbox{\hyperlink{class_matriz}{Matriz}} \mbox{\hyperlink{class_sudoku_a5b15728b3ec21aa6937f4494e7a010fe}{getSudoku}}();}
+\DoxyCodeLine{59         }
+\DoxyCodeLine{60         }
+\DoxyCodeLine{66         \mbox{\hyperlink{class_matriz}{Matriz}} \mbox{\hyperlink{class_sudoku_a7e36e3e9934527815797935629842a7a}{GenerarSudoku}}();}
+\DoxyCodeLine{67     }
+\DoxyCodeLine{68 \};}
+\DoxyCodeLine{74     \textcolor{keyword}{class }\mbox{\hyperlink{class_sudoku_killer}{SudokuKiller}}\{}
+\DoxyCodeLine{75         \textcolor{keyword}{private}:}
+\DoxyCodeLine{76             \mbox{\hyperlink{class_matriz}{Matriz}} sudokuKiller;}
+\DoxyCodeLine{77             \mbox{\hyperlink{class_bloques_sudoku}{BloquesSudoku}} cajas;}
+\DoxyCodeLine{78             \mbox{\hyperlink{class_bloques_sudoku}{BloquesSudoku}} bloquesKiller;}
+\DoxyCodeLine{79                 }
+\DoxyCodeLine{84         \textcolor{keywordtype}{void} GenerarSudokuKillerCompleto(\mbox{\hyperlink{class_sudoku}{Sudoku}} sudoku);}
+\DoxyCodeLine{85         }
+\DoxyCodeLine{86         \textcolor{keyword}{public}:}
+\DoxyCodeLine{91             \mbox{\hyperlink{class_sudoku_killer_a175de207a51168d2ad80d187c459d94d}{SudokuKiller}}();}
+\DoxyCodeLine{92             }
+\DoxyCodeLine{99             \mbox{\hyperlink{class_sudoku_killer_a4d2c381ab0a91a13ac8b39c1f0e58747}{SudokuKiller}}(\mbox{\hyperlink{class_matriz}{Matriz}} sudoku);}
+\DoxyCodeLine{100             }
+\DoxyCodeLine{105             \mbox{\hyperlink{class_sudoku_killer_adfaff24812b2460ec48df65946429498}{SudokuKiller}}(\mbox{\hyperlink{class_sudoku}{Sudoku}} sudoku);}
+\DoxyCodeLine{106 }
+\DoxyCodeLine{112             \mbox{\hyperlink{class_sudoku_killer}{SudokuKiller}} \mbox{\hyperlink{class_sudoku_killer_a3af83cc90417280d7eb274537d28c954}{GenerarSudokiller}}();}
+\DoxyCodeLine{113 }
+\DoxyCodeLine{120             \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_sudoku_killer_a30dfe09a62e70b6e8e9b45839d7bfd0c}{EstaResuelto}}(\mbox{\hyperlink{class_sudoku_killer}{SudokuKiller}} resuelto);}
+\DoxyCodeLine{121     \};}
+\DoxyCodeLine{122 }
+\DoxyCodeLine{128     \textcolor{keywordtype}{bool} \mbox{\hyperlink{_sudoku_killer_8h_a66a57b58427a008030ab6b81349afb9b}{SudokuValido}}(\mbox{\hyperlink{class_matriz}{Matriz}} M);}
+\DoxyCodeLine{129     }
+\DoxyCodeLine{136     \textcolor{keywordtype}{bool} \mbox{\hyperlink{_sudoku_killer_8h_a3545a7e5b10674ee1f41950fd1571b11}{BloquesValido}}(\mbox{\hyperlink{class_sudoku_killer}{SudokuKiller}} sudoku);}
+\DoxyCodeLine{137     }
+\DoxyCodeLine{144     \textcolor{keywordtype}{bool} \mbox{\hyperlink{_sudoku_killer_8h_ae9f3fe34c7f019fa9fba0c3dab72ded7}{SudokuKillerValido}}(\mbox{\hyperlink{class_sudoku_killer}{SudokuKiller}} sudoku);}
+\DoxyCodeLine{145 }
+\DoxyCodeLine{146 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* SUDOKUKILLER\_H */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{147 }
+
+\end{DoxyCode}

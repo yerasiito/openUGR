@@ -1,0 +1,27 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+
+FIT:    data read from \PYGZsq{}compraventaDyV1.dat\PYGZsq{}
+        format = z
+        \PYGZsh{}datapoints = 25
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a*x*log(x)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a
+   0 2.6033979973e+15   0.00e+00  1.02e+07    1.000000e+00
+   5 2.8801247962e\PYGZhy{}05  \PYGZhy{}2.24e\PYGZhy{}10  1.02e+02    5.580963e\PYGZhy{}09
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 2.88012e\PYGZhy{}05
+rel. change during last iteration : \PYGZhy{}2.23513e\PYGZhy{}15
+
+degrees of freedom    (FIT\PYGZus{}NDF)                        : 24
+rms of residuals      (FIT\PYGZus{}STDFIT) = sqrt(WSSR/ndf)    : 0.00109547
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.20005e\PYGZhy{}06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 5.58096e\PYGZhy{}09      +/\PYGZhy{} 2.147e\PYGZhy{}11    (0.3847\PYGZpc{})
+\end{Verbatim}

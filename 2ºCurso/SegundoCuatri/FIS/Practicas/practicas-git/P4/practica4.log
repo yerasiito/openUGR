@@ -1,0 +1,613 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Arch Linux) (preloaded format=pdflatex 2022.4.30)  10 JUN 2022 23:07
+entering extended mode
+ \write18 enabled.
+ %&-line parsing enabled.
+**practica4.tex
+(./practica4.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-04-10>
+(/usr/share/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(/usr/share/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2022/02/26 3.73 The Babel package
+\babel@savecnt=\count193
+\U@D=\dimen139
+\l@unhyphenated=\language87
+
+(/usr/share/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count194
+
+(/usr/share/texmf-dist/tex/generic/babel-spanish/spanish.ldf
+Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
+\es@quottoks=\toks16
+\es@quotdepth=\count195
+Package babel Info: Making " an active character on input line 570.
+Package babel Info: Making . an active character on input line 675.
+Package babel Info: Making < an active character on input line 722.
+Package babel Info: Making > an active character on input line 722.
+))
+LaTeX Info: Redefining \. on input line 3.
+LaTeX Info: Redefining \% on input line 3.
+
+(/usr/share/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip49
+\bibsep=\skip50
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count196
+)
+(/usr/share/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/share/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+
+(/usr/share/texmf-dist/tex/latex/ucs/utf8x.def
+File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
+))
+(/usr/share/texmf-dist/tex/latex/ucs/ucs.sty
+Package: ucs 2013/05/11 v2.2 UCS: Unicode input support
+
+(/usr/share/texmf-dist/tex/latex/ucs/data/uni-global.def
+File: uni-global.def 2013/05/13 UCS: Unicode global data
+)
+\uc@secondtry=\count197
+\uc@combtoks=\toks19
+\uc@combtoksb=\toks20
+\uc@temptokena=\toks21
+)
+(/usr/share/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks22
+)
+(/usr/share/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(/usr/share/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(/usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen140
+\Gin@req@width=\dimen141
+)
+(/usr/share/texmf-dist/tex/latex/tools/array.sty
+Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
+\col@sep=\dimen142
+\ar@mcellbox=\box50
+\extrarowheight=\dimen143
+\NC@list=\toks23
+\extratabsurround=\skip51
+\backup@length=\skip52
+\ar@cellbox=\box51
+)
+(/usr/share/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
+\LTleft=\skip53
+\LTright=\skip54
+\LTpre=\skip55
+\LTpost=\skip56
+\LTchunksize=\count198
+\LTcapwidth=\dimen144
+\LT@head=\box52
+\LT@firsthead=\box53
+\LT@foot=\box54
+\LT@lastfoot=\box55
+\LT@gbox=\box56
+\LT@cols=\count199
+\LT@rows=\count266
+\c@LT@tables=\count267
+\c@LT@chunks=\count268
+\LT@p@ftn=\toks24
+)
+(/usr/share/texmf-dist/tex/latex/parskip/parskip.sty
+Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
+
+(/usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+
+(/usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))
+(/usr/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count269
+))
+(/usr/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
+rs
+\f@nch@headwidth=\skip57
+\f@nch@O@elh=\skip58
+\f@nch@O@erh=\skip59
+\f@nch@O@olh=\skip60
+\f@nch@O@orh=\skip61
+\f@nch@O@elf=\skip62
+\f@nch@O@erf=\skip63
+\f@nch@O@olf=\skip64
+\f@nch@O@orf=\skip65
+)
+(/usr/share/texmf-dist/tex/latex/vmargin/vmargin.sty
+Package: vmargin 2004/07/15 V2.5 set document margins (VK)
+
+Package: vmargin 2004/07/15 V2.5 set document margins (VK)
+\PaperWidth=\dimen145
+\PaperHeight=\dimen146
+) (/usr/share/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count270
+\lst@gtempboxa=\box57
+\lst@token=\toks25
+\lst@length=\count271
+\lst@currlwidth=\dimen147
+\lst@column=\count272
+\lst@pos=\count273
+\lst@lostspace=\dimen148
+\lst@width=\dimen149
+\lst@newlines=\count274
+\lst@lineno=\count275
+\lst@maxwidth=\dimen150
+
+(/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count276
+\lst@skipnumbers=\count277
+\lst@framebox=\box58
+)
+(/usr/share/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+
+(/usr/share/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2020/08/19 v1.3 Adjusting TeX boxes (trim, clip, ...)
+
+(/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+
+(/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks26
+\XKV@tempa@toks=\toks27
+)
+\XKV@depth=\count278
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/share/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/usr/share/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+
+(/usr/share/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box59
+)
+\tc@llx=\dimen151
+\tc@lly=\dimen152
+\tc@urx=\dimen153
+\tc@ury=\dimen154
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(/usr/share/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen155
+\adjbox@Height=\dimen156
+\adjbox@Depth=\dimen157
+\adjbox@Totalheight=\dimen158
+\adjbox@pwidth=\dimen159
+\adjbox@pheight=\dimen160
+\adjbox@pdepth=\dimen161
+\adjbox@ptotalheight=\dimen162
+
+(/usr/share/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count279
+)
+(/usr/share/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box60
+\sift@deathcycles=\count280
+\@vwid@loff=\dimen163
+\@vwid@roff=\dimen164
+))
+(/usr/share/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+
+(/usr/share/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)
+(/usr/share/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
+(/usr/share/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip66
+\enit@outerparindent=\dimen165
+\enit@toks=\toks28
+\enit@inbox=\box61
+\enit@count@id=\count281
+\enitdp@description=\count282
+)
+(/usr/share/texmf-dist/tex/latex/sourcesanspro/sourcesanspro.sty
+Package: sourcesanspro 2018/05/19 v2.7 Adobe's Source Sans Pro typeface
+
+(/usr/share/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+(/usr/share/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+)
+(/usr/share/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+
+(/usr/share/texmf-dist/tex/latex/ly1/ly1enc.def
+File: ly1enc.def 2009/07/22 v0.7 TeX 'n ANSI encoding (DPC/KB)
+)))
+LaTeX Font Info:    Trying to load font information for T1+SourceSansPro-TLF on
+ input line 58.
+
+(/usr/share/texmf-dist/tex/latex/sourcesanspro/T1SourceSansPro-TLF.fd
+File: T1SourceSansPro-TLF.fd 2020/01/19 (autoinst) Font definitions for T1/Sour
+ceSansPro-TLF.
+)
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 58.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
+(Font)              scaled to size 12.0pt on input line 58.
+
+(/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-04-14 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count283
+\l__pdf_internal_box=\box62
+)
+(./practica4.aux
+LaTeX Info: Redefining \. on input line 8.
+LaTeX Info: Redefining \% on input line 8.
+LaTeX Info: Redefining \. on input line 10.
+LaTeX Info: Redefining \% on input line 10.
+)
+\openout1 = `practica4.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 58.
+LaTeX Font Info:    Trying to load font information for LY1+ptm on input line 5
+8.
+ (/usr/share/texmf-dist/tex/latex/ly1/ly1ptm.fd
+File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
+)
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Info: Redefining \. on input line 58.
+LaTeX Info: Redefining \% on input line 58.
+
+(/usr/share/texmf-dist/tex/latex/ucs/ucsencs.def
+File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
+)
+(/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count284
+\scratchdimen=\dimen166
+\scratchbox=\box63
+\nofMPsegments=\count285
+\nofMParguments=\count286
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count287
+\MPscratchDim=\dimen167
+\MPnumerator=\count288
+\makeMPintoPDFobject=\count289
+\everyMPtoPDFconversion=\toks30
+) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+
+(/usr/share/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(/usr/share/texmf-dist/tex/latex/grfext/grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+
+(/usr/share/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+))
+(/usr/share/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+
+(/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\c@lstlisting=\count290
+<images//logoUGR.png, id=1, 1284.8pt x 722.7pt>
+File: images//logoUGR.png Graphic file (type png)
+<use images//logoUGR.png>
+Package pdftex.def Info: images//logoUGR.png  used on input line 64.
+(pdftex.def)             Requested size: 256.95544pt x 144.53743pt.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/sc' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/sc' on input line 65.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/sc' will be
+(Font)              scaled to size 12.0pt on input line 65.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/sc' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/sc' on input line 65.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/sc' will be
+(Font)              scaled to size 20.74pt on input line 65.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/sc' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/sc' on input line 66.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/sc' will be
+(Font)              scaled to size 14.4pt on input line 66.
+
+(/usr/share/texmf-dist/tex/latex/ucs/data/uni-0.def
+File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
+)
+LaTeX Font Info:    Trying to load font information for TS1+SourceSansPro-TLF o
+n input line 66.
+
+(/usr/share/texmf-dist/tex/latex/sourcesanspro/TS1SourceSansPro-TLF.fd
+File: TS1SourceSansPro-TLF.fd 2020/01/19 (autoinst) Font definitions for TS1/So
+urceSansPro-TLF.
+)
+
+LaTeX Font Warning: Font shape `TS1/SourceSansPro-TLF/m/sc' undefined
+(Font)              using `TS1/SourceSansPro-TLF/m/n' instead
+(Font)              for symbol `textordmasculine' on input line 66.
+
+LaTeX Font Info:    Font shape `TS1/SourceSansPro-TLF/m/n' aliased to
+(Font)              `TS1/SourceSansPro-TLF/regular/n' on input line 66.
+LaTeX Font Info:    Font shape `TS1/SourceSansPro-TLF/regular/n' will be
+(Font)              scaled to size 14.4pt on input line 66.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 69.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
+(Font)              scaled to size 24.88pt on input line 69.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 69.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
+(Font)              scaled to size 24.88pt on input line 69.
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./images//logoUGR.png>]
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 84.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
+(Font)              scaled to size 17.28pt on input line 84.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 84.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
+(Font)              scaled to size 17.28pt on input line 84.
+
+(./practica4.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+LaTeX Info: Redefining \. on input line 2.
+LaTeX Info: Redefining \% on input line 2.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 3.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
+(Font)              scaled to size 12.0pt on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 4.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 4.
+)
+\tf@toc=\write3
+\openout3 = `practica4.toc'.
+
+ [1]
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 89.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
+(Font)              scaled to size 14.4pt on input line 89.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 89.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
+(Font)              scaled to size 14.4pt on input line 89.
+<images//C1.png, id=16, 1115.16624pt x 695.59875pt>
+File: images//C1.png Graphic file (type png)
+<use images//C1.png>
+Package pdftex.def Info: images//C1.png  used on input line 90.
+(pdftex.def)             Requested size: 446.0586pt x 278.23457pt.
+<images//C2.png, id=17, 863.225pt x 485.815pt>
+File: images//C2.png Graphic file (type png)
+<use images//C2.png>
+Package pdftex.def Info: images//C2.png  used on input line 91.
+(pdftex.def)             Requested size: 431.61145pt x 242.9069pt.
+<images//C3.png, id=18, 1045.9075pt x 834.11626pt>
+File: images//C3.png Graphic file (type png)
+<use images//C3.png>
+Package pdftex.def Info: images//C3.png  used on input line 92.
+(pdftex.def)             Requested size: 470.65402pt x 375.34885pt.
+ [2 <./images//C1.png> <./images//C2.png>]
+<images//C4.png, id=24, 713.66624pt x 671.50874pt>
+File: images//C4.png Graphic file (type png)
+<use images//C4.png>
+Package pdftex.def Info: images//C4.png  used on input line 93.
+(pdftex.def)             Requested size: 356.83224pt x 335.75356pt.
+ [3 <./images//C3.png>]
+<images//C5.png, id=29, 861.2175pt x 743.77875pt>
+File: images//C5.png Graphic file (type png)
+<use images//C5.png>
+Package pdftex.def Info: images//C5.png  used on input line 94.
+(pdftex.def)             Requested size: 430.6077pt x 371.88846pt.
+ [4 <./images//C4.png>] [5 <./images//C5.png>]
+<images//C6.png, id=38, 891.33pt x 556.0775pt>
+File: images//C6.png Graphic file (type png)
+<use images//C6.png>
+Package pdftex.def Info: images//C6.png  used on input line 99.
+(pdftex.def)             Requested size: 445.66391pt x 278.03807pt.
+<images//C7.png, id=39, 916.42375pt x 577.15625pt>
+File: images//C7.png Graphic file (type png)
+<use images//C7.png>
+Package pdftex.def Info: images//C7.png  used on input line 100.
+(pdftex.def)             Requested size: 458.21075pt x 288.57741pt.
+<images//C8.png, id=40, 984.67876pt x 594.22pt>
+File: images//C8.png Graphic file (type png)
+<use images//C8.png>
+Package pdftex.def Info: images//C8.png  used on input line 101.
+(pdftex.def)             Requested size: 443.10135pt x 267.39653pt.
+ [6 <./images//C6.png> <./images//C7.png>]
+<images//C9.png, id=47, 989.6975pt x 539.01375pt>
+File: images//C9.png Graphic file (type png)
+<use images//C9.png>
+Package pdftex.def Info: images//C9.png  used on input line 102.
+(pdftex.def)             Requested size: 445.35976pt x 242.55394pt.
+<images//C10.png, id=48, 1024.82875pt x 546.04pt>
+File: images//C10.png Graphic file (type png)
+<use images//C10.png>
+Package pdftex.def Info: images//C10.png  used on input line 103.
+(pdftex.def)             Requested size: 461.16867pt x 245.71573pt.
+ [7 <./images//C8.png> <./images//C9.png>] [8 <./images//C10.png>]
+<images//C11.png, id=58, 546.54187pt x 237.13594pt>
+File: images//C11.png Graphic file (type png)
+<use images//C11.png>
+Package pdftex.def Info: images//C11.png  used on input line 108.
+(pdftex.def)             Requested size: 273.27026pt x 118.56767pt.
+<images//C12.png, id=59, 733.23938pt x 329.73187pt>
+File: images//C12.png Graphic file (type png)
+<use images//C12.png>
+Package pdftex.def Info: images//C12.png  used on input line 109.
+(pdftex.def)             Requested size: 366.61879pt x 164.86552pt.
+<images//C13.png, id=60, 626.34pt x 425.33907pt>
+File: images//C13.png Graphic file (type png)
+<use images//C13.png>
+Package pdftex.def Info: images//C13.png  used on input line 110.
+(pdftex.def)             Requested size: 313.16922pt x 212.669pt.
+<images//C14.png, id=61, 630.85687pt x 451.6875pt>
+File: images//C14.png Graphic file (type png)
+<use images//C14.png>
+Package pdftex.def Info: images//C14.png  used on input line 111.
+(pdftex.def)             Requested size: 315.42766pt x 225.84319pt.
+ [9 <./images//C11.png> <./images//C12.png> <./images//C13.png>]
+<images//C15.png, id=68, 744.53156pt x 292.09125pt>
+File: images//C15.png Graphic file (type png)
+<use images//C15.png>
+Package pdftex.def Info: images//C15.png  used on input line 112.
+(pdftex.def)             Requested size: 372.26486pt x 146.04526pt.
+ [10 <./images//C14.png> <./images//C15.png>]
+<images//C16.png, id=74, 755.2215pt x 384.4764pt>
+File: images//C16.png Graphic file (type png)
+<use images//C16.png>
+Package pdftex.def Info: images//C16.png  used on input line 117.
+(pdftex.def)             Requested size: 339.84653pt x 173.01277pt.
+<images//C17.png, id=75, 642.4803pt x 410.4936pt>
+File: images//C17.png Graphic file (type png)
+<use images//C17.png>
+Package pdftex.def Info: images//C17.png  used on input line 118.
+(pdftex.def)             Requested size: 321.23936pt x 205.24629pt.
+<images//C18.png, id=76, 776.9025pt x 414.8298pt>
+File: images//C18.png Graphic file (type png)
+<use images//C18.png>
+Package pdftex.def Info: images//C18.png  used on input line 119.
+(pdftex.def)             Requested size: 310.7555pt x 165.92897pt.
+<images//C19.png, id=77, 818.0964pt x 401.8212pt>
+File: images//C19.png Graphic file (type png)
+<use images//C19.png>
+Package pdftex.def Info: images//C19.png  used on input line 120.
+(pdftex.def)             Requested size: 327.23276pt x 160.72562pt.
+ [11 <./images//C16.png (PNG copy)> <./images//C17.png (PNG copy)> <./images//C
+18.png (PNG copy)>]
+<images//C20.png, id=81, 682.9515pt x 429.2838pt>
+File: images//C20.png Graphic file (type png)
+<use images//C20.png>
+Package pdftex.def Info: images//C20.png  used on input line 121.
+(pdftex.def)             Requested size: 341.47491pt x 214.64137pt.
+ [12 <./images//C19.png (PNG copy)> <./images//C20.png (PNG copy)>]
+<images//DiagramaDeClases.jpeg, id=86, 1606.0pt x 780.9175pt>
+File: images//DiagramaDeClases.jpeg Graphic file (type jpg)
+<use images//DiagramaDeClases.jpeg>
+Package pdftex.def Info: images//DiagramaDeClases.jpeg  used on input line 130.
+
+(pdftex.def)             Requested size: 722.69334pt x 351.40962pt.
+
+Overfull \hbox (75.96216pt too wide) in paragraph at lines 130--130
+ [][] 
+ []
+
+[13
+
+ <./images//DiagramaDeClases.jpeg>] (./practica4.aux
+LaTeX Info: Redefining \. on input line 8.
+LaTeX Info: Redefining \% on input line 8.
+LaTeX Info: Redefining \. on input line 10.
+LaTeX Info: Redefining \% on input line 10.
+)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 9069 strings out of 478238
+ 147923 string characters out of 5850456
+ 444564 words of memory out of 5000000
+ 27131 multiletter control sequences out of 15000+600000
+ 579446 words of font info for 58 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 60i,12n,67p,523b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/sourcesanspro/a_emkxm5.enc}{/usr/share
+/texmf-dist/fonts/enc/dvips/sourcesanspro/a_5ponh6.enc}{/usr/share/texmf-dist/f
+onts/enc/dvips/sourcesanspro/a_4jropk.enc}</usr/share/texmf-dist/fonts/type1/ad
+obe/sourcesanspro/SourceSansPro-Bold.pfb></usr/share/texmf-dist/fonts/type1/ado
+be/sourcesanspro/SourceSansPro-Regular.pfb>
+Output written on practica4.pdf (14 pages, 1646921 bytes).
+PDF statistics:
+ 108 PDF objects out of 1000 (max. 8388607)
+ 47 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 111 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,253 @@
+\hypertarget{class_vector___dinamico}{}\doxysection{Referencia de la Clase Vector\+\_\+\+Dinamico}
+\label{class_vector___dinamico}\index{Vector\_Dinamico@{Vector\_Dinamico}}
+
+
+T.\+D.\+A. \mbox{\hyperlink{class_vector___dinamico}{Vector\+\_\+\+Dinamico}}.  
+
+
+
+
+{\ttfamily \#include $<$vector\+\_\+dinamico.\+h$>$}
+
+\doxysubsection*{MÃ©todos pÃºblicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_vector___dinamico_a0b57a60a2862e5b8153db94d2f603194}{Vector\+\_\+\+Dinamico}} (int n=0)
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_vector___dinamico_a1badd0f4658626752c57e7d901b08486}\label{class_vector___dinamico_a1badd0f4658626752c57e7d901b08486}} 
+{\bfseries Vector\+\_\+\+Dinamico} (const \mbox{\hyperlink{class_vector___dinamico}{Vector\+\_\+\+Dinamico}} \&original)
+\item 
+int \mbox{\hyperlink{class_vector___dinamico_aec00b03f566e1cc6a2bacbed695f8037}{size}} () const
+\begin{DoxyCompactList}\small\item\em Número de componentes del vector. \end{DoxyCompactList}\item 
+float \& \mbox{\hyperlink{class_vector___dinamico_a99d7cef1aff9abfdd82012c2a5a44fa3}{operator\mbox{[}$\,$\mbox{]}}} (int i)
+\begin{DoxyCompactList}\small\item\em Acceso a un elemento. \end{DoxyCompactList}\item 
+const float \& \mbox{\hyperlink{class_vector___dinamico_a98adef75068ef2accb9101803a25a2d0}{operator\mbox{[}$\,$\mbox{]}}} (int i) const
+\begin{DoxyCompactList}\small\item\em Acceso a un elemento de un vector constante. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_vector___dinamico_ad1df2dffd7e4a50642740fcab1bd6e69}{resize}} (int n)
+\begin{DoxyCompactList}\small\item\em Redimensión del vector. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_vector___dinamico_ab7e54a1bb2fcb8c59db1e23a327bf12e}\label{class_vector___dinamico_ab7e54a1bb2fcb8c59db1e23a327bf12e}} 
+\mbox{\hyperlink{class_vector___dinamico}{Vector\+\_\+\+Dinamico}} \& {\bfseries operator=} (const \mbox{\hyperlink{class_vector___dinamico}{Vector\+\_\+\+Dinamico}} \&original)
+\item 
+\mbox{\hyperlink{class_vector___dinamico_a0b57a60a2862e5b8153db94d2f603194}{Vector\+\_\+\+Dinamico}} (int n=0)
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_vector___dinamico_a1badd0f4658626752c57e7d901b08486}\label{class_vector___dinamico_a1badd0f4658626752c57e7d901b08486}} 
+{\bfseries Vector\+\_\+\+Dinamico} (const \mbox{\hyperlink{class_vector___dinamico}{Vector\+\_\+\+Dinamico}} \&original)
+\item 
+int \mbox{\hyperlink{class_vector___dinamico_aec00b03f566e1cc6a2bacbed695f8037}{size}} () const
+\begin{DoxyCompactList}\small\item\em Número de componentes del vector. \end{DoxyCompactList}\item 
+float \& \mbox{\hyperlink{class_vector___dinamico_a99d7cef1aff9abfdd82012c2a5a44fa3}{operator\mbox{[}$\,$\mbox{]}}} (int i)
+\begin{DoxyCompactList}\small\item\em Acceso a un elemento. \end{DoxyCompactList}\item 
+const float \& \mbox{\hyperlink{class_vector___dinamico_a98adef75068ef2accb9101803a25a2d0}{operator\mbox{[}$\,$\mbox{]}}} (int i) const
+\begin{DoxyCompactList}\small\item\em Acceso a un elemento de un vector constante. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_vector___dinamico_ad1df2dffd7e4a50642740fcab1bd6e69}{resize}} (int n)
+\begin{DoxyCompactList}\small\item\em Redimensión del vector. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_vector___dinamico_ab7e54a1bb2fcb8c59db1e23a327bf12e}\label{class_vector___dinamico_ab7e54a1bb2fcb8c59db1e23a327bf12e}} 
+\mbox{\hyperlink{class_vector___dinamico}{Vector\+\_\+\+Dinamico}} \& {\bfseries operator=} (const \mbox{\hyperlink{class_vector___dinamico}{Vector\+\_\+\+Dinamico}} \&original)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{DescripciÃ³n detallada}
+T.\+D.\+A. \mbox{\hyperlink{class_vector___dinamico}{Vector\+\_\+\+Dinamico}}. 
+
+Una instancia {\itshape v} del tipo de datos abstracto {\ttfamily \mbox{\hyperlink{class_vector___dinamico}{Vector\+\_\+\+Dinamico}}} sobre el tipo {\ttfamily float} es un array 1-\/dimensional de un determinado tamaño {\itshape n}, que puede crecer y decrecer a petición del usuario. Lo podemos representar como
+
+\{v\mbox{[}0\mbox{]},v\mbox{[}1\mbox{]},...,v\mbox{[}n-\/1\mbox{]}\}
+
+donde v\mbox{[}i\mbox{]} es el valor almacenado en la posición i del vector
+
+La eficiencia en espacio es {\itshape O(n)}.
+
+Un ejemplo de su uso\+: 
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+ 
+
+\doxysubsection{DocumentaciÃ³n del constructor y destructor}
+\mbox{\Hypertarget{class_vector___dinamico_a0b57a60a2862e5b8153db94d2f603194}\label{class_vector___dinamico_a0b57a60a2862e5b8153db94d2f603194}} 
+\index{Vector\_Dinamico@{Vector\_Dinamico}!Vector\_Dinamico@{Vector\_Dinamico}}
+\index{Vector\_Dinamico@{Vector\_Dinamico}!Vector\_Dinamico@{Vector\_Dinamico}}
+\doxysubsubsection{\texorpdfstring{Vector\_Dinamico()}{Vector\_Dinamico()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Vector\+\_\+\+Dinamico\+::\+Vector\+\_\+\+Dinamico (\begin{DoxyParamCaption}\item[{int}]{n = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Constructor por defecto. 
+
+
+\begin{DoxyParams}{ParÃ¡metros}
+{\em n} & indica el número de componentes inicial reservados para el vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Nota}
+Este constructor también corresponde al de por defecto 
+\end{DoxyNote}
+\mbox{\Hypertarget{class_vector___dinamico_a0b57a60a2862e5b8153db94d2f603194}\label{class_vector___dinamico_a0b57a60a2862e5b8153db94d2f603194}} 
+\index{Vector\_Dinamico@{Vector\_Dinamico}!Vector\_Dinamico@{Vector\_Dinamico}}
+\index{Vector\_Dinamico@{Vector\_Dinamico}!Vector\_Dinamico@{Vector\_Dinamico}}
+\doxysubsubsection{\texorpdfstring{Vector\_Dinamico()}{Vector\_Dinamico()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Vector\+\_\+\+Dinamico\+::\+Vector\+\_\+\+Dinamico (\begin{DoxyParamCaption}\item[{int}]{n = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Constructor por defecto. 
+
+
+\begin{DoxyParams}{ParÃ¡metros}
+{\em n} & indica el número de componentes inicial reservados para el vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Nota}
+Este constructor también corresponde al de por defecto 
+\end{DoxyNote}
+
+
+\doxysubsection{DocumentaciÃ³n de las funciones miembro}
+\mbox{\Hypertarget{class_vector___dinamico_a99d7cef1aff9abfdd82012c2a5a44fa3}\label{class_vector___dinamico_a99d7cef1aff9abfdd82012c2a5a44fa3}} 
+\index{Vector\_Dinamico@{Vector\_Dinamico}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Vector\_Dinamico@{Vector\_Dinamico}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily float \& Vector\+\_\+\+Dinamico\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Acceso a un elemento. 
+
+
+\begin{DoxyParams}{ParÃ¡metros}
+{\em i} & la posición del vector donde está el componente. 0\texorpdfstring{$<$}{<}=i\texorpdfstring{$<$}{<}\mbox{\hyperlink{class_vector___dinamico_aec00b03f566e1cc6a2bacbed695f8037}{size()}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+La referencia al elemento. Por tanto, se puede usar para almacenar un valor en esa posición. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_vector___dinamico_a99d7cef1aff9abfdd82012c2a5a44fa3}\label{class_vector___dinamico_a99d7cef1aff9abfdd82012c2a5a44fa3}} 
+\index{Vector\_Dinamico@{Vector\_Dinamico}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Vector\_Dinamico@{Vector\_Dinamico}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily float \& Vector\+\_\+\+Dinamico\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Acceso a un elemento. 
+
+
+\begin{DoxyParams}{ParÃ¡metros}
+{\em i} & la posición del vector donde está el componente. 0\texorpdfstring{$<$}{<}=i\texorpdfstring{$<$}{<}\mbox{\hyperlink{class_vector___dinamico_aec00b03f566e1cc6a2bacbed695f8037}{size()}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+La referencia al elemento. Por tanto, se puede usar para almacenar un valor en esa posición. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_vector___dinamico_a98adef75068ef2accb9101803a25a2d0}\label{class_vector___dinamico_a98adef75068ef2accb9101803a25a2d0}} 
+\index{Vector\_Dinamico@{Vector\_Dinamico}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Vector\_Dinamico@{Vector\_Dinamico}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily const float \& Vector\+\_\+\+Dinamico\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const}
+
+
+
+Acceso a un elemento de un vector constante. 
+
+
+\begin{DoxyParams}{ParÃ¡metros}
+{\em i} & la posición del vector donde está el componente. 0\texorpdfstring{$<$}{<}=i\texorpdfstring{$<$}{<}\mbox{\hyperlink{class_vector___dinamico_aec00b03f566e1cc6a2bacbed695f8037}{size()}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+La referencia al elemento. Se supone que el vector no se puede modificar y por tanto es acceso de sólo lectura 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_vector___dinamico_a98adef75068ef2accb9101803a25a2d0}\label{class_vector___dinamico_a98adef75068ef2accb9101803a25a2d0}} 
+\index{Vector\_Dinamico@{Vector\_Dinamico}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Vector\_Dinamico@{Vector\_Dinamico}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily const float \& Vector\+\_\+\+Dinamico\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const}
+
+
+
+Acceso a un elemento de un vector constante. 
+
+
+\begin{DoxyParams}{ParÃ¡metros}
+{\em i} & la posición del vector donde está el componente. 0\texorpdfstring{$<$}{<}=i\texorpdfstring{$<$}{<}\mbox{\hyperlink{class_vector___dinamico_aec00b03f566e1cc6a2bacbed695f8037}{size()}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+La referencia al elemento. Se supone que el vector no se puede modificar y por tanto es acceso de sólo lectura 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_vector___dinamico_ad1df2dffd7e4a50642740fcab1bd6e69}\label{class_vector___dinamico_ad1df2dffd7e4a50642740fcab1bd6e69}} 
+\index{Vector\_Dinamico@{Vector\_Dinamico}!resize@{resize}}
+\index{resize@{resize}!Vector\_Dinamico@{Vector\_Dinamico}}
+\doxysubsubsection{\texorpdfstring{resize()}{resize()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Vector\+\_\+\+Dinamico\+::resize (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Redimensión del vector. 
+
+
+\begin{DoxyParams}{ParÃ¡metros}
+{\em n} & El nuevo tamaño del vector. n\texorpdfstring{$>$}{>}=0 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{PostcondiciÃ³n}
+Los valores almacenados antes de la redimensión no se pierden (excepto los que se salen del nuevo rango de índices) 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_vector___dinamico_ad1df2dffd7e4a50642740fcab1bd6e69}\label{class_vector___dinamico_ad1df2dffd7e4a50642740fcab1bd6e69}} 
+\index{Vector\_Dinamico@{Vector\_Dinamico}!resize@{resize}}
+\index{resize@{resize}!Vector\_Dinamico@{Vector\_Dinamico}}
+\doxysubsubsection{\texorpdfstring{resize()}{resize()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Vector\+\_\+\+Dinamico\+::resize (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Redimensión del vector. 
+
+
+\begin{DoxyParams}{ParÃ¡metros}
+{\em n} & El nuevo tamaño del vector. n\texorpdfstring{$>$}{>}=0 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{PostcondiciÃ³n}
+Los valores almacenados antes de la redimensión no se pierden (excepto los que se salen del nuevo rango de índices) 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_vector___dinamico_aec00b03f566e1cc6a2bacbed695f8037}\label{class_vector___dinamico_aec00b03f566e1cc6a2bacbed695f8037}} 
+\index{Vector\_Dinamico@{Vector\_Dinamico}!size@{size}}
+\index{size@{size}!Vector\_Dinamico@{Vector\_Dinamico}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int Vector\+\_\+\+Dinamico\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Número de componentes del vector. 
+
+\begin{DoxyReturn}{Devuelve}
+Devuelve el número de componentes que puede almacenar en este instante el vector 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{Ver tambiÃ©n}
+\mbox{\hyperlink{class_vector___dinamico_ad1df2dffd7e4a50642740fcab1bd6e69}{resize()}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{class_vector___dinamico_aec00b03f566e1cc6a2bacbed695f8037}\label{class_vector___dinamico_aec00b03f566e1cc6a2bacbed695f8037}} 
+\index{Vector\_Dinamico@{Vector\_Dinamico}!size@{size}}
+\index{size@{size}!Vector\_Dinamico@{Vector\_Dinamico}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int Vector\+\_\+\+Dinamico\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Número de componentes del vector. 
+
+\begin{DoxyReturn}{Devuelve}
+Devuelve el número de componentes que puede almacenar en este instante el vector 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{Ver tambiÃ©n}
+\mbox{\hyperlink{class_vector___dinamico_ad1df2dffd7e4a50642740fcab1bd6e69}{resize()}} 
+\end{DoxySeeAlso}
+
+
+La documentaciÃ³n para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+racional-\/mas-\/vd/vdinamico/claselab/conjuntoreales/\mbox{\hyperlink{conjuntoreales_2vector__dinamico_8h}{vector\+\_\+dinamico.\+h}}\item 
+racional-\/mas-\/vd/vdinamico/claselab/\mbox{\hyperlink{vector__dinamico_8h}{vector\+\_\+dinamico.\+h}}\item 
+racional-\/mas-\/vd/vdinamico/claselab/conjuntoreales/\mbox{\hyperlink{conjuntoreales_2vector__dinamico_8cpp}{vector\+\_\+dinamico.\+cpp}}\item 
+racional-\/mas-\/vd/vdinamico/claselab/\mbox{\hyperlink{vector__dinamico_8cpp}{vector\+\_\+dinamico.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,99 @@
+\hypertarget{ejercicio21_8cpp}{}\doxysection{src/ejercicio21.cpp File Reference}
+\label{ejercicio21_8cpp}\index{src/ejercicio21.cpp@{src/ejercicio21.cpp}}
+
+
+Ejercicio 20 de la relacion del reto 3.  
+
+
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{ejercicio21_8cpp_a21309d22988e3f2f48d4962667b29e28}\label{ejercicio21_8cpp_a21309d22988e3f2f48d4962667b29e28}} 
+void {\bfseries enunciado} ()
+\begin{DoxyCompactList}\small\item\em El enunciado del problema a resolver, para tenerlo a la vista sin tener que abrir el documento. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ejercicio21_8cpp_a60a6f984f10a9c613cc03f809bb9a166}{introduce}} (vector$<$ vector$<$ int $>$ $>$ \&M)
+\begin{DoxyCompactList}\small\item\em Pide los datos al usuario para crear la matriz a su antojo. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{ejercicio21_8cpp_aa748aced94174472ef8bc020f22f62c8}{esmatrizbiordenada}} (const vector$<$ vector$<$ int $>$ $>$ \&M)
+\begin{DoxyCompactList}\small\item\em Comprueba si la matriz pasada es bi-\/ordenada Una matriz es bi-\/ordenada si sus elementos están ordenados crecientemente por filas y columnas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ejercicio21_8cpp_ad9e20b343312135a8224bfcfd86a30a0}{imprimir}} (const vector$<$ vector$<$ int $>$ $>$ \&M)
+\begin{DoxyCompactList}\small\item\em Imprime la matriz. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{ejercicio21_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Programa principal donde realizar las pruebas y probar los métodos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Ejercicio 20 de la relacion del reto 3. 
+
+\begin{DoxyAuthor}{Author}
+López Ramírez, Yeray 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+23 de Noviembre de 2021 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{ejercicio21_8cpp_aa748aced94174472ef8bc020f22f62c8}\label{ejercicio21_8cpp_aa748aced94174472ef8bc020f22f62c8}} 
+\index{ejercicio21.cpp@{ejercicio21.cpp}!esmatrizbiordenada@{esmatrizbiordenada}}
+\index{esmatrizbiordenada@{esmatrizbiordenada}!ejercicio21.cpp@{ejercicio21.cpp}}
+\doxysubsubsection{\texorpdfstring{esmatrizbiordenada()}{esmatrizbiordenada()}}
+{\footnotesize\ttfamily bool esmatrizbiordenada (\begin{DoxyParamCaption}\item[{const vector$<$ vector$<$ int $>$ $>$ \&}]{M }\end{DoxyParamCaption})}
+
+
+
+Comprueba si la matriz pasada es bi-\/ordenada Una matriz es bi-\/ordenada si sus elementos están ordenados crecientemente por filas y columnas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em M} & \+: vector$<$vector$<$int$>$$>$ La matriz a comprobar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si es bi-\/ordenada, false si no lo es 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ejercicio21_8cpp_ad9e20b343312135a8224bfcfd86a30a0}\label{ejercicio21_8cpp_ad9e20b343312135a8224bfcfd86a30a0}} 
+\index{ejercicio21.cpp@{ejercicio21.cpp}!imprimir@{imprimir}}
+\index{imprimir@{imprimir}!ejercicio21.cpp@{ejercicio21.cpp}}
+\doxysubsubsection{\texorpdfstring{imprimir()}{imprimir()}}
+{\footnotesize\ttfamily void imprimir (\begin{DoxyParamCaption}\item[{const vector$<$ vector$<$ int $>$ $>$ \&}]{M }\end{DoxyParamCaption})}
+
+
+
+Imprime la matriz. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em M} & \+: vector$<$vector$<$int$>$$>$ La matriz a imprimir \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ejercicio21_8cpp_a60a6f984f10a9c613cc03f809bb9a166}\label{ejercicio21_8cpp_a60a6f984f10a9c613cc03f809bb9a166}} 
+\index{ejercicio21.cpp@{ejercicio21.cpp}!introduce@{introduce}}
+\index{introduce@{introduce}!ejercicio21.cpp@{ejercicio21.cpp}}
+\doxysubsubsection{\texorpdfstring{introduce()}{introduce()}}
+{\footnotesize\ttfamily void introduce (\begin{DoxyParamCaption}\item[{vector$<$ vector$<$ int $>$ $>$ \&}]{M }\end{DoxyParamCaption})}
+
+
+
+Pide los datos al usuario para crear la matriz a su antojo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em M} & \+: queue La matriz a crear/inicializar por el usuario \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ejercicio21_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{ejercicio21_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{ejercicio21.cpp@{ejercicio21.cpp}!main@{main}}
+\index{main@{main}!ejercicio21.cpp@{ejercicio21.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Programa principal donde realizar las pruebas y probar los métodos. 
+
+\begin{DoxyReturn}{Returns}
+0 si todo funciona bien, otro numero en caso de error 
+\end{DoxyReturn}

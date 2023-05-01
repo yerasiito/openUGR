@@ -1,0 +1,96 @@
+\hypertarget{ejercicio19_8cpp}{}\doxysection{src/ejercicio19.cpp File Reference}
+\label{ejercicio19_8cpp}\index{src/ejercicio19.cpp@{src/ejercicio19.cpp}}
+
+
+Ejercicio 19 de la relacion del reto 3.  
+
+
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$stack$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{ejercicio19_8cpp_a21309d22988e3f2f48d4962667b29e28}\label{ejercicio19_8cpp_a21309d22988e3f2f48d4962667b29e28}} 
+void {\bfseries enunciado} ()
+\begin{DoxyCompactList}\small\item\em El enunciado del problema a resolver, para tenerlo a la vista sin tener que abrir el documento. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ejercicio19_8cpp_af6aec0f90a83bd0986f4e87e6fd954fe}{introduce}} (stack$<$ int $>$ \&p)
+\begin{DoxyCompactList}\small\item\em Pide los datos al usuario para crear la lista a su antojo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ejercicio19_8cpp_ace7f3f3a419f52683ec95e9c6fb82e72}{transformarpila}} (stack$<$ int $>$ \&p)
+\begin{DoxyCompactList}\small\item\em Elimina los elementos repetidos de la pila pasada como parametro. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ejercicio19_8cpp_acc0e6c93c0a5e09fb7f61880d9d40299}{imprimir}} (const stack$<$ int $>$ \&p)
+\begin{DoxyCompactList}\small\item\em Imprime la pila sin destruir la original. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{ejercicio19_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Programa principal donde realizar las pruebas y probar los métodos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Ejercicio 19 de la relacion del reto 3. 
+
+\begin{DoxyAuthor}{Author}
+López Ramírez, Yeray 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+22 de Noviembre de 2021 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{ejercicio19_8cpp_acc0e6c93c0a5e09fb7f61880d9d40299}\label{ejercicio19_8cpp_acc0e6c93c0a5e09fb7f61880d9d40299}} 
+\index{ejercicio19.cpp@{ejercicio19.cpp}!imprimir@{imprimir}}
+\index{imprimir@{imprimir}!ejercicio19.cpp@{ejercicio19.cpp}}
+\doxysubsubsection{\texorpdfstring{imprimir()}{imprimir()}}
+{\footnotesize\ttfamily void imprimir (\begin{DoxyParamCaption}\item[{const stack$<$ int $>$ \&}]{p }\end{DoxyParamCaption})}
+
+
+
+Imprime la pila sin destruir la original. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \+: stack La pila a imprimir \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ejercicio19_8cpp_af6aec0f90a83bd0986f4e87e6fd954fe}\label{ejercicio19_8cpp_af6aec0f90a83bd0986f4e87e6fd954fe}} 
+\index{ejercicio19.cpp@{ejercicio19.cpp}!introduce@{introduce}}
+\index{introduce@{introduce}!ejercicio19.cpp@{ejercicio19.cpp}}
+\doxysubsubsection{\texorpdfstring{introduce()}{introduce()}}
+{\footnotesize\ttfamily void introduce (\begin{DoxyParamCaption}\item[{stack$<$ int $>$ \&}]{p }\end{DoxyParamCaption})}
+
+
+
+Pide los datos al usuario para crear la lista a su antojo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \+: stack La pila a crear/inicializar por el usuario \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ejercicio19_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{ejercicio19_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{ejercicio19.cpp@{ejercicio19.cpp}!main@{main}}
+\index{main@{main}!ejercicio19.cpp@{ejercicio19.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Programa principal donde realizar las pruebas y probar los métodos. 
+
+\begin{DoxyReturn}{Returns}
+0 si todo funciona bien, otro numero en caso de error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ejercicio19_8cpp_ace7f3f3a419f52683ec95e9c6fb82e72}\label{ejercicio19_8cpp_ace7f3f3a419f52683ec95e9c6fb82e72}} 
+\index{ejercicio19.cpp@{ejercicio19.cpp}!transformarpila@{transformarpila}}
+\index{transformarpila@{transformarpila}!ejercicio19.cpp@{ejercicio19.cpp}}
+\doxysubsubsection{\texorpdfstring{transformarpila()}{transformarpila()}}
+{\footnotesize\ttfamily void transformarpila (\begin{DoxyParamCaption}\item[{stack$<$ int $>$ \&}]{p }\end{DoxyParamCaption})}
+
+
+
+Elimina los elementos repetidos de la pila pasada como parametro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \+: stack Pila a limpiar de elementos repetidos \\
+\hline
+\end{DoxyParams}

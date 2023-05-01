@@ -1,0 +1,141 @@
+\hypertarget{VistaTextual_8java_source}{}\doxysection{Vista\+Textual.\+java}
+\label{VistaTextual_8java_source}\index{src/vistaTextualCivitas/VistaTextual.java@{src/vistaTextualCivitas/VistaTextual.java}}
+\mbox{\hyperlink{VistaTextual_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00007}00007 \textcolor{keyword}{package }vistaTextualCivitas;}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00009}00009 \textcolor{keyword}{import} civitas.*;}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00010}00010 \textcolor{keyword}{import} controladorCivitas.Respuesta;}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00011}00011 \textcolor{keyword}{import} java.util.ArrayList;}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00012}00012 \textcolor{keyword}{import} java.util.Scanner;}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00019}\mbox{\hyperlink{classvistaTextualCivitas_1_1VistaTextual}{00019}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{classvistaTextualCivitas_1_1VistaTextual}{VistaTextual}} \textcolor{keyword}{implements} \mbox{\hyperlink{interfacevistaTextualCivitas_1_1Vista}{Vista}} \{}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00020}00020     }
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00021}00021   \textcolor{keyword}{private} \textcolor{keyword}{final} Scanner in;}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00022}00022   }
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00023}00023   \mbox{\hyperlink{classcivitas_1_1CivitasJuego}{CivitasJuego}} juegoModel;}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00024}00024   }
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00025}00025   \textcolor{keyword}{public} \mbox{\hyperlink{classvistaTextualCivitas_1_1VistaTextual}{VistaTextual}} (\mbox{\hyperlink{classcivitas_1_1CivitasJuego}{CivitasJuego}} juegoModel) \{}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00026}00026     in = \textcolor{keyword}{new} Scanner (System.in);}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00027}00027     this.juegoModel=juegoModel;}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00028}00028   \}}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00029}00029   }
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00030}00030   }
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00031}00031  @Override         }
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00032}00032  \textcolor{keyword}{public}  \textcolor{keywordtype}{void} pausa() \{}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00033}00033     System.out.print (\textcolor{stringliteral}{"{}\(\backslash\)nPulsa una tecla "{}});}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00034}00034     in.nextLine();}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00035}00035   \}}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00037}00037   \textcolor{keywordtype}{int} leeEntero (\textcolor{keywordtype}{int} max, String msg1, String msg2) \{}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00038}00038     Boolean ok;}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00039}00039     String cadena;}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00040}00040     \textcolor{keywordtype}{int} numero = -\/1;}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00041}00041     \textcolor{keywordflow}{do} \{}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00042}00042       System.out.print (msg1);}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00043}00043       cadena = in.nextLine();}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00044}00044       \textcolor{keywordflow}{try} \{  }
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00045}00045         numero = Integer.parseInt(cadena);}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00046}00046         ok = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00047}00047       \} \textcolor{keywordflow}{catch} (NumberFormatException e) \{ \textcolor{comment}{// No se ha introducido un entero}}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00048}00048         System.out.println (msg2);}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00049}00049         ok = \textcolor{keyword}{false};  }
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00050}00050       \}}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00051}00051       \textcolor{keywordflow}{if} (ok \&\& (numero < 0 || numero >= max)) \{}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00052}00052         System.out.println (msg2);}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00053}00053         ok = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00054}00054       \}}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00055}00055     \} \textcolor{keywordflow}{while} (!ok);}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00057}00057     \textcolor{keywordflow}{return} numero;}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00058}00058   \}}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00059}00059 }
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00060}00060   \textcolor{keywordtype}{int} menu (String titulo, ArrayList<String> lista) \{}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00061}00061     String tab = \textcolor{stringliteral}{"{}  "{}};}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00062}00062     \textcolor{keywordtype}{int} opcion;}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00063}00063     System.out.println (titulo);}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00064}00064     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < lista.size(); i++) \{}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00065}00065       System.out.println (tab+i+\textcolor{stringliteral}{"{}-\/"{}}+lista.get(i));}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00066}00066     \}}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00067}00067 }
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00068}00068     opcion = leeEntero(lista.size(),}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00069}00069                           \textcolor{stringliteral}{"{}\(\backslash\)n"{}}+tab+\textcolor{stringliteral}{"{}Elige una opción: "{}},}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00070}00070                           tab+\textcolor{stringliteral}{"{}Valor erróneo"{}});}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00071}00071     \textcolor{keywordflow}{return} opcion;}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00072}00072   \}}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00073}00073 }
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00074}00074     @Override}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00075}00075     \textcolor{keyword}{public} \textcolor{keywordtype}{void} actualiza() \{}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00076}00076         \textcolor{keywordflow}{if}(juegoModel.finalDelJuego())\{}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00077}00077             ArrayList<Jugador> ranking = juegoModel.Ranking();}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00078}00078             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < ranking.size(); i++)}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00079}00079                 System.out.println(ranking.get(i).getNombre() }
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00080}00080                         + \textcolor{stringliteral}{"{} "{}} + ranking.get(i).getSaldo() + \textcolor{stringliteral}{"{}€"{}});}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00081}00081             separador();}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00082}00082             System.out.println(\textcolor{stringliteral}{"{}Fin del juego"{}});}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00083}00083             separador();}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00084}00084         \}}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00085}00085         \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00086}00086             \mbox{\hyperlink{classcivitas_1_1Jugador}{Jugador}} jugadorActual = juegoModel.getJugadorActual();}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00087}00087             System.out.println(jugadorActual.toString());   }
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00088}00088         \}}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00089}00089         }
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00090}00090     \}}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00091}00091 }
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00092}00092     @Override}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00093}00093     \textcolor{keyword}{public} \mbox{\hyperlink{enumcontroladorCivitas_1_1Respuesta}{Respuesta}} comprar() \{}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00094}00094         String titulo = \textcolor{stringliteral}{"{}¿Quieres comprar "{}} + juegoModel.getTablero().getCasilla(juegoModel.getJugadorActual().getCasillaActual()).toString() + \textcolor{stringliteral}{"{} ?"{}};}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00095}00095         \textcolor{keywordtype}{int} nres = menu(titulo, \mbox{\hyperlink{enumcontroladorCivitas_1_1Respuesta}{Respuesta}}.\mbox{\hyperlink{enumcontroladorCivitas_1_1Respuesta_a551a4b5cf94e4c2dab616e3c6b321604}{respuestas}}());}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00096}00096         }
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00097}00097         \textcolor{keywordflow}{return} \mbox{\hyperlink{enumcontroladorCivitas_1_1Respuesta}{Respuesta}}.values()[nres];   }
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00098}00098     \}}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00099}00099 }
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00100}00100     @Override}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00101}00101     \textcolor{keyword}{public} \mbox{\hyperlink{enumcivitas_1_1OperacionInmobiliaria}{OperacionInmobiliaria}} elegirOperacion() \{}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00102}00102         String titulo = \textcolor{stringliteral}{"{}¿Que operacion deseas realizar?"{}}; }
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00103}00103         \textcolor{keywordtype}{int} nres = menu(titulo, \mbox{\hyperlink{enumcivitas_1_1OperacionInmobiliaria}{OperacionInmobiliaria}}.\mbox{\hyperlink{enumcivitas_1_1OperacionInmobiliaria_ad8ea5bbec2d559167d3dab34354dc887}{operaciones}}());}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00104}00104         \textcolor{keywordflow}{return} \mbox{\hyperlink{enumcivitas_1_1OperacionInmobiliaria}{OperacionInmobiliaria}}.values()[nres];}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00105}00105     \}}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00106}00106 }
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00107}00107     @Override}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00108}00108     \textcolor{keyword}{public} \textcolor{keywordtype}{int} elegirPropiedad() \{}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00109}00109         ArrayList<CasillaCalle> propiedades = juegoModel.getJugadorActual().getPropiedades();}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00110}00110         String titulo = \textcolor{stringliteral}{"{}Elige una propiedad."{}} }
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00111}00111                 + \textcolor{stringliteral}{"{}(Tienes "{}} + propiedades.size()}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00112}00112                 + \textcolor{stringliteral}{"{} propiedades):"{}};}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00113}00113         ArrayList<String> nombrePropiedades = \textcolor{keyword}{new} ArrayList<String> ()\{\{}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00114}00114             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < propiedades.size(); i++)}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00115}00115                 add(propiedades.get(i).getNombre());}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00116}00116         \}\};}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00117}00117         }
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00118}00118         \textcolor{keywordflow}{return}  menu(titulo,nombrePropiedades);}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00119}00119     \}}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00120}00120 }
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00121}00121     @Override}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00122}00122     \textcolor{keyword}{public} \textcolor{keywordtype}{void} mostrarSiguienteOperacion(\mbox{\hyperlink{enumcivitas_1_1OperacionJuego}{OperacionJuego}} operación) \{}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00123}00123         System.out.println(operación);}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00124}00124     \}}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00125}00125 }
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00126}00126     @Override}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00127}00127     \textcolor{keyword}{public} \textcolor{keywordtype}{void} mostrarEventos() \{        }
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00128}00128         \textcolor{keywordflow}{if}(\mbox{\hyperlink{classcivitas_1_1Diario}{Diario}}.getInstance().eventosPendientes())\{}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00129}00129             separador();}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00130}00130             \textcolor{keywordflow}{while}(\mbox{\hyperlink{classcivitas_1_1Diario}{Diario}}.getInstance().eventosPendientes())\{}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00131}00131                 System.out.println(\mbox{\hyperlink{classcivitas_1_1Diario}{Diario}}.getInstance().leerEvento());}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00132}00132             \}}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00133}00133             separador();}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00134}00134         \}}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00135}00135         }
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00136}00136     \}}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00137}00137     }
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00138}00138     \textcolor{keyword}{private} \textcolor{keywordtype}{void} separador()\{}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00139}00139         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < 200; i++)}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00140}00140             System.out.print(\textcolor{stringliteral}{"{}-\/"{}});}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00141}00141         System.out.println(\textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00142}00142     \}}
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00143}00143 }
+\DoxyCodeLine{\Hypertarget{VistaTextual_8java_source_l00144}00144 \}}
+
+\end{DoxyCode}

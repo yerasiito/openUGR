@@ -1,0 +1,5 @@
+\babel@toc {spanish}{}\relax 
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Diagrama de actividad}{2}{}%
+\contentsline {section}{\numberline {2}Descripci\IeC {\'o}n extendida de los casos de uso}{3}{}%
+\contentsline {section}{\numberline {3}Glosario de t\IeC {\'e}rminos extendido}{56}{}%

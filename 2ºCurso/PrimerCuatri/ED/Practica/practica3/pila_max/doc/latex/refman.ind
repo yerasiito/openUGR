@@ -1,0 +1,88 @@
+\begin{theindex}
+
+  \item {$\sim$Cola}
+    \subitem {Cola$<$ T $>$}, \hyperpage{7}
+
+  \indexspace
+
+  \item {Cola}
+    \subitem {Cola$<$ T $>$}, \hyperpage{6}
+  \item {Cola$<$ T $>$}, \hyperpage{5}
+    \subitem {$\sim$Cola}, \hyperpage{7}
+    \subitem {Cola}, \hyperpage{6}
+    \subitem {frente}, \hyperpage{7}
+    \subitem {num\_elementos}, \hyperpage{8}
+    \subitem {operator=}, \hyperpage{8}
+    \subitem {poner}, \hyperpage{9}
+    \subitem {quitar}, \hyperpage{9}
+    \subitem {vacia}, \hyperpage{9}
+
+  \indexspace
+
+  \item {Elemento}, \hyperpage{10}
+    \subitem {elemento}, \hyperpage{11}
+    \subitem {maximo}, \hyperpage{11}
+    \subitem {operator$<$$<$}, \hyperpage{11}
+  \item {elemento}
+    \subitem {Elemento}, \hyperpage{11}
+  \item {elementos\_size}
+    \subitem {Pila\_max}, \hyperpage{12}
+  \item {empty}
+    \subitem {Pila\_max}, \hyperpage{12}
+
+  \indexspace
+
+  \item {frente}
+    \subitem {Cola$<$ T $>$}, \hyperpage{7}
+    \subitem {Pila\_max}, \hyperpage{12}
+
+  \indexspace
+
+  \item {maximo}
+    \subitem {Elemento}, \hyperpage{11}
+
+  \indexspace
+
+  \item {num\_elementos}
+    \subitem {Cola$<$ T $>$}, \hyperpage{8}
+
+  \indexspace
+
+  \item {operator$<$$<$}
+    \subitem {Elemento}, \hyperpage{11}
+  \item {operator=}
+    \subitem {Cola$<$ T $>$}, \hyperpage{8}
+
+  \indexspace
+
+  \item {Pila\_max}, \hyperpage{12}
+    \subitem {elementos\_size}, \hyperpage{12}
+    \subitem {empty}, \hyperpage{12}
+    \subitem {frente}, \hyperpage{12}
+    \subitem {poner}, \hyperpage{13}
+    \subitem {quitar}, \hyperpage{14}
+  \item {poner}
+    \subitem {Cola$<$ T $>$}, \hyperpage{9}
+    \subitem {Pila\_max}, \hyperpage{13}
+
+  \indexspace
+
+  \item {quitar}
+    \subitem {Cola$<$ T $>$}, \hyperpage{9}
+    \subitem {Pila\_max}, \hyperpage{14}
+
+  \indexspace
+
+  \item {src/cola.cpp}, \hyperpage{15, 16}
+  \item {src/cola.h}, \hyperpage{17, 18}
+  \item {src/Pila\_max\_Cola.cpp}, \hyperpage{19, 20}
+  \item {src/Pila\_max\_Cola.h}, \hyperpage{20}, \hyperpage{22}
+  \item {src/pila\_teclado.cpp}, \hyperpage{22}
+  \item {src/usopilas\_max.cpp}, \hyperpage{23}
+
+  \indexspace
+
+  \item {vacia}
+    \subitem {Cola$<$ T $>$}, \hyperpage{9}
+
+\end{theindex}

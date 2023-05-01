@@ -1,0 +1,166 @@
+\hypertarget{class_bloques_sudoku}{}\doxysection{Bloques\+Sudoku Class Reference}
+\label{class_bloques_sudoku}\index{BloquesSudoku@{BloquesSudoku}}
+
+
+\mbox{\hyperlink{class_bloques_sudoku}{Bloques\+Sudoku}} Una clase que contiene los bloques del \mbox{\hyperlink{class_sudoku}{Sudoku}}, se utiliza para la clase \mbox{\hyperlink{class_sudoku_killer}{Sudoku\+Killer}} y \mbox{\hyperlink{class_resolver_sudoku_killer}{Resolver\+Sudoku\+Killer}}.  
+
+
+
+
+{\ttfamily \#include $<$Bloques\+Sudoku.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_bloques_sudoku_a20964ba619a47f7d54aa30ab707dc9f3}\label{class_bloques_sudoku_a20964ba619a47f7d54aa30ab707dc9f3}} 
+{\bfseries Bloques\+Sudoku} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_bloques_sudoku_a7f2ff074f362f1c52df4369a463dd80c}{Bloques\+Sudoku}} (int num)
+\begin{DoxyCompactList}\small\item\em Constructor con parametros. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_bloque}{Bloque}} \mbox{\hyperlink{class_bloques_sudoku_aac2687b30842fa0eabe48bd53a7fefbd}{get\+Bloques\+Sudoku}} (int i)
+\begin{DoxyCompactList}\small\item\em Obtiene un objeto \mbox{\hyperlink{class_bloque}{Bloque}} del vector de objetos de \mbox{\hyperlink{class_bloques_sudoku}{Bloques\+Sudoku}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bloques_sudoku_a9ee48c1f6a954f4ff94033635a635cfa}{set\+Bloques\+Sudoku}} (int i, \mbox{\hyperlink{class_bloque}{Bloque}} b)
+\begin{DoxyCompactList}\small\item\em Modifica un bloque a partir de otro. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bloques_sudoku_aa131e5a9273ce5c0641ab75df9b5be81}{set\+Bloques\+Sudoku}} (int i, vector$<$ \mbox{\hyperlink{class_casilla}{Casilla}} $>$)
+\begin{DoxyCompactList}\small\item\em Modifica un bloque a partir de un vector de casillas. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_bloques_sudoku_a3db4e5b24b16ce1d814a32ae6a3e3412}{aniadir\+Bloque}} (\mbox{\hyperlink{class_bloque}{Bloque}} b)
+\begin{DoxyCompactList}\small\item\em Añade un bloque al vector de \mbox{\hyperlink{class_bloques_sudoku}{Bloques\+Sudoku}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_bloques_sudoku_ab57b35eda00054b58ae71931208895ad}{eliminar\+Bloque}} (int i)
+\begin{DoxyCompactList}\small\item\em elimina un bloque del vector \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_bloques_sudoku_a81138ce70d7db1903317edb749d44b93}{suma\+Bloques}} (vector$<$ int $>$ ibloques)
+\begin{DoxyCompactList}\small\item\em Calcula el total de los atributos suma de los bloques pedidos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_bloques_sudoku}{Bloques\+Sudoku}} Una clase que contiene los bloques del \mbox{\hyperlink{class_sudoku}{Sudoku}}, se utiliza para la clase \mbox{\hyperlink{class_sudoku_killer}{Sudoku\+Killer}} y \mbox{\hyperlink{class_resolver_sudoku_killer}{Resolver\+Sudoku\+Killer}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_bloques_sudoku_a7f2ff074f362f1c52df4369a463dd80c}\label{class_bloques_sudoku_a7f2ff074f362f1c52df4369a463dd80c}} 
+\index{BloquesSudoku@{BloquesSudoku}!BloquesSudoku@{BloquesSudoku}}
+\index{BloquesSudoku@{BloquesSudoku}!BloquesSudoku@{BloquesSudoku}}
+\doxysubsubsection{\texorpdfstring{BloquesSudoku()}{BloquesSudoku()}}
+{\footnotesize\ttfamily Bloques\+Sudoku\+::\+Bloques\+Sudoku (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})}
+
+
+
+Constructor con parametros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & \+: int, Numero de bloques a crear \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_bloques_sudoku_a3db4e5b24b16ce1d814a32ae6a3e3412}\label{class_bloques_sudoku_a3db4e5b24b16ce1d814a32ae6a3e3412}} 
+\index{BloquesSudoku@{BloquesSudoku}!aniadirBloque@{aniadirBloque}}
+\index{aniadirBloque@{aniadirBloque}!BloquesSudoku@{BloquesSudoku}}
+\doxysubsubsection{\texorpdfstring{aniadirBloque()}{aniadirBloque()}}
+{\footnotesize\ttfamily bool Bloques\+Sudoku\+::aniadir\+Bloque (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bloque}{Bloque}}}]{b }\end{DoxyParamCaption})}
+
+
+
+Añade un bloque al vector de \mbox{\hyperlink{class_bloques_sudoku}{Bloques\+Sudoku}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & \+: \mbox{\hyperlink{class_bloque}{Bloque}}, El bloque a añadir \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si se inserta correctamente, false en otro caso 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bloques_sudoku_ab57b35eda00054b58ae71931208895ad}\label{class_bloques_sudoku_ab57b35eda00054b58ae71931208895ad}} 
+\index{BloquesSudoku@{BloquesSudoku}!eliminarBloque@{eliminarBloque}}
+\index{eliminarBloque@{eliminarBloque}!BloquesSudoku@{BloquesSudoku}}
+\doxysubsubsection{\texorpdfstring{eliminarBloque()}{eliminarBloque()}}
+{\footnotesize\ttfamily bool Bloques\+Sudoku\+::eliminar\+Bloque (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+elimina un bloque del vector 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \+: int, Posicion del bloque a eliminar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si se borra correctamente, false en otro caso 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bloques_sudoku_aac2687b30842fa0eabe48bd53a7fefbd}\label{class_bloques_sudoku_aac2687b30842fa0eabe48bd53a7fefbd}} 
+\index{BloquesSudoku@{BloquesSudoku}!getBloquesSudoku@{getBloquesSudoku}}
+\index{getBloquesSudoku@{getBloquesSudoku}!BloquesSudoku@{BloquesSudoku}}
+\doxysubsubsection{\texorpdfstring{getBloquesSudoku()}{getBloquesSudoku()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_bloque}{Bloque}} Bloques\+Sudoku\+::get\+Bloques\+Sudoku (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Obtiene un objeto \mbox{\hyperlink{class_bloque}{Bloque}} del vector de objetos de \mbox{\hyperlink{class_bloques_sudoku}{Bloques\+Sudoku}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \+: int, Posicion del objeto a obtener en el vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un objeto \mbox{\hyperlink{class_bloque}{Bloque}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bloques_sudoku_a9ee48c1f6a954f4ff94033635a635cfa}\label{class_bloques_sudoku_a9ee48c1f6a954f4ff94033635a635cfa}} 
+\index{BloquesSudoku@{BloquesSudoku}!setBloquesSudoku@{setBloquesSudoku}}
+\index{setBloquesSudoku@{setBloquesSudoku}!BloquesSudoku@{BloquesSudoku}}
+\doxysubsubsection{\texorpdfstring{setBloquesSudoku()}{setBloquesSudoku()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Bloques\+Sudoku\+::set\+Bloques\+Sudoku (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{\mbox{\hyperlink{class_bloque}{Bloque}}}]{b }\end{DoxyParamCaption})}
+
+
+
+Modifica un bloque a partir de otro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \+: int, La posicion del bloque a modificar \\
+\hline
+{\em b} & \+: \mbox{\hyperlink{class_bloque}{Bloque}}, El bloque de copia \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bloques_sudoku_aa131e5a9273ce5c0641ab75df9b5be81}\label{class_bloques_sudoku_aa131e5a9273ce5c0641ab75df9b5be81}} 
+\index{BloquesSudoku@{BloquesSudoku}!setBloquesSudoku@{setBloquesSudoku}}
+\index{setBloquesSudoku@{setBloquesSudoku}!BloquesSudoku@{BloquesSudoku}}
+\doxysubsubsection{\texorpdfstring{setBloquesSudoku()}{setBloquesSudoku()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Bloques\+Sudoku\+::set\+Bloques\+Sudoku (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{vector$<$ \mbox{\hyperlink{class_casilla}{Casilla}} $>$}]{ }\end{DoxyParamCaption})}
+
+
+
+Modifica un bloque a partir de un vector de casillas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \+: int, La posicion del bloque a modificar \\
+\hline
+{\em $<$\+Casilla$>$} & \+: Vector, Las casillas a copiar \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bloques_sudoku_a81138ce70d7db1903317edb749d44b93}\label{class_bloques_sudoku_a81138ce70d7db1903317edb749d44b93}} 
+\index{BloquesSudoku@{BloquesSudoku}!sumaBloques@{sumaBloques}}
+\index{sumaBloques@{sumaBloques}!BloquesSudoku@{BloquesSudoku}}
+\doxysubsubsection{\texorpdfstring{sumaBloques()}{sumaBloques()}}
+{\footnotesize\ttfamily int Bloques\+Sudoku\+::suma\+Bloques (\begin{DoxyParamCaption}\item[{vector$<$ int $>$}]{ibloques }\end{DoxyParamCaption})}
+
+
+
+Calcula el total de los atributos suma de los bloques pedidos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ibloques} & \+: vector$<$int$>$, Posiciones de los bloques a calcular \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+la suma total de los bloques dados 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_bloques_sudoku_8h}{Bloques\+Sudoku.\+h}}\end{DoxyCompactItemize}

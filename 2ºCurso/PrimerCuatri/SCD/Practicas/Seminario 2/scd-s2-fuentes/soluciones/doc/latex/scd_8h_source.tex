@@ -1,0 +1,291 @@
+\hypertarget{scd_8h_source}{}\doxysection{scd.\+h}
+\label{scd_8h_source}\index{D:/Universidad/Segundo/SCD/Practicas/Seminario 2/scd-\/s2-\/fuentes/soluciones/scd.h@{D:/Universidad/Segundo/SCD/Practicas/Seminario 2/scd-\/s2-\/fuentes/soluciones/scd.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{// *****************************************************************************}}
+\DoxyCodeLine{2 \textcolor{comment}{// Semaphores and Hoare monitors implementation using C++11 concurrency features.}}
+\DoxyCodeLine{3 \textcolor{comment}{// both classes implement FIFO order.}}
+\DoxyCodeLine{4 \textcolor{comment}{//}}
+\DoxyCodeLine{5 \textcolor{comment}{// (public interface declarations)}}
+\DoxyCodeLine{6 \textcolor{comment}{// Carlos Ureña, 2016-\/2021.}}
+\DoxyCodeLine{7 \textcolor{comment}{//}}
+\DoxyCodeLine{8 \textcolor{comment}{// This program is free software: you can redistribute it and/or modify}}
+\DoxyCodeLine{9 \textcolor{comment}{// it under the terms of the GNU General Public License as published by}}
+\DoxyCodeLine{10 \textcolor{comment}{// the Free Software Foundation, either version 3 of the License, or}}
+\DoxyCodeLine{11 \textcolor{comment}{// (at your option) any later version.}}
+\DoxyCodeLine{12 \textcolor{comment}{//}}
+\DoxyCodeLine{13 \textcolor{comment}{// This program is distributed in the hope that it will be useful,}}
+\DoxyCodeLine{14 \textcolor{comment}{// but WITHOUT ANY WARRANTY; without even the implied warranty of}}
+\DoxyCodeLine{15 \textcolor{comment}{// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the}}
+\DoxyCodeLine{16 \textcolor{comment}{// GNU General Public License for more details.}}
+\DoxyCodeLine{17 \textcolor{comment}{//}}
+\DoxyCodeLine{18 \textcolor{comment}{// You should have received a copy of the GNU General Public License}}
+\DoxyCodeLine{19 \textcolor{comment}{// along with this program.  If not, see <http://www.gnu.org/licenses/>.}}
+\DoxyCodeLine{20 \textcolor{comment}{//}}
+\DoxyCodeLine{21 \textcolor{comment}{// *****************************************************************************}}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#ifndef SCD\_HPP}}
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#define SCD\_HPP}}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#include <random>}  \textcolor{comment}{// default\_random\_engine et al.}}
+\DoxyCodeLine{27 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#include <sstream>}  \textcolor{comment}{// stringstream}}
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#include <mutex>}}
+\DoxyCodeLine{30 \textcolor{preprocessor}{\#include <condition\_variable>}}
+\DoxyCodeLine{31 \textcolor{preprocessor}{\#include <cassert>}}
+\DoxyCodeLine{32 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{33 \textcolor{preprocessor}{\#include <map>}}
+\DoxyCodeLine{34 \textcolor{preprocessor}{\#include <thread>}  \textcolor{comment}{// thread}}
+\DoxyCodeLine{35 \textcolor{preprocessor}{\#include <memory>} \textcolor{comment}{// shared\_ptr, make\_shared}}
+\DoxyCodeLine{36 \textcolor{preprocessor}{\#include <deque>}}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{38 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40 \textcolor{keyword}{namespace }scd}
+\DoxyCodeLine{41 \{}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43 \textcolor{keyword}{using namespace }std ;}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45 \textcolor{comment}{// incomplete type declarations, so we can declare pointers to these classes.}}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47 \textcolor{keyword}{class }HoareMonitor ;}
+\DoxyCodeLine{48 \textcolor{keyword}{class }FIFOQueue ;}
+\DoxyCodeLine{49 \textcolor{keyword}{class }SemaphoreRepr ;}
+\DoxyCodeLine{50 \textcolor{keyword}{template}<\textcolor{keyword}{class} T> \textcolor{keyword}{class }Call\_proxy ;}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{52 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/ }}
+\DoxyCodeLine{53 \textcolor{comment}{// register and get calling thread name}}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55 \textcolor{keywordtype}{void}   register\_thread\_name( \textcolor{keyword}{const} std::string \& name );}
+\DoxyCodeLine{56 \textcolor{keywordtype}{void}   register\_thread\_name( \textcolor{keyword}{const} std::string \& rol, \textcolor{keyword}{const} \textcolor{keywordtype}{int} num );}
+\DoxyCodeLine{57 \textcolor{keywordtype}{string} get\_thread\_name()  ;}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{60 \textcolor{comment}{// function template for generating random numbers (between two integer }}
+\DoxyCodeLine{61 \textcolor{comment}{// compile-\/time constants)}}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63 \textcolor{keyword}{template}< \textcolor{keywordtype}{int} min, \textcolor{keywordtype}{int} max > \textcolor{keywordtype}{int} aleatorio()}
+\DoxyCodeLine{64 \{}
+\DoxyCodeLine{65   \textcolor{keyword}{static} default\_random\_engine generador( (random\_device())() );}
+\DoxyCodeLine{66   \textcolor{keyword}{static} uniform\_int\_distribution<int> distribucion\_uniforme( min, max ) ;}
+\DoxyCodeLine{67   \textcolor{keywordflow}{return} distribucion\_uniforme( generador );}
+\DoxyCodeLine{68 \}}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70 \textcolor{comment}{// *****************************************************************************}}
+\DoxyCodeLine{71 \textcolor{comment}{//}}
+\DoxyCodeLine{72 \textcolor{comment}{// Class: Semaphore}}
+\DoxyCodeLine{73 \textcolor{comment}{//}}
+\DoxyCodeLine{74 \textcolor{comment}{// Classic semaphore objects with FIFO order}}
+\DoxyCodeLine{75 \textcolor{comment}{// (it is a reference to a Semaphore implementation object)}}
+\DoxyCodeLine{76 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78 \textcolor{keyword}{class }\mbox{\hyperlink{classscd_1_1_semaphore}{Semaphore}}}
+\DoxyCodeLine{79 \{}
+\DoxyCodeLine{80    \textcolor{keyword}{public}:}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82    \textcolor{comment}{// initialization}}
+\DoxyCodeLine{83    \mbox{\hyperlink{classscd_1_1_semaphore}{Semaphore}}( \textcolor{keywordtype}{unsigned} init\_value );}
+\DoxyCodeLine{84    \mbox{\hyperlink{classscd_1_1_semaphore}{Semaphore}}( \textcolor{keywordtype}{unsigned} init\_value, \textcolor{keyword}{const} std::string \& p\_name );}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{86    \textcolor{comment}{// explicitly dissallow default constructor}}
+\DoxyCodeLine{87    \mbox{\hyperlink{classscd_1_1_semaphore}{Semaphore}}() = delete ;}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{89    \textcolor{comment}{// dissallow copy constructor and assignements}}
+\DoxyCodeLine{90    \textcolor{comment}{// (cannot 'copy' the state from another existing semaphore,}}
+\DoxyCodeLine{91    \textcolor{comment}{//  which may have been already used by threads)}}
+\DoxyCodeLine{92    \textcolor{comment}{// this forbids creating semaphores aliases}}
+\DoxyCodeLine{93    \mbox{\hyperlink{classscd_1_1_semaphore}{Semaphore}}( \textcolor{keyword}{const} \mbox{\hyperlink{classscd_1_1_semaphore}{Semaphore}} \& sem ) = delete ;}
+\DoxyCodeLine{94    \textcolor{keywordtype}{void} operator = (\mbox{\hyperlink{classscd_1_1_semaphore}{Semaphore}} \& sem ) = delete ;}
+\DoxyCodeLine{95 }
+\DoxyCodeLine{96    \textcolor{comment}{// Move constructor:}}
+\DoxyCodeLine{97    \textcolor{comment}{// allows to copy state from a semaphore which is not in use}}
+\DoxyCodeLine{98    \textcolor{comment}{// this allows:}}
+\DoxyCodeLine{99    \textcolor{comment}{//      Semaphore sem = Semaphore(0) ;}}
+\DoxyCodeLine{100    \textcolor{comment}{//      sem\_vector.push\_back( Semaphore(46) );}}
+\DoxyCodeLine{101    \mbox{\hyperlink{classscd_1_1_semaphore}{Semaphore}}( \mbox{\hyperlink{classscd_1_1_semaphore}{Semaphore}} \&\& sem ) ;}
+\DoxyCodeLine{102 }
+\DoxyCodeLine{103    \textcolor{comment}{// delete...}}
+\DoxyCodeLine{104    \mbox{\hyperlink{classscd_1_1_semaphore}{\string~Semaphore}}() ;}
+\DoxyCodeLine{105 }
+\DoxyCodeLine{106    \textcolor{comment}{// operations (member methods)}}
+\DoxyCodeLine{107    \textcolor{keywordtype}{void}     sem\_wait();}
+\DoxyCodeLine{108    \textcolor{keywordtype}{void}     sem\_signal() ;}
+\DoxyCodeLine{109 }
+\DoxyCodeLine{110    \textcolor{comment}{// operations (non member functions)}}
+\DoxyCodeLine{111    \textcolor{keyword}{friend} \textcolor{keyword}{inline} \textcolor{keywordtype}{void} sem\_wait  ( \mbox{\hyperlink{classscd_1_1_semaphore}{Semaphore}} \& s ) \{ s.sem\_wait()  ; \}}
+\DoxyCodeLine{112    \textcolor{keyword}{friend} \textcolor{keyword}{inline} \textcolor{keywordtype}{void} sem\_signal( \mbox{\hyperlink{classscd_1_1_semaphore}{Semaphore}} \& s ) \{ s.sem\_signal(); \}}
+\DoxyCodeLine{113 }
+\DoxyCodeLine{114    \textcolor{keyword}{private}:}
+\DoxyCodeLine{115    \mbox{\hyperlink{classscd_1_1_semaphore_repr}{SemaphoreRepr}} * repr = \textcolor{keyword}{nullptr}; \textcolor{comment}{// pointer to semaphore implementation}}
+\DoxyCodeLine{116 }
+\DoxyCodeLine{117    \textcolor{comment}{// debug methods:}}
+\DoxyCodeLine{118    \textcolor{keyword}{inline} \textcolor{keywordtype}{void} * get\_ptr\_repr() \{ \textcolor{keywordflow}{return} repr; \}}
+\DoxyCodeLine{119    \textcolor{keywordtype}{int} get\_value() ;}
+\DoxyCodeLine{120 }
+\DoxyCodeLine{121    \textcolor{comment}{// function which can access the private methods}}
+\DoxyCodeLine{122    \textcolor{keyword}{friend} \textcolor{keywordtype}{void} test\_semaforos();}
+\DoxyCodeLine{123 }
+\DoxyCodeLine{124 \} ; \textcolor{comment}{// end class Semaphore}}
+\DoxyCodeLine{125 }
+\DoxyCodeLine{126 }
+\DoxyCodeLine{127 \textcolor{comment}{// *****************************************************************************}}
+\DoxyCodeLine{128 \textcolor{comment}{// Class: CondVar}}
+\DoxyCodeLine{129 \textcolor{comment}{//}}
+\DoxyCodeLine{130 \textcolor{comment}{// a class for conditions variables with "{}urgent wait"{} semantics on signal}}
+\DoxyCodeLine{131 \textcolor{comment}{// used in Hoare Monitors (only to be used from  HoareMonitor class)}}
+\DoxyCodeLine{132 \textcolor{comment}{// These condition variables ensure FIFO order.}}
+\DoxyCodeLine{133 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{134 }
+\DoxyCodeLine{135 \textcolor{keyword}{class }\mbox{\hyperlink{classscd_1_1_cond_var}{CondVar}}}
+\DoxyCodeLine{136 \{}
+\DoxyCodeLine{137    \textcolor{keyword}{public}:}
+\DoxyCodeLine{138 }
+\DoxyCodeLine{139    \textcolor{keywordtype}{void}     wait();     \textcolor{comment}{// unconditionally wait on the underlying thread queue}}
+\DoxyCodeLine{140    \textcolor{keywordtype}{void}     signal();   \textcolor{comment}{// signal operation, with "{}urgent wait"{} semantics}}
+\DoxyCodeLine{141    \textcolor{keywordtype}{unsigned} get\_nwt() ; \textcolor{comment}{// returns number of threads waiting in the cond.var.}}
+\DoxyCodeLine{142 }
+\DoxyCodeLine{143    \textcolor{keywordtype}{bool} empty() \{ \textcolor{keywordflow}{return} get\_nwt() == 0 ; \}}
+\DoxyCodeLine{144 }
+\DoxyCodeLine{145    \textcolor{comment}{// create an un-\/initialized un-\/usable condition variable}}
+\DoxyCodeLine{146    \mbox{\hyperlink{classscd_1_1_cond_var}{CondVar}}() \{\};}
+\DoxyCodeLine{147    }
+\DoxyCodeLine{148    \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{149    \textcolor{keyword}{private}:}
+\DoxyCodeLine{150 }
+\DoxyCodeLine{151    \mbox{\hyperlink{classscd_1_1_cond_var}{CondVar}}( \mbox{\hyperlink{classscd_1_1_hoare_monitor}{HoareMonitor}} * p\_monitor ) ; \textcolor{comment}{// private constructor, only to be used from inside monitor implementation}}
+\DoxyCodeLine{152    \textcolor{keywordtype}{void} check(); \textcolor{comment}{// check whether this v.c. has been properly created, abort when not.}}
+\DoxyCodeLine{153 }
+\DoxyCodeLine{154    \textcolor{keyword}{friend} \textcolor{keyword}{class }\mbox{\hyperlink{classscd_1_1_hoare_monitor}{HoareMonitor}} ; \textcolor{comment}{// forward declaration of friend monitor class}}
+\DoxyCodeLine{155    \mbox{\hyperlink{classscd_1_1_hoare_monitor}{HoareMonitor}} * monitor = \textcolor{keyword}{nullptr}; \textcolor{comment}{// reference to the monitor for this variable}}
+\DoxyCodeLine{156    \mbox{\hyperlink{classscd_1_1_f_i_f_o_queue}{FIFOQueue}} *    queue   = \textcolor{keyword}{nullptr}; \textcolor{comment}{// underlying FIFOQueue}}
+\DoxyCodeLine{157 \};}
+\DoxyCodeLine{158 }
+\DoxyCodeLine{159 }
+\DoxyCodeLine{160 \textcolor{comment}{// *****************************************************************************}}
+\DoxyCodeLine{161 \textcolor{comment}{// Class: HoareMonitor}}
+\DoxyCodeLine{162 \textcolor{comment}{//}}
+\DoxyCodeLine{163 \textcolor{comment}{// Base class for classic Hoare-\/style monitors}}
+\DoxyCodeLine{164 \textcolor{comment}{// (with "{}urgent wait"{} signal semantics and guaranteed FIFO order)}}
+\DoxyCodeLine{165 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{166 }
+\DoxyCodeLine{167 \textcolor{keyword}{class }\mbox{\hyperlink{classscd_1_1_hoare_monitor}{HoareMonitor}}}
+\DoxyCodeLine{168 \{}
+\DoxyCodeLine{169    \textcolor{keyword}{public}:}
+\DoxyCodeLine{170 }
+\DoxyCodeLine{171    \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{172    \textcolor{keyword}{protected}:  \textcolor{comment}{// methods to be called from derived classes (concrete monitors)}}
+\DoxyCodeLine{173 }
+\DoxyCodeLine{174    \textcolor{comment}{// constructors and destructor}}
+\DoxyCodeLine{175    \mbox{\hyperlink{classscd_1_1_hoare_monitor}{HoareMonitor}}() ;}
+\DoxyCodeLine{176    \mbox{\hyperlink{classscd_1_1_hoare_monitor}{HoareMonitor}}( \textcolor{keyword}{const} std::string \& p\_name ) ;}
+\DoxyCodeLine{177    \mbox{\hyperlink{classscd_1_1_hoare_monitor}{\string~HoareMonitor}}();}
+\DoxyCodeLine{178 }
+\DoxyCodeLine{179    \textcolor{comment}{// create a new condition variable in this monitor}}
+\DoxyCodeLine{180    \mbox{\hyperlink{classscd_1_1_cond_var}{CondVar}} newCondVar() ;}
+\DoxyCodeLine{181 }
+\DoxyCodeLine{182    \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{183    \textcolor{keyword}{private}:}
+\DoxyCodeLine{184 }
+\DoxyCodeLine{185    \textcolor{comment}{// allow friend classes to access private parts of this class}}
+\DoxyCodeLine{186    \textcolor{keyword}{template}<\textcolor{keyword}{typename} MonClass> \textcolor{keyword}{friend} \textcolor{keyword}{class }\mbox{\hyperlink{classscd_1_1_call__proxy}{Call\_proxy}} ;}
+\DoxyCodeLine{187    \textcolor{keyword}{template}<\textcolor{keyword}{typename} MonClass> \textcolor{keyword}{friend} \textcolor{keyword}{class }\mbox{\hyperlink{classscd_1_1_m_ref}{MRef}} ;}
+\DoxyCodeLine{188    \textcolor{keyword}{friend} \textcolor{keyword}{class }\mbox{\hyperlink{classscd_1_1_cond_var}{CondVar}} ;}
+\DoxyCodeLine{189 }
+\DoxyCodeLine{190    \textcolor{comment}{// mutex used to serialize operations which change the monitor and queues state }}
+\DoxyCodeLine{191    \textcolor{comment}{// (for instance: enter, leave, signal, wait, etc...)}}
+\DoxyCodeLine{192    \textcolor{comment}{// (this is NOT the 'monitor lock')}}
+\DoxyCodeLine{193    std::mutex access\_mutex ;}
+\DoxyCodeLine{194 }
+\DoxyCodeLine{195    \textcolor{comment}{// name of this monitor (useful for debugging)}}
+\DoxyCodeLine{196    std::string name = \textcolor{stringliteral}{"{}monitor name not assigned"{}} ;}
+\DoxyCodeLine{197 }
+\DoxyCodeLine{198    \textcolor{comment}{// true iif any thread is running in the monitor}}
+\DoxyCodeLine{199    \textcolor{keywordtype}{bool} is\_running = false ;}
+\DoxyCodeLine{200 }
+\DoxyCodeLine{201    \textcolor{comment}{// identifier for thread currently in the monitor (when running==true)}}
+\DoxyCodeLine{202    std::thread::id running\_thread\_id ;}
+\DoxyCodeLine{203 }
+\DoxyCodeLine{204    \textcolor{comment}{// queue for threads waiting to enter the monitor}}
+\DoxyCodeLine{205    \mbox{\hyperlink{classscd_1_1_f_i_f_o_queue}{FIFOQueue}} * monitor\_queue = nullptr ;}
+\DoxyCodeLine{206 }
+\DoxyCodeLine{207    \textcolor{comment}{// queue for threads waiting to re-\/enter the monitor after signal}}
+\DoxyCodeLine{208    \mbox{\hyperlink{classscd_1_1_f_i_f_o_queue}{FIFOQueue}} * urgent\_queue = nullptr ; }
+\DoxyCodeLine{209 }
+\DoxyCodeLine{210    \textcolor{comment}{// enter and leave the monitor}}
+\DoxyCodeLine{211    \textcolor{keywordtype}{void} enter();}
+\DoxyCodeLine{212    \textcolor{keywordtype}{void} leave();}
+\DoxyCodeLine{213 \} ;}
+\DoxyCodeLine{214 }
+\DoxyCodeLine{215 \textcolor{comment}{// *****************************************************************************}}
+\DoxyCodeLine{216 \textcolor{comment}{// Class: MRef}}
+\DoxyCodeLine{217 \textcolor{comment}{//}}
+\DoxyCodeLine{218 \textcolor{comment}{// Reference to a monitor. All monitors should be accesed through these references}}
+\DoxyCodeLine{219 \textcolor{comment}{// Implements the "{}execute around"{} pattern, as described here:}}
+\DoxyCodeLine{220 \textcolor{comment}{//}}
+\DoxyCodeLine{221 \textcolor{comment}{//    Wrapping C++ Member Function Calls.}}
+\DoxyCodeLine{222 \textcolor{comment}{//    Bjarne Stroustrup}}
+\DoxyCodeLine{223 \textcolor{comment}{//    The C++ Report, June 2000.}}
+\DoxyCodeLine{224 \textcolor{comment}{//    http://www.stroustrup.com/wrapper.pdf}}
+\DoxyCodeLine{225 \textcolor{comment}{//}}
+\DoxyCodeLine{226 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{227 }
+\DoxyCodeLine{228 \textcolor{keyword}{template}<\textcolor{keyword}{class} MonClass> \textcolor{keyword}{class }\mbox{\hyperlink{classscd_1_1_m_ref}{MRef}}}
+\DoxyCodeLine{229 \{}
+\DoxyCodeLine{230    \textcolor{keyword}{private}:}
+\DoxyCodeLine{231    shared\_ptr<MonClass> monPtr ; \textcolor{comment}{// shared pointer to the monitor}}
+\DoxyCodeLine{232 }
+\DoxyCodeLine{233    \textcolor{keyword}{public}:}
+\DoxyCodeLine{234 }
+\DoxyCodeLine{235    \textcolor{comment}{// create a reference from a shared\_ptr}}
+\DoxyCodeLine{236    \textcolor{keyword}{inline} \mbox{\hyperlink{classscd_1_1_m_ref}{MRef}}( shared\_ptr<MonClass>  p\_monPtr )}
+\DoxyCodeLine{237    \{}
+\DoxyCodeLine{238       assert( p\_monPtr != \textcolor{keyword}{nullptr} );}
+\DoxyCodeLine{239       monPtr = p\_monPtr ;}
+\DoxyCodeLine{240    \}}
+\DoxyCodeLine{241 }
+\DoxyCodeLine{242    \textcolor{comment}{// obtain a call proxy through the dereference operator}}
+\DoxyCodeLine{243    \textcolor{keyword}{inline} \mbox{\hyperlink{classscd_1_1_call__proxy}{Call\_proxy<MonClass>}}  operator -\/> ()}
+\DoxyCodeLine{244    \{}
+\DoxyCodeLine{245      assert( monPtr != \textcolor{keyword}{nullptr} );}
+\DoxyCodeLine{246      \textcolor{keywordflow}{return} \mbox{\hyperlink{classscd_1_1_call__proxy}{Call\_proxy<MonClass>}}( *monPtr ) ; \textcolor{comment}{// acquires mutual exclusion}}
+\DoxyCodeLine{247    \}}
+\DoxyCodeLine{248 \} ;}
+\DoxyCodeLine{249 }
+\DoxyCodeLine{250 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{251 \textcolor{comment}{// creation of a monitor reference by using a list of}}
+\DoxyCodeLine{252 \textcolor{comment}{// actual parameters (the list must match a monitor constructor parameters list)}}
+\DoxyCodeLine{253 }
+\DoxyCodeLine{254 \textcolor{keyword}{template}< \textcolor{keyword}{class }MonClass, \textcolor{keyword}{class}... Args > \textcolor{keyword}{inline}}
+\DoxyCodeLine{255 \mbox{\hyperlink{classscd_1_1_m_ref}{MRef<MonClass>}} Create( Args \&\&... args )}
+\DoxyCodeLine{256 \{}
+\DoxyCodeLine{257    \textcolor{comment}{// equivalent to 'new'}}
+\DoxyCodeLine{258    \textcolor{keywordflow}{return} \mbox{\hyperlink{classscd_1_1_m_ref}{MRef<MonClass>}}( make\_shared<MonClass>( args... ) );}
+\DoxyCodeLine{259 \}}
+\DoxyCodeLine{260 }
+\DoxyCodeLine{261 \textcolor{comment}{// *****************************************************************************}}
+\DoxyCodeLine{262 \textcolor{comment}{// Class Call\_proxy<...>}}
+\DoxyCodeLine{263 \textcolor{comment}{//}}
+\DoxyCodeLine{264 \textcolor{comment}{// each instance holds a reference to a monitor, }}
+\DoxyCodeLine{265 \textcolor{comment}{// It is responsible for calling:}}
+\DoxyCodeLine{266 \textcolor{comment}{//  * 'monitor.enter' (on constructor) and }}
+\DoxyCodeLine{267 \textcolor{comment}{//  * 'monitor.leave' (on destruction)}}
+\DoxyCodeLine{268 \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{269 }
+\DoxyCodeLine{270 \textcolor{keyword}{template}<\textcolor{keyword}{class} MonClass> \textcolor{keyword}{class }\mbox{\hyperlink{classscd_1_1_call__proxy}{Call\_proxy}}}
+\DoxyCodeLine{271 \{}
+\DoxyCodeLine{272    \textcolor{keyword}{private}:}
+\DoxyCodeLine{273    MonClass \& monRef ; \textcolor{comment}{// monitor reference}}
+\DoxyCodeLine{274 }
+\DoxyCodeLine{275    \textcolor{keyword}{public}:}
+\DoxyCodeLine{276    \textcolor{keyword}{inline} \mbox{\hyperlink{classscd_1_1_call__proxy}{Call\_proxy}}( MonClass \& mr ) : monRef(mr) \{ monRef.enter(); \}}
+\DoxyCodeLine{277    \textcolor{keyword}{inline} MonClass * operator -\/> () \{ \textcolor{keywordflow}{return} \&monRef; \}}
+\DoxyCodeLine{278    \textcolor{keyword}{inline} \mbox{\hyperlink{classscd_1_1_call__proxy}{\string~Call\_proxy}}() \{ monRef.leave(); \}}
+\DoxyCodeLine{279 \};}
+\DoxyCodeLine{280 }
+\DoxyCodeLine{281 \} \textcolor{comment}{// namespace HW end}}
+\DoxyCodeLine{282 }
+\DoxyCodeLine{283 \textcolor{comment}{// *****************************************************************************}}
+\DoxyCodeLine{284 }
+\DoxyCodeLine{285 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// ifndef SCD\_HPP}}
+
+\end{DoxyCode}

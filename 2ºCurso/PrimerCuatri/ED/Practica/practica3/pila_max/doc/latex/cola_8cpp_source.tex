@@ -1,0 +1,97 @@
+\hypertarget{cola_8cpp_source}{}\doxysection{cola.\+cpp}
+\label{cola_8cpp_source}\index{src/cola.cpp@{src/cola.cpp}}
+\mbox{\hyperlink{cola_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00006}00006 \textcolor{preprocessor}{\#include <cassert>}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00007}00007 \textcolor{comment}{// \#include <cola.h>  El codigo ya se incluye en cola.h}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00009}00009 \textcolor{comment}{/* \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ */}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00012}00012 \textcolor{keyword}{template} <\textcolor{keyword}{class} T>}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00013}\mbox{\hyperlink{classCola_a2249ab5603a92fddb8bd9bb55abeaa24}{00013}} \mbox{\hyperlink{classCola_aea3a971c7c522618f4dc972e8b4ff153}{Cola<T>::Cola}}(\textcolor{keyword}{const} \mbox{\hyperlink{classCola}{Cola<T>}} \& original)\{}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00014}00014   \textcolor{keywordflow}{if} (original.primera!=0)\{           \textcolor{comment}{//Si tiene elementos}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00015}00015     Celda *p = original.primera;      \textcolor{comment}{//Copiamos el puntero a la primera celda}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00016}00016     primera = }
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00017}00017     ultima = \textcolor{keyword}{new} Celda(p-\/>elemento,0); \textcolor{comment}{//Inicializamos la lista de nodos}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00018}00018     p = p-\/>siguiente;                     \textcolor{comment}{//Avanzamos el puntero}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00019}00019     \textcolor{keywordflow}{while} (p!=0)\{                         \textcolor{comment}{//Mientras queden elementos}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00020}00020       ultima-\/>siguiente = \textcolor{keyword}{new} Celda(p-\/>elemento,0); \textcolor{comment}{//Copiamos el elemento}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00021}00021       ultima = ultima-\/>siguiente;                   \textcolor{comment}{//Avanzamos los punteros}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00022}00022       p = p-\/>siguiente;}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00023}00023     \}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00024}00024   \}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00025}00025   \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00026}00026     primera = ultima = 0;            \textcolor{comment}{//Si no tiene elementos}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00027}00027   num\_elem = original.num\_elem;}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00028}00028 \}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00030}00030 \textcolor{comment}{/* \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ */}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00032}00032 \textcolor{keyword}{template} <\textcolor{keyword}{class} T>}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00033}\mbox{\hyperlink{classCola_af4d55930921c93c626006ba2e842530b}{00033}} \mbox{\hyperlink{classCola_af4d55930921c93c626006ba2e842530b}{Cola<T>::\string~Cola}}()\{}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00034}00034   Celda * aux;}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00035}00035   \textcolor{keywordflow}{while} (primera!=0)\{             \textcolor{comment}{//Mientras queden elementos}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00036}00036     aux = primera;                \textcolor{comment}{//Copiamos el puntero}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00037}00037     primera = primera-\/>siguiente; \textcolor{comment}{//Avanzamos primera}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00038}00038     \textcolor{keyword}{delete} aux;                   \textcolor{comment}{//Borramos el nodo}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00039}00039   \}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00040}00040 \}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00042}00042 \textcolor{comment}{/* \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ */}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00044}00044 \textcolor{keyword}{template} <\textcolor{keyword}{class} T>}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00045}\mbox{\hyperlink{classCola_a2ac480681dec95b8ffeea075507849e2}{00045}} \mbox{\hyperlink{classCola}{Cola<T>}}\& \mbox{\hyperlink{classCola_a2ac480681dec95b8ffeea075507849e2}{Cola<T>::operator=}}(\textcolor{keyword}{const} \mbox{\hyperlink{classCola}{Cola<T>}} \& otra)\{}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00046}00046   Celda * p;}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00047}00047   }
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00048}00048   \textcolor{keywordflow}{if} (\textcolor{keyword}{this} != \&otra)\{    \textcolor{comment}{//Comprobación de rigor. Si son diferentes objetos}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00049}00049     \textcolor{keywordflow}{while} (primera!=0)\{  \textcolor{comment}{//Borramos la lista de nodos de la cola *this}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00050}00050       p = primera;}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00051}00051       primera = primera-\/>siguiente;}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00052}00052       \textcolor{keyword}{delete} p;}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00053}00053     \}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00054}00054     \textcolor{keywordflow}{if} (otra.primera!=0)\{        \textcolor{comment}{//Si la otra cola tiene elementos}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00055}00055       p = otra.primera;          \textcolor{comment}{//Copiamos el puntero al primer nodo}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00056}00056       primera=ultima= \textcolor{keyword}{new} Celda(p-\/>elemento,0); \textcolor{comment}{//Reservamos el primer nodo}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00057}00057       p=p-\/>siguiente;                           \textcolor{comment}{//Avanzamos el puntero}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00058}00058       \textcolor{keywordflow}{while} (p!=0)\{                             \textcolor{comment}{//Mientras queden elementos}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00059}00059         ultima-\/>siguiente=\textcolor{keyword}{new} Celda(p-\/>elemento,0); \textcolor{comment}{//Creamos un nuevo nodo}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00060}00060         ultima=ultima-\/>siguiente;                   \textcolor{comment}{//Actualizamos ultima}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00061}00061         p=p-\/>siguiente;                             \textcolor{comment}{//Avanzamos el puntero}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00062}00062       \}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00063}00063     \}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00064}00064     \textcolor{keywordflow}{else} primera=ultima=0;      \textcolor{comment}{//Si la otra cola está vacía}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00065}00065     num\_elem=otra.num\_elem;}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00066}00066   \}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00067}00067   \textcolor{keywordflow}{return} *\textcolor{keyword}{this}; \textcolor{comment}{//Devolvemos el objeto para permitir el encadenamiento (a=b=c)}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00068}00068 \}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00069}00069 }
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00070}00070 \textcolor{comment}{/*\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ */}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00071}00071 }
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00072}00072 \textcolor{keyword}{template} <\textcolor{keyword}{class} T>}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00073}\mbox{\hyperlink{classCola_a4a902e5805ae74f8d80c6f3267fd14c4}{00073}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classCola_a4a902e5805ae74f8d80c6f3267fd14c4}{Cola<T>::poner}}(\textcolor{keyword}{const} T \& elem)\{}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00074}00074   Celda *aux = \textcolor{keyword}{new} Celda(elem,0);    \textcolor{comment}{//Creamos un nuevo nodo}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00075}00075   \textcolor{keywordflow}{if} (primera==0)                    \textcolor{comment}{//Si la lista está vacía,}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00076}00076     primera = ultima = aux;          \textcolor{comment}{//primera y ultima apuntan a ese nodo}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00077}00077   \textcolor{keywordflow}{else}\{                      \textcolor{comment}{//Si la lista ya tenia nodos,}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00078}00078     ultima-\/>siguiente = aux; \textcolor{comment}{//Actualizamos el puntero siguiente del ultimo nodo}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00079}00079     ultima = aux;            \textcolor{comment}{//Actualizamos ultima}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00080}00080   \}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00081}00081   num\_elem++;                \textcolor{comment}{//Incrementamos el numero de elementos}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00082}00082 \}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00083}00083 }
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00084}00084 \textcolor{comment}{/* \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ */}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00085}00085 }
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00086}00086 \textcolor{keyword}{template} <\textcolor{keyword}{class} T>}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00087}\mbox{\hyperlink{classCola_a320766ddc7020424052c99e5c82a105d}{00087}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classCola_a320766ddc7020424052c99e5c82a105d}{Cola<T>::quitar}}()\{}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00088}00088   assert(primera!=0);             \textcolor{comment}{//Si la cola está vacía, abortar}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00089}00089   Celda *aux = primera;           \textcolor{comment}{//Copiamos el puntero al primer nodo}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00090}00090   primera = primera-\/>siguiente;   \textcolor{comment}{//Actualizamos primera}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00091}00091   \textcolor{keyword}{delete} aux;                     \textcolor{comment}{//Borramos el primer nodo}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00092}00092   \textcolor{keywordflow}{if} (primera == 0)               \textcolor{comment}{//Si no quedan nodos,}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00093}00093     ultima=0;                     \textcolor{comment}{//actualizamos ultima}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00094}00094   num\_elem-\/-\/;                     \textcolor{comment}{//Actualizamos el número de elementos}}
+\DoxyCodeLine{\Hypertarget{cola_8cpp_source_l00095}00095 \}}
+
+\end{DoxyCode}

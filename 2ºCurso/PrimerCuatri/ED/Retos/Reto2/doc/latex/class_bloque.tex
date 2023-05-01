@@ -1,0 +1,218 @@
+\hypertarget{class_bloque}{}\doxysection{Bloque Class Reference}
+\label{class_bloque}\index{Bloque@{Bloque}}
+
+
+\mbox{\hyperlink{class_bloque}{Bloque}} Una clase que agrupa las casillas de una \mbox{\hyperlink{class_matriz}{Matriz}}, se utiliza en la clase \mbox{\hyperlink{class_bloques_sudoku}{Bloques\+Sudoku}} para la clase \mbox{\hyperlink{class_sudoku_killer}{Sudoku\+Killer}}.  
+
+
+
+
+{\ttfamily \#include $<$Bloques\+Sudoku.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_bloque_a3ea37861f40b57e2790fcd220a640ac7}\label{class_bloque_a3ea37861f40b57e2790fcd220a640ac7}} 
+{\bfseries Bloque} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_bloque_a0f440ffbe43b4dabfc2d2e4f5b184ed3}{Bloque}} (int tam)
+\begin{DoxyCompactList}\small\item\em Constructor con parametros. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_bloque_a1bff2374493ff006016c6fd99cc07224}{Bloque}} (const \mbox{\hyperlink{class_bloque}{Bloque}} \&b)
+\begin{DoxyCompactList}\small\item\em Constructor de copia. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_bloque_a06bcf2578f817b91e66a80957a500c29}{get\+Tamanio}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene el tamaño del bloque. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_bloque_accc4b84ebad376dceaf6e0266795d58a}{get\+Suma\+Bloque}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene la suma de los valores bloque, llama a suma\+Valores. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_casilla}{Casilla}} \mbox{\hyperlink{class_bloque_a1d350ad864c09535aa2bc75d32d37e51}{get\+Casilla}} (int i)
+\begin{DoxyCompactList}\small\item\em Obtiene un objeto \mbox{\hyperlink{class_casilla}{Casilla}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bloque_a828590f76163833678ffe3bde916ee3c}{set\+Casilla}} (int i, int fil, int col, int val)
+\begin{DoxyCompactList}\small\item\em Establece los parametros de una casilla. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_bloque_aa63f81eb9cc5e7fad7d69dc34500db29}{aniadir\+Casilla}} (int val, int fil, int col)
+\begin{DoxyCompactList}\small\item\em Añade una nueva casilla al bloque, tama++. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_bloque_acb1e1d1438eeebd2e35ad63501f92839}{eliminar\+Casilla}} (int i)
+\begin{DoxyCompactList}\small\item\em Elimina la casilla del bloque. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_bloque_a959450745a65ae7b5afe7b99fb7710d8}{es\+Casilla\+Contigua}} (\mbox{\hyperlink{class_casilla}{Casilla}} nueva)
+\begin{DoxyCompactList}\small\item\em Comprueba que la nueva casilla sea contigua a alguna existente en el bloque. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_bloque_a1d718fa55711f4ccb36c8ab52f56551c}\label{class_bloque_a1d718fa55711f4ccb36c8ab52f56551c}} 
+void {\bfseries suma\+Valores} ()
+\begin{DoxyCompactList}\small\item\em Suma los valores de las casillas del bloque y modifica el atributo suma. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_bloque}{Bloque}} Una clase que agrupa las casillas de una \mbox{\hyperlink{class_matriz}{Matriz}}, se utiliza en la clase \mbox{\hyperlink{class_bloques_sudoku}{Bloques\+Sudoku}} para la clase \mbox{\hyperlink{class_sudoku_killer}{Sudoku\+Killer}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_bloque_a0f440ffbe43b4dabfc2d2e4f5b184ed3}\label{class_bloque_a0f440ffbe43b4dabfc2d2e4f5b184ed3}} 
+\index{Bloque@{Bloque}!Bloque@{Bloque}}
+\index{Bloque@{Bloque}!Bloque@{Bloque}}
+\doxysubsubsection{\texorpdfstring{Bloque()}{Bloque()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Bloque\+::\+Bloque (\begin{DoxyParamCaption}\item[{int}]{tam }\end{DoxyParamCaption})}
+
+
+
+Constructor con parametros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tam} & \+: int, Tamaño del bloque \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bloque_a1bff2374493ff006016c6fd99cc07224}\label{class_bloque_a1bff2374493ff006016c6fd99cc07224}} 
+\index{Bloque@{Bloque}!Bloque@{Bloque}}
+\index{Bloque@{Bloque}!Bloque@{Bloque}}
+\doxysubsubsection{\texorpdfstring{Bloque()}{Bloque()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Bloque\+::\+Bloque (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_bloque}{Bloque}} \&}]{b }\end{DoxyParamCaption})}
+
+
+
+Constructor de copia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & \+: \mbox{\hyperlink{class_bloque}{Bloque}}, El bloque a copiar \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_bloque_aa63f81eb9cc5e7fad7d69dc34500db29}\label{class_bloque_aa63f81eb9cc5e7fad7d69dc34500db29}} 
+\index{Bloque@{Bloque}!aniadirCasilla@{aniadirCasilla}}
+\index{aniadirCasilla@{aniadirCasilla}!Bloque@{Bloque}}
+\doxysubsubsection{\texorpdfstring{aniadirCasilla()}{aniadirCasilla()}}
+{\footnotesize\ttfamily bool Bloque\+::aniadir\+Casilla (\begin{DoxyParamCaption}\item[{int}]{val,  }\item[{int}]{fil,  }\item[{int}]{col }\end{DoxyParamCaption})}
+
+
+
+Añade una nueva casilla al bloque, tama++. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & \+: int, El valor de la casilla \\
+\hline
+{\em fil} & \+: int, La posicion en la fila de la casilla \\
+\hline
+{\em col} & \+: int, La posicion en la columna de la casilla \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si es añadida, false en otro caso 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+val != null \&\& val \texorpdfstring{$>$}{>} 0 \&\& val \texorpdfstring{$<$}{<} 0 
+
+tama \texorpdfstring{$<$}{<} TAMA\+\_\+\+MAX 
+
+es\+Casilla\+Contigua==true 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{class_bloque_acb1e1d1438eeebd2e35ad63501f92839}\label{class_bloque_acb1e1d1438eeebd2e35ad63501f92839}} 
+\index{Bloque@{Bloque}!eliminarCasilla@{eliminarCasilla}}
+\index{eliminarCasilla@{eliminarCasilla}!Bloque@{Bloque}}
+\doxysubsubsection{\texorpdfstring{eliminarCasilla()}{eliminarCasilla()}}
+{\footnotesize\ttfamily bool Bloque\+::eliminar\+Casilla (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Elimina la casilla del bloque. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \+: int, Posicion de la casilla a eliminar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si se elimina correctamente, false en otro caso 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+i \texorpdfstring{$<$}{<} tama \&\& i \texorpdfstring{$>$}{>}= 0 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{class_bloque_a959450745a65ae7b5afe7b99fb7710d8}\label{class_bloque_a959450745a65ae7b5afe7b99fb7710d8}} 
+\index{Bloque@{Bloque}!esCasillaContigua@{esCasillaContigua}}
+\index{esCasillaContigua@{esCasillaContigua}!Bloque@{Bloque}}
+\doxysubsubsection{\texorpdfstring{esCasillaContigua()}{esCasillaContigua()}}
+{\footnotesize\ttfamily bool Bloque\+::es\+Casilla\+Contigua (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_casilla}{Casilla}}}]{nueva }\end{DoxyParamCaption})}
+
+
+
+Comprueba que la nueva casilla sea contigua a alguna existente en el bloque. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nueva} & \+: \mbox{\hyperlink{class_casilla}{Casilla}}, La casilla a comprobar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+Si tama==0, devuelve true 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+true si la casilla es contigua, false en otro caso 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bloque_a1d350ad864c09535aa2bc75d32d37e51}\label{class_bloque_a1d350ad864c09535aa2bc75d32d37e51}} 
+\index{Bloque@{Bloque}!getCasilla@{getCasilla}}
+\index{getCasilla@{getCasilla}!Bloque@{Bloque}}
+\doxysubsubsection{\texorpdfstring{getCasilla()}{getCasilla()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_casilla}{Casilla}} Bloque\+::get\+Casilla (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Obtiene un objeto \mbox{\hyperlink{class_casilla}{Casilla}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \+: int, posición de la casilla en el vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+el objeto \mbox{\hyperlink{class_casilla}{Casilla}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bloque_accc4b84ebad376dceaf6e0266795d58a}\label{class_bloque_accc4b84ebad376dceaf6e0266795d58a}} 
+\index{Bloque@{Bloque}!getSumaBloque@{getSumaBloque}}
+\index{getSumaBloque@{getSumaBloque}!Bloque@{Bloque}}
+\doxysubsubsection{\texorpdfstring{getSumaBloque()}{getSumaBloque()}}
+{\footnotesize\ttfamily int Bloque\+::get\+Suma\+Bloque (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Obtiene la suma de los valores bloque, llama a suma\+Valores. 
+
+\begin{DoxyReturn}{Returns}
+la suma del valor en las casillas del bloque 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bloque_a06bcf2578f817b91e66a80957a500c29}\label{class_bloque_a06bcf2578f817b91e66a80957a500c29}} 
+\index{Bloque@{Bloque}!getTamanio@{getTamanio}}
+\index{getTamanio@{getTamanio}!Bloque@{Bloque}}
+\doxysubsubsection{\texorpdfstring{getTamanio()}{getTamanio()}}
+{\footnotesize\ttfamily int Bloque\+::get\+Tamanio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Obtiene el tamaño del bloque. 
+
+\begin{DoxyReturn}{Returns}
+el tamaño del bloque 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bloque_a828590f76163833678ffe3bde916ee3c}\label{class_bloque_a828590f76163833678ffe3bde916ee3c}} 
+\index{Bloque@{Bloque}!setCasilla@{setCasilla}}
+\index{setCasilla@{setCasilla}!Bloque@{Bloque}}
+\doxysubsubsection{\texorpdfstring{setCasilla()}{setCasilla()}}
+{\footnotesize\ttfamily void Bloque\+::set\+Casilla (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{fil,  }\item[{int}]{col,  }\item[{int}]{val }\end{DoxyParamCaption})}
+
+
+
+Establece los parametros de una casilla. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \+: int, Posicion de la casilla a modificar \\
+\hline
+{\em fil} & \+: int, La posicion en la fila de la casilla \\
+\hline
+{\em col} & \+: int, La posicion en la columna de la casilla \\
+\hline
+{\em val} & \+: int, El valor de la casilla \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_bloques_sudoku_8h}{Bloques\+Sudoku.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,86 @@
+\hypertarget{_bloques_matriz_8h}{}\doxysection{include/\+Bloques\+Matriz.h File Reference}
+\label{_bloques_matriz_8h}\index{include/BloquesMatriz.h@{include/BloquesMatriz.h}}
+
+
+Fichero cabecera de las clases {\ttfamily \mbox{\hyperlink{class_bloque}{Bloque}}} y {\ttfamily Bloques\+Matriz}.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}Casilla.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_bloque}{Bloque}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_bloque}{Bloque}} Una clase que agrupa las casillas de una \mbox{\hyperlink{class_matriz}{Matriz}}, se utiliza en la clase {\ttfamily Bloques\+Matriz} para la clase {\ttfamily \mbox{\hyperlink{class_sudoku_killer}{Sudoku\+Killer}}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_bloques_sudoku}{Bloques\+Sudoku}}
+\begin{DoxyCompactList}\small\item\em Bloques\+Matriz Una clase que contiene los bloques del \mbox{\hyperlink{class_sudoku}{Sudoku}}, se utiliza para la clase {\ttfamily \mbox{\hyperlink{class_sudoku_killer}{Sudoku\+Killer}}} y {\ttfamily \mbox{\hyperlink{class_resolver_sudoku_killer}{Resolver\+Sudoku\+Killer}}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{_bloques_matriz_8h_ae20b32e52ca233d5c80da31906bf1318}\label{_bloques_matriz_8h_ae20b32e52ca233d5c80da31906bf1318}} 
+\#define {\bfseries TAMA\+\_\+\+MAX}~= 5
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{_bloques_matriz_8h_a192922a3f82f49d05b913e496bf66e68}{se\+Solapa\+Bloques}} (\mbox{\hyperlink{class_bloque}{Bloque}} izq, \mbox{\hyperlink{class_bloque}{Bloque}} dcha)
+\begin{DoxyCompactList}\small\item\em Comprueba que 2 bloques no se solapan. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_bloques_matriz_8h_a86c81c014f5776a37c238444cfcc58f8}{es\+Mismo\+Bloque}} (\mbox{\hyperlink{class_bloque}{Bloque}} izq, \mbox{\hyperlink{class_bloque}{Bloque}} dcha)
+\begin{DoxyCompactList}\small\item\em Compara si 2 bloques son iguales. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Fichero cabecera de las clases {\ttfamily \mbox{\hyperlink{class_bloque}{Bloque}}} y {\ttfamily Bloques\+Matriz}. 
+
+\begin{DoxyAuthor}{Author}
+López Ramírez, Yeray 
+
+Castillo Ucles, Jaime 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Octubre 2021 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_bloques_matriz_8h_a86c81c014f5776a37c238444cfcc58f8}\label{_bloques_matriz_8h_a86c81c014f5776a37c238444cfcc58f8}} 
+\index{BloquesMatriz.h@{BloquesMatriz.h}!esMismoBloque@{esMismoBloque}}
+\index{esMismoBloque@{esMismoBloque}!BloquesMatriz.h@{BloquesMatriz.h}}
+\doxysubsubsection{\texorpdfstring{esMismoBloque()}{esMismoBloque()}}
+{\footnotesize\ttfamily bool es\+Mismo\+Bloque (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bloque}{Bloque}}}]{izq,  }\item[{\mbox{\hyperlink{class_bloque}{Bloque}}}]{dcha }\end{DoxyParamCaption})}
+
+
+
+Compara si 2 bloques son iguales. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em izq} & \\
+\hline
+{\em dcha} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true cuando las casillas que lo formas son iguales, false en otro caso 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_bloques_matriz_8h_a192922a3f82f49d05b913e496bf66e68}\label{_bloques_matriz_8h_a192922a3f82f49d05b913e496bf66e68}} 
+\index{BloquesMatriz.h@{BloquesMatriz.h}!seSolapaBloques@{seSolapaBloques}}
+\index{seSolapaBloques@{seSolapaBloques}!BloquesMatriz.h@{BloquesMatriz.h}}
+\doxysubsubsection{\texorpdfstring{seSolapaBloques()}{seSolapaBloques()}}
+{\footnotesize\ttfamily bool se\+Solapa\+Bloques (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bloque}{Bloque}}}]{izq,  }\item[{\mbox{\hyperlink{class_bloque}{Bloque}}}]{dcha }\end{DoxyParamCaption})}
+
+
+
+Comprueba que 2 bloques no se solapan. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em izq} & \\
+\hline
+{\em dcha} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si alguna casilla coincide, false en otro caso 
+\end{DoxyReturn}

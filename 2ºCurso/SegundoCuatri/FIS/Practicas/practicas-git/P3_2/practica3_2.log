@@ -1,0 +1,530 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.4.1)  14 MAY 2022 23:52
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**d:/pablo/Documentos/GII/Segundo/FIS/FIS-Practicas/P3_2/practica3_2.tex
+(d:/pablo/Documentos/GII/Segundo/FIS/FIS-Practicas/P3_2/practica3_2.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-02-24> (c:/texlive/2021/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(c:/texlive/2021/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+) (c:/texlive/2021/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2022/02/26 3.73 The Babel package
+\babel@savecnt=\count193
+\U@D=\dimen139
+\l@unhyphenated=\language87
+ (c:/texlive/2021/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count194
+ (c:/texlive/2021/texmf-dist/tex/generic/babel-spanish/spanish.ldf
+Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
+\es@quottoks=\toks16
+\es@quotdepth=\count195
+Package babel Info: Making " an active character on input line 570.
+Package babel Info: Making . an active character on input line 675.
+Package babel Info: Making < an active character on input line 722.
+Package babel Info: Making > an active character on input line 722.
+))
+LaTeX Info: Redefining \. on input line 3.
+LaTeX Info: Redefining \% on input line 3.
+ (c:/texlive/2021/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip49
+\bibsep=\skip50
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count196
+) (c:/texlive/2021/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) (c:/texlive/2021/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks17
+\inpenc@posthook=\toks18
+ (c:/texlive/2021/texmf-dist/tex/latex/ucs/utf8x.def
+File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
+)) (c:/texlive/2021/texmf-dist/tex/latex/ucs/ucs.sty
+Package: ucs 2013/05/11 v2.2 UCS: Unicode input support
+ (c:/texlive/2021/texmf-dist/tex/latex/ucs/data/uni-global.def
+File: uni-global.def 2013/05/13 UCS: Unicode global data
+)
+\uc@secondtry=\count197
+\uc@combtoks=\toks19
+\uc@combtoksb=\toks20
+\uc@temptokena=\toks21
+) (c:/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (c:/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks22
+) (c:/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+ (c:/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (c:/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+ (c:/texlive/2021/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen140
+\Gin@req@width=\dimen141
+) (c:/texlive/2021/texmf-dist/tex/latex/tools/array.sty
+Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
+\col@sep=\dimen142
+\ar@mcellbox=\box50
+\extrarowheight=\dimen143
+\NC@list=\toks23
+\extratabsurround=\skip51
+\backup@length=\skip52
+\ar@cellbox=\box51
+) (c:/texlive/2021/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
+\LTleft=\skip53
+\LTright=\skip54
+\LTpre=\skip55
+\LTpost=\skip56
+\LTchunksize=\count198
+\LTcapwidth=\dimen144
+\LT@head=\box52
+\LT@firsthead=\box53
+\LT@foot=\box54
+\LT@lastfoot=\box55
+\LT@gbox=\box56
+\LT@cols=\count199
+\LT@rows=\count266
+\c@LT@tables=\count267
+\c@LT@chunks=\count268
+\LT@p@ftn=\toks24
+) (c:/texlive/2021/texmf-dist/tex/latex/parskip/parskip.sty
+Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
+ (c:/texlive/2021/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+ (c:/texlive/2021/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+) (c:/texlive/2021/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)) (c:/texlive/2021/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count269
+)) (c:/texlive/2021/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and footers
+\f@nch@headwidth=\skip57
+\f@nch@O@elh=\skip58
+\f@nch@O@erh=\skip59
+\f@nch@O@olh=\skip60
+\f@nch@O@orh=\skip61
+\f@nch@O@elf=\skip62
+\f@nch@O@erf=\skip63
+\f@nch@O@olf=\skip64
+\f@nch@O@orf=\skip65
+) (c:/texlive/2021/texmf-dist/tex/latex/vmargin/vmargin.sty
+Package: vmargin 2004/07/15 V2.5 set document margins (VK)
+
+Package: vmargin 2004/07/15 V2.5 set document margins (VK)
+\PaperWidth=\dimen145
+\PaperHeight=\dimen146
+) (c:/texlive/2021/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count270
+\lst@gtempboxa=\box57
+\lst@token=\toks25
+\lst@length=\count271
+\lst@currlwidth=\dimen147
+\lst@column=\count272
+\lst@pos=\count273
+\lst@lostspace=\dimen148
+\lst@width=\dimen149
+\lst@newlines=\count274
+\lst@lineno=\count275
+\lst@maxwidth=\dimen150
+ (c:/texlive/2021/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count276
+\lst@skipnumbers=\count277
+\lst@framebox=\box58
+) (c:/texlive/2021/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+ (c:/texlive/2021/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2020/08/19 v1.3 Adjusting TeX boxes (trim, clip, ...)
+ (c:/texlive/2021/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+ (c:/texlive/2021/texmf-dist/tex/generic/xkeyval/xkeyval.tex (c:/texlive/2021/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks26
+\XKV@tempa@toks=\toks27
+)
+\XKV@depth=\count278
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (c:/texlive/2021/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back-ends (calc, etex, pgfmath)
+) (c:/texlive/2021/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+ (c:/texlive/2021/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box59
+)
+\tc@llx=\dimen151
+\tc@lly=\dimen152
+\tc@urx=\dimen153
+\tc@ury=\dimen154
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+ (c:/texlive/2021/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen155
+\adjbox@Height=\dimen156
+\adjbox@Depth=\dimen157
+\adjbox@Totalheight=\dimen158
+\adjbox@pwidth=\dimen159
+\adjbox@pheight=\dimen160
+\adjbox@pdepth=\dimen161
+\adjbox@ptotalheight=\dimen162
+ (c:/texlive/2021/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count279
+) (c:/texlive/2021/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box60
+\sift@deathcycles=\count280
+\@vwid@loff=\dimen163
+\@vwid@roff=\dimen164
+)) (c:/texlive/2021/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip66
+\enit@outerparindent=\dimen165
+\enit@toks=\toks28
+\enit@inbox=\box61
+\enit@count@id=\count281
+\enitdp@description=\count282
+) (c:/texlive/2021/texmf-dist/tex/latex/sourcesanspro/sourcesanspro.sty
+Package: sourcesanspro 2018/05/19 v2.7 Adobe's Source Sans Pro typeface
+ (c:/texlive/2021/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+ (c:/texlive/2021/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)) (c:/texlive/2021/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+) (c:/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+ (c:/texlive/2021/texmf-dist/tex/latex/ly1/ly1enc.def
+File: ly1enc.def 2009/07/22 v0.7 TeX 'n ANSI encoding (DPC/KB)
+)))
+LaTeX Font Info:    Trying to load font information for T1+SourceSansPro-TLF on input line 57.
+ (c:/texlive/2021/texmf-dist/tex/latex/sourcesanspro/T1SourceSansPro-TLF.fd
+File: T1SourceSansPro-TLF.fd 2020/01/19 (autoinst) Font definitions for T1/SourceSansPro-TLF.
+)
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 57.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
+(Font)              scaled to size 12.0pt on input line 57.
+ (c:/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count283
+\l__pdf_internal_box=\box62
+) (./practica3_2.aux
+LaTeX Info: Redefining \. on input line 8.
+LaTeX Info: Redefining \% on input line 8.
+LaTeX Info: Redefining \. on input line 10.
+LaTeX Info: Redefining \% on input line 10.
+)
+\openout1 = `practica3_2.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 57.
+LaTeX Font Info:    Trying to load font information for LY1+ptm on input line 57.
+ (c:/texlive/2021/texmf-dist/tex/latex/ly1/ly1ptm.fd
+File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
+)
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Info: Redefining \. on input line 57.
+LaTeX Info: Redefining \% on input line 57.
+ (c:/texlive/2021/texmf-dist/tex/latex/ucs/ucsencs.def
+File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
+) (c:/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count284
+\scratchdimen=\dimen166
+\scratchbox=\box63
+\nofMPsegments=\count285
+\nofMParguments=\count286
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count287
+\MPscratchDim=\dimen167
+\MPnumerator=\count288
+\makeMPintoPDFobject=\count289
+\everyMPtoPDFconversion=\toks30
+) (c:/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+ (c:/texlive/2021/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (c:/texlive/2021/texmf-dist/tex/latex/grfext/grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+ (c:/texlive/2021/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)) (c:/texlive/2021/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+ (c:/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+\c@lstlisting=\count290
+<images//logoUGR.png, id=1, 1284.8pt x 722.7pt>
+File: images//logoUGR.png Graphic file (type png)
+<use images//logoUGR.png>
+Package pdftex.def Info: images//logoUGR.png  used on input line 63.
+(pdftex.def)             Requested size: 256.95544pt x 144.53743pt.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/sc' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/sc' on input line 65.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/sc' will be
+(Font)              scaled to size 12.0pt on input line 65.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/sc' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/sc' on input line 65.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/sc' will be
+(Font)              scaled to size 14.4pt on input line 65.
+ (c:/texlive/2021/texmf-dist/tex/latex/ucs/data/uni-0.def
+File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
+)
+LaTeX Font Info:    Trying to load font information for TS1+SourceSansPro-TLF on input line 65.
+ (c:/texlive/2021/texmf-dist/tex/latex/sourcesanspro/TS1SourceSansPro-TLF.fd
+File: TS1SourceSansPro-TLF.fd 2020/01/19 (autoinst) Font definitions for TS1/SourceSansPro-TLF.
+)
+
+LaTeX Font Warning: Font shape `TS1/SourceSansPro-TLF/m/sc' undefined
+(Font)              using `TS1/SourceSansPro-TLF/m/n' instead
+(Font)              for symbol `textordmasculine' on input line 65.
+
+LaTeX Font Info:    Font shape `TS1/SourceSansPro-TLF/m/n' aliased to
+(Font)              `TS1/SourceSansPro-TLF/regular/n' on input line 65.
+LaTeX Font Info:    Font shape `TS1/SourceSansPro-TLF/regular/n' will be
+(Font)              scaled to size 14.4pt on input line 65.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 68.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
+(Font)              scaled to size 24.88pt on input line 68.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 68.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
+(Font)              scaled to size 24.88pt on input line 68.
+[1
+
+{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./images//logoUGR.png>]
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 83.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
+(Font)              scaled to size 17.28pt on input line 83.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 83.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
+(Font)              scaled to size 17.28pt on input line 83.
+ (./practica3_2.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+LaTeX Info: Redefining \. on input line 2.
+LaTeX Info: Redefining \% on input line 2.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 3.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
+(Font)              scaled to size 12.0pt on input line 3.
+)
+\tf@toc=\write3
+\openout3 = `practica3_2.toc'.
+
+ [1]
+<images//contrato1.png, id=16, 413.29407pt x 312.41719pt>
+File: images//contrato1.png Graphic file (type png)
+<use images//contrato1.png>
+Package pdftex.def Info: images//contrato1.png  used on input line 88.
+(pdftex.def)             Requested size: 413.29305pt x 312.41641pt.
+<images//contrato2.png, id=17, 414.79968pt x 261.22594pt>
+File: images//contrato2.png Graphic file (type png)
+<use images//contrato2.png>
+Package pdftex.def Info: images//contrato2.png  used on input line 89.
+(pdftex.def)             Requested size: 414.79868pt x 261.22528pt.
+<images//contrato3.png, id=18, 414.04688pt x 353.82187pt>
+File: images//contrato3.png Graphic file (type png)
+<use images//contrato3.png>
+Package pdftex.def Info: images//contrato3.png  used on input line 90.
+(pdftex.def)             Requested size: 414.04585pt x 353.821pt.
+ [2 <./images//contrato1.png> <./images//contrato2.png>]
+<images//contrato4.png, id=24, 414.04688pt x 288.3272pt>
+File: images//contrato4.png Graphic file (type png)
+<use images//contrato4.png>
+Package pdftex.def Info: images//contrato4.png  used on input line 91.
+(pdftex.def)             Requested size: 414.04585pt x 288.32648pt.
+ [3 <./images//contrato3.png>]
+<images//contrato5.png, id=29, 415.5525pt x 353.82187pt>
+File: images//contrato5.png Graphic file (type png)
+<use images//contrato5.png>
+Package pdftex.def Info: images//contrato5.png  used on input line 92.
+(pdftex.def)             Requested size: 415.55148pt x 353.821pt.
+ [4 <./images//contrato4.png>]
+<images//contrato6.png, id=34, 414.04688pt x 353.82187pt>
+File: images//contrato6.png Graphic file (type png)
+<use images//contrato6.png>
+Package pdftex.def Info: images//contrato6.png  used on input line 93.
+(pdftex.def)             Requested size: 414.04585pt x 353.821pt.
+ [5 <./images//contrato5.png>]
+<images//contrato7.png, id=39, 411.78844pt x 261.97874pt>
+File: images//contrato7.png Graphic file (type png)
+<use images//contrato7.png>
+Package pdftex.def Info: images//contrato7.png  used on input line 94.
+(pdftex.def)             Requested size: 411.78741pt x 261.9781pt.
+<images//contrato8.png, id=40, 413.29407pt x 287.57437pt>
+File: images//contrato8.png Graphic file (type png)
+<use images//contrato8.png>
+Package pdftex.def Info: images//contrato8.png  used on input line 95.
+(pdftex.def)             Requested size: 413.29305pt x 287.57367pt.
+ [6 <./images//contrato6.png> <./images//contrato7.png>]
+<images//contrato9.png, id=47, 414.04688pt x 447.17062pt>
+File: images//contrato9.png Graphic file (type png)
+<use images//contrato9.png>
+Package pdftex.def Info: images//contrato9.png  used on input line 96.
+(pdftex.def)             Requested size: 414.04585pt x 447.16953pt.
+ [7 <./images//contrato8.png>]
+<images//contrato10.png, id=52, 413.29407pt x 300.3722pt>
+File: images//contrato10.png Graphic file (type png)
+<use images//contrato10.png>
+Package pdftex.def Info: images//contrato10.png  used on input line 97.
+(pdftex.def)             Requested size: 413.29305pt x 300.37144pt.
+ [8 <./images//contrato9.png>]
+<images//contrato11.png, id=57, 413.29407pt x 319.94531pt>
+File: images//contrato11.png Graphic file (type png)
+<use images//contrato11.png>
+Package pdftex.def Info: images//contrato11.png  used on input line 98.
+(pdftex.def)             Requested size: 413.29305pt x 319.94452pt.
+ [9 <./images//contrato10.png>]
+<images//contrato12.png, id=62, 414.79968pt x 353.82187pt>
+File: images//contrato12.png Graphic file (type png)
+<use images//contrato12.png>
+Package pdftex.def Info: images//contrato12.png  used on input line 99.
+(pdftex.def)             Requested size: 414.79868pt x 353.821pt.
+ [10 <./images//contrato11.png>]
+<images//contrato13.png, id=67, 411.03563pt x 279.29344pt>
+File: images//contrato13.png Graphic file (type png)
+<use images//contrato13.png>
+Package pdftex.def Info: images//contrato13.png  used on input line 100.
+(pdftex.def)             Requested size: 411.03462pt x 279.29276pt.
+ [11 <./images//contrato12.png>]
+<images//contrato14.png, id=72, 412.54124pt x 347.04657pt>
+File: images//contrato14.png Graphic file (type png)
+<use images//contrato14.png>
+Package pdftex.def Info: images//contrato14.png  used on input line 101.
+(pdftex.def)             Requested size: 412.54024pt x 347.04572pt.
+ [12 <./images//contrato13.png>]
+<images//contrato15.png, id=78, 414.04688pt x 274.02374pt>
+File: images//contrato15.png Graphic file (type png)
+<use images//contrato15.png>
+Package pdftex.def Info: images//contrato15.png  used on input line 102.
+(pdftex.def)             Requested size: 414.04585pt x 274.02307pt.
+ [13 <./images//contrato14.png>]
+<images//contrato16.png, id=83, 414.04688pt x 275.52937pt>
+File: images//contrato16.png Graphic file (type png)
+<use images//contrato16.png>
+Package pdftex.def Info: images//contrato16.png  used on input line 103.
+(pdftex.def)             Requested size: 414.04585pt x 275.52869pt.
+<images//contrato17.png, id=84, 415.5525pt x 365.86688pt>
+File: images//contrato17.png Graphic file (type png)
+<use images//contrato17.png>
+Package pdftex.def Info: images//contrato17.png  used on input line 104.
+(pdftex.def)             Requested size: 415.55148pt x 365.86598pt.
+ [14 <./images//contrato15.png> <./images//contrato16.png>]
+<images//contrato18.png, id=90, 416.30531pt x 255.95625pt>
+File: images//contrato18.png Graphic file (type png)
+<use images//contrato18.png>
+Package pdftex.def Info: images//contrato18.png  used on input line 105.
+(pdftex.def)             Requested size: 416.30429pt x 255.95561pt.
+ [15 <./images//contrato17.png>]
+<images//contrato19.png, id=95, 412.54124pt x 293.59688pt>
+File: images//contrato19.png Graphic file (type png)
+<use images//contrato19.png>
+Package pdftex.def Info: images//contrato19.png  used on input line 106.
+(pdftex.def)             Requested size: 412.54024pt x 293.59615pt.
+<images//contrato20.png, id=96, 415.5525pt x 301.125pt>
+File: images//contrato20.png Graphic file (type png)
+<use images//contrato20.png>
+Package pdftex.def Info: images//contrato20.png  used on input line 107.
+(pdftex.def)             Requested size: 415.55148pt x 301.12425pt.
+ [16 <./images//contrato18.png> <./images//contrato19.png>]
+<images//contrato21.png, id=102, 415.5525pt x 320.69812pt>
+File: images//contrato21.png Graphic file (type png)
+<use images//contrato21.png>
+Package pdftex.def Info: images//contrato21.png  used on input line 108.
+(pdftex.def)             Requested size: 415.55148pt x 320.69733pt.
+ [17 <./images//contrato20.png>]
+<images//contrato22.png, id=107, 413.29407pt x 286.82156pt>
+File: images//contrato22.png Graphic file (type png)
+<use images//contrato22.png>
+Package pdftex.def Info: images//contrato22.png  used on input line 109.
+(pdftex.def)             Requested size: 413.29305pt x 286.82085pt.
+<images//contrato23.png, id=108, 414.04688pt x 259.7203pt>
+File: images//contrato23.png Graphic file (type png)
+<use images//contrato23.png>
+Package pdftex.def Info: images//contrato23.png  used on input line 110.
+(pdftex.def)             Requested size: 414.04585pt x 259.71967pt.
+ [18 <./images//contrato21.png> <./images//contrato22.png>]
+<images//contrato24.png, id=115, 411.78844pt x 313.17pt>
+File: images//contrato24.png Graphic file (type png)
+<use images//contrato24.png>
+Package pdftex.def Info: images//contrato24.png  used on input line 111.
+(pdftex.def)             Requested size: 411.78741pt x 313.16922pt.
+ [19 <./images//contrato23.png> <./images//contrato24.png>] (./practica3_2.aux
+LaTeX Info: Redefining \. on input line 8.
+LaTeX Info: Redefining \% on input line 8.
+LaTeX Info: Redefining \. on input line 10.
+LaTeX Info: Redefining \% on input line 10.
+)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 8983 strings out of 478276
+ 147776 string characters out of 5850490
+ 442001 words of memory out of 5000000
+ 27026 multiletter control sequences out of 15000+600000
+ 547996 words of font info for 45 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 60i,12n,67p,580b,590s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2021/texmf-dist/fonts/enc/dvips/sourcesanspro/a_emkxm5.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/sourcesanspro/a_5ponh6.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/sourcesanspro/a_4jropk.enc}<c:/texlive/2021/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-Bold.pfb><c:/texlive/2021/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-Regular.pfb>
+Output written on practica3_2.pdf (20 pages, 634296 bytes).
+PDF statistics:
+ 139 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 126 words of extra memory for PDF output out of 10000 (max. 10000000)
+

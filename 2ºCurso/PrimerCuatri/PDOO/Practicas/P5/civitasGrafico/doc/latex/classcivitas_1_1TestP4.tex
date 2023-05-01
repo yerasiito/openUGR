@@ -1,0 +1,111 @@
+\hypertarget{classcivitas_1_1TestP4}{}\doxysection{civitas.\+Test\+P4 Class Reference}
+\label{classcivitas_1_1TestP4}\index{civitas.TestP4@{civitas.TestP4}}
+
+
+Clase de prueba de la Practica 4. Verifica si el jugador se convierte en Especulador y se hacen efectivos sus cambios.  
+
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classcivitas_1_1TestP4_aa690f44d726ad12c7a8b740b293d82b9}{main}} (String\mbox{[}$\,$\mbox{]} args)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase de prueba de la Practica 4. Verifica si el jugador se convierte en Especulador y se hacen efectivos sus cambios. 
+
+Definition at line \mbox{\hyperlink{TestP4_8java_source_l00014}{14}} of file \mbox{\hyperlink{TestP4_8java_source}{Test\+P4.\+java}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcivitas_1_1TestP4_aa690f44d726ad12c7a8b740b293d82b9}\label{classcivitas_1_1TestP4_aa690f44d726ad12c7a8b740b293d82b9}} 
+\index{civitas.TestP4@{civitas.TestP4}!main@{main}}
+\index{main@{main}!civitas.TestP4@{civitas.TestP4}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void civitas.\+Test\+P4.\+main (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & the command line arguments \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{TestP4_8java_source_l00019}{19}} of file \mbox{\hyperlink{TestP4_8java_source}{Test\+P4.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00019}00019                                            \{}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00020}00020         \textcolor{comment}{//Creamos jugador y lo metemos en un arrayList jugadores}}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00021}00021         Jugador jug1 = \textcolor{keyword}{new} Jugador(\textcolor{stringliteral}{"{}Paco"{}});}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00022}00022         ArrayList<Jugador> jugadores = \textcolor{keyword}{new} ArrayList<>();}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00023}00023         jugadores.add(jug1);}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00024}00024         }
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00025}00025         \textcolor{comment}{//creamos la propiedad que cambiará de propietario(jugador a especulador)}}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00026}00026         CasillaCalle propiedad1 = \textcolor{keyword}{new} CasillaCalle(\textcolor{stringliteral}{"{}Nueva"{}}, 100, 500, 0); \textcolor{comment}{//vale 100€}}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00027}00027         SorpresaConvertirme sorpresa = \textcolor{keyword}{new} SorpresaConvertirme(\textcolor{stringliteral}{"{}Has pisado un casino, y te has puesto a especular"{}});}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00028}00028         jug1.comprar(propiedad1); \textcolor{comment}{//el jugador la compra}}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00029}00029         }
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00030}00030         \textcolor{comment}{//Convierte el jugador}}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00031}00031         System.out.println(\textcolor{stringliteral}{"{}Jugador antes de convertirse "{}} + jugadores.get(0).getClass());}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00032}00032         sorpresa.aplicarAJugador(0, jugadores); \textcolor{comment}{//el jugador se convierte}}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00033}00033         System.out.println(\textcolor{stringliteral}{"{}Jugador despues de convertirse "{}} + jugadores.get(0).getClass());}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00034}00034         }
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00035}00035         \textcolor{comment}{//Imprime los eventos}}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00036}00036         \textcolor{keywordflow}{while}(Diario.getInstance().eventosPendientes())\{}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00037}00037                 System.out.println(Diario.getInstance().leerEvento());}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00038}00038         \}}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00039}00039         System.out.println(\textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00040}00040         }
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00041}00041         JugadorEspeculador convertido = (JugadorEspeculador)jugadores.get(0); \textcolor{comment}{//ahorra llamar al array}}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00042}00042         }
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00043}00043         \textcolor{comment}{//Creamos una casilla para que especulador compre a la mitad de precio}}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00044}00044         CasillaCalle propiedad2 = \textcolor{keyword}{new} CasillaCalle(\textcolor{stringliteral}{"{}Nueva"{}}, 200, 10, 0); \textcolor{comment}{//vale 200€}}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00045}00045 }
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00046}00046         convertido.comprar(propiedad2); \textcolor{comment}{//Deberia de pagar 100€}}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00047}00047         }
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00048}00048         \textcolor{comment}{//Imprime los eventos}}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00049}00049         \textcolor{keywordflow}{while}(Diario.getInstance().eventosPendientes())\{}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00050}00050                 System.out.println(Diario.getInstance().leerEvento());}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00051}00051         \}}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00052}00052         System.out.println(\textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00053}00053         }
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00054}00054         \textcolor{comment}{//Construye todos las casas y hoteles posibles}}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00055}00055         System.out.println(\textcolor{stringliteral}{"{}El jugador construye todo lo que puede en la prop1: "{}});}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00056}00056         System.out.println(\textcolor{stringliteral}{"{}****************************************************"{}}); \textcolor{comment}{//Comentar de aqui al siguiente separador(se peta la terminal)}}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00057}00057         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < 8; i++)\{}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00058}00058             \textcolor{keywordflow}{while}(!convertido.construirHotel(1))\{}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00059}00059                 convertido.construirCasa(1); \textcolor{comment}{//construye casas}}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00060}00060             \} \textcolor{comment}{//debe de poder construirlas todas}}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00061}00061         \}}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00062}00062         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < 8; i++)}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00063}00063             convertido.construirCasa(1); \textcolor{comment}{//construye las casas que quedan}}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00064}00064         }
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00065}00065         \textcolor{comment}{//Imprime eventos}}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00066}00066         \textcolor{keywordflow}{while}(Diario.getInstance().eventosPendientes())\{}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00067}00067                 System.out.println(Diario.getInstance().leerEvento());}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00068}00068         \}}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00069}00069         System.out.println(\textcolor{stringliteral}{"{}****************************************************"{}});}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00070}00070         }
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00071}00071         \textcolor{comment}{//Vemos que está todo construido al maximo}}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00072}00072         System.out.println(\textcolor{stringliteral}{"{}Tiene "{}} + convertido.getPropiedades().get(1).getNumCasas() + \textcolor{stringliteral}{"{} casas"{}});}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00073}00073         System.out.println(\textcolor{stringliteral}{"{}Tiene "{}} + convertido.getPropiedades().get(1).getNumHoteles() + \textcolor{stringliteral}{"{} hoteles"{}});}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00074}00074         \textcolor{comment}{//intentamos construir de mas}}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00075}00075         convertido.construirCasa(1); \textcolor{comment}{//No la puede construir}}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00076}00076         convertido.construirHotel(1); \textcolor{comment}{//No lo puede construir}}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00077}00077         }
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00078}00078         \textcolor{keywordflow}{while}(Diario.getInstance().eventosPendientes())\{}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00079}00079                 System.out.println(Diario.getInstance().leerEvento());}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00080}00080         \}}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00081}00081 }
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00082}00082         }
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1TestP4_l00083}00083     \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/civitas/\mbox{\hyperlink{TestP4_8java}{Test\+P4.\+java}}\end{DoxyCompactItemize}

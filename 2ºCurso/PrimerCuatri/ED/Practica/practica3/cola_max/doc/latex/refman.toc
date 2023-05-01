@@ -1,0 +1,49 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Class Index}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Class List}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}File Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}File List}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Class Documentation}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Cola\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}max Class Reference}{5}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Detailed Description}{5}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Member Function Documentation}{5}{subsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.2.1}elementos\_size()}{5}{subsubsection.3.1.2.1}%
+\contentsline {subsubsection}{\numberline {3.1.2.2}empty()}{6}{subsubsection.3.1.2.2}%
+\contentsline {subsubsection}{\numberline {3.1.2.3}frente()}{6}{subsubsection.3.1.2.3}%
+\contentsline {subsubsection}{\numberline {3.1.2.4}poner()}{6}{subsubsection.3.1.2.4}%
+\contentsline {subsubsection}{\numberline {3.1.2.5}quitar()}{7}{subsubsection.3.1.2.5}%
+\contentsline {section}{\numberline {3.2}Elemento Struct Reference}{8}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Detailed Description}{8}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Friends And Related Function Documentation}{9}{subsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.2.1}operator$<$$<$}{9}{subsubsection.3.2.2.1}%
+\contentsline {subsection}{\numberline {3.2.3}Member Data Documentation}{9}{subsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.3.1}elemento}{9}{subsubsection.3.2.3.1}%
+\contentsline {subsubsection}{\numberline {3.2.3.2}maximo}{9}{subsubsection.3.2.3.2}%
+\contentsline {section}{\numberline {3.3}Pila$<$ T $>$ Class Template Reference}{10}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Detailed Description}{10}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Constructor \& Destructor Documentation}{11}{subsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.2.1}Pila()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{11}{subsubsection.3.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.3.2.2}Pila()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{11}{subsubsection.3.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.3.2.3}$\sim $Pila()}{11}{subsubsection.3.3.2.3}%
+\contentsline {subsection}{\numberline {3.3.3}Member Function Documentation}{12}{subsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.3.1}num\_elementos()}{12}{subsubsection.3.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.3.2}operator=()}{12}{subsubsection.3.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3.3}poner()}{13}{subsubsection.3.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.3.4}quitar()}{13}{subsubsection.3.3.3.4}%
+\contentsline {subsubsection}{\numberline {3.3.3.5}tope()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{13}{subsubsection.3.3.3.5}%
+\contentsline {subsubsection}{\numberline {3.3.3.6}tope()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{14}{subsubsection.3.3.3.6}%
+\contentsline {subsubsection}{\numberline {3.3.3.7}vacia()}{14}{subsubsection.3.3.3.7}%
+\contentsline {chapter}{\numberline {4}File Documentation}{15}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Cola\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}max\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pila.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{15}{section.4.1}%
+\contentsline {section}{\numberline {4.2}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Cola\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}max\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pila.h File Reference}{16}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Detailed Description}{17}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.3}Cola\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}max\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pila.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{17}{section.4.3}%
+\contentsline {section}{\numberline {4.4}cola\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}teclado.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{17}{section.4.4}%
+\contentsline {section}{\numberline {4.5}src/pila.cpp File Reference}{18}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Detailed Description}{19}{subsection.4.5.1}%
+\contentsline {section}{\numberline {4.6}pila.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{19}{section.4.6}%
+\contentsline {section}{\numberline {4.7}src/pila.h File Reference}{20}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Detailed Description}{21}{subsection.4.7.1}%
+\contentsline {section}{\numberline {4.8}pila.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{21}{section.4.8}%
+\contentsline {section}{\numberline {4.9}usocolas\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}max.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{22}{section.4.9}%
+\contentsline {chapter}{Index}{23}{section*.15}%

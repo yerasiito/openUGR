@@ -1,0 +1,19 @@
+\begin{theindex}
+
+  \item {civitas.Casilla}, \hyperpage{5}
+  \item {civitas.Civitas}, \hyperpage{6}
+    \subitem {main}, \hyperpage{6}
+  \item {civitas.CivitasJuego}, \hyperpage{6}
+  \item {civitas.Dado}, \hyperpage{7}
+  \item {civitas.Diario}, \hyperpage{8}
+  \item {civitas.Jugador}, \hyperpage{8}
+  \item {civitas.MazoSorpresas}, \hyperpage{9}
+  \item {civitas.Sorpresa}, \hyperpage{9}
+  \item {civitas.Tablero}, \hyperpage{10}
+
+  \indexspace
+
+  \item {main}
+    \subitem {civitas.Civitas}, \hyperpage{6}
+
+\end{theindex}

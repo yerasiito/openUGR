@@ -1,0 +1,5 @@
+<map id="vistaTextualCivitas.VistaTextual" name="vistaTextualCivitas.VistaTextual">
+<area shape="rect" id="node1" title="Clase Vistatextual que gestiona los menus del juego y todo lo relacionado con feedbacks al usuario...." alt="" coords="93,95,260,136"/>
+<area shape="rect" id="node2" href="$interfacevistaTextualCivitas_1_1Vista.html" title="Interfaz Vista que declara los metodos de la VistaTextual. Funciona como un fichero ...." alt="" coords="5,5,172,32"/>
+<area shape="rect" id="node3" href="$classcivitas_1_1CivitasJuego.html" title="Clase Principal del paquete. Gestiona la lógica interna del juego. Se crea el tablero con 14 calles,..." alt="" coords="196,5,336,32"/>
+</map>

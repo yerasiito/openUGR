@@ -1,0 +1,276 @@
+\hypertarget{class_imagen}{}\doxysection{Referencia de la Clase Imagen}
+\label{class_imagen}\index{Imagen@{Imagen}}
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_imagen_ab2e649aa7a105155c7bfdb846abf0528}\label{class_imagen_ab2e649aa7a105155c7bfdb846abf0528}} 
+{\bfseries Imagen} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_imagen_a33f5f31d610526dbe66d04de0a827f91}{Imagen}} (const \mbox{\hyperlink{class_imagen}{Imagen}} \&otra)
+\begin{DoxyCompactList}\small\item\em Constructor de copia. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_imagen_ad4943ff0e2de31d4c25a879030f3ebf2}{Imagen}} (int filas, int cols)
+\begin{DoxyCompactList}\small\item\em Constructor por parámetros. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_imagen_a03dd93c9cf920a9dc0b72f8bd34f2e8a}\label{class_imagen_a03dd93c9cf920a9dc0b72f8bd34f2e8a}} 
+{\bfseries $\sim$\+Imagen} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase. Libera los recursos ocupados por la imagen. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_imagen_afc28426f02930d23dc392b6ffd71e46a}\label{class_imagen_afc28426f02930d23dc392b6ffd71e46a}} 
+void {\bfseries Reservar} ()
+\begin{DoxyCompactList}\small\item\em Reserva memoria dinámica. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_imagen_a6bf0d0e8f2c5a77dbc02157398b51ede}\label{class_imagen_a6bf0d0e8f2c5a77dbc02157398b51ede}} 
+void {\bfseries Liberar} ()
+\begin{DoxyCompactList}\small\item\em Libera memoria dinámica. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_imagen_a4cb4faa04f5e2913965e43a6a65acfd1}{num\+\_\+filas}} () const
+\begin{DoxyCompactList}\small\item\em Calcula el número de filas de una imagen. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_imagen_ac28d55c18064aea2a65e6fcf51d86191}{num\+\_\+columnas}} () const
+\begin{DoxyCompactList}\small\item\em Calcula el número de columnas de una imagen. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_imagen_aa8bdc0191ef1b952a6405273edf3f3c8}\label{class_imagen_aa8bdc0191ef1b952a6405273edf3f3c8}} 
+\mbox{\hyperlink{class_imagen}{Imagen}} \& {\bfseries operator=} (const \mbox{\hyperlink{class_imagen}{Imagen}} \&otra)
+\begin{DoxyCompactList}\small\item\em Operador asignación. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_imagen_af851c14953e6348ed635dea7a885ad4a}{copiar}} (\+::byte $\ast$$\ast$destino, \+::byte $\ast$$\ast$orig, int filas, int columnas)
+\begin{DoxyCompactList}\small\item\em Método que copia dos matrices. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_imagen_a5694ba66da34de411b99ccfebf68ad7e}{asigna\+\_\+pixel}} (int fila, int cols, unsigned char valor)
+\begin{DoxyCompactList}\small\item\em Asigna un valor entre 0 y 255 a cada punto de la imagen. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_imagen_af6785847a0382bbe6c2be56886d0965e}{Media}} (int f1, int c1, int f2, int c2)
+\begin{DoxyCompactList}\small\item\em Calcula el valor gris medio de la matriz, utilizado por Iconizar. \end{DoxyCompactList}\item 
+\+::byte \mbox{\hyperlink{class_imagen_a89da68c89f2bab4ee59f33a5de794fd0}{valor\+\_\+pixel}} (int fila, int cols) const
+\begin{DoxyCompactList}\small\item\em Consulta el valor de luminosidad de la casilla (fila, cols) de la imagen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_imagen_a37df4ff3a31b19396c7f1d247f99b9ad}{umbralizar}} ()
+\begin{DoxyCompactList}\small\item\em Umbraliza la imagen gracias a la generación de un umbral. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_imagen}{Imagen}} \mbox{\hyperlink{class_imagen_abea64cd6b95230a2d53fd39ab9e67538}{iconizar}} (int nf, int nc)
+\begin{DoxyCompactList}\small\item\em Devuelve un icono de la imagen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_imagen_a565377a9c77906fc38e03bc4a2f9818e}{contrastar}} (\+::byte minimo, \+::byte maximo)
+\begin{DoxyCompactList}\small\item\em Aumenta el contraste de la imagen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{class_imagen_a33f5f31d610526dbe66d04de0a827f91}\label{class_imagen_a33f5f31d610526dbe66d04de0a827f91}} 
+\index{Imagen@{Imagen}!Imagen@{Imagen}}
+\index{Imagen@{Imagen}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{Imagen()}{Imagen()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Imagen\+::\+Imagen (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_imagen}{Imagen}} \&}]{otra }\end{DoxyParamCaption})}
+
+
+
+Constructor de copia. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em otra} & \mbox{\hyperlink{class_imagen}{Imagen}} que se le pasa de copia \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_imagen_ad4943ff0e2de31d4c25a879030f3ebf2}\label{class_imagen_ad4943ff0e2de31d4c25a879030f3ebf2}} 
+\index{Imagen@{Imagen}!Imagen@{Imagen}}
+\index{Imagen@{Imagen}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{Imagen()}{Imagen()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Imagen\+::\+Imagen (\begin{DoxyParamCaption}\item[{int}]{filas,  }\item[{int}]{cols }\end{DoxyParamCaption})}
+
+
+
+Constructor por parámetros. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em filas} & Número de filas que va a tener la imagen \\
+\hline
+{\em cols} & Número de columnas que va a tener la imagen \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+filas\texorpdfstring{$>$}{>}0 \&\& cols\texorpdfstring{$>$}{>}0 
+\end{DoxyPrecond}
+\begin{DoxyPostcond}{Postcondición}
+
+\end{DoxyPostcond}
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{class_imagen_a5694ba66da34de411b99ccfebf68ad7e}\label{class_imagen_a5694ba66da34de411b99ccfebf68ad7e}} 
+\index{Imagen@{Imagen}!asigna\_pixel@{asigna\_pixel}}
+\index{asigna\_pixel@{asigna\_pixel}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{asigna\_pixel()}{asigna\_pixel()}}
+{\footnotesize\ttfamily void Imagen\+::asigna\+\_\+pixel (\begin{DoxyParamCaption}\item[{int}]{fila,  }\item[{int}]{cols,  }\item[{unsigned char}]{valor }\end{DoxyParamCaption})}
+
+
+
+Asigna un valor entre 0 y 255 a cada punto de la imagen. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em fila} & Número de fila donde se va asignar el valor \\
+\hline
+{\em cols} & Número de columna donde s eva asignar el valor \\
+\hline
+{\em valor} & Número de valor que se va a asignar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+0\texorpdfstring{$<$}{<}= fila \texorpdfstring{$<$}{<} \mbox{\hyperlink{class_imagen_a4cb4faa04f5e2913965e43a6a65acfd1}{num\+\_\+filas()}} 
+
+0\texorpdfstring{$<$}{<}= cols \texorpdfstring{$<$}{<} num\+\_\+columnas () 
+
+0\texorpdfstring{$<$}{<}= valor \texorpdfstring{$<$}{<}= 255 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{class_imagen_a565377a9c77906fc38e03bc4a2f9818e}\label{class_imagen_a565377a9c77906fc38e03bc4a2f9818e}} 
+\index{Imagen@{Imagen}!contrastar@{contrastar}}
+\index{contrastar@{contrastar}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{contrastar()}{contrastar()}}
+{\footnotesize\ttfamily void Imagen\+::contrastar (\begin{DoxyParamCaption}\item[{\+::byte}]{minimo,  }\item[{\+::byte}]{maximo }\end{DoxyParamCaption})}
+
+
+
+Aumenta el contraste de la imagen. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em minimo} & \\
+\hline
+{\em maximo} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+min \texorpdfstring{$<$}{<}= max 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{class_imagen_af851c14953e6348ed635dea7a885ad4a}\label{class_imagen_af851c14953e6348ed635dea7a885ad4a}} 
+\index{Imagen@{Imagen}!copiar@{copiar}}
+\index{copiar@{copiar}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{copiar()}{copiar()}}
+{\footnotesize\ttfamily void Imagen\+::copiar (\begin{DoxyParamCaption}\item[{\+::byte $\ast$$\ast$}]{destino,  }\item[{\+::byte $\ast$$\ast$}]{orig,  }\item[{int}]{filas,  }\item[{int}]{columnas }\end{DoxyParamCaption})}
+
+
+
+Método que copia dos matrices. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em destino} & Matriz a copiar \\
+\hline
+{\em orig} & Matriz a ser copiada \\
+\hline
+{\em filas} & Número de filas \\
+\hline
+{\em columnas} & Número de columnas \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_imagen_abea64cd6b95230a2d53fd39ab9e67538}\label{class_imagen_abea64cd6b95230a2d53fd39ab9e67538}} 
+\index{Imagen@{Imagen}!iconizar@{iconizar}}
+\index{iconizar@{iconizar}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{iconizar()}{iconizar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_imagen}{Imagen}} Imagen\+::iconizar (\begin{DoxyParamCaption}\item[{int}]{nf,  }\item[{int}]{nc }\end{DoxyParamCaption})}
+
+
+
+Devuelve un icono de la imagen. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em nf} & Número de filas del icono \\
+\hline
+{\em nc} & Número de columnas del icono \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+nf \texorpdfstring{$<$}{<}= filas de la imagen dada 
+
+nc \texorpdfstring{$<$}{<}= columnas de la imagen dada 
+
+nf \&\& nc \texorpdfstring{$>$}{>} 0 
+
+nf y nc deben ser divisores del tamaño de la imagen 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{class_imagen_af6785847a0382bbe6c2be56886d0965e}\label{class_imagen_af6785847a0382bbe6c2be56886d0965e}} 
+\index{Imagen@{Imagen}!Media@{Media}}
+\index{Media@{Media}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{Media()}{Media()}}
+{\footnotesize\ttfamily int Imagen\+::\+Media (\begin{DoxyParamCaption}\item[{int}]{f1,  }\item[{int}]{c1,  }\item[{int}]{f2,  }\item[{int}]{c2 }\end{DoxyParamCaption})}
+
+
+
+Calcula el valor gris medio de la matriz, utilizado por Iconizar. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em f1} & fila inicial \\
+\hline
+{\em c1} & columna inicial \\
+\hline
+{\em f2} & fila final (se incluye) \\
+\hline
+{\em c2} & columna final (se incluye) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+el valor medio de gris de la matriz 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondición}
+f1 \texorpdfstring{$<$}{<}= f2 e c1 \texorpdfstring{$<$}{<}= c2 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{class_imagen_ac28d55c18064aea2a65e6fcf51d86191}\label{class_imagen_ac28d55c18064aea2a65e6fcf51d86191}} 
+\index{Imagen@{Imagen}!num\_columnas@{num\_columnas}}
+\index{num\_columnas@{num\_columnas}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{num\_columnas()}{num\_columnas()}}
+{\footnotesize\ttfamily int Imagen\+::num\+\_\+columnas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Calcula el número de columnas de una imagen. 
+
+\begin{DoxyReturn}{Devuelve}
+número de columnas de una imagen 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_imagen_a4cb4faa04f5e2913965e43a6a65acfd1}\label{class_imagen_a4cb4faa04f5e2913965e43a6a65acfd1}} 
+\index{Imagen@{Imagen}!num\_filas@{num\_filas}}
+\index{num\_filas@{num\_filas}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{num\_filas()}{num\_filas()}}
+{\footnotesize\ttfamily int Imagen\+::num\+\_\+filas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Calcula el número de filas de una imagen. 
+
+\begin{DoxyReturn}{Devuelve}
+número de filas de una imagen 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_imagen_a37df4ff3a31b19396c7f1d247f99b9ad}\label{class_imagen_a37df4ff3a31b19396c7f1d247f99b9ad}} 
+\index{Imagen@{Imagen}!umbralizar@{umbralizar}}
+\index{umbralizar@{umbralizar}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{umbralizar()}{umbralizar()}}
+{\footnotesize\ttfamily void Imagen\+::umbralizar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Umbraliza la imagen gracias a la generación de un umbral. 
+
+\begin{DoxyPostcond}{Postcondición}
+Se crea T el umbral generado automáticamente de la imagen 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_imagen_a89da68c89f2bab4ee59f33a5de794fd0}\label{class_imagen_a89da68c89f2bab4ee59f33a5de794fd0}} 
+\index{Imagen@{Imagen}!valor\_pixel@{valor\_pixel}}
+\index{valor\_pixel@{valor\_pixel}!Imagen@{Imagen}}
+\doxysubsubsection{\texorpdfstring{valor\_pixel()}{valor\_pixel()}}
+{\footnotesize\ttfamily byte Imagen\+::valor\+\_\+pixel (\begin{DoxyParamCaption}\item[{int}]{fila,  }\item[{int}]{cols }\end{DoxyParamCaption}) const}
+
+
+
+Consulta el valor de luminosidad de la casilla (fila, cols) de la imagen. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em fila} & Número de fila donde está la casilla que se va a consultar \\
+\hline
+{\em cols} & Número de columna donde está la casilla que se va a cosultar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+0 \texorpdfstring{$<$}{<}= fila \texorpdfstring{$<$}{<} num\+\_\+filas () 
+
+0 \texorpdfstring{$<$}{<}= col \texorpdfstring{$<$}{<} num\+\_\+columnas () 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Devuelve}
+El valor de luminosidad de la casilla, que está en el conjunto \{0,1,...,255\} 
+\end{DoxyReturn}
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+tdaimagen2.\+0/include/\mbox{\hyperlink{imagen_8h}{imagen.\+h}}\item 
+tdaimagen2.\+0/src/\mbox{\hyperlink{imagen_8cpp}{imagen.\+cpp}}\end{DoxyCompactItemize}

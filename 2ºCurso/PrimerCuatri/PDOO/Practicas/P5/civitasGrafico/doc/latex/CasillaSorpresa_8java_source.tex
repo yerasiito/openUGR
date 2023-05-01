@@ -1,0 +1,37 @@
+\hypertarget{CasillaSorpresa_8java_source}{}\doxysection{Casilla\+Sorpresa.\+java}
+\label{CasillaSorpresa_8java_source}\index{src/civitas/CasillaSorpresa.java@{src/civitas/CasillaSorpresa.java}}
+\mbox{\hyperlink{CasillaSorpresa_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{CasillaSorpresa_8java_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{CasillaSorpresa_8java_source_l00007}00007 \textcolor{keyword}{package }civitas;}
+\DoxyCodeLine{\Hypertarget{CasillaSorpresa_8java_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{CasillaSorpresa_8java_source_l00009}00009 \textcolor{keyword}{import} java.util.ArrayList;}
+\DoxyCodeLine{\Hypertarget{CasillaSorpresa_8java_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{CasillaSorpresa_8java_source_l00015}\mbox{\hyperlink{classcivitas_1_1CasillaSorpresa}{00015}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{classcivitas_1_1CasillaSorpresa}{CasillaSorpresa}} \textcolor{keyword}{extends} \mbox{\hyperlink{classcivitas_1_1Casilla}{Casilla}}\{}
+\DoxyCodeLine{\Hypertarget{CasillaSorpresa_8java_source_l00016}00016     \textcolor{keyword}{private} \mbox{\hyperlink{classcivitas_1_1MazoSorpresas}{MazoSorpresas}} mazo;}
+\DoxyCodeLine{\Hypertarget{CasillaSorpresa_8java_source_l00017}00017     \textcolor{keyword}{public} \mbox{\hyperlink{classcivitas_1_1CasillaSorpresa}{CasillaSorpresa}}() \{}
+\DoxyCodeLine{\Hypertarget{CasillaSorpresa_8java_source_l00018}00018         super(\textcolor{keyword}{null});}
+\DoxyCodeLine{\Hypertarget{CasillaSorpresa_8java_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{CasillaSorpresa_8java_source_l00020}00020     \}}
+\DoxyCodeLine{\Hypertarget{CasillaSorpresa_8java_source_l00021}00021     }
+\DoxyCodeLine{\Hypertarget{CasillaSorpresa_8java_source_l00022}00022     \mbox{\hyperlink{classcivitas_1_1CasillaSorpresa}{CasillaSorpresa}}(String nombre, \mbox{\hyperlink{classcivitas_1_1MazoSorpresas}{MazoSorpresas}} mazo)\{}
+\DoxyCodeLine{\Hypertarget{CasillaSorpresa_8java_source_l00023}00023         super(nombre);}
+\DoxyCodeLine{\Hypertarget{CasillaSorpresa_8java_source_l00024}00024         this.mazo = mazo;}
+\DoxyCodeLine{\Hypertarget{CasillaSorpresa_8java_source_l00025}00025     \}}
+\DoxyCodeLine{\Hypertarget{CasillaSorpresa_8java_source_l00026}00026     }
+\DoxyCodeLine{\Hypertarget{CasillaSorpresa_8java_source_l00027}00027     @Override}
+\DoxyCodeLine{\Hypertarget{CasillaSorpresa_8java_source_l00028}00028     \textcolor{keywordtype}{void} recibeJugador(\textcolor{keywordtype}{int} iactual, ArrayList<Jugador> todos)\{}
+\DoxyCodeLine{\Hypertarget{CasillaSorpresa_8java_source_l00029}00029         super.recibeJugador(iactual, todos);}
+\DoxyCodeLine{\Hypertarget{CasillaSorpresa_8java_source_l00030}00030         \mbox{\hyperlink{classcivitas_1_1Sorpresa}{Sorpresa}} sorpresa = mazo.siguiente();}
+\DoxyCodeLine{\Hypertarget{CasillaSorpresa_8java_source_l00031}00031         sorpresa.aplicarAJugador(iactual, todos);}
+\DoxyCodeLine{\Hypertarget{CasillaSorpresa_8java_source_l00032}00032     \}}
+\DoxyCodeLine{\Hypertarget{CasillaSorpresa_8java_source_l00033}00033     }
+\DoxyCodeLine{\Hypertarget{CasillaSorpresa_8java_source_l00034}00034     @Override}
+\DoxyCodeLine{\Hypertarget{CasillaSorpresa_8java_source_l00035}00035     \textcolor{keyword}{public} String toString()\{}
+\DoxyCodeLine{\Hypertarget{CasillaSorpresa_8java_source_l00036}00036         String cadena = \textcolor{stringliteral}{"{}una casilla Sorpresa"{}};}
+\DoxyCodeLine{\Hypertarget{CasillaSorpresa_8java_source_l00037}00037         }
+\DoxyCodeLine{\Hypertarget{CasillaSorpresa_8java_source_l00038}00038         \textcolor{keywordflow}{return} cadena;}
+\DoxyCodeLine{\Hypertarget{CasillaSorpresa_8java_source_l00039}00039     \}}
+\DoxyCodeLine{\Hypertarget{CasillaSorpresa_8java_source_l00040}00040 \}}
+
+\end{DoxyCode}

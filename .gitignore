@@ -1,0 +1,22 @@
+**/Teoria/
+**/materialClase/
+**/FFT/
+**/Examen/
+**/Examenes/
+**/PDFs/
+
+**/logic\ works/
+
+**/zip/
+**/build/
+**/CMakeFiles/
+**.vscode/
+*.cmake
+*.o
+*.exe
+*.mp4
+*.pdf
+*.zip
+*.tgz
+**/CMakeCache.txt
+!Documentacion.pdf

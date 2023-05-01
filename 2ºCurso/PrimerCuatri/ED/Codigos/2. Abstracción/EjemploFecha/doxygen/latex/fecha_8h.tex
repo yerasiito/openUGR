@@ -1,0 +1,221 @@
+\hypertarget{fecha_8h}{}\section{Referencia del Archivo /\+Users/javier/abad/docencia/\+E\+D/2017-\/2018/\+Transparencias/codigo/\+Ejemplo\+Fecha/\+Ejemplo\+Fecha/fecha.h}
+\label{fecha_8h}\index{/\+Users/javier/abad/docencia/\+E\+D/2017-\/2018/\+Transparencias/codigo/\+Ejemplo\+Fecha/\+Ejemplo\+Fecha/fecha.\+h@{/\+Users/javier/abad/docencia/\+E\+D/2017-\/2018/\+Transparencias/codigo/\+Ejemplo\+Fecha/\+Ejemplo\+Fecha/fecha.\+h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+\subsection*{Clases}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_fecha}{Fecha}
+\end{DoxyCompactItemize}
+\subsection*{typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct_fecha}{Fecha} \hyperlink{fecha_8h_a6cf169395784c2c14b9619c2f06dcb07}{Fecha}
+\end{DoxyCompactItemize}
+\subsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{fecha_8h_a9927e7258a334eaae99ed7b897f44957}{constructor} (\hyperlink{struct_fecha}{Fecha} \&f, int \hyperlink{fecha_8h_a4098f7def1df813cf122568606805033}{dia}, int \hyperlink{fecha_8h_a294115208b97d03cf5073f0ee3d8e5cb}{mes}, int \hyperlink{fecha_8h_ab5c7b2325b7aadfff427a422f85427de}{anio})
+\begin{DoxyCompactList}\small\item\em Constructor primitivo. \end{DoxyCompactList}\item 
+void \hyperlink{fecha_8h_a27c90cdf6b211a2e5efe0e4c6ad6407d}{lee} (\hyperlink{struct_fecha}{Fecha} \&f, char cadena\mbox{[}$\,$\mbox{]})
+\item 
+int \hyperlink{fecha_8h_a4098f7def1df813cf122568606805033}{dia} (\hyperlink{struct_fecha}{Fecha} f)
+\begin{DoxyCompactList}\small\item\em Lee una fecha de una cadena. \end{DoxyCompactList}\item 
+int \hyperlink{fecha_8h_a294115208b97d03cf5073f0ee3d8e5cb}{mes} (\hyperlink{struct_fecha}{Fecha} f)
+\begin{DoxyCompactList}\small\item\em Obtiene el día del objeto receptor. \end{DoxyCompactList}\item 
+int \hyperlink{fecha_8h_ab5c7b2325b7aadfff427a422f85427de}{anio} (\hyperlink{struct_fecha}{Fecha} f)
+\begin{DoxyCompactList}\small\item\em Obtiene el mes del objeto receptor. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{fecha_8h_ab195708968745c41cdb4ff0ff78a83df}{Escribe} (\hyperlink{struct_fecha}{Fecha} f, char $\ast$cadena)
+\begin{DoxyCompactList}\small\item\em Obtiene el año del objeto receptor. \end{DoxyCompactList}\item 
+void \hyperlink{fecha_8h_aef2881d0181e1e4914f06ce41a4dcfe6}{Siguiente} (\hyperlink{struct_fecha}{Fecha} f, \hyperlink{struct_fecha}{Fecha} \&g)
+\begin{DoxyCompactList}\small\item\em Escribe el objeto receptor en una cadena. \end{DoxyCompactList}\item 
+void \hyperlink{fecha_8h_aeb11cf19c6bc5d46bc78ce34c215508b}{Anterior} (\hyperlink{struct_fecha}{Fecha} \&f)
+\item 
+bool \hyperlink{fecha_8h_a45f84d9f615fd0c9998c2b7d972c709e}{menor} (\hyperlink{struct_fecha}{Fecha} f1, \hyperlink{struct_fecha}{Fecha} f2)
+\begin{DoxyCompactList}\small\item\em Cambia f por la fecha anterior a la que representa. \end{DoxyCompactList}\item 
+bool \hyperlink{fecha_8h_a84ac5961a0ce84a970c44823a64a0bef}{menor\+\_\+o\+\_\+igual} (\hyperlink{struct_fecha}{Fecha} f1, \hyperlink{struct_fecha}{Fecha} f2)
+\begin{DoxyCompactList}\small\item\em Decide si f1 es anterior a f2. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Documentación de los \textquotesingle{}typedefs\textquotesingle{}}
+\mbox{\Hypertarget{fecha_8h_a6cf169395784c2c14b9619c2f06dcb07}\label{fecha_8h_a6cf169395784c2c14b9619c2f06dcb07}} 
+\index{fecha.\+h@{fecha.\+h}!Fecha@{Fecha}}
+\index{Fecha@{Fecha}!fecha.\+h@{fecha.\+h}}
+\subsubsection{\texorpdfstring{Fecha}{Fecha}}
+{\footnotesize\ttfamily typedef struct \hyperlink{struct_fecha}{Fecha} \hyperlink{struct_fecha}{Fecha}}
+
+
+
+\subsection{Documentación de las funciones}
+\mbox{\Hypertarget{fecha_8h_ab5c7b2325b7aadfff427a422f85427de}\label{fecha_8h_ab5c7b2325b7aadfff427a422f85427de}} 
+\index{fecha.\+h@{fecha.\+h}!anio@{anio}}
+\index{anio@{anio}!fecha.\+h@{fecha.\+h}}
+\subsubsection{\texorpdfstring{anio()}{anio()}}
+{\footnotesize\ttfamily int anio (\begin{DoxyParamCaption}\item[{\hyperlink{struct_fecha}{Fecha}}]{f }\end{DoxyParamCaption})}
+
+
+
+Obtiene el mes del objeto receptor. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em f} & Objeto receptor. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Mes del objeto f. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fecha_8h_aeb11cf19c6bc5d46bc78ce34c215508b}\label{fecha_8h_aeb11cf19c6bc5d46bc78ce34c215508b}} 
+\index{fecha.\+h@{fecha.\+h}!Anterior@{Anterior}}
+\index{Anterior@{Anterior}!fecha.\+h@{fecha.\+h}}
+\subsubsection{\texorpdfstring{Anterior()}{Anterior()}}
+{\footnotesize\ttfamily void Anterior (\begin{DoxyParamCaption}\item[{\hyperlink{struct_fecha}{Fecha} \&}]{f }\end{DoxyParamCaption})}
+
+Cambia f por la fecha siguiente a la que representa. 
+\begin{DoxyParams}{Parámetros}
+{\em f} & Objeto receptor. Es M\+O\+D\+I\+F\+I\+C\+A\+DO. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{fecha_8h_a9927e7258a334eaae99ed7b897f44957}\label{fecha_8h_a9927e7258a334eaae99ed7b897f44957}} 
+\index{fecha.\+h@{fecha.\+h}!constructor@{constructor}}
+\index{constructor@{constructor}!fecha.\+h@{fecha.\+h}}
+\subsubsection{\texorpdfstring{constructor()}{constructor()}}
+{\footnotesize\ttfamily void constructor (\begin{DoxyParamCaption}\item[{\hyperlink{struct_fecha}{Fecha} \&}]{f,  }\item[{int}]{dia,  }\item[{int}]{mes,  }\item[{int}]{anio }\end{DoxyParamCaption})}
+
+
+
+Constructor primitivo. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em f} & Objeto creado. Debe ser nulo. \\
+\hline
+{\em dia} & dia de la fecha. 0 $<$ dia $<$= 31. \\
+\hline
+{\em mes} & mes de la fecha. 0 $<$ mes $<$= 12. \\
+\hline
+{\em anio} & año de la fecha. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondición}
+Los tres argumentos deben representar una fecha válida según el calendario occidental. 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Devuelve}
+Objeto \hyperlink{struct_fecha}{Fecha} correspondiente a la fecha dada por los argumentos.  Crea un objeto \hyperlink{struct_fecha}{Fecha} a partir de los argumentos. Devuelve el objeto creado sobre f. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fecha_8h_a4098f7def1df813cf122568606805033}\label{fecha_8h_a4098f7def1df813cf122568606805033}} 
+\index{fecha.\+h@{fecha.\+h}!dia@{dia}}
+\index{dia@{dia}!fecha.\+h@{fecha.\+h}}
+\subsubsection{\texorpdfstring{dia()}{dia()}}
+{\footnotesize\ttfamily int dia (\begin{DoxyParamCaption}\item[{\hyperlink{struct_fecha}{Fecha}}]{f }\end{DoxyParamCaption})}
+
+
+
+Lee una fecha de una cadena. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em f} & Objeto creado. Es M\+O\+D\+I\+F\+I\+C\+A\+DO. \\
+\hline
+{\em cadena} & Cadena de caracteres que representa una fecha en formato dd/mm/aaaa. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Objeto \hyperlink{struct_fecha}{Fecha} que representa la fecha leída en cadena. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fecha_8h_ab195708968745c41cdb4ff0ff78a83df}\label{fecha_8h_ab195708968745c41cdb4ff0ff78a83df}} 
+\index{fecha.\+h@{fecha.\+h}!Escribe@{Escribe}}
+\index{Escribe@{Escribe}!fecha.\+h@{fecha.\+h}}
+\subsubsection{\texorpdfstring{Escribe()}{Escribe()}}
+{\footnotesize\ttfamily char$\ast$ Escribe (\begin{DoxyParamCaption}\item[{\hyperlink{struct_fecha}{Fecha}}]{f,  }\item[{char $\ast$}]{cadena }\end{DoxyParamCaption})}
+
+
+
+Obtiene el año del objeto receptor. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em f} & Objeto receptor. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Año del objeto f. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fecha_8h_a27c90cdf6b211a2e5efe0e4c6ad6407d}\label{fecha_8h_a27c90cdf6b211a2e5efe0e4c6ad6407d}} 
+\index{fecha.\+h@{fecha.\+h}!lee@{lee}}
+\index{lee@{lee}!fecha.\+h@{fecha.\+h}}
+\subsubsection{\texorpdfstring{lee()}{lee()}}
+{\footnotesize\ttfamily void lee (\begin{DoxyParamCaption}\item[{\hyperlink{struct_fecha}{Fecha} \&}]{f,  }\item[{char}]{cadena\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{fecha_8h_a45f84d9f615fd0c9998c2b7d972c709e}\label{fecha_8h_a45f84d9f615fd0c9998c2b7d972c709e}} 
+\index{fecha.\+h@{fecha.\+h}!menor@{menor}}
+\index{menor@{menor}!fecha.\+h@{fecha.\+h}}
+\subsubsection{\texorpdfstring{menor()}{menor()}}
+{\footnotesize\ttfamily bool menor (\begin{DoxyParamCaption}\item[{\hyperlink{struct_fecha}{Fecha}}]{f1,  }\item[{\hyperlink{struct_fecha}{Fecha}}]{f2 }\end{DoxyParamCaption})}
+
+
+
+Cambia f por la fecha anterior a la que representa. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em f} & Objeto receptor. Es M\+O\+D\+I\+F\+I\+C\+A\+DO. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{fecha_8h_a84ac5961a0ce84a970c44823a64a0bef}\label{fecha_8h_a84ac5961a0ce84a970c44823a64a0bef}} 
+\index{fecha.\+h@{fecha.\+h}!menor\+\_\+o\+\_\+igual@{menor\+\_\+o\+\_\+igual}}
+\index{menor\+\_\+o\+\_\+igual@{menor\+\_\+o\+\_\+igual}!fecha.\+h@{fecha.\+h}}
+\subsubsection{\texorpdfstring{menor\+\_\+o\+\_\+igual()}{menor\_o\_igual()}}
+{\footnotesize\ttfamily bool menor\+\_\+o\+\_\+igual (\begin{DoxyParamCaption}\item[{\hyperlink{struct_fecha}{Fecha}}]{f1,  }\item[{\hyperlink{struct_fecha}{Fecha}}]{f2 }\end{DoxyParamCaption})}
+
+
+
+Decide si f1 es anterior a f2. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em f1} & \\
+\hline
+{\em f2} & Fechas que se comparan. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+true, si f1 es una fecha estrictamente anterior a f2. false, en otro caso. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fecha_8h_a294115208b97d03cf5073f0ee3d8e5cb}\label{fecha_8h_a294115208b97d03cf5073f0ee3d8e5cb}} 
+\index{fecha.\+h@{fecha.\+h}!mes@{mes}}
+\index{mes@{mes}!fecha.\+h@{fecha.\+h}}
+\subsubsection{\texorpdfstring{mes()}{mes()}}
+{\footnotesize\ttfamily int mes (\begin{DoxyParamCaption}\item[{\hyperlink{struct_fecha}{Fecha}}]{f }\end{DoxyParamCaption})}
+
+
+
+Obtiene el día del objeto receptor. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em f} & Objeto receptor. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Día del objeto f. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{fecha_8h_aef2881d0181e1e4914f06ce41a4dcfe6}\label{fecha_8h_aef2881d0181e1e4914f06ce41a4dcfe6}} 
+\index{fecha.\+h@{fecha.\+h}!Siguiente@{Siguiente}}
+\index{Siguiente@{Siguiente}!fecha.\+h@{fecha.\+h}}
+\subsubsection{\texorpdfstring{Siguiente()}{Siguiente()}}
+{\footnotesize\ttfamily void Siguiente (\begin{DoxyParamCaption}\item[{\hyperlink{struct_fecha}{Fecha}}]{f,  }\item[{\hyperlink{struct_fecha}{Fecha} \&}]{g }\end{DoxyParamCaption})}
+
+
+
+Escribe el objeto receptor en una cadena. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em f} & Objeto receptor. \\
+\hline
+{\em cadena} & Cadena que recibe la expresión de f. Debe tener suficiente espacio. Es M\+O\+D\+I\+F\+I\+C\+A\+DO. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Cadena escrita.  Sobre ’cadena’ se escribe una representación en formato ’dd/mm/aaaa’ del objeto f. Devuelve la dirección de la cadena escrita. 
+\end{DoxyReturn}

@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Ejemplo Fecha: Fichero Fuente /Users/javier/abad/docencia/ED/2017-2018/Transparencias/codigo/EjemploFecha/EjemploFecha/fecha.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Ejemplo Fecha
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">/Users/javier/abad/docencia/ED/2017-2018/Transparencias/codigo/EjemploFecha/EjemploFecha/fecha.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="fecha_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef fecha_h</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define fecha_h</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="struct_fecha.html">    7</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_fecha.html">Fecha</a>{</div><div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="struct_fecha.html#ac53f8e215a42333a1a9ff1a87e8e70f7">    8</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="struct_fecha.html#ac53f8e215a42333a1a9ff1a87e8e70f7">dia</a>;</div><div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="struct_fecha.html#a92bb43d32ce633e59bd11874c1a4b370">    9</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="struct_fecha.html#a92bb43d32ce633e59bd11874c1a4b370">mes</a>;</div><div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="struct_fecha.html#ad596dcd5c981e026d04a83a1c214e759">   10</a></span>&#160;  <span class="keywordtype">int</span> <a class="code" href="struct_fecha.html#ad596dcd5c981e026d04a83a1c214e759">anio</a>;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}<a class="code" href="fecha_8h.html#a6cf169395784c2c14b9619c2f06dcb07">Fecha</a>;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> TDA Fecha</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> Fecha: constructor, dia, mes, año, siguiente, anterior,</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> escribe, lee, menor, menor o igual</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> </span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> Definición:</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> Fecha representa fechas según el calendario occidental</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> Son objetos mutables</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> Residen en memoria estática</span></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> </span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> Operaciones:</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">*/</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">void</span> <a class="code" href="fecha_8h.html#a9927e7258a334eaae99ed7b897f44957">constructor</a> (<a class="code" href="struct_fecha.html">Fecha</a> &amp; f, <span class="keywordtype">int</span> <a class="code" href="fecha_8h.html#a4098f7def1df813cf122568606805033">dia</a>, <span class="keywordtype">int</span> <a class="code" href="fecha_8h.html#a294115208b97d03cf5073f0ee3d8e5cb">mes</a>, <span class="keywordtype">int</span> <a class="code" href="fecha_8h.html#ab5c7b2325b7aadfff427a422f85427de">anio</a>);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">void</span> <a class="code" href="fecha_8h.html#a27c90cdf6b211a2e5efe0e4c6ad6407d">lee</a>(<a class="code" href="struct_fecha.html">Fecha</a> &amp; f, <span class="keywordtype">char</span> cadena[]);</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">int</span> <a class="code" href="fecha_8h.html#a4098f7def1df813cf122568606805033">dia</a>(<a class="code" href="struct_fecha.html">Fecha</a> f);</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keywordtype">int</span> <a class="code" href="fecha_8h.html#a294115208b97d03cf5073f0ee3d8e5cb">mes</a>(<a class="code" href="struct_fecha.html">Fecha</a> f);</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keywordtype">int</span> <a class="code" href="fecha_8h.html#ab5c7b2325b7aadfff427a422f85427de">anio</a>(<a class="code" href="struct_fecha.html">Fecha</a> f);</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keywordtype">char</span> * <a class="code" href="fecha_8h.html#ab195708968745c41cdb4ff0ff78a83df">Escribe</a> (<a class="code" href="struct_fecha.html">Fecha</a> f, <span class="keywordtype">char</span> * cadena);</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="keywordtype">void</span> <a class="code" href="fecha_8h.html#aef2881d0181e1e4914f06ce41a4dcfe6">Siguiente</a>(<a class="code" href="struct_fecha.html">Fecha</a> f, <a class="code" href="struct_fecha.html">Fecha</a> &amp;g);</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keywordtype">void</span> <a class="code" href="fecha_8h.html#aeb11cf19c6bc5d46bc78ce34c215508b">Anterior</a>(<a class="code" href="struct_fecha.html">Fecha</a> &amp; f);</div><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="fecha_8h.html#a45f84d9f615fd0c9998c2b7d972c709e">menor</a>(<a class="code" href="struct_fecha.html">Fecha</a> f1, <a class="code" href="struct_fecha.html">Fecha</a> f2);</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keywordtype">bool</span> <a class="code" href="fecha_8h.html#a84ac5961a0ce84a970c44823a64a0bef">menor_o_igual</a>(<a class="code" href="struct_fecha.html">Fecha</a> f1, <a class="code" href="struct_fecha.html">Fecha</a> f2);</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* fecha_h */</span><span class="preprocessor"></span></div><div class="ttc" id="fecha_8h_html_ab5c7b2325b7aadfff427a422f85427de"><div class="ttname"><a href="fecha_8h.html#ab5c7b2325b7aadfff427a422f85427de">anio</a></div><div class="ttdeci">int anio(Fecha f)</div><div class="ttdoc">Obtiene el mes del objeto receptor. </div><div class="ttdef"><b>Definition:</b> fecha.cpp:26</div></div>
+<div class="ttc" id="fecha_8h_html_a45f84d9f615fd0c9998c2b7d972c709e"><div class="ttname"><a href="fecha_8h.html#a45f84d9f615fd0c9998c2b7d972c709e">menor</a></div><div class="ttdeci">bool menor(Fecha f1, Fecha f2)</div><div class="ttdoc">Cambia f por la fecha anterior a la que representa. </div><div class="ttdef"><b>Definition:</b> fecha.cpp:80</div></div>
+<div class="ttc" id="struct_fecha_html"><div class="ttname"><a href="struct_fecha.html">Fecha</a></div><div class="ttdef"><b>Definition:</b> fecha.h:7</div></div>
+<div class="ttc" id="struct_fecha_html_ac53f8e215a42333a1a9ff1a87e8e70f7"><div class="ttname"><a href="struct_fecha.html#ac53f8e215a42333a1a9ff1a87e8e70f7">Fecha::dia</a></div><div class="ttdeci">int dia</div><div class="ttdef"><b>Definition:</b> fecha.h:8</div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="struct_fecha_html_ad596dcd5c981e026d04a83a1c214e759"><div class="ttname"><a href="struct_fecha.html#ad596dcd5c981e026d04a83a1c214e759">Fecha::anio</a></div><div class="ttdeci">int anio</div><div class="ttdef"><b>Definition:</b> fecha.h:10</div></div>
+<div class="ttc" id="fecha_8h_html_aeb11cf19c6bc5d46bc78ce34c215508b"><div class="ttname"><a href="fecha_8h.html#aeb11cf19c6bc5d46bc78ce34c215508b">Anterior</a></div><div class="ttdeci">void Anterior(Fecha &amp;f)</div><div class="ttdef"><b>Definition:</b> fecha.cpp:74</div></div>
+<div class="ttc" id="fecha_8h_html_a4098f7def1df813cf122568606805033"><div class="ttname"><a href="fecha_8h.html#a4098f7def1df813cf122568606805033">dia</a></div><div class="ttdeci">int dia(Fecha f)</div><div class="ttdoc">Lee una fecha de una cadena. </div><div class="ttdef"><b>Definition:</b> fecha.cpp:18</div></div>
+<div class="ttc" id="fecha_8h_html_a27c90cdf6b211a2e5efe0e4c6ad6407d"><div class="ttname"><a href="fecha_8h.html#a27c90cdf6b211a2e5efe0e4c6ad6407d">lee</a></div><div class="ttdeci">void lee(Fecha &amp;f, char cadena[])</div></div>
+<div class="ttc" id="fecha_8h_html_a9927e7258a334eaae99ed7b897f44957"><div class="ttname"><a href="fecha_8h.html#a9927e7258a334eaae99ed7b897f44957">constructor</a></div><div class="ttdeci">void constructor(Fecha &amp;f, int dia, int mes, int anio)</div><div class="ttdoc">Constructor primitivo. </div><div class="ttdef"><b>Definition:</b> fecha.cpp:8</div></div>
+<div class="ttc" id="fecha_8h_html_a84ac5961a0ce84a970c44823a64a0bef"><div class="ttname"><a href="fecha_8h.html#a84ac5961a0ce84a970c44823a64a0bef">menor_o_igual</a></div><div class="ttdeci">bool menor_o_igual(Fecha f1, Fecha f2)</div><div class="ttdoc">Decide si f1 es anterior a f2. </div><div class="ttdef"><b>Definition:</b> fecha.cpp:100</div></div>
+<div class="ttc" id="fecha_8h_html_a6cf169395784c2c14b9619c2f06dcb07"><div class="ttname"><a href="fecha_8h.html#a6cf169395784c2c14b9619c2f06dcb07">Fecha</a></div><div class="ttdeci">struct Fecha Fecha</div></div>
+<div class="ttc" id="fecha_8h_html_a294115208b97d03cf5073f0ee3d8e5cb"><div class="ttname"><a href="fecha_8h.html#a294115208b97d03cf5073f0ee3d8e5cb">mes</a></div><div class="ttdeci">int mes(Fecha f)</div><div class="ttdoc">Obtiene el día del objeto receptor. </div><div class="ttdef"><b>Definition:</b> fecha.cpp:22</div></div>
+<div class="ttc" id="fecha_8h_html_ab195708968745c41cdb4ff0ff78a83df"><div class="ttname"><a href="fecha_8h.html#ab195708968745c41cdb4ff0ff78a83df">Escribe</a></div><div class="ttdeci">char * Escribe(Fecha f, char *cadena)</div><div class="ttdoc">Obtiene el año del objeto receptor. </div><div class="ttdef"><b>Definition:</b> fecha.cpp:30</div></div>
+<div class="ttc" id="struct_fecha_html_a92bb43d32ce633e59bd11874c1a4b370"><div class="ttname"><a href="struct_fecha.html#a92bb43d32ce633e59bd11874c1a4b370">Fecha::mes</a></div><div class="ttdeci">int mes</div><div class="ttdef"><b>Definition:</b> fecha.h:9</div></div>
+<div class="ttc" id="fecha_8h_html_aef2881d0181e1e4914f06ce41a4dcfe6"><div class="ttname"><a href="fecha_8h.html#aef2881d0181e1e4914f06ce41a4dcfe6">Siguiente</a></div><div class="ttdeci">void Siguiente(Fecha f, Fecha &amp;g)</div><div class="ttdoc">Escribe el objeto receptor en una cadena. </div><div class="ttdef"><b>Definition:</b> fecha.cpp:35</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

@@ -1,0 +1,4 @@
+<map id="vistaTextualCivitas.Vista" name="vistaTextualCivitas.Vista">
+<area shape="rect" id="node1" title="Interfaz Vista que declara los metodos de la VistaTextual. Funciona como un fichero ...." alt="" coords="5,5,172,32"/>
+<area shape="rect" id="node2" href="$classvistaTextualCivitas_1_1VistaTextual.html" title="Clase Vistatextual que gestiona los menus del juego y todo lo relacionado con feedbacks al usuario...." alt="" coords="5,80,172,121"/>
+</map>

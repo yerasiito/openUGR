@@ -1,0 +1,10 @@
+<map id="Cola_max::poner" name="Cola_max::poner">
+<area shape="rect" id="node1" title="Función poner, añade un nuevo elemento a la cola y actualiza el máximo." alt="" coords="5,157,127,184"/>
+<area shape="rect" id="node2" href="$classCola__max.html#a6a21a7234cbc76aae5a7eb9853df4c4c" title="Función empty." alt="" coords="175,5,300,32"/>
+<area shape="rect" id="node3" href="$classCola__max.html#a6285d796501acd3e9909fd5a7b5d6211" title="Función frente." alt="" coords="176,56,299,83"/>
+<area shape="rect" id="node4" href="$classPila.html#a02ff6cf06e5e8f719260ecbec8b34797" title="Añade un elemento &quot;encima&quot; del tope de la pila." alt="" coords="195,107,279,133"/>
+<area shape="rect" id="node5" href="$classCola__max.html#a58c9f9ac66155d527e17ec0e48244245" title="Función quitar, elimina el elemento que se encuentra en el frente de la cola y su máximo correpondien..." alt="" coords="177,157,298,184"/>
+<area shape="rect" id="node6" href="$classPila.html#a7eb7aca18dffbc1d570195de1e446054" title="Quita el elemento del tope de la pila." alt="" coords="195,208,279,235"/>
+<area shape="rect" id="node7" href="$classPila.html#a4de09eccae1be86e910f586169dfc7a3" title="Devuelve el elemento del tope de la pila." alt="" coords="199,259,276,285"/>
+<area shape="rect" id="node8" href="$classPila.html#a326618921557d69842196303b9832b61" title="Comprueba si la pila está vacía." alt="" coords="196,309,279,336"/>
+</map>

@@ -1,0 +1,19 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+Ajustada a la fórmula a0*2x
+iter  	chisq   	delta/lim  lambda   a0
+   0 9.3672982738e+03   0.00e+00  2.53e+01	1.418029e\PYGZhy{}08
+   4 4.5210289275e\PYGZhy{}04  \PYGZhy{}2.18e\PYGZhy{}09  2.53e\PYGZhy{}03	4.422579e\PYGZhy{}09
+iter  	chisq   	delta/lim  lambda   a0
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.000452103
+rel. change during last iteration : \PYGZhy{}2.1823e\PYGZhy{}14
+
+degrees of freedom	(FIT\PYGZus{}NDF)                    	: 30
+rms of residuals  	(FIT\PYGZus{}STDFIT) = sqrt(WSSR/ndf)	: 0.00388202
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.50701e\PYGZhy{}05
+
+Final set of parameters        	Asymptotic Standard Error
+=======================        	==========================
+a0          	= 4.42258e\PYGZhy{}09  	+/\PYGZhy{} 3.914e\PYGZhy{}13	(0.00885\PYGZpc{})
+\end{Verbatim}

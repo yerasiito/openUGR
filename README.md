@@ -1,0 +1,6 @@
+# openUGR
+### EN
+This repository contains a collection of projects I've completed during my computer engineering degree at university. Projects include practical problem-solving solutions using various programming languages and technologies, as well as research projects in specific areas of computer science. Each project includes a detailed description of its purpose and functionality, along with instructions on how to use and implement it. I hope this repository will be useful for those seeking inspiration and reference for their own computer engineering projects.
+
+### ES
+Este repositorio contiene una recopilación de los proyectos que he realizado durante mi carrera de ingeniería informática en la universidad. Los proyectos incluyen soluciones a problemas prácticos utilizando diferentes lenguajes de programación y tecnologías, así como también proyectos de investigación en áreas específicas de la informática. Cada proyecto incluye una descripción detallada de su propósito y funcionalidad, junto con instrucciones sobre cómo utilizarlo y cómo implementarlo. Espero que este repositorio sea útil para aquellos que buscan inspiración y referencia en sus propios proyectos de ingeniería informática.

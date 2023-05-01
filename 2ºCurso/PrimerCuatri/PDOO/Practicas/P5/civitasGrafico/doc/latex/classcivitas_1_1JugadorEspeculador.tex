@@ -1,0 +1,86 @@
+\hypertarget{classcivitas_1_1JugadorEspeculador}{}\doxysection{civitas.\+Jugador\+Especulador Class Reference}
+\label{classcivitas_1_1JugadorEspeculador}\index{civitas.JugadorEspeculador@{civitas.JugadorEspeculador}}
+
+
+Clase Hija(\+Jugador) \mbox{\hyperlink{classcivitas_1_1JugadorEspeculador}{Jugador\+Especulador}} que gestiona este nuevo tipo de jugador. Un jugador cualquiera puede convertirse en especulador Ser especulador implica cambios en sus atributos o como el juego reacciona a él -\/Paga la mitad -\/Puede construir un {\ttfamily Factor\+Especulador} de veces(casas y hoteles) Un jugador solo puede convertido mediante la \mbox{\hyperlink{classcivitas_1_1Sorpresa}{Sorpresa}} Convertirme.  
+
+
+
+
+Inheritance diagram for civitas.\+Jugador\+Especulador\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{classcivitas_1_1JugadorEspeculador__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for civitas.\+Jugador\+Especulador\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{classcivitas_1_1JugadorEspeculador__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcivitas_1_1JugadorEspeculador_aaa172e22e9cc952cdaa37f55ed81a60e}{Jugador\+Especulador}} (\mbox{\hyperlink{classcivitas_1_1Jugador}{Jugador}} otro)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static float \mbox{\hyperlink{classcivitas_1_1JugadorEspeculador_aa050b43321f8e95863e1bab2a2486543}{Factor\+Especulador}} = 2
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Clase Hija(\+Jugador) \mbox{\hyperlink{classcivitas_1_1JugadorEspeculador}{Jugador\+Especulador}} que gestiona este nuevo tipo de jugador. Un jugador cualquiera puede convertirse en especulador Ser especulador implica cambios en sus atributos o como el juego reacciona a él -\/Paga la mitad -\/Puede construir un {\ttfamily Factor\+Especulador} de veces(casas y hoteles) Un jugador solo puede convertido mediante la \mbox{\hyperlink{classcivitas_1_1Sorpresa}{Sorpresa}} Convertirme. 
+
+Definition at line \mbox{\hyperlink{JugadorEspeculador_8java_source_l00018}{18}} of file \mbox{\hyperlink{JugadorEspeculador_8java_source}{Jugador\+Especulador.\+java}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcivitas_1_1JugadorEspeculador_aaa172e22e9cc952cdaa37f55ed81a60e}\label{classcivitas_1_1JugadorEspeculador_aaa172e22e9cc952cdaa37f55ed81a60e}} 
+\index{civitas.JugadorEspeculador@{civitas.JugadorEspeculador}!JugadorEspeculador@{JugadorEspeculador}}
+\index{JugadorEspeculador@{JugadorEspeculador}!civitas.JugadorEspeculador@{civitas.JugadorEspeculador}}
+\doxysubsubsection{\texorpdfstring{JugadorEspeculador()}{JugadorEspeculador()}}
+{\footnotesize\ttfamily civitas.\+Jugador\+Especulador.\+Jugador\+Especulador (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcivitas_1_1Jugador}{Jugador}}}]{otro }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{JugadorEspeculador_8java_source_l00022}{22}} of file \mbox{\hyperlink{JugadorEspeculador_8java_source}{Jugador\+Especulador.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1JugadorEspeculador_l00022}00022                                               \{}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1JugadorEspeculador_l00023}00023         super(otro); \textcolor{comment}{//Copia atributos}}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1JugadorEspeculador_l00024}00024         CasasMax*= FactorEspeculador;}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1JugadorEspeculador_l00025}00025         HotelesMax*=FactorEspeculador;}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1JugadorEspeculador_l00026}00026         ActualizaPropiedadesPorConversion(otro); \textcolor{comment}{//Convierte propiedades}}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1JugadorEspeculador_l00027}00027     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classcivitas_1_1JugadorEspeculador_aa050b43321f8e95863e1bab2a2486543}\label{classcivitas_1_1JugadorEspeculador_aa050b43321f8e95863e1bab2a2486543}} 
+\index{civitas.JugadorEspeculador@{civitas.JugadorEspeculador}!FactorEspeculador@{FactorEspeculador}}
+\index{FactorEspeculador@{FactorEspeculador}!civitas.JugadorEspeculador@{civitas.JugadorEspeculador}}
+\doxysubsubsection{\texorpdfstring{FactorEspeculador}{FactorEspeculador}}
+{\footnotesize\ttfamily float civitas.\+Jugador\+Especulador.\+Factor\+Especulador = 2\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{JugadorEspeculador_8java_source_l00020}{20}} of file \mbox{\hyperlink{JugadorEspeculador_8java_source}{Jugador\+Especulador.\+java}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/civitas/\mbox{\hyperlink{JugadorEspeculador_8java}{Jugador\+Especulador.\+java}}\end{DoxyCompactItemize}

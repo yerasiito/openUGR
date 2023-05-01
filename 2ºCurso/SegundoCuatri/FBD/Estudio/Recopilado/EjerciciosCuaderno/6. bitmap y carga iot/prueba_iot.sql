@@ -1,0 +1,7 @@
+drop table prueba_iot;
+
+CREATE TABLE Prueba_IOT (id NUMBER PRIMARY KEY) ORGANIZATION INDEX;
+
+SELECT id FROM Prueba_IOT;
+
+

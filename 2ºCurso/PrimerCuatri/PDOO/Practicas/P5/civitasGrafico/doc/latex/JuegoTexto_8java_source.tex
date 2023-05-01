@@ -1,0 +1,47 @@
+\hypertarget{JuegoTexto_8java_source}{}\doxysection{Juego\+Texto.\+java}
+\label{JuegoTexto_8java_source}\index{src/JuegoTexto/JuegoTexto.java@{src/JuegoTexto/JuegoTexto.java}}
+\mbox{\hyperlink{JuegoTexto_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{JuegoTexto_8java_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{JuegoTexto_8java_source_l00007}00007 \textcolor{keyword}{package }JuegoTexto;}
+\DoxyCodeLine{\Hypertarget{JuegoTexto_8java_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{JuegoTexto_8java_source_l00009}00009 \textcolor{keyword}{import} controladorCivitas.Controlador;}
+\DoxyCodeLine{\Hypertarget{JuegoTexto_8java_source_l00010}00010 \textcolor{keyword}{import} civitas.CivitasJuego;}
+\DoxyCodeLine{\Hypertarget{JuegoTexto_8java_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{JuegoTexto_8java_source_l00012}00012 \textcolor{keyword}{import} java.util.ArrayList;}
+\DoxyCodeLine{\Hypertarget{JuegoTexto_8java_source_l00013}00013 \textcolor{keyword}{import} java.util.Scanner;}
+\DoxyCodeLine{\Hypertarget{JuegoTexto_8java_source_l00014}00014 \textcolor{keyword}{import} vistaTextualCivitas.VistaTextual;}
+\DoxyCodeLine{\Hypertarget{JuegoTexto_8java_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{JuegoTexto_8java_source_l00019}\mbox{\hyperlink{classJuegoTexto_1_1JuegoTexto}{00019}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{classJuegoTexto_1_1JuegoTexto}{JuegoTexto}} \{}
+\DoxyCodeLine{\Hypertarget{JuegoTexto_8java_source_l00023}\mbox{\hyperlink{classJuegoTexto_1_1JuegoTexto_a0901049bce0235a31bf5d19884a90c61}{00023}}     \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{void} \mbox{\hyperlink{classJuegoTexto_1_1JuegoTexto_a0901049bce0235a31bf5d19884a90c61}{main}}(String[] args) \{}
+\DoxyCodeLine{\Hypertarget{JuegoTexto_8java_source_l00024}00024         \textcolor{keyword}{final} \textcolor{keywordtype}{int} MINJUGADORES = 2, MAXJUGADORES = 4;}
+\DoxyCodeLine{\Hypertarget{JuegoTexto_8java_source_l00025}00025         }
+\DoxyCodeLine{\Hypertarget{JuegoTexto_8java_source_l00026}00026         Scanner in = \textcolor{keyword}{new} Scanner (System.in); \textcolor{comment}{//El objeto que leerá el teclado}}
+\DoxyCodeLine{\Hypertarget{JuegoTexto_8java_source_l00027}00027         }
+\DoxyCodeLine{\Hypertarget{JuegoTexto_8java_source_l00028}00028         \textcolor{comment}{//Leemos los jugadores}}
+\DoxyCodeLine{\Hypertarget{JuegoTexto_8java_source_l00029}00029         ArrayList<String> jugadores = \textcolor{keyword}{new} ArrayList<String>()\{}
+\DoxyCodeLine{\Hypertarget{JuegoTexto_8java_source_l00030}00030             \{}
+\DoxyCodeLine{\Hypertarget{JuegoTexto_8java_source_l00031}00031                 System.out.println(\textcolor{stringliteral}{"{}¿Cuantos jugadores van a jugar?"{}});}
+\DoxyCodeLine{\Hypertarget{JuegoTexto_8java_source_l00032}00032                 \textcolor{keywordtype}{int} numJugadores = in.nextInt();}
+\DoxyCodeLine{\Hypertarget{JuegoTexto_8java_source_l00033}00033                 \textcolor{keywordflow}{while}(numJugadores > MAXJUGADORES || numJugadores < MINJUGADORES)\{}
+\DoxyCodeLine{\Hypertarget{JuegoTexto_8java_source_l00034}00034                     System.out.println(\textcolor{stringliteral}{"{}¿Cuantos jugadores van a jugar?"{}});        }
+\DoxyCodeLine{\Hypertarget{JuegoTexto_8java_source_l00035}00035                     numJugadores = in.nextInt();    }
+\DoxyCodeLine{\Hypertarget{JuegoTexto_8java_source_l00036}00036                 \}}
+\DoxyCodeLine{\Hypertarget{JuegoTexto_8java_source_l00037}00037                 \textcolor{keywordtype}{int} contador = 0;}
+\DoxyCodeLine{\Hypertarget{JuegoTexto_8java_source_l00038}00038                 System.out.println(\textcolor{stringliteral}{"{}Introduce el nombre de los jugadores:"{}});}
+\DoxyCodeLine{\Hypertarget{JuegoTexto_8java_source_l00039}00039                 \textcolor{keywordflow}{while}(contador < numJugadores)\{}
+\DoxyCodeLine{\Hypertarget{JuegoTexto_8java_source_l00040}00040                     add(in.next());}
+\DoxyCodeLine{\Hypertarget{JuegoTexto_8java_source_l00041}00041                     contador++;}
+\DoxyCodeLine{\Hypertarget{JuegoTexto_8java_source_l00042}00042                 \}}
+\DoxyCodeLine{\Hypertarget{JuegoTexto_8java_source_l00043}00043             \}}
+\DoxyCodeLine{\Hypertarget{JuegoTexto_8java_source_l00044}00044         \};}
+\DoxyCodeLine{\Hypertarget{JuegoTexto_8java_source_l00045}00045         }
+\DoxyCodeLine{\Hypertarget{JuegoTexto_8java_source_l00046}00046         \mbox{\hyperlink{classcivitas_1_1CivitasJuego}{CivitasJuego}} juego = \textcolor{keyword}{new} \mbox{\hyperlink{classcivitas_1_1CivitasJuego}{CivitasJuego}}(jugadores, \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{JuegoTexto_8java_source_l00047}00047         \mbox{\hyperlink{classvistaTextualCivitas_1_1VistaTextual}{VistaTextual}} vista = \textcolor{keyword}{new} \mbox{\hyperlink{classvistaTextualCivitas_1_1VistaTextual}{VistaTextual}}(juego);}
+\DoxyCodeLine{\Hypertarget{JuegoTexto_8java_source_l00048}00048         \mbox{\hyperlink{classcontroladorCivitas_1_1Controlador}{Controlador}} controlador = \textcolor{keyword}{new} \mbox{\hyperlink{classcontroladorCivitas_1_1Controlador}{Controlador}}(juego,vista);}
+\DoxyCodeLine{\Hypertarget{JuegoTexto_8java_source_l00049}00049         }
+\DoxyCodeLine{\Hypertarget{JuegoTexto_8java_source_l00050}00050         controlador.juega();}
+\DoxyCodeLine{\Hypertarget{JuegoTexto_8java_source_l00051}00051     \}}
+\DoxyCodeLine{\Hypertarget{JuegoTexto_8java_source_l00052}00052 \}}
+
+\end{DoxyCode}

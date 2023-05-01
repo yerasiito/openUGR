@@ -1,0 +1,264 @@
+\hypertarget{classvistaTextualCivitas_1_1VistaTextual}{}\doxysection{vista\+Textual\+Civitas.\+Vista\+Textual Class Reference}
+\label{classvistaTextualCivitas_1_1VistaTextual}\index{vistaTextualCivitas.VistaTextual@{vistaTextualCivitas.VistaTextual}}
+
+
+Clase Vistatextual que gestiona los menus del juego y todo lo relacionado con feedbacks al usuario. Utiliza la interfaz {\ttfamily \mbox{\hyperlink{interfacevistaTextualCivitas_1_1Vista}{Vista}}}.  
+
+
+
+
+Inheritance diagram for vista\+Textual\+Civitas.\+Vista\+Textual\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{classvistaTextualCivitas_1_1VistaTextual__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for vista\+Textual\+Civitas.\+Vista\+Textual\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{classvistaTextualCivitas_1_1VistaTextual__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classvistaTextualCivitas_1_1VistaTextual_a11ae780283771d818b40d151e5dde377}{Vista\+Textual}} (\mbox{\hyperlink{classcivitas_1_1CivitasJuego}{Civitas\+Juego}} juego\+Model)
+\item 
+void \mbox{\hyperlink{classvistaTextualCivitas_1_1VistaTextual_a4fbd35d1470e31249cac7d2e576d9da9}{pausa}} ()
+\item 
+void \mbox{\hyperlink{classvistaTextualCivitas_1_1VistaTextual_afbd020b1663cf41270d9ad4b543d5ae1}{actualiza}} ()
+\item 
+\mbox{\hyperlink{enumcontroladorCivitas_1_1Respuesta}{Respuesta}} \mbox{\hyperlink{classvistaTextualCivitas_1_1VistaTextual_ae886506872859cbc88284c364083ec91}{comprar}} ()
+\item 
+\mbox{\hyperlink{enumcivitas_1_1OperacionInmobiliaria}{Operacion\+Inmobiliaria}} \mbox{\hyperlink{classvistaTextualCivitas_1_1VistaTextual_ad6097b8ede7f4659d3824f8f7b791357}{elegir\+Operacion}} ()
+\item 
+int \mbox{\hyperlink{classvistaTextualCivitas_1_1VistaTextual_a88c613506b6d451891c2f24bb0cdb6f4}{elegir\+Propiedad}} ()
+\item 
+void \mbox{\hyperlink{classvistaTextualCivitas_1_1VistaTextual_ac1e6118c054f95fd30dff0f2772bcdaf}{mostrar\+Siguiente\+Operacion}} (\mbox{\hyperlink{enumcivitas_1_1OperacionJuego}{Operacion\+Juego}} operación)
+\item 
+void \mbox{\hyperlink{classvistaTextualCivitas_1_1VistaTextual_a96688f4ba5de5585cfa2613a9588aa53}{mostrar\+Eventos}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase Vistatextual que gestiona los menus del juego y todo lo relacionado con feedbacks al usuario. Utiliza la interfaz {\ttfamily \mbox{\hyperlink{interfacevistaTextualCivitas_1_1Vista}{Vista}}}. 
+
+Definition at line \mbox{\hyperlink{VistaTextual_8java_source_l00019}{19}} of file \mbox{\hyperlink{VistaTextual_8java_source}{Vista\+Textual.\+java}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_a11ae780283771d818b40d151e5dde377}\label{classvistaTextualCivitas_1_1VistaTextual_a11ae780283771d818b40d151e5dde377}} 
+\index{vistaTextualCivitas.VistaTextual@{vistaTextualCivitas.VistaTextual}!VistaTextual@{VistaTextual}}
+\index{VistaTextual@{VistaTextual}!vistaTextualCivitas.VistaTextual@{vistaTextualCivitas.VistaTextual}}
+\doxysubsubsection{\texorpdfstring{VistaTextual()}{VistaTextual()}}
+{\footnotesize\ttfamily vista\+Textual\+Civitas.\+Vista\+Textual.\+Vista\+Textual (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcivitas_1_1CivitasJuego}{Civitas\+Juego}}}]{juego\+Model }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{VistaTextual_8java_source_l00025}{25}} of file \mbox{\hyperlink{VistaTextual_8java_source}{Vista\+Textual.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00025}00025                                                 \{}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00026}00026     in = \textcolor{keyword}{new} Scanner (System.in);}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00027}00027     this.juegoModel=juegoModel;}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00028}00028   \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_afbd020b1663cf41270d9ad4b543d5ae1}\label{classvistaTextualCivitas_1_1VistaTextual_afbd020b1663cf41270d9ad4b543d5ae1}} 
+\index{vistaTextualCivitas.VistaTextual@{vistaTextualCivitas.VistaTextual}!actualiza@{actualiza}}
+\index{actualiza@{actualiza}!vistaTextualCivitas.VistaTextual@{vistaTextualCivitas.VistaTextual}}
+\doxysubsubsection{\texorpdfstring{actualiza()}{actualiza()}}
+{\footnotesize\ttfamily void vista\+Textual\+Civitas.\+Vista\+Textual.\+actualiza (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacevistaTextualCivitas_1_1Vista}{vista\+Textual\+Civitas.\+Vista}}.
+
+
+
+Definition at line \mbox{\hyperlink{VistaTextual_8java_source_l00075}{75}} of file \mbox{\hyperlink{VistaTextual_8java_source}{Vista\+Textual.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00075}00075                             \{}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00076}00076         \textcolor{keywordflow}{if}(juegoModel.finalDelJuego())\{}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00077}00077             ArrayList<Jugador> ranking = juegoModel.Ranking();}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00078}00078             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < ranking.size(); i++)}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00079}00079                 System.out.println(ranking.get(i).getNombre() }
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00080}00080                         + \textcolor{stringliteral}{"{} "{}} + ranking.get(i).getSaldo() + \textcolor{stringliteral}{"{}€"{}});}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00081}00081             separador();}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00082}00082             System.out.println(\textcolor{stringliteral}{"{}Fin del juego"{}});}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00083}00083             separador();}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00084}00084         \}}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00085}00085         \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00086}00086             \mbox{\hyperlink{classcivitas_1_1Jugador}{Jugador}} jugadorActual = juegoModel.getJugadorActual();}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00087}00087             System.out.println(jugadorActual.toString());   }
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00088}00088         \}}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00089}00089         }
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00090}00090     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_ae886506872859cbc88284c364083ec91}\label{classvistaTextualCivitas_1_1VistaTextual_ae886506872859cbc88284c364083ec91}} 
+\index{vistaTextualCivitas.VistaTextual@{vistaTextualCivitas.VistaTextual}!comprar@{comprar}}
+\index{comprar@{comprar}!vistaTextualCivitas.VistaTextual@{vistaTextualCivitas.VistaTextual}}
+\doxysubsubsection{\texorpdfstring{comprar()}{comprar()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enumcontroladorCivitas_1_1Respuesta}{Respuesta}} vista\+Textual\+Civitas.\+Vista\+Textual.\+comprar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacevistaTextualCivitas_1_1Vista}{vista\+Textual\+Civitas.\+Vista}}.
+
+
+
+Definition at line \mbox{\hyperlink{VistaTextual_8java_source_l00093}{93}} of file \mbox{\hyperlink{VistaTextual_8java_source}{Vista\+Textual.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00093}00093                                \{}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00094}00094         String titulo = \textcolor{stringliteral}{"{}¿Quieres comprar "{}} + juegoModel.getTablero().getCasilla(juegoModel.getJugadorActual().getCasillaActual()).toString() + \textcolor{stringliteral}{"{} ?"{}};}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00095}00095         \textcolor{keywordtype}{int} nres = menu(titulo, Respuesta.respuestas());}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00096}00096         }
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00097}00097         \textcolor{keywordflow}{return} Respuesta.values()[nres];   }
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00098}00098     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_ad6097b8ede7f4659d3824f8f7b791357}\label{classvistaTextualCivitas_1_1VistaTextual_ad6097b8ede7f4659d3824f8f7b791357}} 
+\index{vistaTextualCivitas.VistaTextual@{vistaTextualCivitas.VistaTextual}!elegirOperacion@{elegirOperacion}}
+\index{elegirOperacion@{elegirOperacion}!vistaTextualCivitas.VistaTextual@{vistaTextualCivitas.VistaTextual}}
+\doxysubsubsection{\texorpdfstring{elegirOperacion()}{elegirOperacion()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enumcivitas_1_1OperacionInmobiliaria}{Operacion\+Inmobiliaria}} vista\+Textual\+Civitas.\+Vista\+Textual.\+elegir\+Operacion (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacevistaTextualCivitas_1_1Vista}{vista\+Textual\+Civitas.\+Vista}}.
+
+
+
+Definition at line \mbox{\hyperlink{VistaTextual_8java_source_l00101}{101}} of file \mbox{\hyperlink{VistaTextual_8java_source}{Vista\+Textual.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00101}00101                                                    \{}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00102}00102         String titulo = \textcolor{stringliteral}{"{}¿Que operacion deseas realizar?"{}}; }
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00103}00103         \textcolor{keywordtype}{int} nres = menu(titulo, \mbox{\hyperlink{enumcivitas_1_1OperacionInmobiliaria}{OperacionInmobiliaria}}.\mbox{\hyperlink{enumcivitas_1_1OperacionInmobiliaria_ad8ea5bbec2d559167d3dab34354dc887}{operaciones}}());}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00104}00104         \textcolor{keywordflow}{return} \mbox{\hyperlink{enumcivitas_1_1OperacionInmobiliaria}{OperacionInmobiliaria}}.values()[nres];}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00105}00105     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_a88c613506b6d451891c2f24bb0cdb6f4}\label{classvistaTextualCivitas_1_1VistaTextual_a88c613506b6d451891c2f24bb0cdb6f4}} 
+\index{vistaTextualCivitas.VistaTextual@{vistaTextualCivitas.VistaTextual}!elegirPropiedad@{elegirPropiedad}}
+\index{elegirPropiedad@{elegirPropiedad}!vistaTextualCivitas.VistaTextual@{vistaTextualCivitas.VistaTextual}}
+\doxysubsubsection{\texorpdfstring{elegirPropiedad()}{elegirPropiedad()}}
+{\footnotesize\ttfamily int vista\+Textual\+Civitas.\+Vista\+Textual.\+elegir\+Propiedad (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacevistaTextualCivitas_1_1Vista}{vista\+Textual\+Civitas.\+Vista}}.
+
+
+
+Definition at line \mbox{\hyperlink{VistaTextual_8java_source_l00108}{108}} of file \mbox{\hyperlink{VistaTextual_8java_source}{Vista\+Textual.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00108}00108                                  \{}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00109}00109         ArrayList<CasillaCalle> propiedades = juegoModel.getJugadorActual().getPropiedades();}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00110}00110         String titulo = \textcolor{stringliteral}{"{}Elige una propiedad."{}} }
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00111}00111                 + \textcolor{stringliteral}{"{}(Tienes "{}} + propiedades.size()}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00112}00112                 + \textcolor{stringliteral}{"{} propiedades):"{}};}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00113}00113         ArrayList<String> nombrePropiedades = \textcolor{keyword}{new} ArrayList<String> ()\{\{}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00114}00114             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < propiedades.size(); i++)}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00115}00115                 add(propiedades.get(i).getNombre());}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00116}00116         \}\};}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00117}00117         }
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00118}00118         \textcolor{keywordflow}{return}  menu(titulo,nombrePropiedades);}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00119}00119     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_a96688f4ba5de5585cfa2613a9588aa53}\label{classvistaTextualCivitas_1_1VistaTextual_a96688f4ba5de5585cfa2613a9588aa53}} 
+\index{vistaTextualCivitas.VistaTextual@{vistaTextualCivitas.VistaTextual}!mostrarEventos@{mostrarEventos}}
+\index{mostrarEventos@{mostrarEventos}!vistaTextualCivitas.VistaTextual@{vistaTextualCivitas.VistaTextual}}
+\doxysubsubsection{\texorpdfstring{mostrarEventos()}{mostrarEventos()}}
+{\footnotesize\ttfamily void vista\+Textual\+Civitas.\+Vista\+Textual.\+mostrar\+Eventos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacevistaTextualCivitas_1_1Vista}{vista\+Textual\+Civitas.\+Vista}}.
+
+
+
+Definition at line \mbox{\hyperlink{VistaTextual_8java_source_l00127}{127}} of file \mbox{\hyperlink{VistaTextual_8java_source}{Vista\+Textual.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00127}00127                                  \{        }
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00128}00128         \textcolor{keywordflow}{if}(\mbox{\hyperlink{classcivitas_1_1Diario}{Diario}}.getInstance().eventosPendientes())\{}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00129}00129             separador();}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00130}00130             \textcolor{keywordflow}{while}(\mbox{\hyperlink{classcivitas_1_1Diario}{Diario}}.getInstance().eventosPendientes())\{}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00131}00131                 System.out.println(\mbox{\hyperlink{classcivitas_1_1Diario}{Diario}}.getInstance().leerEvento());}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00132}00132             \}}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00133}00133             separador();}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00134}00134         \}}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00135}00135         }
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00136}00136     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_ac1e6118c054f95fd30dff0f2772bcdaf}\label{classvistaTextualCivitas_1_1VistaTextual_ac1e6118c054f95fd30dff0f2772bcdaf}} 
+\index{vistaTextualCivitas.VistaTextual@{vistaTextualCivitas.VistaTextual}!mostrarSiguienteOperacion@{mostrarSiguienteOperacion}}
+\index{mostrarSiguienteOperacion@{mostrarSiguienteOperacion}!vistaTextualCivitas.VistaTextual@{vistaTextualCivitas.VistaTextual}}
+\doxysubsubsection{\texorpdfstring{mostrarSiguienteOperacion()}{mostrarSiguienteOperacion()}}
+{\footnotesize\ttfamily void vista\+Textual\+Civitas.\+Vista\+Textual.\+mostrar\+Siguiente\+Operacion (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{enumcivitas_1_1OperacionJuego}{Operacion\+Juego}}}]{operación }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacevistaTextualCivitas_1_1Vista}{vista\+Textual\+Civitas.\+Vista}}.
+
+
+
+Definition at line \mbox{\hyperlink{VistaTextual_8java_source_l00122}{122}} of file \mbox{\hyperlink{VistaTextual_8java_source}{Vista\+Textual.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00122}00122                                                                      \{}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00123}00123         System.out.println(operación);}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00124}00124     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_a4fbd35d1470e31249cac7d2e576d9da9}\label{classvistaTextualCivitas_1_1VistaTextual_a4fbd35d1470e31249cac7d2e576d9da9}} 
+\index{vistaTextualCivitas.VistaTextual@{vistaTextualCivitas.VistaTextual}!pausa@{pausa}}
+\index{pausa@{pausa}!vistaTextualCivitas.VistaTextual@{vistaTextualCivitas.VistaTextual}}
+\doxysubsubsection{\texorpdfstring{pausa()}{pausa()}}
+{\footnotesize\ttfamily void vista\+Textual\+Civitas.\+Vista\+Textual.\+pausa (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Implements \mbox{\hyperlink{interfacevistaTextualCivitas_1_1Vista}{vista\+Textual\+Civitas.\+Vista}}.
+
+
+
+Definition at line \mbox{\hyperlink{VistaTextual_8java_source_l00032}{32}} of file \mbox{\hyperlink{VistaTextual_8java_source}{Vista\+Textual.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00032}00032                       \{}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00033}00033     System.out.print (\textcolor{stringliteral}{"{}\(\backslash\)nPulsa una tecla "{}});}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00034}00034     in.nextLine();}
+\DoxyCodeLine{\Hypertarget{classvistaTextualCivitas_1_1VistaTextual_l00035}00035   \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/vista\+Textual\+Civitas/\mbox{\hyperlink{VistaTextual_8java}{Vista\+Textual.\+java}}\end{DoxyCompactItemize}

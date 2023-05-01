@@ -1,0 +1,57 @@
+\hypertarget{pila_8h_source}{}\doxysection{pila.\+h}
+\label{pila_8h_source}\index{src/pila.h@{src/pila.h}}
+\mbox{\hyperlink{pila_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00010}00010 \textcolor{preprocessor}{\#ifndef \_\_Pila\_H\_\_}}
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00011}00011 \textcolor{preprocessor}{\#define \_\_Pila\_H\_\_}}
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00013}00013 \textcolor{preprocessor}{\#include <cassert>}}
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00042}00042 \textcolor{keyword}{template} <\textcolor{keyword}{class} T>}
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00043}\mbox{\hyperlink{classPila}{00043}} \textcolor{keyword}{class }\mbox{\hyperlink{classPila}{Pila}}\{}
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00044}00044   \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00045}00045     \textcolor{keyword}{struct }Celda \{}
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00046}00046       T elemento;        }
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00047}00047       Celda * siguiente; }
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00052}00052       Celda() : siguiente(0)\{}
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00053}00053       \}}
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00059}00059       Celda(\textcolor{keyword}{const} T \& elem, Celda * sig): elemento(elem), siguiente(sig)\{}
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00060}00060       \}}
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00061}00061     \};}
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00062}00062 }
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00063}00063     Celda * primera; }
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00064}00064     \textcolor{keywordtype}{int} num\_elem;    }
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00065}00065 }
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00066}00066   \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00067}00067     \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/  Constructores -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00071}\mbox{\hyperlink{classPila_a7ff5138a6888873379192365d7acbde4}{00071}} \textcolor{comment}{}    \mbox{\hyperlink{classPila_a7ff5138a6888873379192365d7acbde4}{Pila}}(): primera(0), num\_elem(0)\{}
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00072}00072     \}}
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00077}00077     \mbox{\hyperlink{classPila_a7ff5138a6888873379192365d7acbde4}{Pila}}(\textcolor{keyword}{const} \mbox{\hyperlink{classPila}{Pila<T>}} \& otra);}
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00078}00078     \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/ Destructor -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00082}00082 \textcolor{comment}{}    \mbox{\hyperlink{classPila_a5bc38b4a06fdc0c1abc8736ebc5ba839}{\string~Pila}}();}
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00083}00083     \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/ Otras funciones -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00088}00088 \textcolor{comment}{}    \mbox{\hyperlink{classPila}{Pila}}\& \mbox{\hyperlink{classPila_a149aae11a3eba4dfa939925eb5cdb0eb}{operator= }}(\textcolor{keyword}{const} \mbox{\hyperlink{classPila}{Pila<T>}}\& otra);}
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00092}\mbox{\hyperlink{classPila_a326618921557d69842196303b9832b61}{00092}}     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classPila_a326618921557d69842196303b9832b61}{vacia}}()\textcolor{keyword}{ const}\{}
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00093}00093       \textcolor{keywordflow}{return} (primera==0);}
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00094}00094     \}}
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00098}\mbox{\hyperlink{classPila_a4de09eccae1be86e910f586169dfc7a3}{00098}}     T\& \mbox{\hyperlink{classPila_a4de09eccae1be86e910f586169dfc7a3}{tope}} ()\{}
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00099}00099       assert(primera!=0);       \textcolor{comment}{//Si la pila está vacía, abortar}}
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00100}00100       \textcolor{keywordflow}{return} primera-\/>elemento; \textcolor{comment}{//Devuelve el elemento del tope de la pila}}
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00101}00101     \}}
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00105}\mbox{\hyperlink{classPila_a82562b5c198642bd8c8b10ba7d2fa814}{00105}}     \textcolor{keyword}{const} T \& \mbox{\hyperlink{classPila_a82562b5c198642bd8c8b10ba7d2fa814}{tope}} ()\textcolor{keyword}{ const}\{}
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00106}00106       assert(primera!=0);       \textcolor{comment}{//Si la pila está vacía, abortar}}
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00107}00107       \textcolor{keywordflow}{return} primera-\/>elemento; \textcolor{comment}{//Devuelve el elemento del tope de la pila}}
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00108}00108     \}}
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00113}00113     \textcolor{keywordtype}{void} \mbox{\hyperlink{classPila_a02ff6cf06e5e8f719260ecbec8b34797}{poner}}(\textcolor{keyword}{const} T \& elem);}
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00117}00117     \textcolor{keywordtype}{void} \mbox{\hyperlink{classPila_a7eb7aca18dffbc1d570195de1e446054}{quitar}}();}
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00121}\mbox{\hyperlink{classPila_a1268523f53fe982a9872a6b42c515d01}{00121}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{classPila_a1268523f53fe982a9872a6b42c515d01}{num\_elementos}}()\textcolor{keyword}{ const}\{}
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00122}00122       \textcolor{keywordflow}{return} num\_elem;}
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00123}00123     \}}
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00124}00124 \};}
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00125}00125 }
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00126}00126 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{pila_8cpp}{pila.cpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{pila_8h_source_l00127}00127 \textcolor{preprocessor}{\#endif  }\textcolor{comment}{//\_\_Pila\_H\_\_}}
+
+\end{DoxyCode}

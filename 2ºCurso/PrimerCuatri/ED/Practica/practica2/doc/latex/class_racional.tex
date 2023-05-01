@@ -1,0 +1,301 @@
+\hypertarget{class_racional}{}\doxysection{Referencia de la Clase Racional}
+\label{class_racional}\index{Racional@{Racional}}
+
+
+T.\+D.\+A. \mbox{\hyperlink{class_racional}{Racional}}.  
+
+
+
+
+{\ttfamily \#include $<$Racional.\+h$>$}
+
+\doxysubsection*{M茅todos p煤blicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_racional_a05130ab34147ac85a4e340a33c82deb2}\label{class_racional_a05130ab34147ac85a4e340a33c82deb2}} 
+{\bfseries Racional} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto de la clase. Crea el numero racional 0/1. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_racional_a5b8490366043f82fcc83cb827197fc05}{Racional}} (int n, int d)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_racional_a6c5adcd48e75a23200f2db70bd13101b}{Racional}} (const \mbox{\hyperlink{class_racional}{Racional}} \&c)
+\begin{DoxyCompactList}\small\item\em Constructor de copias de la clase. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_racional_a7457006396e7609e8a03af043a86afbb}{numerador}} ()
+\begin{DoxyCompactList}\small\item\em Numerador. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_racional_a222dded5259ed20fc4c40ffbe9d6b9a7}{denominador}} ()
+\begin{DoxyCompactList}\small\item\em Denominador. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_racional_ad5a5b3220853ced644fef769e122cf52}{asignar}} (int n, int d)
+\begin{DoxyCompactList}\small\item\em Asignaci髇 de un racional. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_racional_a585a90e00a35d0d00576af756ab301f0}{comparar}} (\mbox{\hyperlink{class_racional}{Racional}} r)
+\begin{DoxyCompactList}\small\item\em Compara dos racionales. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_racional_ab30e69922f714ac6c79ec2628b301274}\label{class_racional_ab30e69922f714ac6c79ec2628b301274}} 
+void {\bfseries print} ()
+\begin{DoxyCompactList}\small\item\em Imprime un racional en el formato \char`\"{}(n/d)\char`\"{};. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_racional}{Racional}} \mbox{\hyperlink{class_racional_aa4539b99ed60caa9a107a1c0b4f28aa2}{operator+}} (const \mbox{\hyperlink{class_racional}{Racional}} \&r)
+\begin{DoxyCompactList}\small\item\em Suma dos racionales. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_racional}{Racional}} \mbox{\hyperlink{class_racional_a5dae34ac2c6aa5260556dd43208fd962}{operator$\ast$}} (const \mbox{\hyperlink{class_racional}{Racional}} \&r)
+\begin{DoxyCompactList}\small\item\em Multiplicaci髇 de dos racionales. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_racional_a1d1cccc4b27d5b232070cfe503565a02}{operator+=}} (const \mbox{\hyperlink{class_racional}{Racional}} \&r)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador +=. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_racional_a3ff869f17b7ba36d10cad60eff8e894d}{operator==}} (const \mbox{\hyperlink{class_racional}{Racional}} \&r)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador ==. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_racional_a33114260605dc5f5659d9a83f9bb6047}\label{class_racional_a33114260605dc5f5659d9a83f9bb6047}} 
+\mbox{\hyperlink{class_racional}{Racional}} {\bfseries simplifica} ()
+\begin{DoxyCompactList}\small\item\em Convierte un racional en irreducible;. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Amigas}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{class_racional_a787ae52c1b55f429d8a8b4eba1dbb1f0}{operator$<$$<$}} (ostream \&os, const \mbox{\hyperlink{class_racional}{Racional}} \&r)
+\begin{DoxyCompactList}\small\item\em Salida de un racional a ostream. \end{DoxyCompactList}\item 
+istream \& \mbox{\hyperlink{class_racional_aa33b8bfb38e34cee6b6da1cfb3600fbe}{operator$>$$>$}} (istream \&is, \mbox{\hyperlink{class_racional}{Racional}} \&r)
+\begin{DoxyCompactList}\small\item\em Entrada de un \mbox{\hyperlink{class_racional}{Racional}} desde istream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripci贸n detallada}
+T.\+D.\+A. \mbox{\hyperlink{class_racional}{Racional}}. 
+
+Una instancia {\itshape c} del tipo de datos abstracto {\ttfamily \mbox{\hyperlink{class_racional}{Racional}}} es un objeto del conjunto de los n鷐eros racionales, compuestos por dos valores enteros que representan, respectivamente, numerador y denominador. Lo representamos
+
+num/den
+
+Un ejemplo de su uso\+: 
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+
+
+\begin{DoxyAuthor}{Autor}
+
+\end{DoxyAuthor}
+\begin{DoxyDate}{Fecha}
+Septiembre 2021 
+\end{DoxyDate}
+
+
+\doxysubsection{Documentaci贸n del constructor y destructor}
+\mbox{\Hypertarget{class_racional_a5b8490366043f82fcc83cb827197fc05}\label{class_racional_a5b8490366043f82fcc83cb827197fc05}} 
+\index{Racional@{Racional}!Racional@{Racional}}
+\index{Racional@{Racional}!Racional@{Racional}}
+\doxysubsubsection{\texorpdfstring{Racional()}{Racional()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Racional\+::\+Racional (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{int}]{d }\end{DoxyParamCaption})}
+
+
+
+Constructor de la clase. 
+
+
+\begin{DoxyParams}{Par谩metros}
+{\em n} & numerador del racional a construir \\
+\hline
+{\em d} & denominador del racional a construir \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Crea el numero racional n/d 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondici贸n}
+d debe ser distinto de cero 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{class_racional_a6c5adcd48e75a23200f2db70bd13101b}\label{class_racional_a6c5adcd48e75a23200f2db70bd13101b}} 
+\index{Racional@{Racional}!Racional@{Racional}}
+\index{Racional@{Racional}!Racional@{Racional}}
+\doxysubsubsection{\texorpdfstring{Racional()}{Racional()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Racional\+::\+Racional (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_racional}{Racional}} \&}]{c }\end{DoxyParamCaption})}
+
+
+
+Constructor de copias de la clase. 
+
+
+\begin{DoxyParams}{Par谩metros}
+{\em c.\+num} & numerador del racional a construir \\
+\hline
+{\em c.\+den} & denominador del racional a construir \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Documentaci贸n de las funciones miembro}
+\mbox{\Hypertarget{class_racional_ad5a5b3220853ced644fef769e122cf52}\label{class_racional_ad5a5b3220853ced644fef769e122cf52}} 
+\index{Racional@{Racional}!asignar@{asignar}}
+\index{asignar@{asignar}!Racional@{Racional}}
+\doxysubsubsection{\texorpdfstring{asignar()}{asignar()}}
+{\footnotesize\ttfamily void Racional\+::asignar (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{int}]{d }\end{DoxyParamCaption})}
+
+
+
+Asignaci髇 de un racional. 
+
+
+\begin{DoxyParams}{Par谩metros}
+{\em n} & numerador del racional a asignar \\
+\hline
+{\em d} & denominador del racional a asignar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Asigna al objeto impl韈ito el numero racional n/d 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondici贸n}
+d debe ser distinto de cero 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{class_racional_a585a90e00a35d0d00576af756ab301f0}\label{class_racional_a585a90e00a35d0d00576af756ab301f0}} 
+\index{Racional@{Racional}!comparar@{comparar}}
+\index{comparar@{comparar}!Racional@{Racional}}
+\doxysubsubsection{\texorpdfstring{comparar()}{comparar()}}
+{\footnotesize\ttfamily bool Racional\+::comparar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_racional}{Racional}}}]{r }\end{DoxyParamCaption})}
+
+
+
+Compara dos racionales. 
+
+
+\begin{DoxyParams}{Par谩metros}
+{\em r} & racional a comparar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve 0 si este objeto es igual a r, \texorpdfstring{$<$}{<}0 si este objeto es menor que r, \texorpdfstring{$>$}{>}0 si este objeto es mayor que r 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_racional_a222dded5259ed20fc4c40ffbe9d6b9a7}\label{class_racional_a222dded5259ed20fc4c40ffbe9d6b9a7}} 
+\index{Racional@{Racional}!denominador@{denominador}}
+\index{denominador@{denominador}!Racional@{Racional}}
+\doxysubsubsection{\texorpdfstring{denominador()}{denominador()}}
+{\footnotesize\ttfamily int Racional\+::denominador (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Denominador. 
+
+\begin{DoxyReturn}{Devuelve}
+Devuelve el denominador del racional 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_racional_a7457006396e7609e8a03af043a86afbb}\label{class_racional_a7457006396e7609e8a03af043a86afbb}} 
+\index{Racional@{Racional}!numerador@{numerador}}
+\index{numerador@{numerador}!Racional@{Racional}}
+\doxysubsubsection{\texorpdfstring{numerador()}{numerador()}}
+{\footnotesize\ttfamily int Racional\+::numerador (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Numerador. 
+
+\begin{DoxyReturn}{Devuelve}
+Devuelve el numerador del racional 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_racional_a5dae34ac2c6aa5260556dd43208fd962}\label{class_racional_a5dae34ac2c6aa5260556dd43208fd962}} 
+\index{Racional@{Racional}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Racional@{Racional}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_racional}{Racional}} Racional\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_racional}{Racional}} \&}]{r }\end{DoxyParamCaption})}
+
+
+
+Multiplicaci髇 de dos racionales. 
+
+
+\begin{DoxyParams}{Par谩metros}
+{\em r} & racional a multiplicar con el objeto implicito \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_racional_aa4539b99ed60caa9a107a1c0b4f28aa2}\label{class_racional_aa4539b99ed60caa9a107a1c0b4f28aa2}} 
+\index{Racional@{Racional}!operator+@{operator+}}
+\index{operator+@{operator+}!Racional@{Racional}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_racional}{Racional}} Racional\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_racional}{Racional}} \&}]{r }\end{DoxyParamCaption})}
+
+
+
+Suma dos racionales. 
+
+
+\begin{DoxyParams}{Par谩metros}
+{\em r} & racional a sumar con el objeto implicito \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_racional_a1d1cccc4b27d5b232070cfe503565a02}\label{class_racional_a1d1cccc4b27d5b232070cfe503565a02}} 
+\index{Racional@{Racional}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Racional@{Racional}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily void Racional\+::operator+= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_racional}{Racional}} \&}]{r }\end{DoxyParamCaption})}
+
+
+
+Sobrecarga del operador +=. 
+
+
+\begin{DoxyParams}{Par谩metros}
+{\em r} & racional a sumar con el objeto impl韈ito \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_racional_a3ff869f17b7ba36d10cad60eff8e894d}\label{class_racional_a3ff869f17b7ba36d10cad60eff8e894d}} 
+\index{Racional@{Racional}!operator==@{operator==}}
+\index{operator==@{operator==}!Racional@{Racional}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Racional\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_racional}{Racional}} \&}]{r }\end{DoxyParamCaption})}
+
+
+
+Sobrecarga del operador ==. 
+
+
+\begin{DoxyParams}{Par谩metros}
+{\em r} & racional a comparar con el objeto impl韈ito \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve 0 si este objeto es igual a r 
+\end{DoxyReturn}
+
+
+\doxysubsection{Documentaci贸n de las funciones relacionadas y clases amigas}
+\mbox{\Hypertarget{class_racional_a787ae52c1b55f429d8a8b4eba1dbb1f0}\label{class_racional_a787ae52c1b55f429d8a8b4eba1dbb1f0}} 
+\index{Racional@{Racional}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Racional@{Racional}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \mbox{\hyperlink{class_racional}{Racional}} \&}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Salida de un racional a ostream. 
+
+
+\begin{DoxyParams}{Par谩metros}
+{\em os} & stream de salida \\
+\hline
+{\em r} & \mbox{\hyperlink{class_racional}{Racional}} a escribir \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondici贸n}
+Se obtiene en {\itshape os} la cadena (num/den) con {\itshape num},den los valores del numerador y denominador de {\itshape r} 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{class_racional_aa33b8bfb38e34cee6b6da1cfb3600fbe}\label{class_racional_aa33b8bfb38e34cee6b6da1cfb3600fbe}} 
+\index{Racional@{Racional}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!Racional@{Racional}}
+\doxysubsubsection{\texorpdfstring{operator$>$$>$}{operator>>}}
+{\footnotesize\ttfamily istream \& operator$>$$>$ (\begin{DoxyParamCaption}\item[{istream \&}]{is,  }\item[{\mbox{\hyperlink{class_racional}{Racional}} \&}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Entrada de un \mbox{\hyperlink{class_racional}{Racional}} desde istream. 
+
+
+\begin{DoxyParams}{Par谩metros}
+{\em is} & stream de entrada \\
+\hline
+{\em r} & \mbox{\hyperlink{class_racional}{Racional}} que recibe el valor \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Valores devueltos}
+{\em El} & \mbox{\hyperlink{class_racional}{Racional}} le韉o en r \\
+\hline
+\end{DoxyRetVals}
+\begin{DoxyPrecond}{Precondici贸n}
+La entrada tiene el formato (num/den) con {\itshape num},{\itshape den} los valores del numerador y denominador 
+\end{DoxyPrecond}
+
+
+La documentaci贸n para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+racional-\/mas-\/vd/racional-\/doxygen/\mbox{\hyperlink{_racional_8h}{Racional.\+h}}\item 
+racional-\/mas-\/vd/racional-\/doxygen/Racional.\+cpp\end{DoxyCompactItemize}

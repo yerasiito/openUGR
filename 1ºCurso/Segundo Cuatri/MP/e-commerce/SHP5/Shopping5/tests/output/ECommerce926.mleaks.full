@@ -1,0 +1,27 @@
+MEMORY LEAK REPORT BY Valgrind 
+
+jue 03 jun 2021 19:47:26 CEST
+
+
+==52369== Memcheck, a memory error detector
+==52369== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==52369== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==52369== Command: ./dist/Debug/GNU-Linux/shopping3a -input ./datas/ECommerce926.dataset -events 500 -index-by UserID -report-by Brand -output ./data/ECommerce926-hit2.dataset
+==52369== 
+Error opening file ./datas/ECommerce926.dataset
+==52369== 
+==52369== HEAP SUMMARY:
+==52369==     in use at exit: 93 bytes in 3 blocks
+==52369==   total heap usage: 31 allocs, 28 frees, 75,559 bytes allocated
+==52369== 
+==52369== LEAK SUMMARY:
+==52369==    definitely lost: 0 bytes in 0 blocks
+==52369==    indirectly lost: 0 bytes in 0 blocks
+==52369==      possibly lost: 0 bytes in 0 blocks
+==52369==    still reachable: 93 bytes in 3 blocks
+==52369==         suppressed: 0 bytes in 0 blocks
+==52369== Reachable blocks (those to which a pointer was found) are not shown.
+==52369== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==52369== 
+==52369== For lists of detected and suppressed errors, rerun with: -s
+==52369== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

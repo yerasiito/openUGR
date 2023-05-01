@@ -1,0 +1,251 @@
+\begin{theindex}
+
+  \item {alMazo}
+    \subitem {civitas.MazoSorpresas}, \hyperpage{24}
+  \item {aniadeCasilla}
+    \subitem {civitas.Tablero}, \hyperpage{26}
+
+  \indexspace
+
+  \item {cantidadCasasHoteles}
+    \subitem {civitas.Casilla}, \hyperpage{9}
+  \item {Casilla}
+    \subitem {civitas.Casilla}, \hyperpage{8}
+  \item {civitas.Casilla}, \hyperpage{7}
+    \subitem {cantidadCasasHoteles}, \hyperpage{9}
+    \subitem {Casilla}, \hyperpage{8}
+    \subitem {comprar}, \hyperpage{9}
+    \subitem {construirCasa}, \hyperpage{9}
+    \subitem {construirHotel}, \hyperpage{9}
+    \subitem {derruirCasas}, \hyperpage{9}
+    \subitem {esEsteElPropietario}, \hyperpage{10}
+    \subitem {getFACTORALQUILERCALLE}, \hyperpage{10}
+    \subitem {getFACTORALQUILERCASA}, \hyperpage{10}
+    \subitem {getFACTORALQUILERHOTEL}, \hyperpage{10}
+    \subitem {getNombre}, \hyperpage{11}
+    \subitem {getNumCasas}, \hyperpage{11}
+    \subitem {getNumHoteles}, \hyperpage{11}
+    \subitem {getPrecioAlquilerCompleto}, \hyperpage{11}
+    \subitem {getPrecioCompra}, \hyperpage{11}
+    \subitem {getPrecioEdificar}, \hyperpage{12}
+    \subitem {informe}, \hyperpage{12}
+    \subitem {recibeJugador}, \hyperpage{12}
+    \subitem {recibeJugador\_calle}, \hyperpage{12}
+    \subitem {recibeJugador\_sorpresa}, \hyperpage{13}
+    \subitem {tienePropietario}, \hyperpage{13}
+    \subitem {toString}, \hyperpage{13}
+    \subitem {tramitarAlquiler}, \hyperpage{13}
+  \item {civitas.Civitas}, \hyperpage{14}
+    \subitem {main}, \hyperpage{14}
+  \item {civitas.CivitasJuego}, \hyperpage{15}
+    \subitem {CivitasJuego}, \hyperpage{15}
+    \subitem {comprar}, \hyperpage{16}
+    \subitem {construirCasa}, \hyperpage{16}
+    \subitem {construirHotel}, \hyperpage{16}
+    \subitem {ContabilizarPasosPorSalida}, \hyperpage{17}
+    \subitem {finalDelJuego}, \hyperpage{17}
+    \subitem {getIndiceJugadorActual}, \hyperpage{17}
+    \subitem {getJugadorActual}, \hyperpage{17}
+    \subitem {getJugadores}, \hyperpage{17}
+    \subitem {getMazo}, \hyperpage{18}
+    \subitem {getTablero}, \hyperpage{18}
+    \subitem {inicializaMazoSorpresas}, \hyperpage{18}
+    \subitem {inicializaTablero}, \hyperpage{18}
+    \subitem {PasarTurno}, \hyperpage{19}
+    \subitem {Ranking}, \hyperpage{19}
+    \subitem {siguientePaso}, \hyperpage{19}
+    \subitem {siguientePasoCompletado}, \hyperpage{20}
+  \item {civitas.Dado}, \hyperpage{20}
+    \subitem {getInstance}, \hyperpage{20}
+    \subitem {getUltimoResultado}, \hyperpage{21}
+    \subitem {quienEmpieza}, \hyperpage{21}
+    \subitem {setDebug}, \hyperpage{21}
+    \subitem {tirar}, \hyperpage{21}
+  \item {civitas.Diario}, \hyperpage{22}
+    \subitem {eventosPendientes}, \hyperpage{22}
+    \subitem {getEventos}, \hyperpage{22}
+    \subitem {getInstance}, \hyperpage{22}
+    \subitem {leerEvento}, \hyperpage{22}
+  \item {civitas.Jugador}, \hyperpage{23}
+  \item {civitas.MazoSorpresas}, \hyperpage{23}
+    \subitem {alMazo}, \hyperpage{24}
+    \subitem {getMazoSorpresas}, \hyperpage{24}
+    \subitem {MazoSorpresas}, \hyperpage{23}
+    \subitem {siguiente}, \hyperpage{24}
+  \item {civitas.Sorpresa}, \hyperpage{25}
+    \subitem {toString}, \hyperpage{25}
+  \item {civitas.Tablero}, \hyperpage{25}
+    \subitem {aniadeCasilla}, \hyperpage{26}
+    \subitem {computarPasoPorSalida}, \hyperpage{26}
+    \subitem {correcto}, \hyperpage{26}
+    \subitem {getCasilla}, \hyperpage{26}
+    \subitem {getCasillas}, \hyperpage{27}
+    \subitem {getPasoPorSalida}, \hyperpage{27}
+    \subitem {nuevaPosicion}, \hyperpage{27}
+    \subitem {Tablero}, \hyperpage{26}
+  \item {CivitasJuego}
+    \subitem {civitas.CivitasJuego}, \hyperpage{15}
+  \item {comprar}
+    \subitem {civitas.Casilla}, \hyperpage{9}
+    \subitem {civitas.CivitasJuego}, \hyperpage{16}
+  \item {computarPasoPorSalida}
+    \subitem {civitas.Tablero}, \hyperpage{26}
+  \item {construirCasa}
+    \subitem {civitas.Casilla}, \hyperpage{9}
+    \subitem {civitas.CivitasJuego}, \hyperpage{16}
+  \item {construirHotel}
+    \subitem {civitas.Casilla}, \hyperpage{9}
+    \subitem {civitas.CivitasJuego}, \hyperpage{16}
+  \item {ContabilizarPasosPorSalida}
+    \subitem {civitas.CivitasJuego}, \hyperpage{17}
+  \item {correcto}
+    \subitem {civitas.Tablero}, \hyperpage{26}
+
+  \indexspace
+
+  \item {derruirCasas}
+    \subitem {civitas.Casilla}, \hyperpage{9}
+
+  \indexspace
+
+  \item {esEsteElPropietario}
+    \subitem {civitas.Casilla}, \hyperpage{10}
+  \item {eventosPendientes}
+    \subitem {civitas.Diario}, \hyperpage{22}
+
+  \indexspace
+
+  \item {finalDelJuego}
+    \subitem {civitas.CivitasJuego}, \hyperpage{17}
+
+  \indexspace
+
+  \item {getCasilla}
+    \subitem {civitas.Tablero}, \hyperpage{26}
+  \item {getCasillas}
+    \subitem {civitas.Tablero}, \hyperpage{27}
+  \item {getEventos}
+    \subitem {civitas.Diario}, \hyperpage{22}
+  \item {getFACTORALQUILERCALLE}
+    \subitem {civitas.Casilla}, \hyperpage{10}
+  \item {getFACTORALQUILERCASA}
+    \subitem {civitas.Casilla}, \hyperpage{10}
+  \item {getFACTORALQUILERHOTEL}
+    \subitem {civitas.Casilla}, \hyperpage{10}
+  \item {getIndiceJugadorActual}
+    \subitem {civitas.CivitasJuego}, \hyperpage{17}
+  \item {getInstance}
+    \subitem {civitas.Dado}, \hyperpage{20}
+    \subitem {civitas.Diario}, \hyperpage{22}
+  \item {getJugadorActual}
+    \subitem {civitas.CivitasJuego}, \hyperpage{17}
+  \item {getJugadores}
+    \subitem {civitas.CivitasJuego}, \hyperpage{17}
+  \item {getMazo}
+    \subitem {civitas.CivitasJuego}, \hyperpage{18}
+  \item {getMazoSorpresas}
+    \subitem {civitas.MazoSorpresas}, \hyperpage{24}
+  \item {getNombre}
+    \subitem {civitas.Casilla}, \hyperpage{11}
+  \item {getNumCasas}
+    \subitem {civitas.Casilla}, \hyperpage{11}
+  \item {getNumHoteles}
+    \subitem {civitas.Casilla}, \hyperpage{11}
+  \item {getPasoPorSalida}
+    \subitem {civitas.Tablero}, \hyperpage{27}
+  \item {getPrecioAlquilerCompleto}
+    \subitem {civitas.Casilla}, \hyperpage{11}
+  \item {getPrecioCompra}
+    \subitem {civitas.Casilla}, \hyperpage{11}
+  \item {getPrecioEdificar}
+    \subitem {civitas.Casilla}, \hyperpage{12}
+  \item {getTablero}
+    \subitem {civitas.CivitasJuego}, \hyperpage{18}
+  \item {getUltimoResultado}
+    \subitem {civitas.Dado}, \hyperpage{21}
+
+  \indexspace
+
+  \item {informe}
+    \subitem {civitas.Casilla}, \hyperpage{12}
+  \item {inicializaMazoSorpresas}
+    \subitem {civitas.CivitasJuego}, \hyperpage{18}
+  \item {inicializaTablero}
+    \subitem {civitas.CivitasJuego}, \hyperpage{18}
+
+  \indexspace
+
+  \item {leerEvento}
+    \subitem {civitas.Diario}, \hyperpage{22}
+
+  \indexspace
+
+  \item {main}
+    \subitem {civitas.Civitas}, \hyperpage{14}
+  \item {MazoSorpresas}
+    \subitem {civitas.MazoSorpresas}, \hyperpage{23}
+
+  \indexspace
+
+  \item {nuevaPosicion}
+    \subitem {civitas.Tablero}, \hyperpage{27}
+
+  \indexspace
+
+  \item {PasarTurno}
+    \subitem {civitas.CivitasJuego}, \hyperpage{19}
+
+  \indexspace
+
+  \item {quienEmpieza}
+    \subitem {civitas.Dado}, \hyperpage{21}
+
+  \indexspace
+
+  \item {Ranking}
+    \subitem {civitas.CivitasJuego}, \hyperpage{19}
+  \item {recibeJugador}
+    \subitem {civitas.Casilla}, \hyperpage{12}
+  \item {recibeJugador\_calle}
+    \subitem {civitas.Casilla}, \hyperpage{12}
+  \item {recibeJugador\_sorpresa}
+    \subitem {civitas.Casilla}, \hyperpage{13}
+
+  \indexspace
+
+  \item {setDebug}
+    \subitem {civitas.Dado}, \hyperpage{21}
+  \item {siguiente}
+    \subitem {civitas.MazoSorpresas}, \hyperpage{24}
+  \item {siguientePaso}
+    \subitem {civitas.CivitasJuego}, \hyperpage{19}
+  \item {siguientePasoCompletado}
+    \subitem {civitas.CivitasJuego}, \hyperpage{20}
+  \item {src/civitas/Casilla.java}, \hyperpage{29}
+  \item {src/civitas/Civitas.java}, \hyperpage{31}
+  \item {src/civitas/CivitasJuego.java}, \hyperpage{32}
+  \item {src/civitas/Dado.java}, \hyperpage{34}
+  \item {src/civitas/Diario.java}, \hyperpage{35}
+  \item {src/civitas/Enumerados.java}, \hyperpage{35}
+  \item {src/civitas/EstadoJuego.java}, \hyperpage{35}
+  \item {src/civitas/GestorEstados.java}, \hyperpage{36}
+  \item {src/civitas/Jugador.java}, \hyperpage{37}
+  \item {src/civitas/MazoSorpresas.java}, \hyperpage{39}
+  \item {src/civitas/Sorpresa.java}, \hyperpage{39}
+  \item {src/civitas/Tablero.java}, \hyperpage{40}
+
+  \indexspace
+
+  \item {Tablero}
+    \subitem {civitas.Tablero}, \hyperpage{26}
+  \item {tienePropietario}
+    \subitem {civitas.Casilla}, \hyperpage{13}
+  \item {tirar}
+    \subitem {civitas.Dado}, \hyperpage{21}
+  \item {toString}
+    \subitem {civitas.Casilla}, \hyperpage{13}
+    \subitem {civitas.Sorpresa}, \hyperpage{25}
+  \item {tramitarAlquiler}
+    \subitem {civitas.Casilla}, \hyperpage{13}
+
+\end{theindex}

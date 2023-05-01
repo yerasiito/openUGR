@@ -1,0 +1,36 @@
+\hypertarget{SorpresaPagarCobrar_8java_source}{}\doxysection{Sorpresa\+Pagar\+Cobrar.\+java}
+\label{SorpresaPagarCobrar_8java_source}\index{src/civitas/SorpresaPagarCobrar.java@{src/civitas/SorpresaPagarCobrar.java}}
+\mbox{\hyperlink{SorpresaPagarCobrar_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{SorpresaPagarCobrar_8java_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{SorpresaPagarCobrar_8java_source_l00007}00007 \textcolor{keyword}{package }civitas;}
+\DoxyCodeLine{\Hypertarget{SorpresaPagarCobrar_8java_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{SorpresaPagarCobrar_8java_source_l00009}00009 \textcolor{keyword}{import} java.util.ArrayList;}
+\DoxyCodeLine{\Hypertarget{SorpresaPagarCobrar_8java_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{SorpresaPagarCobrar_8java_source_l00014}\mbox{\hyperlink{classcivitas_1_1SorpresaPagarCobrar}{00014}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{classcivitas_1_1SorpresaPagarCobrar}{SorpresaPagarCobrar}} \textcolor{keyword}{extends} \mbox{\hyperlink{classcivitas_1_1Sorpresa}{Sorpresa}}\{}
+\DoxyCodeLine{\Hypertarget{SorpresaPagarCobrar_8java_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{SorpresaPagarCobrar_8java_source_l00016}00016     \textcolor{keyword}{public} \mbox{\hyperlink{classcivitas_1_1SorpresaPagarCobrar}{SorpresaPagarCobrar}}(String texto, \textcolor{keywordtype}{int} valor) \{}
+\DoxyCodeLine{\Hypertarget{SorpresaPagarCobrar_8java_source_l00017}00017         super(texto, valor);}
+\DoxyCodeLine{\Hypertarget{SorpresaPagarCobrar_8java_source_l00018}00018     \}}
+\DoxyCodeLine{\Hypertarget{SorpresaPagarCobrar_8java_source_l00019}00019     }
+\DoxyCodeLine{\Hypertarget{SorpresaPagarCobrar_8java_source_l00020}00020     @Override}
+\DoxyCodeLine{\Hypertarget{SorpresaPagarCobrar_8java_source_l00021}00021     \textcolor{keywordtype}{void} aplicarAJugador(\textcolor{keywordtype}{int} actual, ArrayList<Jugador> todos)\{}
+\DoxyCodeLine{\Hypertarget{SorpresaPagarCobrar_8java_source_l00022}00022         informe(actual, todos);}
+\DoxyCodeLine{\Hypertarget{SorpresaPagarCobrar_8java_source_l00023}00023         todos.get(actual).modificarSaldo(valor);}
+\DoxyCodeLine{\Hypertarget{SorpresaPagarCobrar_8java_source_l00024}00024     \}}
+\DoxyCodeLine{\Hypertarget{SorpresaPagarCobrar_8java_source_l00025}00025     }
+\DoxyCodeLine{\Hypertarget{SorpresaPagarCobrar_8java_source_l00026}00026     @Override}
+\DoxyCodeLine{\Hypertarget{SorpresaPagarCobrar_8java_source_l00027}00027     \textcolor{keywordtype}{void} informe(\textcolor{keywordtype}{int} actual, ArrayList<Jugador> todos)\{}
+\DoxyCodeLine{\Hypertarget{SorpresaPagarCobrar_8java_source_l00028}00028         String evento = \textcolor{stringliteral}{"{}El jugador "{}} + todos.get(actual).getNombre() +}
+\DoxyCodeLine{\Hypertarget{SorpresaPagarCobrar_8java_source_l00029}00029                 \textcolor{stringliteral}{"{} se le ha aplicado una Sorpresa de PAGARCOBRAR: "{}} + toString();}
+\DoxyCodeLine{\Hypertarget{SorpresaPagarCobrar_8java_source_l00030}00030         \mbox{\hyperlink{classcivitas_1_1Diario}{Diario}}.getInstance().ocurreEvento(evento);}
+\DoxyCodeLine{\Hypertarget{SorpresaPagarCobrar_8java_source_l00031}00031     \}}
+\DoxyCodeLine{\Hypertarget{SorpresaPagarCobrar_8java_source_l00032}00032     }
+\DoxyCodeLine{\Hypertarget{SorpresaPagarCobrar_8java_source_l00033}00033     @Override}
+\DoxyCodeLine{\Hypertarget{SorpresaPagarCobrar_8java_source_l00034}00034     \textcolor{keyword}{public} String toString()\{}
+\DoxyCodeLine{\Hypertarget{SorpresaPagarCobrar_8java_source_l00035}00035         \textcolor{keywordflow}{return} super.toString() + \textcolor{stringliteral}{"{} una unica vez"{}};}
+\DoxyCodeLine{\Hypertarget{SorpresaPagarCobrar_8java_source_l00036}00036     \}}
+\DoxyCodeLine{\Hypertarget{SorpresaPagarCobrar_8java_source_l00037}00037     }
+\DoxyCodeLine{\Hypertarget{SorpresaPagarCobrar_8java_source_l00038}00038 \}}
+
+\end{DoxyCode}

@@ -1,0 +1,70 @@
+\hypertarget{imagen_8h_source}{}\doxysection{imagen.\+h}
+\label{imagen_8h_source}\index{tdaimagen2.0/include/imagen.h@{tdaimagen2.0/include/imagen.h}}
+\mbox{\hyperlink{imagen_8h}{Ir a la documentación de este archivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#ifndef imagen\_h}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#define imagen\_h}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <cstring>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{typedef} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} byte; \textcolor{comment}{//tipo base de cada pixel}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18 \textcolor{comment}{/*}}
+\DoxyCodeLine{19 \textcolor{comment}{* @brief  T.D.A Imagen}}
+\DoxyCodeLine{20 \textcolor{comment}{*}}
+\DoxyCodeLine{21 \textcolor{comment}{* Una instancia @e c del tipo de datos abstracto @c Imagen es un objeto que se correponde con una matriz}}
+\DoxyCodeLine{22 \textcolor{comment}{* bidimensional que representa una imagen de niveles de grises formadaque tiene el propósito de poder crear programas de manipulación y reprocesamiento}}
+\DoxyCodeLine{23 \textcolor{comment}{* de imágenes con la finalidad de mejorarlas o crear arte.}}
+\DoxyCodeLine{24 \textcolor{comment}{*}}
+\DoxyCodeLine{25 \textcolor{comment}{* @author Jaime Castillo Uclés}}
+\DoxyCodeLine{26 \textcolor{comment}{* @date 30 Octubre 2021}}
+\DoxyCodeLine{27 \textcolor{comment}{*}}
+\DoxyCodeLine{28 \textcolor{comment}{*/}}
+\DoxyCodeLine{29 \textcolor{keyword}{class }\mbox{\hyperlink{class_imagen}{Imagen}}\{}
+\DoxyCodeLine{30     \textcolor{keyword}{private}:}
+\DoxyCodeLine{31         \textcolor{keyword}{const} static ::byte BLANCO=0;}
+\DoxyCodeLine{32         \textcolor{keyword}{const} static ::byte NEGRO=255;}
+\DoxyCodeLine{33         \textcolor{keywordtype}{int} filas; \textcolor{comment}{//Número de filas de la matriz}}
+\DoxyCodeLine{34         \textcolor{keywordtype}{int} cols; \textcolor{comment}{//Número de columnas de la matriz}}
+\DoxyCodeLine{35         ::byte **img; \textcolor{comment}{//Puntero al vector de punteros}}
+\DoxyCodeLine{36     \textcolor{keyword}{public}:}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{41     \mbox{\hyperlink{class_imagen_ab2e649aa7a105155c7bfdb846abf0528}{Imagen}}();}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{47     \mbox{\hyperlink{class_imagen_ab2e649aa7a105155c7bfdb846abf0528}{Imagen}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_imagen}{Imagen}} \& otra);}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{56     \mbox{\hyperlink{class_imagen_ab2e649aa7a105155c7bfdb846abf0528}{Imagen}}(\textcolor{keywordtype}{int} filas, \textcolor{keywordtype}{int} cols);}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{61     \mbox{\hyperlink{class_imagen_a03dd93c9cf920a9dc0b72f8bd34f2e8a}{\string~Imagen}}();}
+\DoxyCodeLine{65     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_imagen_afc28426f02930d23dc392b6ffd71e46a}{Reservar}}();}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{70     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_imagen_a6bf0d0e8f2c5a77dbc02157398b51ede}{Liberar}}();}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{76     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_imagen_a4cb4faa04f5e2913965e43a6a65acfd1}{num\_filas}} () \textcolor{keyword}{const};}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{82     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_imagen_ac28d55c18064aea2a65e6fcf51d86191}{num\_columnas}} () \textcolor{keyword}{const};}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{87     \mbox{\hyperlink{class_imagen}{Imagen}} \& \mbox{\hyperlink{class_imagen_aa8bdc0191ef1b952a6405273edf3f3c8}{operator=}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_imagen}{Imagen}} \& otra);}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{97     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_imagen_af851c14953e6348ed635dea7a885ad4a}{copiar}}(::\textcolor{keywordtype}{byte} **destino, ::\textcolor{keywordtype}{byte} **orig, \textcolor{keywordtype}{int} filas, \textcolor{keywordtype}{int} columnas);}
+\DoxyCodeLine{98 }
+\DoxyCodeLine{108     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_imagen_a5694ba66da34de411b99ccfebf68ad7e}{asigna\_pixel}} (\textcolor{keywordtype}{int} fila, \textcolor{keywordtype}{int} cols, \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} valor);}
+\DoxyCodeLine{109 }
+\DoxyCodeLine{119         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_imagen_af6785847a0382bbe6c2be56886d0965e}{Media}}(\textcolor{keywordtype}{int} f1, \textcolor{keywordtype}{int} c1, \textcolor{keywordtype}{int} f2, \textcolor{keywordtype}{int} c2);}
+\DoxyCodeLine{120 }
+\DoxyCodeLine{129     ::byte \mbox{\hyperlink{class_imagen_a89da68c89f2bab4ee59f33a5de794fd0}{valor\_pixel}} (\textcolor{keywordtype}{int} fila, \textcolor{keywordtype}{int} cols) \textcolor{keyword}{const};}
+\DoxyCodeLine{130 }
+\DoxyCodeLine{135     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_imagen_a37df4ff3a31b19396c7f1d247f99b9ad}{umbralizar}}();}
+\DoxyCodeLine{145     \mbox{\hyperlink{class_imagen}{Imagen}} \mbox{\hyperlink{class_imagen_abea64cd6b95230a2d53fd39ab9e67538}{iconizar}}(\textcolor{keywordtype}{int} nf, \textcolor{keywordtype}{int} nc);}
+\DoxyCodeLine{146 }
+\DoxyCodeLine{153     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_imagen_a565377a9c77906fc38e03bc4a2f9818e}{contrastar}}(::\textcolor{keywordtype}{byte} minimo, ::\textcolor{keywordtype}{byte} maximo);}
+\DoxyCodeLine{154 }
+\DoxyCodeLine{155 \};}
+\DoxyCodeLine{156 }
+\DoxyCodeLine{157 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//imagen\_h}}
+
+\end{DoxyCode}

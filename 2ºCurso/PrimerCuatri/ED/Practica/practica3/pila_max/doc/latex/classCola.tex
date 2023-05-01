@@ -1,0 +1,364 @@
+\hypertarget{classCola}{}\doxysection{Cola\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\label{classCola}\index{Cola$<$ T $>$@{Cola$<$ T $>$}}
+
+
+T.\+D.\+A. \mbox{\hyperlink{classCola}{Cola}}.  
+
+
+
+
+{\ttfamily \#include $<$cola.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCola_aea3a971c7c522618f4dc972e8b4ff153}{Cola}} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCola_a2249ab5603a92fddb8bd9bb55abeaa24}{Cola}} (const \mbox{\hyperlink{classCola}{Cola}}$<$ T $>$ \&original)
+\begin{DoxyCompactList}\small\item\em Constructor de copias. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCola_af4d55930921c93c626006ba2e842530b}{$\sim$\+Cola}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCola}{Cola}} \& \mbox{\hyperlink{classCola_a2ac480681dec95b8ffeea075507849e2}{operator=}} (const \mbox{\hyperlink{classCola}{Cola}}$<$ T $>$ \&otra)
+\begin{DoxyCompactList}\small\item\em Operador de asignación. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCola_a2c746a66289cd4f90d4e43f712b72fb6}{vacia}} () const
+\begin{DoxyCompactList}\small\item\em Comprueba si la cola está vacía. \end{DoxyCompactList}\item 
+T \& \mbox{\hyperlink{classCola_a125323973ff1a498fc568a63489a09bc}{frente}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve el elemento del frente de la cola. \end{DoxyCompactList}\item 
+const T \& \mbox{\hyperlink{classCola_adb148ac9e0c44117f5304b9b96ec31ef}{frente}} () const
+\begin{DoxyCompactList}\small\item\em Devuelve el elemento del frente de una cola constante. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCola_a4a902e5805ae74f8d80c6f3267fd14c4}{poner}} (const T \&elem)
+\begin{DoxyCompactList}\small\item\em Añade un elemento al final de la cola. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCola_a320766ddc7020424052c99e5c82a105d}{quitar}} ()
+\begin{DoxyCompactList}\small\item\em Quita el elemento del frente de la cola. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCola_a26e5b0df5411aa23114d790f0a8c023b}{num\+\_\+elementos}} () const
+\begin{DoxyCompactList}\small\item\em Devuelve el número de elementos de la cola. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class Cola$<$ T $>$}
+T.\+D.\+A. \mbox{\hyperlink{classCola}{Cola}}. 
+
+Una instancia {\itshape c} del tipo de dato abstracto \mbox{\hyperlink{classCola}{Cola}} sobre un dominio {\itshape T} es una sucesión finita de elementos del mismo con un funcionamiento {\itshape FIFO} (First In, First Out\}). En una cola, las operaciones de inserción tienen lugar en uno de los extremos, denominado {\itshape final} de la cola, mientras que el borrado y consulta se lleva a cabo en el otro extremo, denominado {\itshape frente} de la cola. Una cola de longitud {\itshape n} la denotamos
+
+
+\begin{DoxyItemize}
+\item \texorpdfstring{$<$}{<}a1,a2,a3,..,an\texorpdfstring{$<$}{<}
+\end{DoxyItemize}
+
+En esta cola, tendremos acceso únicamente al elemento del {\itshape Frente}, es decir, a {\itshape a1}. El borrado o consulta de un elemento será sobre {\itshape a1}, mientras que la inserción de un nuevo elemento se hará después de {\itshape an} (final de la cola).
+
+Si n=0 diremos que la cola está vacía.
+
+El espacio requerido para el almacenamiento es O(n), donde n es el número de elementos de la cola.
+
+\begin{DoxyAuthor}{Author}
+J. Fdez-\/\+Valdivia 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Octubre 2020 
+\end{DoxyDate}
+
+
+Definition at line \mbox{\hyperlink{cola_8h_source_l00041}{41}} of file \mbox{\hyperlink{cola_8h_source}{cola.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCola_aea3a971c7c522618f4dc972e8b4ff153}\label{classCola_aea3a971c7c522618f4dc972e8b4ff153}} 
+\index{Cola$<$ T $>$@{Cola$<$ T $>$}!Cola@{Cola}}
+\index{Cola@{Cola}!Cola$<$ T $>$@{Cola$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Cola()}{Cola()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classCola}{Cola}}$<$ T $>$\+::\mbox{\hyperlink{classCola}{Cola}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor por defecto. 
+
+
+
+Definition at line \mbox{\hyperlink{cola_8h_source_l00071}{71}} of file \mbox{\hyperlink{cola_8h_source}{cola.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classCola_l00071}00071           : primera(0), ultima(0), num\_elem(0)\{}
+\DoxyCodeLine{\Hypertarget{classCola_l00072}00072     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCola_a2249ab5603a92fddb8bd9bb55abeaa24}\label{classCola_a2249ab5603a92fddb8bd9bb55abeaa24}} 
+\index{Cola$<$ T $>$@{Cola$<$ T $>$}!Cola@{Cola}}
+\index{Cola@{Cola}!Cola$<$ T $>$@{Cola$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Cola()}{Cola()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classCola}{Cola}}$<$ T $>$\+::\mbox{\hyperlink{classCola}{Cola}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classCola}{Cola}}$<$ T $>$ \&}]{original }\end{DoxyParamCaption})}
+
+
+
+Constructor de copias. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em original} & La cola de la que se hará la copia. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{cola_8cpp_source_l00013}{13}} of file \mbox{\hyperlink{cola_8cpp_source}{cola.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classCola_l00013}00013                                      \{}
+\DoxyCodeLine{\Hypertarget{classCola_l00014}00014   \textcolor{keywordflow}{if} (original.primera!=0)\{           \textcolor{comment}{//Si tiene elementos}}
+\DoxyCodeLine{\Hypertarget{classCola_l00015}00015     Celda *p = original.primera;      \textcolor{comment}{//Copiamos el puntero a la primera celda}}
+\DoxyCodeLine{\Hypertarget{classCola_l00016}00016     primera = }
+\DoxyCodeLine{\Hypertarget{classCola_l00017}00017     ultima = \textcolor{keyword}{new} Celda(p-\/>elemento,0); \textcolor{comment}{//Inicializamos la lista de nodos}}
+\DoxyCodeLine{\Hypertarget{classCola_l00018}00018     p = p-\/>siguiente;                     \textcolor{comment}{//Avanzamos el puntero}}
+\DoxyCodeLine{\Hypertarget{classCola_l00019}00019     \textcolor{keywordflow}{while} (p!=0)\{                         \textcolor{comment}{//Mientras queden elementos}}
+\DoxyCodeLine{\Hypertarget{classCola_l00020}00020       ultima-\/>siguiente = \textcolor{keyword}{new} Celda(p-\/>elemento,0); \textcolor{comment}{//Copiamos el elemento}}
+\DoxyCodeLine{\Hypertarget{classCola_l00021}00021       ultima = ultima-\/>siguiente;                   \textcolor{comment}{//Avanzamos los punteros}}
+\DoxyCodeLine{\Hypertarget{classCola_l00022}00022       p = p-\/>siguiente;}
+\DoxyCodeLine{\Hypertarget{classCola_l00023}00023     \}}
+\DoxyCodeLine{\Hypertarget{classCola_l00024}00024   \}}
+\DoxyCodeLine{\Hypertarget{classCola_l00025}00025   \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{classCola_l00026}00026     primera = ultima = 0;            \textcolor{comment}{//Si no tiene elementos}}
+\DoxyCodeLine{\Hypertarget{classCola_l00027}00027   num\_elem = original.num\_elem;}
+\DoxyCodeLine{\Hypertarget{classCola_l00028}00028 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCola_af4d55930921c93c626006ba2e842530b}\label{classCola_af4d55930921c93c626006ba2e842530b}} 
+\index{Cola$<$ T $>$@{Cola$<$ T $>$}!````~Cola@{$\sim$Cola}}
+\index{````~Cola@{$\sim$Cola}!Cola$<$ T $>$@{Cola$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$Cola()}{~Cola()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classCola}{Cola}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{classCola}{Cola}}}
+
+
+
+Destructor. 
+
+
+
+Definition at line \mbox{\hyperlink{cola_8cpp_source_l00033}{33}} of file \mbox{\hyperlink{cola_8cpp_source}{cola.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classCola_l00033}00033               \{}
+\DoxyCodeLine{\Hypertarget{classCola_l00034}00034   Celda * aux;}
+\DoxyCodeLine{\Hypertarget{classCola_l00035}00035   \textcolor{keywordflow}{while} (primera!=0)\{             \textcolor{comment}{//Mientras queden elementos}}
+\DoxyCodeLine{\Hypertarget{classCola_l00036}00036     aux = primera;                \textcolor{comment}{//Copiamos el puntero}}
+\DoxyCodeLine{\Hypertarget{classCola_l00037}00037     primera = primera-\/>siguiente; \textcolor{comment}{//Avanzamos primera}}
+\DoxyCodeLine{\Hypertarget{classCola_l00038}00038     \textcolor{keyword}{delete} aux;                   \textcolor{comment}{//Borramos el nodo}}
+\DoxyCodeLine{\Hypertarget{classCola_l00039}00039   \}}
+\DoxyCodeLine{\Hypertarget{classCola_l00040}00040 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCola_a125323973ff1a498fc568a63489a09bc}\label{classCola_a125323973ff1a498fc568a63489a09bc}} 
+\index{Cola$<$ T $>$@{Cola$<$ T $>$}!frente@{frente}}
+\index{frente@{frente}!Cola$<$ T $>$@{Cola$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{frente()}{frente()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T \& \mbox{\hyperlink{classCola}{Cola}}$<$ T $>$\+::frente (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Devuelve el elemento del frente de la cola. 
+
+
+
+Definition at line \mbox{\hyperlink{cola_8h_source_l00098}{98}} of file \mbox{\hyperlink{cola_8h_source}{cola.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classCola_l00098}00098                 \{}
+\DoxyCodeLine{\Hypertarget{classCola_l00099}00099       assert(primera!=0);        \textcolor{comment}{//Si la cola está vacía, abortar}}
+\DoxyCodeLine{\Hypertarget{classCola_l00100}00100       \textcolor{keywordflow}{return} primera-\/>elemento;  \textcolor{comment}{//Devuelve el elemento del frente de la cola}}
+\DoxyCodeLine{\Hypertarget{classCola_l00101}00101     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCola_adb148ac9e0c44117f5304b9b96ec31ef}\label{classCola_adb148ac9e0c44117f5304b9b96ec31ef}} 
+\index{Cola$<$ T $>$@{Cola$<$ T $>$}!frente@{frente}}
+\index{frente@{frente}!Cola$<$ T $>$@{Cola$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{frente()}{frente()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+const T \& \mbox{\hyperlink{classCola}{Cola}}$<$ T $>$\+::frente (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Devuelve el elemento del frente de una cola constante. 
+
+
+
+Definition at line \mbox{\hyperlink{cola_8h_source_l00105}{105}} of file \mbox{\hyperlink{cola_8h_source}{cola.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classCola_l00105}00105                              \{}
+\DoxyCodeLine{\Hypertarget{classCola_l00106}00106       assert(primera!=0);        \textcolor{comment}{//Si la cola está vacía, abortar}}
+\DoxyCodeLine{\Hypertarget{classCola_l00107}00107       \textcolor{keywordflow}{return} primera-\/>elemento;  \textcolor{comment}{//Devuelve el elemento del frente de la cola}}
+\DoxyCodeLine{\Hypertarget{classCola_l00108}00108     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCola_a26e5b0df5411aa23114d790f0a8c023b}\label{classCola_a26e5b0df5411aa23114d790f0a8c023b}} 
+\index{Cola$<$ T $>$@{Cola$<$ T $>$}!num\_elementos@{num\_elementos}}
+\index{num\_elementos@{num\_elementos}!Cola$<$ T $>$@{Cola$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{num\_elementos()}{num\_elementos()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+int \mbox{\hyperlink{classCola}{Cola}}$<$ T $>$\+::num\+\_\+elementos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Devuelve el número de elementos de la cola. 
+
+
+
+Definition at line \mbox{\hyperlink{cola_8h_source_l00121}{121}} of file \mbox{\hyperlink{cola_8h_source}{cola.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classCola_l00121}00121                              \{ }
+\DoxyCodeLine{\Hypertarget{classCola_l00122}00122       \textcolor{keywordflow}{return} num\_elem; }
+\DoxyCodeLine{\Hypertarget{classCola_l00123}00123     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCola_a2ac480681dec95b8ffeea075507849e2}\label{classCola_a2ac480681dec95b8ffeea075507849e2}} 
+\index{Cola$<$ T $>$@{Cola$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!Cola$<$ T $>$@{Cola$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classCola}{Cola}}$<$ T $>$ \& \mbox{\hyperlink{classCola}{Cola}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classCola}{Cola}}$<$ T $>$ \&}]{otra }\end{DoxyParamCaption})}
+
+
+
+Operador de asignación. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em otra} & La cola que se va a asignar. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{cola_8cpp_source_l00045}{45}} of file \mbox{\hyperlink{cola_8cpp_source}{cola.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classCola_l00045}00045                                                \{}
+\DoxyCodeLine{\Hypertarget{classCola_l00046}00046   Celda * p;}
+\DoxyCodeLine{\Hypertarget{classCola_l00047}00047   }
+\DoxyCodeLine{\Hypertarget{classCola_l00048}00048   \textcolor{keywordflow}{if} (\textcolor{keyword}{this} != \&otra)\{    \textcolor{comment}{//Comprobación de rigor. Si son diferentes objetos}}
+\DoxyCodeLine{\Hypertarget{classCola_l00049}00049     \textcolor{keywordflow}{while} (primera!=0)\{  \textcolor{comment}{//Borramos la lista de nodos de la cola *this}}
+\DoxyCodeLine{\Hypertarget{classCola_l00050}00050       p = primera;}
+\DoxyCodeLine{\Hypertarget{classCola_l00051}00051       primera = primera-\/>siguiente;}
+\DoxyCodeLine{\Hypertarget{classCola_l00052}00052       \textcolor{keyword}{delete} p;}
+\DoxyCodeLine{\Hypertarget{classCola_l00053}00053     \}}
+\DoxyCodeLine{\Hypertarget{classCola_l00054}00054     \textcolor{keywordflow}{if} (otra.primera!=0)\{        \textcolor{comment}{//Si la otra cola tiene elementos}}
+\DoxyCodeLine{\Hypertarget{classCola_l00055}00055       p = otra.primera;          \textcolor{comment}{//Copiamos el puntero al primer nodo}}
+\DoxyCodeLine{\Hypertarget{classCola_l00056}00056       primera=ultima= \textcolor{keyword}{new} Celda(p-\/>elemento,0); \textcolor{comment}{//Reservamos el primer nodo}}
+\DoxyCodeLine{\Hypertarget{classCola_l00057}00057       p=p-\/>siguiente;                           \textcolor{comment}{//Avanzamos el puntero}}
+\DoxyCodeLine{\Hypertarget{classCola_l00058}00058       \textcolor{keywordflow}{while} (p!=0)\{                             \textcolor{comment}{//Mientras queden elementos}}
+\DoxyCodeLine{\Hypertarget{classCola_l00059}00059         ultima-\/>siguiente=\textcolor{keyword}{new} Celda(p-\/>elemento,0); \textcolor{comment}{//Creamos un nuevo nodo}}
+\DoxyCodeLine{\Hypertarget{classCola_l00060}00060         ultima=ultima-\/>siguiente;                   \textcolor{comment}{//Actualizamos ultima}}
+\DoxyCodeLine{\Hypertarget{classCola_l00061}00061         p=p-\/>siguiente;                             \textcolor{comment}{//Avanzamos el puntero}}
+\DoxyCodeLine{\Hypertarget{classCola_l00062}00062       \}}
+\DoxyCodeLine{\Hypertarget{classCola_l00063}00063     \}}
+\DoxyCodeLine{\Hypertarget{classCola_l00064}00064     \textcolor{keywordflow}{else} primera=ultima=0;      \textcolor{comment}{//Si la otra cola está vacía}}
+\DoxyCodeLine{\Hypertarget{classCola_l00065}00065     num\_elem=otra.num\_elem;}
+\DoxyCodeLine{\Hypertarget{classCola_l00066}00066   \}}
+\DoxyCodeLine{\Hypertarget{classCola_l00067}00067   \textcolor{keywordflow}{return} *\textcolor{keyword}{this}; \textcolor{comment}{//Devolvemos el objeto para permitir el encadenamiento (a=b=c)}}
+\DoxyCodeLine{\Hypertarget{classCola_l00068}00068 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCola_a4a902e5805ae74f8d80c6f3267fd14c4}\label{classCola_a4a902e5805ae74f8d80c6f3267fd14c4}} 
+\index{Cola$<$ T $>$@{Cola$<$ T $>$}!poner@{poner}}
+\index{poner@{poner}!Cola$<$ T $>$@{Cola$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{poner()}{poner()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classCola}{Cola}}$<$ T $>$\+::poner (\begin{DoxyParamCaption}\item[{const T \&}]{elem }\end{DoxyParamCaption})}
+
+
+
+Añade un elemento al final de la cola. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em elem} & \mbox{\hyperlink{structElemento}{Elemento}} que se va a añadir. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{cola_8cpp_source_l00073}{73}} of file \mbox{\hyperlink{cola_8cpp_source}{cola.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classCola_l00073}00073                                  \{}
+\DoxyCodeLine{\Hypertarget{classCola_l00074}00074   Celda *aux = \textcolor{keyword}{new} Celda(elem,0);    \textcolor{comment}{//Creamos un nuevo nodo}}
+\DoxyCodeLine{\Hypertarget{classCola_l00075}00075   \textcolor{keywordflow}{if} (primera==0)                    \textcolor{comment}{//Si la lista está vacía,}}
+\DoxyCodeLine{\Hypertarget{classCola_l00076}00076     primera = ultima = aux;          \textcolor{comment}{//primera y ultima apuntan a ese nodo}}
+\DoxyCodeLine{\Hypertarget{classCola_l00077}00077   \textcolor{keywordflow}{else}\{                      \textcolor{comment}{//Si la lista ya tenia nodos,}}
+\DoxyCodeLine{\Hypertarget{classCola_l00078}00078     ultima-\/>siguiente = aux; \textcolor{comment}{//Actualizamos el puntero siguiente del ultimo nodo}}
+\DoxyCodeLine{\Hypertarget{classCola_l00079}00079     ultima = aux;            \textcolor{comment}{//Actualizamos ultima}}
+\DoxyCodeLine{\Hypertarget{classCola_l00080}00080   \}}
+\DoxyCodeLine{\Hypertarget{classCola_l00081}00081   num\_elem++;                \textcolor{comment}{//Incrementamos el numero de elementos}}
+\DoxyCodeLine{\Hypertarget{classCola_l00082}00082 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCola_a320766ddc7020424052c99e5c82a105d}\label{classCola_a320766ddc7020424052c99e5c82a105d}} 
+\index{Cola$<$ T $>$@{Cola$<$ T $>$}!quitar@{quitar}}
+\index{quitar@{quitar}!Cola$<$ T $>$@{Cola$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{quitar()}{quitar()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classCola}{Cola}}$<$ T $>$\+::quitar}
+
+
+
+Quita el elemento del frente de la cola. 
+
+
+
+Definition at line \mbox{\hyperlink{cola_8cpp_source_l00087}{87}} of file \mbox{\hyperlink{cola_8cpp_source}{cola.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classCola_l00087}00087                     \{}
+\DoxyCodeLine{\Hypertarget{classCola_l00088}00088   assert(primera!=0);             \textcolor{comment}{//Si la cola está vacía, abortar}}
+\DoxyCodeLine{\Hypertarget{classCola_l00089}00089   Celda *aux = primera;           \textcolor{comment}{//Copiamos el puntero al primer nodo}}
+\DoxyCodeLine{\Hypertarget{classCola_l00090}00090   primera = primera-\/>siguiente;   \textcolor{comment}{//Actualizamos primera}}
+\DoxyCodeLine{\Hypertarget{classCola_l00091}00091   \textcolor{keyword}{delete} aux;                     \textcolor{comment}{//Borramos el primer nodo}}
+\DoxyCodeLine{\Hypertarget{classCola_l00092}00092   \textcolor{keywordflow}{if} (primera == 0)               \textcolor{comment}{//Si no quedan nodos,}}
+\DoxyCodeLine{\Hypertarget{classCola_l00093}00093     ultima=0;                     \textcolor{comment}{//actualizamos ultima}}
+\DoxyCodeLine{\Hypertarget{classCola_l00094}00094   num\_elem-\/-\/;                     \textcolor{comment}{//Actualizamos el número de elementos}}
+\DoxyCodeLine{\Hypertarget{classCola_l00095}00095 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCola_a2c746a66289cd4f90d4e43f712b72fb6}\label{classCola_a2c746a66289cd4f90d4e43f712b72fb6}} 
+\index{Cola$<$ T $>$@{Cola$<$ T $>$}!vacia@{vacia}}
+\index{vacia@{vacia}!Cola$<$ T $>$@{Cola$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{vacia()}{vacia()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{classCola}{Cola}}$<$ T $>$\+::vacia (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Comprueba si la cola está vacía. 
+
+
+
+Definition at line \mbox{\hyperlink{cola_8h_source_l00092}{92}} of file \mbox{\hyperlink{cola_8h_source}{cola.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classCola_l00092}00092                       \{}
+\DoxyCodeLine{\Hypertarget{classCola_l00093}00093       \textcolor{keywordflow}{return} num\_elem==0;}
+\DoxyCodeLine{\Hypertarget{classCola_l00094}00094     \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{cola_8h}{cola.\+h}}\item 
+src/\mbox{\hyperlink{cola_8cpp}{cola.\+cpp}}\end{DoxyCompactItemize}

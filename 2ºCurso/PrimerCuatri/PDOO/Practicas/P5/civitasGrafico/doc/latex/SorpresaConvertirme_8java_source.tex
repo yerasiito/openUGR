@@ -1,0 +1,36 @@
+\hypertarget{SorpresaConvertirme_8java_source}{}\doxysection{Sorpresa\+Convertirme.\+java}
+\label{SorpresaConvertirme_8java_source}\index{src/civitas/SorpresaConvertirme.java@{src/civitas/SorpresaConvertirme.java}}
+\mbox{\hyperlink{SorpresaConvertirme_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{SorpresaConvertirme_8java_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{SorpresaConvertirme_8java_source_l00007}00007 \textcolor{keyword}{package }civitas;}
+\DoxyCodeLine{\Hypertarget{SorpresaConvertirme_8java_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{SorpresaConvertirme_8java_source_l00009}00009 \textcolor{keyword}{import} java.util.ArrayList;}
+\DoxyCodeLine{\Hypertarget{SorpresaConvertirme_8java_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{SorpresaConvertirme_8java_source_l00015}\mbox{\hyperlink{classcivitas_1_1SorpresaConvertirme}{00015}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{classcivitas_1_1SorpresaConvertirme}{SorpresaConvertirme}} \textcolor{keyword}{extends} \mbox{\hyperlink{classcivitas_1_1Sorpresa}{Sorpresa}}\{}
+\DoxyCodeLine{\Hypertarget{SorpresaConvertirme_8java_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{SorpresaConvertirme_8java_source_l00017}00017     \textcolor{keyword}{public} \mbox{\hyperlink{classcivitas_1_1SorpresaConvertirme}{SorpresaConvertirme}}(String nombre) \{}
+\DoxyCodeLine{\Hypertarget{SorpresaConvertirme_8java_source_l00018}00018         super(nombre, 0);}
+\DoxyCodeLine{\Hypertarget{SorpresaConvertirme_8java_source_l00019}00019     \}}
+\DoxyCodeLine{\Hypertarget{SorpresaConvertirme_8java_source_l00020}00020     }
+\DoxyCodeLine{\Hypertarget{SorpresaConvertirme_8java_source_l00021}00021     @Override}
+\DoxyCodeLine{\Hypertarget{SorpresaConvertirme_8java_source_l00022}00022     \textcolor{keywordtype}{void} aplicarAJugador(\textcolor{keywordtype}{int} actual, ArrayList<Jugador> todos)\{}
+\DoxyCodeLine{\Hypertarget{SorpresaConvertirme_8java_source_l00023}00023         informe(actual, todos);}
+\DoxyCodeLine{\Hypertarget{SorpresaConvertirme_8java_source_l00024}00024         \mbox{\hyperlink{classcivitas_1_1JugadorEspeculador}{JugadorEspeculador}} jEsp = todos.get(actual).convertir();}
+\DoxyCodeLine{\Hypertarget{SorpresaConvertirme_8java_source_l00025}00025         todos.set(actual, jEsp); \textcolor{comment}{//mete el jugador especulador en su lugar}}
+\DoxyCodeLine{\Hypertarget{SorpresaConvertirme_8java_source_l00026}00026         }
+\DoxyCodeLine{\Hypertarget{SorpresaConvertirme_8java_source_l00027}00027         String cambios = \textcolor{stringliteral}{"{}El jugador convertido paga la mitad y podrá construir "{}} }
+\DoxyCodeLine{\Hypertarget{SorpresaConvertirme_8java_source_l00028}00028                 + jEsp.getFactorEspeculador() + \textcolor{stringliteral}{"{} veces más propiedades."{}};}
+\DoxyCodeLine{\Hypertarget{SorpresaConvertirme_8java_source_l00029}00029         \mbox{\hyperlink{classcivitas_1_1Diario}{Diario}}.getInstance().ocurreEvento(cambios);  }
+\DoxyCodeLine{\Hypertarget{SorpresaConvertirme_8java_source_l00030}00030     \}}
+\DoxyCodeLine{\Hypertarget{SorpresaConvertirme_8java_source_l00031}00031     }
+\DoxyCodeLine{\Hypertarget{SorpresaConvertirme_8java_source_l00032}00032     @Override}
+\DoxyCodeLine{\Hypertarget{SorpresaConvertirme_8java_source_l00033}00033     \textcolor{keywordtype}{void} informe(\textcolor{keywordtype}{int} actual, ArrayList<Jugador> todos)\{}
+\DoxyCodeLine{\Hypertarget{SorpresaConvertirme_8java_source_l00034}00034         String evento = \textcolor{stringliteral}{"{}¡El jugador "{}} + todos.get(actual).getNombre() +}
+\DoxyCodeLine{\Hypertarget{SorpresaConvertirme_8java_source_l00035}00035                 \textcolor{stringliteral}{"{} se le ha convertido en Especulador! "{}} + toString();}
+\DoxyCodeLine{\Hypertarget{SorpresaConvertirme_8java_source_l00036}00036         \mbox{\hyperlink{classcivitas_1_1Diario}{Diario}}.getInstance().ocurreEvento(evento);}
+\DoxyCodeLine{\Hypertarget{SorpresaConvertirme_8java_source_l00037}00037     \}}
+\DoxyCodeLine{\Hypertarget{SorpresaConvertirme_8java_source_l00038}00038     }
+\DoxyCodeLine{\Hypertarget{SorpresaConvertirme_8java_source_l00039}00039 \}}
+
+\end{DoxyCode}

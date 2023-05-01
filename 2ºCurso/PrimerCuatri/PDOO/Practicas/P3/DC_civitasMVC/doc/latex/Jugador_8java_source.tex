@@ -1,0 +1,193 @@
+\hypertarget{Jugador_8java_source}{}\doxysection{Jugador.\+java}
+\label{Jugador_8java_source}\index{src/civitas/Jugador.java@{src/civitas/Jugador.java}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00001}00001 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00002}00002 \textcolor{comment}{ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-\/default.txt to change this license}}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00003}00003 \textcolor{comment}{ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template}}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00004}00004 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00005}00005 \textcolor{keyword}{package }civitas;}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00007}00007 \textcolor{keyword}{import} java.util.ArrayList;}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00012}\mbox{\hyperlink{classcivitas_1_1Jugador}{00012}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{classcivitas_1_1Jugador}{Jugador}} \textcolor{keyword}{implements} Comparable<Jugador>\{}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00013}00013     \textcolor{keyword}{private} \textcolor{keyword}{final} \textcolor{keyword}{static} \textcolor{keywordtype}{int} CasasMax = 4;}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00014}00014     \textcolor{keyword}{private} \textcolor{keyword}{final} \textcolor{keyword}{static} \textcolor{keywordtype}{int} HotelesMax = 4;}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00015}00015     \textcolor{keyword}{private} \textcolor{keyword}{final} \textcolor{keyword}{static} \textcolor{keywordtype}{int} CasasPorHotel = 4;}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00016}00016     \textcolor{keyword}{private} \textcolor{keyword}{final} \textcolor{keyword}{static} \textcolor{keywordtype}{float} PasoporSalida = 1000f;}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00017}00017     \textcolor{keyword}{private} \textcolor{keyword}{final} \textcolor{keyword}{static} \textcolor{keywordtype}{float} SaldoInicial = 7500f;}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00018}00018     }
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00019}00019     \textcolor{keyword}{private} \textcolor{keywordtype}{int} casillaActual;}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00020}00020     \textcolor{keyword}{private} String nombre;}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00021}00021     \textcolor{keyword}{private} \textcolor{keywordtype}{boolean} puedeComprar;}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00022}00022     \textcolor{keyword}{private} \textcolor{keywordtype}{float} saldo;}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00023}00023     \textcolor{keyword}{private} ArrayList<Casilla> propiedades;}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00024}00024     }
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00025}00025     \textcolor{keyword}{private} \textcolor{keywordtype}{void} init()\{}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00026}00026         casillaActual = 0;}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00027}00027         nombre = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00028}00028         puedeComprar = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00029}00029         saldo = SaldoInicial;}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00030}00030         propiedades = \textcolor{keyword}{new} ArrayList<>();}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00031}00031     \}}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00032}00032     }
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00033}00033     \textcolor{keyword}{public} \mbox{\hyperlink{classcivitas_1_1Jugador}{Jugador}}(String nombre)\{}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00034}00034         init();}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00035}00035         this.nombre = nombre;}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00036}00036     \}}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00037}00037     }
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00038}00038     \textcolor{comment}{//constructor de copia}}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00039}00039     \textcolor{keyword}{protected} \mbox{\hyperlink{classcivitas_1_1Jugador}{Jugador}}(\mbox{\hyperlink{classcivitas_1_1Jugador}{Jugador}} otro)\{}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00040}00040         this.nombre = otro.nombre;}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00041}00041         this.casillaActual = otro.casillaActual;}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00042}00042         this.saldo = otro.saldo;}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00043}00043         this.puedeComprar = otro.puedeComprar;}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00044}00044         this.propiedades = otro.propiedades;}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00045}00045     \}}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00046}00046     }
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00047}00047     \textcolor{keyword}{public} \textcolor{keywordtype}{int} CantidadCasasHoteles()\{}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00048}00048         \textcolor{keywordtype}{int} total = 0;}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00049}00049         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < propiedades.size(); i++)}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00050}00050             total += propiedades.get(i).cantidadCasasHoteles();}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00051}00051         }
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00052}00052         \textcolor{keywordflow}{return} total;}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00053}00053     \}}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00054}00054 }
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00055}00055     \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{int} getCasasMax()\{}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00056}00056         \textcolor{keywordflow}{return} CasasMax;}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00057}00057     \}}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00058}00058     }
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00059}00059     \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{int} getCasasPorHotel()\{}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00060}00060         \textcolor{keywordflow}{return} CasasPorHotel;}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00061}00061     \}}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00062}00062     }
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00063}00063     \textcolor{keyword}{public} \textcolor{keywordtype}{int} getCasillaActual()\{}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00064}00064         \textcolor{keywordflow}{return} casillaActual;}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00065}00065     \}}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00066}00066     }
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00067}00067     \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{int} getHotelesMax()\{}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00068}00068         \textcolor{keywordflow}{return} HotelesMax;}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00069}00069     \}}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00070}00070     }
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00071}00071     \textcolor{keyword}{public} String getNombre()\{}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00072}00072         \textcolor{keywordflow}{return} nombre;}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00073}00073     \}}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00074}00074     }
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00075}00075     \textcolor{keyword}{public} \textcolor{keyword}{static} \textcolor{keywordtype}{float} getPremioPasoSalida()\{}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00076}00076         \textcolor{keywordflow}{return} PasoporSalida;}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00077}00077     \}}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00078}00078 }
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00079}00079     \textcolor{keyword}{public} ArrayList<Casilla> getPropiedades() \{}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00080}00080         \textcolor{keywordflow}{return} propiedades;}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00081}00081     \}}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00082}00082     }
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00083}00083     \textcolor{keyword}{public} \textcolor{keywordtype}{boolean} getPuedeComprar()\{}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00084}00084         \textcolor{keywordflow}{return} puedeComprar;}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00085}00085     \}}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00086}00086     }
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00087}00087     \textcolor{keyword}{public} \textcolor{keywordtype}{float} getSaldo()\{}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00088}00088         \textcolor{keywordflow}{return} saldo;}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00089}00089     \}}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00090}00090         }
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00091}00091     \textcolor{keyword}{public} \textcolor{keywordtype}{int} compareTo(\mbox{\hyperlink{classcivitas_1_1Jugador}{Jugador}} otro)\{}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00092}00092         \textcolor{keywordflow}{return} Float.compare(otro.getSaldo(), saldo);}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00093}00093     \}}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00095}00095     \textcolor{keyword}{public} \textcolor{keywordtype}{boolean} comprar(\mbox{\hyperlink{classcivitas_1_1Casilla}{Casilla}} titulo)\{}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00096}00096         \textcolor{comment}{//pendiente}}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00097}00097         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00098}00098     \}}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00099}00099     }
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00100}00100     \textcolor{keyword}{public} \textcolor{keywordtype}{boolean} construirCasa(\textcolor{keywordtype}{int} i)\{}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00101}00101         \textcolor{comment}{//pendiente}}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00102}00102         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00103}00103     \}}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00104}00104     }
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00105}00105     \textcolor{keyword}{public} \textcolor{keywordtype}{boolean} construirHotel(\textcolor{keywordtype}{int} i)\{}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00106}00106         \textcolor{comment}{//pendiente}}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00107}00107         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00108}00108     \}}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00110}00110     \textcolor{keyword}{public} \textcolor{keywordtype}{boolean} enBancarrota()\{}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00111}00111         \textcolor{keywordflow}{return} saldo < 0;}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00112}00112     \}}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00113}00113     }
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00114}00114     \textcolor{keyword}{public} \textcolor{keywordtype}{boolean} existeLaPropiedad(\textcolor{keywordtype}{int} ip)\{}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00115}00115         \textcolor{keywordtype}{boolean} existe = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00116}00116         \textcolor{keywordflow}{if}(ip > -\/1 \&\& ip < propiedades.size())}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00117}00117             existe = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00118}00118         \textcolor{keywordflow}{return} existe;}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00119}00119     \}}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00120}00120     }
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00121}00121     \textcolor{keyword}{public} \textcolor{keywordtype}{boolean} modificarSaldo(\textcolor{keywordtype}{float} cantidad)\{}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00122}00122         saldo+=cantidad;}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00123}00123         String evento = \textcolor{stringliteral}{"{}El jugador "{}} + nombre + \textcolor{stringliteral}{"{} ha modificado su saldo en "{}}}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00124}00124                 + cantidad + \textcolor{stringliteral}{"{} €"{}};}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00125}00125         \mbox{\hyperlink{classcivitas_1_1Diario}{Diario}}.getInstance().ocurreEvento(evento);}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00126}00126         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00127}00127     \}}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00128}00128     }
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00129}00129     \textcolor{keyword}{public} \textcolor{keywordtype}{boolean} moverACasilla(\textcolor{keywordtype}{int} numCasilla)\{}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00130}00130         casillaActual = numCasilla;}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00131}00131         puedeComprar = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00132}00132         String evento = \textcolor{stringliteral}{"{}El jugador "{}} + nombre + \textcolor{stringliteral}{"{} se ha movido a la casilla "{}}}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00133}00133                 + numCasilla;}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00134}00134         \mbox{\hyperlink{classcivitas_1_1Diario}{Diario}}.getInstance().ocurreEvento(evento);}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00135}00135         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00136}00136     \}}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00137}00137     }
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00138}00138     \textcolor{keyword}{public} \textcolor{keywordtype}{boolean} paga(\textcolor{keywordtype}{float} cantidad)\{}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00139}00139         \textcolor{keywordflow}{return} modificarSaldo(cantidad*-\/1);}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00140}00140     \}}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00141}00141     }
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00142}00142     \textcolor{keyword}{public} \textcolor{keywordtype}{boolean} pagaAlquiler(\textcolor{keywordtype}{float} cantidad)\{}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00143}00143         \textcolor{keywordflow}{return} paga(cantidad);}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00144}00144     \}}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00145}00145     }
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00146}00146     \textcolor{keyword}{public} \textcolor{keywordtype}{boolean} pasaPorSalida()\{}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00147}00147         recibe(PasoporSalida);}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00148}00148         String evento = \textcolor{stringliteral}{"{}El jugador "{}} + nombre + \textcolor{stringliteral}{"{} ha pasado por la Salida"{}};}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00149}00149         \mbox{\hyperlink{classcivitas_1_1Diario}{Diario}}.getInstance().ocurreEvento(evento);}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00150}00150         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00151}00151     \}}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00152}00152     }
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00153}00153     \textcolor{keyword}{public} \textcolor{keywordtype}{boolean} puedeComprarCasilla()\{}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00154}00154         \textcolor{keywordflow}{return} puedeComprar = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00155}00155     \}}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00156}00156     }
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00157}00157     \textcolor{keyword}{public} \textcolor{keywordtype}{boolean} puedoEdificarCasa(\mbox{\hyperlink{classcivitas_1_1Casilla}{Casilla}} propiedad)\{}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00158}00158         \textcolor{keywordtype}{boolean} puedoEdificar = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00159}00159         \textcolor{keywordflow}{if}(puedoGastar(propiedad.getPrecioEdificar()) }
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00160}00160                 \&\& propiedad.getNumCasas() < CasasMax)}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00161}00161             puedoEdificar = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00162}00162         }
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00163}00163         \textcolor{keywordflow}{return} puedoEdificar;}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00164}00164     \}}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00165}00165     }
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00166}00166     \textcolor{keyword}{public} \textcolor{keywordtype}{boolean} puedoEdificarHotel(\mbox{\hyperlink{classcivitas_1_1Casilla}{Casilla}} propiedad)\{}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00167}00167         \textcolor{keywordtype}{boolean} puedoEdificar = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00168}00168         \textcolor{keywordflow}{if}(puedoGastar(propiedad.getPrecioEdificar()*\mbox{\hyperlink{classcivitas_1_1Casilla}{Casilla}}.getFACTORALQUILERHOTEL()) }
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00169}00169                 \&\& propiedad.getNumCasas() == CasasPorHotel}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00170}00170                 \&\& propiedad.getNumHoteles() < HotelesMax)}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00171}00171             puedoEdificar = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00172}00172         }
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00173}00173         \textcolor{keywordflow}{return} puedoEdificar;}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00174}00174     \}}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00175}00175     }
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00176}00176     \textcolor{keyword}{public} \textcolor{keywordtype}{boolean} puedoGastar(\textcolor{keywordtype}{float} precio)\{}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00177}00177         \textcolor{keywordflow}{return} saldo >= precio;}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00178}00178     \}}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00179}00179     }
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00180}00180     \textcolor{keyword}{public} \textcolor{keywordtype}{boolean} recibe(\textcolor{keywordtype}{float} cantidad)\{}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00181}00181         \textcolor{keywordflow}{return} modificarSaldo(cantidad);}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00182}00182     \}}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00183}00183     }
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00184}00184     \textcolor{keyword}{public} \textcolor{keywordtype}{boolean} tieneAlgoQueGestionar()\{}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00185}00185         \textcolor{keywordflow}{return} !propiedades.isEmpty();}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00186}00186     \}}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00187}00187     }
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00188}00188     \textcolor{keyword}{public} String toString()\{}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00189}00189          \textcolor{keywordflow}{return} (\textcolor{stringliteral}{"{}Jugador: "{}} +nombre}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00190}00190                 + \textcolor{stringliteral}{"{}, Casilla Actual: "{}} + casillaActual}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00191}00191                 + \textcolor{stringliteral}{"{}, Saldo: "{}} + saldo + \textcolor{stringliteral}{"{}\(\backslash\)n"{}});}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00192}00192     \}}
+\DoxyCodeLine{\Hypertarget{Jugador_8java_source_l00193}00193 \}}
+
+\end{DoxyCode}

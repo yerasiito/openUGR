@@ -1,0 +1,31 @@
+\hypertarget{conjunto__reales_8h_source}{}\doxysection{conjunto\+\_\+reales.\+h}
+\label{conjunto__reales_8h_source}\index{racional-\/mas-\/vd/vdinamico/claselab/conjuntoreales/conjunto\_reales.h@{racional-\/mas-\/vd/vdinamico/claselab/conjuntoreales/conjunto\_reales.h}}
+\mbox{\hyperlink{conjunto__reales_8h}{Ir a la documentación de este archivo.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#ifndef \_conjunto\_reales\_h}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#define \_conjunto\_reales\_h}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <\mbox{\hyperlink{vector__dinamico_8h}{vector\_dinamico.h}}>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <cassert>}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{34 \textcolor{keyword}{class }\mbox{\hyperlink{class_conjunto___reales}{Conjunto\_Reales}} \{}
+\DoxyCodeLine{35   \textcolor{keyword}{private}:}
+\DoxyCodeLine{54     \mbox{\hyperlink{class_vector___dinamico}{Vector\_Dinamico}} v; }
+\DoxyCodeLine{55     \textcolor{keywordtype}{int} nelementos;  }
+\DoxyCodeLine{65     \textcolor{keywordtype}{bool} posicion\_elemento(\textcolor{keywordtype}{int}\& pos, \textcolor{keywordtype}{float} val) \textcolor{keyword}{const};}
+\DoxyCodeLine{66   \textcolor{keyword}{public}:}
+\DoxyCodeLine{67     \mbox{\hyperlink{class_conjunto___reales}{Conjunto\_Reales}}(): nelementos(0) \{\}}
+\DoxyCodeLine{68     \textcolor{comment}{// Conjunto\_Reales(const Conjunto\_Reales\& c);}}
+\DoxyCodeLine{69     \textcolor{comment}{// \string~Conjunto\_Reales();}}
+\DoxyCodeLine{70     \textcolor{comment}{// Conjunto\_Reales\& operator= (const Conjunto\_Reales\& c);}}
+\DoxyCodeLine{78 \textcolor{comment}{}    \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_conjunto___reales_aed1485ad5799eb1662d5ee49a0b62772}{Insertar}}(\textcolor{keywordtype}{float} f);}
+\DoxyCodeLine{86     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_conjunto___reales_ab52fefbe5e399f98a0ec67ef48008616}{Borrar}}(\textcolor{keywordtype}{float} f);}
+\DoxyCodeLine{93     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_conjunto___reales_aa4e1c080cf2c90e9b4451b87ce11bbf3}{Pertenece}}(\textcolor{keywordtype}{float} f)\textcolor{keyword}{ const }\{ \textcolor{keywordtype}{int} pos; \textcolor{keywordflow}{return} posicion\_elemento(pos,f); \}}
+\DoxyCodeLine{101     \textcolor{keywordtype}{float} \mbox{\hyperlink{class_conjunto___reales_aa31c562605e4711c7755a5df24a2755c}{Elemento}}(\textcolor{keywordtype}{int} i)\textcolor{keyword}{ const }\{ assert(0<=i \&\& i<v.\mbox{\hyperlink{class_vector___dinamico_aec00b03f566e1cc6a2bacbed695f8037}{size}}()); \textcolor{keywordflow}{return} v[i]; \}}
+\DoxyCodeLine{106     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_conjunto___reales_af173f1a2579c2845e6b44ee86cfef0aa}{size}}()\textcolor{keyword}{ const }\{ \textcolor{keywordflow}{return} nelementos; \}}
+\DoxyCodeLine{107 \};}
+\DoxyCodeLine{108 }
+\DoxyCodeLine{109 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* \_conjunto\_reales\_h */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

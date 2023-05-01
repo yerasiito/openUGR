@@ -1,0 +1,103 @@
+\hypertarget{structElemento}{}\doxysection{Elemento Struct Reference}
+\label{structElemento}\index{Elemento@{Elemento}}
+
+
+T.\+D.\+A Cola con máximo. Una instancia {\itshape A} del tipo abstracto de dato @A cola con máximo es un objeto que representa una cola tipo FIFO que guarda el máximo de todos sus elementos en una cola paralela a la cola en la se guardan los datos, de forma que se pueda consultar el máximo directamente en una de las colas y en la otra se guardan los elementos de por sí. Basado en el tipo de dato propio proporcionado por Prof. Joaquín Valdivia \char`\"{}pila.\+h\char`\"{} y parcialmente en std\+::stack de la STL.  
+
+
+
+
+{\ttfamily \#include $<$Cola\+\_\+max\+\_\+\+Pila.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{structElemento_a3c20143acde7647ccfb5f03845a8c7ee}{elemento}}
+\item 
+int \mbox{\hyperlink{structElemento_a8ea9e65e36d5c2d866ebf1122353bb1b}{maximo}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{structElemento_a837bcdc92b6224f11e4cd3ca0c9d336a}{operator$<$$<$}} (ostream \&os, const \mbox{\hyperlink{structElemento}{Elemento}} \&elem)
+\begin{DoxyCompactList}\small\item\em Operador \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+T.\+D.\+A Cola con máximo. Una instancia {\itshape A} del tipo abstracto de dato @A cola con máximo es un objeto que representa una cola tipo FIFO que guarda el máximo de todos sus elementos en una cola paralela a la cola en la se guardan los datos, de forma que se pueda consultar el máximo directamente en una de las colas y en la otra se guardan los elementos de por sí. Basado en el tipo de dato propio proporcionado por Prof. Joaquín Valdivia \char`\"{}pila.\+h\char`\"{} y parcialmente en std\+::stack de la STL. 
+
+\begin{DoxyAuthor}{Author}
+Yeray Lopéz Ramírez 
+
+Jaime Castillo Uclés 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+27 NOV 2021
+\end{DoxyDate}
+T.\+D.\+A. \mbox{\hyperlink{structElemento}{Elemento}} de la cola Una instancia del tipo abstracto \mbox{\hyperlink{structElemento}{Elemento}} de la cola que contiene dos elementos, un dato y un máximo de la cola hasta ese punto de la cola. 
+
+Definition at line \mbox{\hyperlink{Cola__max__Pila_8h_source_l00037}{37}} of file \mbox{\hyperlink{Cola__max__Pila_8h_source}{Cola\+\_\+max\+\_\+\+Pila.\+h}}.
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{structElemento_a837bcdc92b6224f11e4cd3ca0c9d336a}\label{structElemento_a837bcdc92b6224f11e4cd3ca0c9d336a}} 
+\index{Elemento@{Elemento}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Elemento@{Elemento}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{os,  }\item[{const \mbox{\hyperlink{structElemento}{Elemento}} \&}]{elem }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Operador \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & stream de salida \\
+\hline
+{\em elemento} & \mbox{\hyperlink{structElemento}{Elemento}} de salida \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+instancia del ostream 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{Cola__max__Pila_8h_source_l00046}{46}} of file \mbox{\hyperlink{Cola__max__Pila_8h_source}{Cola\+\_\+max\+\_\+\+Pila.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{structElemento_l00046}00046                                                                       \{}
+\DoxyCodeLine{\Hypertarget{structElemento_l00047}00047                 os << elem.elemento << \textcolor{stringliteral}{"{} ("{}} << elem.maximo << \textcolor{stringliteral}{"{})"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{structElemento_l00048}00048                 \textcolor{keywordflow}{return} os;}
+\DoxyCodeLine{\Hypertarget{structElemento_l00049}00049             \};}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structElemento_a3c20143acde7647ccfb5f03845a8c7ee}\label{structElemento_a3c20143acde7647ccfb5f03845a8c7ee}} 
+\index{Elemento@{Elemento}!elemento@{elemento}}
+\index{elemento@{elemento}!Elemento@{Elemento}}
+\doxysubsubsection{\texorpdfstring{elemento}{elemento}}
+{\footnotesize\ttfamily int Elemento\+::elemento}
+
+
+
+Definition at line \mbox{\hyperlink{Cola__max__Pila_8h_source_l00038}{38}} of file \mbox{\hyperlink{Cola__max__Pila_8h_source}{Cola\+\_\+max\+\_\+\+Pila.\+h}}.
+
+\mbox{\Hypertarget{structElemento_a8ea9e65e36d5c2d866ebf1122353bb1b}\label{structElemento_a8ea9e65e36d5c2d866ebf1122353bb1b}} 
+\index{Elemento@{Elemento}!maximo@{maximo}}
+\index{maximo@{maximo}!Elemento@{Elemento}}
+\doxysubsubsection{\texorpdfstring{maximo}{maximo}}
+{\footnotesize\ttfamily int Elemento\+::maximo}
+
+
+
+Definition at line \mbox{\hyperlink{Cola__max__Pila_8h_source_l00039}{39}} of file \mbox{\hyperlink{Cola__max__Pila_8h_source}{Cola\+\_\+max\+\_\+\+Pila.\+h}}.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{Cola__max__Pila_8h}{Cola\+\_\+max\+\_\+\+Pila.\+h}}\end{DoxyCompactItemize}

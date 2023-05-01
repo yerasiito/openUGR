@@ -1,0 +1,87 @@
+\hypertarget{classcivitas_1_1Tablero}{}\doxysection{civitas.\+Tablero Class Reference}
+\label{classcivitas_1_1Tablero}\index{civitas.Tablero@{civitas.Tablero}}
+
+
+Clase \mbox{\hyperlink{classcivitas_1_1Tablero}{Tablero}} que gestiona las casillas del juego Puede contener calles, casillas sorpresa y descansos También gestiona si el jugador ha dado la vuelta entera al tablero.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcivitas_1_1Casilla}{Casilla}} \mbox{\hyperlink{classcivitas_1_1Tablero_a3e8d442ecab08ad5735bb82ed191cebb}{get\+Casilla}} (int num\+Casilla)
+\item 
+Array\+List$<$ \mbox{\hyperlink{classcivitas_1_1Casilla}{Casilla}} $>$ \mbox{\hyperlink{classcivitas_1_1Tablero_ac8c06aaa2663e389e2e0a97ad25a4925}{get\+Casillas}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase \mbox{\hyperlink{classcivitas_1_1Tablero}{Tablero}} que gestiona las casillas del juego Puede contener calles, casillas sorpresa y descansos También gestiona si el jugador ha dado la vuelta entera al tablero. 
+
+Definition at line \mbox{\hyperlink{Tablero_8java_source_l00016}{16}} of file \mbox{\hyperlink{Tablero_8java_source}{Tablero.\+java}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcivitas_1_1Tablero_a155fcd33e95b6b43c1720b91da169a1f}\label{classcivitas_1_1Tablero_a155fcd33e95b6b43c1720b91da169a1f}} 
+\index{civitas.Tablero@{civitas.Tablero}!Tablero@{Tablero}}
+\index{Tablero@{Tablero}!civitas.Tablero@{civitas.Tablero}}
+\doxysubsubsection{\texorpdfstring{Tablero()}{Tablero()}}
+{\footnotesize\ttfamily civitas.\+Tablero.\+Tablero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{Tablero_8java_source_l00021}{21}} of file \mbox{\hyperlink{Tablero_8java_source}{Tablero.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00021}00021                     \{}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00022}00022         casillas = \textcolor{keyword}{new} ArrayList<>();}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00023}00023         porSalida = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00024}00024     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcivitas_1_1Tablero_a3e8d442ecab08ad5735bb82ed191cebb}\label{classcivitas_1_1Tablero_a3e8d442ecab08ad5735bb82ed191cebb}} 
+\index{civitas.Tablero@{civitas.Tablero}!getCasilla@{getCasilla}}
+\index{getCasilla@{getCasilla}!civitas.Tablero@{civitas.Tablero}}
+\doxysubsubsection{\texorpdfstring{getCasilla()}{getCasilla()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcivitas_1_1Casilla}{Casilla}} civitas.\+Tablero.\+get\+Casilla (\begin{DoxyParamCaption}\item[{int}]{num\+Casilla }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{Tablero_8java_source_l00044}{44}} of file \mbox{\hyperlink{Tablero_8java_source}{Tablero.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00044}00044                                              \{}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00045}00045         \textcolor{keywordflow}{if}(correcto(numCasilla))}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00046}00046             \textcolor{keywordflow}{return} casillas.get(numCasilla);}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00047}00047         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00048}00048             \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00049}00049     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcivitas_1_1Tablero_ac8c06aaa2663e389e2e0a97ad25a4925}\label{classcivitas_1_1Tablero_ac8c06aaa2663e389e2e0a97ad25a4925}} 
+\index{civitas.Tablero@{civitas.Tablero}!getCasillas@{getCasillas}}
+\index{getCasillas@{getCasillas}!civitas.Tablero@{civitas.Tablero}}
+\doxysubsubsection{\texorpdfstring{getCasillas()}{getCasillas()}}
+{\footnotesize\ttfamily Array\+List$<$ \mbox{\hyperlink{classcivitas_1_1Casilla}{Casilla}} $>$ civitas.\+Tablero.\+get\+Casillas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{Tablero_8java_source_l00051}{51}} of file \mbox{\hyperlink{Tablero_8java_source}{Tablero.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00051}00051                                             \{}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00052}00052         \textcolor{keywordflow}{return} casillas;}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Tablero_l00053}00053     \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/civitas/\mbox{\hyperlink{Tablero_8java}{Tablero.\+java}}\end{DoxyCompactItemize}

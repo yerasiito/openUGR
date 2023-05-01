@@ -1,0 +1,114 @@
+\hypertarget{classcontroladorCivitas_1_1Controlador}{}\doxysection{controlador\+Civitas.\+Controlador Class Reference}
+\label{classcontroladorCivitas_1_1Controlador}\index{controladorCivitas.Controlador@{controladorCivitas.Controlador}}
+
+
+Clase \mbox{\hyperlink{classcontroladorCivitas_1_1Controlador}{Controlador}} que comunica {\ttfamily Civitas\+Juego} con {\ttfamily Vista\+Textual} Permite la comunicacion entre paquetes sin violar el acceso a variables o.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcontroladorCivitas_1_1Controlador_ae16b395eec5e5583f60ab9218b4e7b70}{Controlador}} (\mbox{\hyperlink{classcivitas_1_1CivitasJuego}{Civitas\+Juego}} juego, \mbox{\hyperlink{classvistaTextualCivitas_1_1VistaTextual}{Vista\+Textual}} vista)
+\item 
+void \mbox{\hyperlink{classcontroladorCivitas_1_1Controlador_aab36e166c1e1ccc1cee3c14032bf81f4}{juega}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase \mbox{\hyperlink{classcontroladorCivitas_1_1Controlador}{Controlador}} que comunica {\ttfamily Civitas\+Juego} con {\ttfamily Vista\+Textual} Permite la comunicacion entre paquetes sin violar el acceso a variables o. 
+
+Definition at line \mbox{\hyperlink{Controlador_8java_source_l00019}{19}} of file \mbox{\hyperlink{Controlador_8java_source}{Controlador.\+java}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcontroladorCivitas_1_1Controlador_ae16b395eec5e5583f60ab9218b4e7b70}\label{classcontroladorCivitas_1_1Controlador_ae16b395eec5e5583f60ab9218b4e7b70}} 
+\index{controladorCivitas.Controlador@{controladorCivitas.Controlador}!Controlador@{Controlador}}
+\index{Controlador@{Controlador}!controladorCivitas.Controlador@{controladorCivitas.Controlador}}
+\doxysubsubsection{\texorpdfstring{Controlador()}{Controlador()}}
+{\footnotesize\ttfamily controlador\+Civitas.\+Controlador.\+Controlador (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcivitas_1_1CivitasJuego}{Civitas\+Juego}}}]{juego,  }\item[{\mbox{\hyperlink{classvistaTextualCivitas_1_1VistaTextual}{Vista\+Textual}}}]{vista }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{Controlador_8java_source_l00024}{24}} of file \mbox{\hyperlink{Controlador_8java_source}{Controlador.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00024}00024                                                               \{}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00025}00025         this.juego = juego;}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00026}00026         this.vista = vista;}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00027}00027     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcontroladorCivitas_1_1Controlador_aab36e166c1e1ccc1cee3c14032bf81f4}\label{classcontroladorCivitas_1_1Controlador_aab36e166c1e1ccc1cee3c14032bf81f4}} 
+\index{controladorCivitas.Controlador@{controladorCivitas.Controlador}!juega@{juega}}
+\index{juega@{juega}!controladorCivitas.Controlador@{controladorCivitas.Controlador}}
+\doxysubsubsection{\texorpdfstring{juega()}{juega()}}
+{\footnotesize\ttfamily void controlador\+Civitas.\+Controlador.\+juega (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{Controlador_8java_source_l00029}{29}} of file \mbox{\hyperlink{Controlador_8java_source}{Controlador.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00029}00029                        \{}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00030}00030         OperacionJuego opcionJuego;}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00031}00031         vista.mostrarEventos();}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00032}00032         \textcolor{keywordflow}{while}(!juego.finalDelJuego())\{                }
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00033}00033             vista.actualiza();}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00034}00034             vista.pausa();}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00035}00035             opcionJuego = juego.siguientePaso();}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00036}00036             vista.mostrarSiguienteOperacion(opcionJuego);}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00037}00037             \textcolor{keywordflow}{if}(opcionJuego != OperacionJuego.PASAR\_TURNO)\{}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00038}00038                 vista.mostrarEventos();}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00039}00039             \}}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00040}00040             }
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00041}00041             \textcolor{keywordflow}{if}(!juego.finalDelJuego())\{}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00042}00042                 \textcolor{keywordflow}{switch}(opcionJuego)\{}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00043}00043                     }
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00044}00044                     \textcolor{keywordflow}{case} COMPRAR:}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00045}00045                             \textcolor{keywordflow}{if}(vista.comprar() == Respuesta.SI)}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00046}00046                                 juego.comprar();}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00047}00047                         juego.siguientePasoCompletado(opcionJuego);}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00048}00048                         vista.mostrarEventos();}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00049}00049                         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00050}00050                     \textcolor{keywordflow}{case} GESTIONAR:}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00051}00051                         \textcolor{keywordtype}{int} numPropiedad;}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00052}00052                         OperacionInmobiliaria opcion = vista.elegirOperacion();}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00053}00053                         \textcolor{keywordflow}{if}( opcion != OperacionInmobiliaria.TERMINAR)\{}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00054}00054                             numPropiedad = vista.elegirPropiedad();}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00055}00055                             GestionInmobiliaria gestion = \textcolor{keyword}{new} GestionInmobiliaria(opcion, numPropiedad);}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00056}00056                             }
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00057}00057                             \textcolor{keywordflow}{switch}(gestion.getOperacion())\{}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00058}00058                                 }
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00059}00059                                 \textcolor{keywordflow}{case} CONSTRUIR\_CASA:}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00060}00060                                     juego.construirCasa(numPropiedad);}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00061}00061                                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00062}00062                                     }
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00063}00063                                 \textcolor{keywordflow}{case} CONSTRUIR\_HOTEL: }
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00064}00064                                     juego.construirHotel(numPropiedad);}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00065}00065                                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00066}00066                             \}}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00067}00067                         \}     }
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00068}00068                         juego.siguientePasoCompletado(opcionJuego);}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00069}00069                         vista.mostrarEventos();}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00070}00070                         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00071}00071                 \}}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00072}00072             \}}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00073}00073             \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00074}00074                 System.out.println(\textcolor{stringliteral}{"{}Un jugador entró en bancarrota! Esto son los resultados:"{}});}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00075}00075                 vista.actualiza();}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00076}00076             \}}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00077}00077         \}}
+\DoxyCodeLine{\Hypertarget{classcontroladorCivitas_1_1Controlador_l00078}00078     \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/controlador\+Civitas/\mbox{\hyperlink{Controlador_8java}{Controlador.\+java}}\end{DoxyCompactItemize}

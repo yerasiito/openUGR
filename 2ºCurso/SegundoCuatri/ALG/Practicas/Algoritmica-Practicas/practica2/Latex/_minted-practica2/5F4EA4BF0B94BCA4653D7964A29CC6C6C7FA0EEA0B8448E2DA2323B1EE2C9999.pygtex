@@ -1,0 +1,32 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n+nf}{maxDiferencia}\PYG{p}{(}\PYG{n}{vector}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{int}\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{o}{\PYGZam{}}\PYG{n}{sentencia}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{minimo}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{maximo}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{o}{\PYGZam{}}\PYG{n}{dC}\PYG{p}{,}
+\PYG{+w}{                  }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{o}{\PYGZam{}}\PYG{n}{dV}\PYG{p}{)\PYGZob{}}
+\PYG{+w}{  }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{minimo}\PYG{o}{\PYGZgt{}=}\PYG{+w}{ }\PYG{n}{maximo}\PYG{p}{)\PYGZob{}}
+\PYG{+w}{  	}\PYG{n}{dC}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{dV}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{minimo}\PYG{p}{;}
+\PYG{+w}{  	}\PYG{k}{return}\PYG{+w}{ }\PYG{l+m+mi}{\PYGZhy{}9999}\PYG{p}{;}
+\PYG{+w}{  }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{  }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{maxDiff}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{\PYGZhy{}99999}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{diaC}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{diaV}\PYG{p}{;}
+\PYG{+w}{  }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{mitad}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{maximo}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{n}{minimo}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{/}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{p}{;}
+\PYG{+w}{  }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{izq\PYGZus{}maxDiff}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{maxDiferencia}\PYG{p}{(}\PYG{n}{sentencia}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{minimo}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{mitad}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{dC}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{dV}\PYG{p}{);}
+\PYG{+w}{  }\PYG{n}{diaC}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{dC}\PYG{p}{;}
+\PYG{+w}{  }\PYG{n}{diaV}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{dV}\PYG{p}{;}
+\PYG{+w}{  }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{der\PYGZus{}maxDiff}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{maxDiferencia}\PYG{p}{(}\PYG{n}{sentencia}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{mitad}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{maximo}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{dC}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{dV}\PYG{p}{);}
+\PYG{+w}{  }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{izq\PYGZus{}maxDiff}\PYG{+w}{ }\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{der\PYGZus{}maxDiff}\PYG{p}{)\PYGZob{}}
+\PYG{+w}{  	}\PYG{n}{maxDiff}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{izq\PYGZus{}maxDiff}\PYG{p}{;}
+\PYG{+w}{  }\PYG{p}{\PYGZcb{}}\PYG{k}{else}\PYG{p}{\PYGZob{}}
+\PYG{+w}{  	}\PYG{n}{diaC}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{dC}\PYG{p}{;}
+\PYG{+w}{  	}\PYG{n}{diaV}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{dV}\PYG{p}{;}
+\PYG{+w}{  	}\PYG{n}{maxDiff}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{der\PYGZus{}maxDiff}\PYG{p}{;}
+\PYG{+w}{  }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{  }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{minimo\PYGZus{}izq}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{encontrarMinimo\PYGZus{}izq}\PYG{p}{(}\PYG{n}{sentencia}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{minimo}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{mitad}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{dC}\PYG{p}{);}
+\PYG{+w}{  }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{maximo\PYGZus{}der}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{encontrarMaximo\PYGZus{}der}\PYG{p}{(}\PYG{n}{sentencia}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{mitad}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{maximo}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{dV}\PYG{p}{);}
+\PYG{+w}{  }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{((}\PYG{n}{maximo\PYGZus{}der}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n}{minimo\PYGZus{}izq}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{n}{maxDiff}\PYG{p}{)\PYGZob{}}
+\PYG{+w}{  	}\PYG{n}{maxDiff}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{maximo\PYGZus{}der}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n}{minimo\PYGZus{}izq}\PYG{p}{;}
+\PYG{+w}{  	}\PYG{n}{diaC}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{dC}\PYG{p}{;}
+\PYG{+w}{  	}\PYG{n}{diaV}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{dV}\PYG{p}{;}
+\PYG{+w}{  }\PYG{p}{\PYGZcb{}}
+\PYG{+w}{  }\PYG{n}{dC}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{diaC}\PYG{p}{;}
+\PYG{+w}{  }\PYG{n}{dV}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{diaV}\PYG{p}{;}
+\PYG{+w}{  }\PYG{k}{return}\PYG{+w}{ }\PYG{n}{maxDiff}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

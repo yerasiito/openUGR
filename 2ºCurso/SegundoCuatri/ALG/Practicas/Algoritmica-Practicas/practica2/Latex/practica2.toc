@@ -1,0 +1,14 @@
+\babel@toc {spanish}{}\relax 
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Descripci\IeC {\'o}n del problema}{2}{}%
+\contentsline {subsection}{\numberline {1.1}Enunciado formal del problema Compra-venta de acciones}{2}{}%
+\contentsline {section}{\numberline {2}Algoritmo Trivial}{2}{}%
+\contentsline {subsection}{\numberline {2.1}Implementaci\IeC {\'o}n de la funci\IeC {\'o}n de c\IeC {\'o}mputo en C++ }{2}{}%
+\contentsline {subsection}{\numberline {2.2} C\IeC {\'a}lculo de la Eficiencia Te\IeC {\'o}rica }{3}{}%
+\contentsline {subsection}{\numberline {2.3} C\IeC {\'a}lculo de la Eficiencia Emp\IeC {\'\i }rica}{3}{}%
+\contentsline {subsection}{\numberline {2.4}C\IeC {\'a}lculo de la Eficiencia H\IeC {\'\i }brida}{4}{}%
+\contentsline {section}{\numberline {3}Algoritmo basado en Divide y Vencer\IeC {\'a}s}{6}{}%
+\contentsline {subsection}{\numberline {3.1}Implementaci\IeC {\'o}n de la funci\IeC {\'o}n de c\IeC {\'o}mputo en C++ }{6}{}%
+\contentsline {subsection}{\numberline {3.2}C\IeC {\'a}lculo de la Eficiencia te\IeC {\'o}rica}{8}{}%
+\contentsline {subsection}{\numberline {3.3}C\IeC {\'a}lculo de la Eficiencia emp\IeC {\'\i }rica}{8}{}%
+\contentsline {subsection}{\numberline {3.4}C\IeC {\'a}lculo de la Eficiencia H\IeC {\'\i }brida}{11}{}%

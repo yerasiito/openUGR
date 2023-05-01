@@ -1,0 +1,124 @@
+\indexentry{Bloque@{Bloque}|hyperpage}{5}
+\indexentry{Bloque@{Bloque}!Bloque@{Bloque}|hyperpage}{6}
+\indexentry{Bloque@{Bloque}!Bloque@{Bloque}|hyperpage}{6}
+\indexentry{Bloque@{Bloque}!Bloque@{Bloque}|hyperpage}{6}
+\indexentry{Bloque@{Bloque}!Bloque@{Bloque}|hyperpage}{6}
+\indexentry{Bloque@{Bloque}!aniadirCasilla@{aniadirCasilla}|hyperpage}{6}
+\indexentry{aniadirCasilla@{aniadirCasilla}!Bloque@{Bloque}|hyperpage}{6}
+\indexentry{Bloque@{Bloque}!eliminarCasilla@{eliminarCasilla}|hyperpage}{7}
+\indexentry{eliminarCasilla@{eliminarCasilla}!Bloque@{Bloque}|hyperpage}{7}
+\indexentry{Bloque@{Bloque}!esCasillaContigua@{esCasillaContigua}|hyperpage}{7}
+\indexentry{esCasillaContigua@{esCasillaContigua}!Bloque@{Bloque}|hyperpage}{7}
+\indexentry{Bloque@{Bloque}!getCasilla@{getCasilla}|hyperpage}{8}
+\indexentry{getCasilla@{getCasilla}!Bloque@{Bloque}|hyperpage}{8}
+\indexentry{Bloque@{Bloque}!getSumaBloque@{getSumaBloque}|hyperpage}{8}
+\indexentry{getSumaBloque@{getSumaBloque}!Bloque@{Bloque}|hyperpage}{8}
+\indexentry{Bloque@{Bloque}!getTamanio@{getTamanio}|hyperpage}{8}
+\indexentry{getTamanio@{getTamanio}!Bloque@{Bloque}|hyperpage}{8}
+\indexentry{Bloque@{Bloque}!setCasilla@{setCasilla}|hyperpage}{8}
+\indexentry{setCasilla@{setCasilla}!Bloque@{Bloque}|hyperpage}{8}
+\indexentry{BloquesSudoku@{BloquesSudoku}|hyperpage}{9}
+\indexentry{BloquesSudoku@{BloquesSudoku}!BloquesSudoku@{BloquesSudoku}|hyperpage}{10}
+\indexentry{BloquesSudoku@{BloquesSudoku}!BloquesSudoku@{BloquesSudoku}|hyperpage}{10}
+\indexentry{BloquesSudoku@{BloquesSudoku}!aniadirBloque@{aniadirBloque}|hyperpage}{10}
+\indexentry{aniadirBloque@{aniadirBloque}!BloquesSudoku@{BloquesSudoku}|hyperpage}{10}
+\indexentry{BloquesSudoku@{BloquesSudoku}!eliminarBloque@{eliminarBloque}|hyperpage}{10}
+\indexentry{eliminarBloque@{eliminarBloque}!BloquesSudoku@{BloquesSudoku}|hyperpage}{10}
+\indexentry{BloquesSudoku@{BloquesSudoku}!getBloquesSudoku@{getBloquesSudoku}|hyperpage}{11}
+\indexentry{getBloquesSudoku@{getBloquesSudoku}!BloquesSudoku@{BloquesSudoku}|hyperpage}{11}
+\indexentry{BloquesSudoku@{BloquesSudoku}!setBloquesSudoku@{setBloquesSudoku}|hyperpage}{11}
+\indexentry{setBloquesSudoku@{setBloquesSudoku}!BloquesSudoku@{BloquesSudoku}|hyperpage}{11}
+\indexentry{BloquesSudoku@{BloquesSudoku}!setBloquesSudoku@{setBloquesSudoku}|hyperpage}{11}
+\indexentry{setBloquesSudoku@{setBloquesSudoku}!BloquesSudoku@{BloquesSudoku}|hyperpage}{11}
+\indexentry{BloquesSudoku@{BloquesSudoku}!sumaBloques@{sumaBloques}|hyperpage}{13}
+\indexentry{sumaBloques@{sumaBloques}!BloquesSudoku@{BloquesSudoku}|hyperpage}{13}
+\indexentry{Casilla@{Casilla}|hyperpage}{13}
+\indexentry{Casilla@{Casilla}!Casilla@{Casilla}|hyperpage}{14}
+\indexentry{Casilla@{Casilla}!Casilla@{Casilla}|hyperpage}{14}
+\indexentry{Casilla@{Casilla}!Casilla@{Casilla}|hyperpage}{14}
+\indexentry{Casilla@{Casilla}!Casilla@{Casilla}|hyperpage}{14}
+\indexentry{Casilla@{Casilla}!getColumna@{getColumna}|hyperpage}{15}
+\indexentry{getColumna@{getColumna}!Casilla@{Casilla}|hyperpage}{15}
+\indexentry{Casilla@{Casilla}!getFila@{getFila}|hyperpage}{15}
+\indexentry{getFila@{getFila}!Casilla@{Casilla}|hyperpage}{15}
+\indexentry{Casilla@{Casilla}!getValor@{getValor}|hyperpage}{15}
+\indexentry{getValor@{getValor}!Casilla@{Casilla}|hyperpage}{15}
+\indexentry{Casilla@{Casilla}!isEmpty@{isEmpty}|hyperpage}{15}
+\indexentry{isEmpty@{isEmpty}!Casilla@{Casilla}|hyperpage}{15}
+\indexentry{Casilla@{Casilla}!setCasilla@{setCasilla}|hyperpage}{16}
+\indexentry{setCasilla@{setCasilla}!Casilla@{Casilla}|hyperpage}{16}
+\indexentry{Casilla@{Casilla}!setColumna@{setColumna}|hyperpage}{16}
+\indexentry{setColumna@{setColumna}!Casilla@{Casilla}|hyperpage}{16}
+\indexentry{Casilla@{Casilla}!setFila@{setFila}|hyperpage}{16}
+\indexentry{setFila@{setFila}!Casilla@{Casilla}|hyperpage}{16}
+\indexentry{Casilla@{Casilla}!setPosicion@{setPosicion}|hyperpage}{17}
+\indexentry{setPosicion@{setPosicion}!Casilla@{Casilla}|hyperpage}{17}
+\indexentry{Casilla@{Casilla}!setValor@{setValor}|hyperpage}{17}
+\indexentry{setValor@{setValor}!Casilla@{Casilla}|hyperpage}{17}
+\indexentry{Casilla@{Casilla}!to\_string@{to\_string}|hyperpage}{17}
+\indexentry{to\_string@{to\_string}!Casilla@{Casilla}|hyperpage}{17}
+\indexentry{Matriz$<$ M $>$@{Matriz$<$ M $>$}|hyperpage}{18}
+\indexentry{Matriz$<$ M $>$@{Matriz$<$ M $>$}!Matriz@{Matriz}|hyperpage}{18}
+\indexentry{Matriz@{Matriz}!Matriz$<$ M $>$@{Matriz$<$ M $>$}|hyperpage}{18}
+\indexentry{Matriz$<$ M $>$@{Matriz$<$ M $>$}!eliminarValor@{eliminarValor}|hyperpage}{19}
+\indexentry{eliminarValor@{eliminarValor}!Matriz$<$ M $>$@{Matriz$<$ M $>$}|hyperpage}{19}
+\indexentry{Matriz$<$ M $>$@{Matriz$<$ M $>$}!getCasilla@{getCasilla}|hyperpage}{19}
+\indexentry{getCasilla@{getCasilla}!Matriz$<$ M $>$@{Matriz$<$ M $>$}|hyperpage}{19}
+\indexentry{Matriz$<$ M $>$@{Matriz$<$ M $>$}!getColumna@{getColumna}|hyperpage}{20}
+\indexentry{getColumna@{getColumna}!Matriz$<$ M $>$@{Matriz$<$ M $>$}|hyperpage}{20}
+\indexentry{Matriz$<$ M $>$@{Matriz$<$ M $>$}!getFila@{getFila}|hyperpage}{20}
+\indexentry{getFila@{getFila}!Matriz$<$ M $>$@{Matriz$<$ M $>$}|hyperpage}{20}
+\indexentry{Matriz$<$ M $>$@{Matriz$<$ M $>$}!insertarValor@{insertarValor}|hyperpage}{20}
+\indexentry{insertarValor@{insertarValor}!Matriz$<$ M $>$@{Matriz$<$ M $>$}|hyperpage}{20}
+\indexentry{ResolverSudokuKiller@{ResolverSudokuKiller}|hyperpage}{21}
+\indexentry{ResolverSudokuKiller@{ResolverSudokuKiller}!DescartaSecuencias@{DescartaSecuencias}|hyperpage}{22}
+\indexentry{DescartaSecuencias@{DescartaSecuencias}!ResolverSudokuKiller@{ResolverSudokuKiller}|hyperpage}{22}
+\indexentry{ResolverSudokuKiller@{ResolverSudokuKiller}!ResuelveSudoku@{ResuelveSudoku}|hyperpage}{22}
+\indexentry{ResuelveSudoku@{ResuelveSudoku}!ResolverSudokuKiller@{ResolverSudokuKiller}|hyperpage}{22}
+\indexentry{ResolverSudokuKiller@{ResolverSudokuKiller}!SecuenciaBloqueKiller@{SecuenciaBloqueKiller}|hyperpage}{22}
+\indexentry{SecuenciaBloqueKiller@{SecuenciaBloqueKiller}!ResolverSudokuKiller@{ResolverSudokuKiller}|hyperpage}{22}
+\indexentry{ResolverSudokuKiller@{ResolverSudokuKiller}!SecuenciaCaja@{SecuenciaCaja}|hyperpage}{23}
+\indexentry{SecuenciaCaja@{SecuenciaCaja}!ResolverSudokuKiller@{ResolverSudokuKiller}|hyperpage}{23}
+\indexentry{ResolverSudokuKiller@{ResolverSudokuKiller}!SecuenciasPosibles@{SecuenciasPosibles}|hyperpage}{23}
+\indexentry{SecuenciasPosibles@{SecuenciasPosibles}!ResolverSudokuKiller@{ResolverSudokuKiller}|hyperpage}{23}
+\indexentry{Sudoku@{Sudoku}|hyperpage}{24}
+\indexentry{Sudoku@{Sudoku}!Sudoku@{Sudoku}|hyperpage}{24}
+\indexentry{Sudoku@{Sudoku}!Sudoku@{Sudoku}|hyperpage}{24}
+\indexentry{Sudoku@{Sudoku}!GenerarSudoku@{GenerarSudoku}|hyperpage}{25}
+\indexentry{GenerarSudoku@{GenerarSudoku}!Sudoku@{Sudoku}|hyperpage}{25}
+\indexentry{Sudoku@{Sudoku}!getSudoku@{getSudoku}|hyperpage}{25}
+\indexentry{getSudoku@{getSudoku}!Sudoku@{Sudoku}|hyperpage}{25}
+\indexentry{Sudoku@{Sudoku}!getValorCasilla@{getValorCasilla}|hyperpage}{25}
+\indexentry{getValorCasilla@{getValorCasilla}!Sudoku@{Sudoku}|hyperpage}{25}
+\indexentry{SudokuKiller@{SudokuKiller}|hyperpage}{26}
+\indexentry{SudokuKiller@{SudokuKiller}!SudokuKiller@{SudokuKiller}|hyperpage}{26}
+\indexentry{SudokuKiller@{SudokuKiller}!SudokuKiller@{SudokuKiller}|hyperpage}{26}
+\indexentry{SudokuKiller@{SudokuKiller}!SudokuKiller@{SudokuKiller}|hyperpage}{26}
+\indexentry{SudokuKiller@{SudokuKiller}!SudokuKiller@{SudokuKiller}|hyperpage}{26}
+\indexentry{SudokuKiller@{SudokuKiller}!EstaResuelto@{EstaResuelto}|hyperpage}{27}
+\indexentry{EstaResuelto@{EstaResuelto}!SudokuKiller@{SudokuKiller}|hyperpage}{27}
+\indexentry{include/BloquesSudoku.h@{include/BloquesSudoku.h}|hyperpage}{29}
+\indexentry{BloquesSudoku.h@{BloquesSudoku.h}!esMismoBloque@{esMismoBloque}|hyperpage}{30}
+\indexentry{esMismoBloque@{esMismoBloque}!BloquesSudoku.h@{BloquesSudoku.h}|hyperpage}{30}
+\indexentry{BloquesSudoku.h@{BloquesSudoku.h}!seSolapaBloques@{seSolapaBloques}|hyperpage}{30}
+\indexentry{seSolapaBloques@{seSolapaBloques}!BloquesSudoku.h@{BloquesSudoku.h}|hyperpage}{30}
+\indexentry{include/BloquesSudoku.h@{include/BloquesSudoku.h}|hyperpage}{31}
+\indexentry{include/Casilla.h@{include/Casilla.h}|hyperpage}{32}
+\indexentry{Casilla.h@{Casilla.h}!mismaCasilla@{mismaCasilla}|hyperpage}{32}
+\indexentry{mismaCasilla@{mismaCasilla}!Casilla.h@{Casilla.h}|hyperpage}{32}
+\indexentry{include/Casilla.h@{include/Casilla.h}|hyperpage}{33}
+\indexentry{include/Matriz.h@{include/Matriz.h}|hyperpage}{33}
+\indexentry{include/Matriz.h@{include/Matriz.h}|hyperpage}{34}
+\indexentry{include/ResolverSudokuKiller.h@{include/ResolverSudokuKiller.h}|hyperpage}{34}
+\indexentry{include/ResolverSudokuKiller.h@{include/ResolverSudokuKiller.h}|hyperpage}{35}
+\indexentry{include/SudokuKiller.h@{include/SudokuKiller.h}|hyperpage}{35}
+\indexentry{SudokuKiller.h@{SudokuKiller.h}!BloquesValido@{BloquesValido}|hyperpage}{36}
+\indexentry{BloquesValido@{BloquesValido}!SudokuKiller.h@{SudokuKiller.h}|hyperpage}{36}
+\indexentry{SudokuKiller.h@{SudokuKiller.h}!SudokuKillerValido@{SudokuKillerValido}|hyperpage}{37}
+\indexentry{SudokuKillerValido@{SudokuKillerValido}!SudokuKiller.h@{SudokuKiller.h}|hyperpage}{37}
+\indexentry{SudokuKiller.h@{SudokuKiller.h}!SudokuValido@{SudokuValido}|hyperpage}{37}
+\indexentry{SudokuValido@{SudokuValido}!SudokuKiller.h@{SudokuKiller.h}|hyperpage}{37}
+\indexentry{include/SudokuKiller.h@{include/SudokuKiller.h}|hyperpage}{37}
+\indexentry{src/main.cpp@{src/main.cpp}|hyperpage}{38}
+\indexentry{main.cpp@{main.cpp}!main@{main}|hyperpage}{39}
+\indexentry{main@{main}!main.cpp@{main.cpp}|hyperpage}{39}

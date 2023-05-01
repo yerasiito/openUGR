@@ -1,0 +1,139 @@
+\hypertarget{class_resolver_sudoku_killer}{}\doxysection{Resolver\+Sudoku\+Killer Class Reference}
+\label{class_resolver_sudoku_killer}\index{ResolverSudokuKiller@{ResolverSudokuKiller}}
+
+
+\mbox{\hyperlink{class_resolver_sudoku_killer}{Resolver\+Sudoku\+Killer}} Una clase que resuelve el juego del \mbox{\hyperlink{class_sudoku}{Sudoku}} Killer a partir de algoritmos logicos humanos, utiliza la clase \mbox{\hyperlink{class_sudoku_killer}{Sudoku\+Killer}}.  
+
+
+
+
+{\ttfamily \#include $<$Resolver\+Sudoku\+Killer.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_resolver_sudoku_killer_a71a86509da8a8b8a621fd53983871cf4}\label{class_resolver_sudoku_killer_a71a86509da8a8b8a621fd53983871cf4}} 
+{\bfseries Resolver\+Sudoku\+Killer} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sudoku_killer}{Sudoku\+Killer}} \mbox{\hyperlink{class_resolver_sudoku_killer_aa181d7c556e6a92e3cd0c7ed41317527}{Resuelve\+Sudoku}} (\mbox{\hyperlink{class_sudoku_killer}{Sudoku\+Killer}} a\+Resolver)
+\begin{DoxyCompactList}\small\item\em utiliza los metodos y algoritmos de la clase para resolver el sudoku dado \end{DoxyCompactList}\item 
+vector$<$ int $>$ \mbox{\hyperlink{class_resolver_sudoku_killer_a0f2df1aba23ad50cda4926ea4249f761}{Secuencia\+Caja}} (int i)
+\begin{DoxyCompactList}\small\item\em Devuelve los posibles valores de la caja/region de 3x3 del sudoku Si el vector resultante contiene un solo elemento, lo inserta automaticamente. \end{DoxyCompactList}\item 
+vector$<$ int $>$ \mbox{\hyperlink{class_resolver_sudoku_killer_aa9ea66d4f706b51abc09969c80d4517a}{Secuencia\+Bloque\+Killer}} (int i)
+\begin{DoxyCompactList}\small\item\em Obtiene todos los valores posibles dentro de un bloque killer a partir de la suma. Tendrá en cuenta los valores de \mbox{\hyperlink{class_resolver_sudoku_killer_a0f2df1aba23ad50cda4926ea4249f761}{Secuencia\+Caja()}} Si el vector resultante contiene un solo elemento, lo inserta automaticamente. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_resolver_sudoku_killer_a04bd8f1c433bfc5118293a9bc7341244}\label{class_resolver_sudoku_killer_a04bd8f1c433bfc5118293a9bc7341244}} 
+void {\bfseries Busca\+Secuencias\+Unicas} ()
+\begin{DoxyCompactList}\small\item\em Una Secuencia Única implica que para un bloque el numero de valores es igual a su tamaño, la disposicion de los valores es desconocida. Matemáticamente ciertas sumas de valores para determinados tamaños dan siempre una secuencia Única. Se pueden buscar a fuerza bruta o almacenarlas en una lista Escribe los valores posibles en las casillas. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_resolver_sudoku_killer_ae3e3b7734d45b584cc16caf063967558}\label{class_resolver_sudoku_killer_ae3e3b7734d45b584cc16caf063967558}} 
+void {\bfseries Regla45} ()
+\begin{DoxyCompactList}\small\item\em Comprueba si existen cajas, filas o columnas que contengan bloques killer completos excepto una casilla, cuyo valor se calcula 45$\ast$numero de caja,fila,columa -\/ la suma de los bloques killer(metodo suma\+Bloques) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_resolver_sudoku_killer_afb0e2bcaf10ffa72aa9a12923fe40de7}{Descarta\+Secuencias}} (int i)
+\begin{DoxyCompactList}\small\item\em Descarta las combinaciones de numeros que contengan un numero que ya existe en la caja,fila,columna o bloque killer. Regla basica de sudoku. \end{DoxyCompactList}\item 
+vector$<$ int $>$ \mbox{\hyperlink{class_resolver_sudoku_killer_ad3b1cb19059683fbde0e7d11b0d71982}{Secuencias\+Posibles}} (int valor, int tama)
+\begin{DoxyCompactList}\small\item\em Calcula las combinaciones posibles de numeros para un valor concreto y un tamanio de bloque. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_resolver_sudoku_killer}{Resolver\+Sudoku\+Killer}} Una clase que resuelve el juego del \mbox{\hyperlink{class_sudoku}{Sudoku}} Killer a partir de algoritmos logicos humanos, utiliza la clase \mbox{\hyperlink{class_sudoku_killer}{Sudoku\+Killer}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_resolver_sudoku_killer_afb0e2bcaf10ffa72aa9a12923fe40de7}\label{class_resolver_sudoku_killer_afb0e2bcaf10ffa72aa9a12923fe40de7}} 
+\index{ResolverSudokuKiller@{ResolverSudokuKiller}!DescartaSecuencias@{DescartaSecuencias}}
+\index{DescartaSecuencias@{DescartaSecuencias}!ResolverSudokuKiller@{ResolverSudokuKiller}}
+\doxysubsubsection{\texorpdfstring{DescartaSecuencias()}{DescartaSecuencias()}}
+{\footnotesize\ttfamily void Resolver\+Sudoku\+Killer\+::\+Descarta\+Secuencias (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Descarta las combinaciones de numeros que contengan un numero que ya existe en la caja,fila,columna o bloque killer. Regla basica de sudoku. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_resolver_sudoku_killer_aa181d7c556e6a92e3cd0c7ed41317527}\label{class_resolver_sudoku_killer_aa181d7c556e6a92e3cd0c7ed41317527}} 
+\index{ResolverSudokuKiller@{ResolverSudokuKiller}!ResuelveSudoku@{ResuelveSudoku}}
+\index{ResuelveSudoku@{ResuelveSudoku}!ResolverSudokuKiller@{ResolverSudokuKiller}}
+\doxysubsubsection{\texorpdfstring{ResuelveSudoku()}{ResuelveSudoku()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_sudoku_killer}{Sudoku\+Killer}} Resolver\+Sudoku\+Killer\+::\+Resuelve\+Sudoku (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sudoku_killer}{Sudoku\+Killer}}}]{a\+Resolver }\end{DoxyParamCaption})}
+
+
+
+utiliza los metodos y algoritmos de la clase para resolver el sudoku dado 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a\+Resolver} & \+: Sudokukiller, El sudoku devuelto por el metodo Generar\+Sudoku\+Killer para resolverlo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+el sudoku completamente resuelto 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_resolver_sudoku_killer_aa9ea66d4f706b51abc09969c80d4517a}\label{class_resolver_sudoku_killer_aa9ea66d4f706b51abc09969c80d4517a}} 
+\index{ResolverSudokuKiller@{ResolverSudokuKiller}!SecuenciaBloqueKiller@{SecuenciaBloqueKiller}}
+\index{SecuenciaBloqueKiller@{SecuenciaBloqueKiller}!ResolverSudokuKiller@{ResolverSudokuKiller}}
+\doxysubsubsection{\texorpdfstring{SecuenciaBloqueKiller()}{SecuenciaBloqueKiller()}}
+{\footnotesize\ttfamily vector$<$ int $>$ Resolver\+Sudoku\+Killer\+::\+Secuencia\+Bloque\+Killer (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Obtiene todos los valores posibles dentro de un bloque killer a partir de la suma. Tendrá en cuenta los valores de \mbox{\hyperlink{class_resolver_sudoku_killer_a0f2df1aba23ad50cda4926ea4249f761}{Secuencia\+Caja()}} Si el vector resultante contiene un solo elemento, lo inserta automaticamente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \+: int, La posicion del bloque dentro del vector de bloquer\+Killer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+i\texorpdfstring{$>$}{>}=0 \&\& i\texorpdfstring{$<$}{<}bloques\+Killer.\+get\+Tama() 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+Los valores posibles en el bloque dado 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_resolver_sudoku_killer_a0f2df1aba23ad50cda4926ea4249f761}\label{class_resolver_sudoku_killer_a0f2df1aba23ad50cda4926ea4249f761}} 
+\index{ResolverSudokuKiller@{ResolverSudokuKiller}!SecuenciaCaja@{SecuenciaCaja}}
+\index{SecuenciaCaja@{SecuenciaCaja}!ResolverSudokuKiller@{ResolverSudokuKiller}}
+\doxysubsubsection{\texorpdfstring{SecuenciaCaja()}{SecuenciaCaja()}}
+{\footnotesize\ttfamily vector$<$ int $>$ Resolver\+Sudoku\+Killer\+::\+Secuencia\+Caja (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Devuelve los posibles valores de la caja/region de 3x3 del sudoku Si el vector resultante contiene un solo elemento, lo inserta automaticamente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \+: int, la posicion de la caja solicitada \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+i\texorpdfstring{$>$}{>}=0 \&\& i \texorpdfstring{$<$}{<} caja.\+get\+Tama() 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+Los valores posibles de la caja 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_resolver_sudoku_killer_ad3b1cb19059683fbde0e7d11b0d71982}\label{class_resolver_sudoku_killer_ad3b1cb19059683fbde0e7d11b0d71982}} 
+\index{ResolverSudokuKiller@{ResolverSudokuKiller}!SecuenciasPosibles@{SecuenciasPosibles}}
+\index{SecuenciasPosibles@{SecuenciasPosibles}!ResolverSudokuKiller@{ResolverSudokuKiller}}
+\doxysubsubsection{\texorpdfstring{SecuenciasPosibles()}{SecuenciasPosibles()}}
+{\footnotesize\ttfamily vector$<$ int $>$ Resolver\+Sudoku\+Killer\+::\+Secuencias\+Posibles (\begin{DoxyParamCaption}\item[{int}]{valor,  }\item[{int}]{tama }\end{DoxyParamCaption})}
+
+
+
+Calcula las combinaciones posibles de numeros para un valor concreto y un tamanio de bloque. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor} & \+: int, El valor total de la secuencia \\
+\hline
+{\em tama} & \+: int, El tamaño de la secuencia \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+las posibles combinaciones para un total y tamaño 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_resolver_sudoku_killer_8h}{Resolver\+Sudoku\+Killer.\+h}}\end{DoxyCompactItemize}

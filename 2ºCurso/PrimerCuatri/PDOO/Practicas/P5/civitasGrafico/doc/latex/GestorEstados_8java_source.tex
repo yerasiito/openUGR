@@ -1,0 +1,86 @@
+\hypertarget{GestorEstados_8java_source}{}\doxysection{Gestor\+Estados.\+java}
+\label{GestorEstados_8java_source}\index{src/civitas/GestorEstados.java@{src/civitas/GestorEstados.java}}
+\mbox{\hyperlink{GestorEstados_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00008}00008 \textcolor{keyword}{package }civitas;}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00014}00014 \textcolor{keyword}{class }GestorEstados \{}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00015}00015   EstadoJuego estadoInicial() \{}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00016}00016     \textcolor{keywordflow}{return} (EstadoJuego.INICIO\_TURNO);}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00017}00017   \}}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00018}00018   }
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00019}00019   OperacionJuego siguienteOperacion(Jugador jugador, EstadoJuego estado) \{}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00020}00020     OperacionJuego op = \textcolor{keyword}{null};}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00021}00021     \textcolor{keywordflow}{switch} (estado) \{}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00022}00022       \textcolor{keywordflow}{case} INICIO\_TURNO :}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00023}00023           op = OperacionJuego.AVANZAR;}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00024}00024         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00026}00026       \textcolor{keywordflow}{case} DESPUES\_AVANZAR :}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00027}00027         \textcolor{keywordflow}{if} (jugador.getPuedeComprar())}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00028}00028           op = OperacionJuego.COMPRAR;}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00029}00029         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (jugador.tieneAlgoQueGestionar())}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00030}00030           op = OperacionJuego.GESTIONAR;}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00031}00031         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00032}00032           op = OperacionJuego.PASAR\_TURNO;}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00033}00033         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00035}00035       \textcolor{keywordflow}{case} DESPUES\_COMPRAR :}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00036}00036         \textcolor{keywordflow}{if} (jugador.tieneAlgoQueGestionar())}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00037}00037           op = OperacionJuego.GESTIONAR;}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00038}00038         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00039}00039           op = OperacionJuego.PASAR\_TURNO;}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00040}00040         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00041}00041 }
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00042}00042       \textcolor{keywordflow}{case} DESPUES\_GESTIONAR :}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00043}00043         op = OperacionJuego.PASAR\_TURNO;}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00044}00044         \textcolor{keywordflow}{break};        }
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00045}00045     \}}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00046}00046     \textcolor{keywordflow}{return} op;}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00047}00047   \}}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00048}00048   }
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00049}00049   EstadoJuego siguienteEstado (Jugador jugador, EstadoJuego estado, OperacionJuego operacion) \{}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00050}00050     EstadoJuego siguiente = \textcolor{keyword}{null};}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00052}00052     \textcolor{keywordflow}{switch} (estado) \{}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00053}00053       \textcolor{keywordflow}{case} INICIO\_TURNO :}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00054}00054         \textcolor{keywordflow}{if} (operacion==OperacionJuego.AVANZAR)}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00055}00055           siguiente = EstadoJuego.DESPUES\_AVANZAR;}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00056}00056         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00057}00057 }
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00058}00058       \textcolor{keywordflow}{case} DESPUES\_AVANZAR :}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00059}00059         \textcolor{keywordflow}{switch} (operacion) \{}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00060}00060           \textcolor{keywordflow}{case} PASAR\_TURNO :}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00061}00061             siguiente = EstadoJuego.INICIO\_TURNO;}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00062}00062             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00063}00063           \textcolor{keywordflow}{case} COMPRAR :}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00064}00064             siguiente = EstadoJuego.DESPUES\_COMPRAR;}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00065}00065             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00066}00066           \textcolor{keywordflow}{case} GESTIONAR :}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00067}00067             siguiente = EstadoJuego.DESPUES\_GESTIONAR;}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00068}00068             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00069}00069         \}}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00070}00070         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00071}00071 }
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00072}00072       \textcolor{keywordflow}{case} DESPUES\_COMPRAR :}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00073}00073         \textcolor{keywordflow}{if} (operacion==OperacionJuego.GESTIONAR)}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00074}00074           siguiente = EstadoJuego.DESPUES\_GESTIONAR;}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00075}00075         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (operacion==OperacionJuego.PASAR\_TURNO)}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00076}00076           siguiente = EstadoJuego.INICIO\_TURNO;}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00077}00077         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00078}00078 }
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00079}00079       \textcolor{keywordflow}{case} DESPUES\_GESTIONAR :}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00080}00080         \textcolor{keywordflow}{if} (operacion==OperacionJuego.PASAR\_TURNO)}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00081}00081           siguiente = EstadoJuego.INICIO\_TURNO;}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00082}00082         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00083}00083     \}}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00084}00084 }
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00085}00085     Diario.getInstance().ocurreEvento(\textcolor{stringliteral}{"{}De: "{}}+estado.toString()+ \textcolor{stringliteral}{"{} con "{}}+operacion.toString()+ \textcolor{stringliteral}{"{} sale: "{}}+siguiente.toString());}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00086}00086 }
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00087}00087     \textcolor{keywordflow}{return} siguiente;}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00088}00088   \}}
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00089}00089 }
+\DoxyCodeLine{\Hypertarget{GestorEstados_8java_source_l00090}00090 \}}
+
+\end{DoxyCode}

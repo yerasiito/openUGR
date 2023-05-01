@@ -1,0 +1,24 @@
+
+Se leen 30 eventos del archivo./data/ECommerce30.dataset
+Indexado por Brand
+30 pares
+
+Sales/Day
+         4         4         2         5         5         1         9        30
+
+    SUNDAY    MONDAY   TUESDAY WEDNESDAY  THURSDAY    FRIDAY  SATURDAY
+
+
+Brand/Traffic
+         4         1         1         1         2         1         2        11         2         5        30
+
+   beautix   grattol       jas  jessnail    kapous   kerasys    masura    runail     shary   staleks
+
+
+Brand/Sales
+        44         6        26         1         5         2         3        42         6        63       198
+
+   beautix   grattol       jas  jessnail    kapous   kerasys    masura    runail     shary   staleks
+
+
+Highest traffic choice (runail) with 11 hits 

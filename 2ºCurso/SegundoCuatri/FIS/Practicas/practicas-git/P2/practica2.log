@@ -1,0 +1,678 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2022.3.5)  1 APR 2022 22:22
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/practica2.tex
+(/home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/practica2.tex
+LaTeX2e <2020-02-02> patch level 2
+L3 programming layer <2020-02-14> (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@section=\count168
+\c@subsection=\count169
+\c@subsubsection=\count170
+\c@paragraph=\count171
+\c@subparagraph=\count172
+\c@figure=\count173
+\c@table=\count174
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+) (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2020/02/14 3.40 The Babel package
+ (/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
+File: switch.def 2020/02/14 3.40 Babel switching mechanism
+) (/usr/share/texlive/texmf-dist/tex/generic/babel-spanish/spanish.ldf
+Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
+ (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2020/02/14 3.40 Babel common definitions
+\babel@savecnt=\count175
+\U@D=\dimen135
+ (/usr/share/texlive/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count176
+)
+\es@quottoks=\toks14
+\es@quotdepth=\count177
+Package babel Info: Making " an active character on input line 561.
+Package babel Info: Making . an active character on input line 662.
+Package babel Info: Making < an active character on input line 707.
+Package babel Info: Making > an active character on input line 707.
+))
+LaTeX Info: Redefining \. on input line 3.
+LaTeX Info: Redefining \% on input line 3.
+ (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip49
+\bibsep=\skip50
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count178
+) (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+ (/usr/share/texlive/texmf-dist/tex/latex/ucs/utf8x.def
+File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
+)) (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucs.sty
+Package: ucs 2013/05/11 v2.2 UCS: Unicode input support
+ (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-global.def
+File: uni-global.def 2013/05/13 UCS: Unicode global data
+)
+\uc@secondtry=\count179
+\uc@combtoks=\toks17
+\uc@combtoksb=\toks18
+\uc@temptokena=\toks19
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks20
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+ (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen136
+\Gin@req@width=\dimen137
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen138
+\ar@mcellbox=\box45
+\extrarowheight=\dimen139
+\NC@list=\toks21
+\extratabsurround=\skip51
+\backup@length=\skip52
+\ar@cellbox=\box46
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
+\LTleft=\skip53
+\LTright=\skip54
+\LTpre=\skip55
+\LTpost=\skip56
+\LTchunksize=\count180
+\LTcapwidth=\dimen140
+\LT@head=\box47
+\LT@firsthead=\box48
+\LT@foot=\box49
+\LT@lastfoot=\box50
+\LT@cols=\count181
+\LT@rows=\count182
+\c@LT@tables=\count183
+\c@LT@chunks=\count184
+\LT@p@ftn=\toks22
+) (/usr/share/texlive/texmf-dist/tex/latex/parskip/parskip.sty
+Package: parskip 2020-01-22 v2.0d non-zero parskip adjustments
+ (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+) (/usr/share/texlive/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)) (/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count185
+)) (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footers
+\f@nch@headwidth=\skip57
+\f@nch@O@elh=\skip58
+\f@nch@O@erh=\skip59
+\f@nch@O@olh=\skip60
+\f@nch@O@orh=\skip61
+\f@nch@O@elf=\skip62
+\f@nch@O@erf=\skip63
+\f@nch@O@olf=\skip64
+\f@nch@O@orf=\skip65
+) (/usr/share/texlive/texmf-dist/tex/latex/vmargin/vmargin.sty
+Package: vmargin 2004/07/15 V2.5 set document margins (VK)
+
+Package: vmargin 2004/07/15 V2.5 set document margins (VK)
+\PaperWidth=\dimen141
+\PaperHeight=\dimen142
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count186
+\lst@gtempboxa=\box51
+\lst@token=\toks23
+\lst@length=\count187
+\lst@currlwidth=\dimen143
+\lst@column=\count188
+\lst@pos=\count189
+\lst@lostspace=\dimen144
+\lst@width=\dimen145
+\lst@newlines=\count190
+\lst@lineno=\count191
+\lst@maxwidth=\dimen146
+ (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
+\c@lstnumber=\count192
+\lst@skipnumbers=\count193
+\lst@framebox=\box52
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2019/09/10 1.8c listings configuration
+))
+Package: listings 2019/09/10 1.8c (Carsten Heinz)
+ (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2019/01/04 v1.2 Adjusting TeX boxes (trim, clip, ...)
+ (/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+ (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks24
+\XKV@tempa@toks=\toks25
+)
+\XKV@depth=\count194
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back-ends (calc, etex, pgfmath)
+) (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2018/04/08 v1.1 Trim and clip general TeX material
+ (/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box53
+)
+\tc@llx=\dimen147
+\tc@lly=\dimen148
+\tc@urx=\dimen149
+\tc@ury=\dimen150
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+ (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen151
+\adjbox@Height=\dimen152
+\adjbox@Depth=\dimen153
+\adjbox@Totalheight=\dimen154
+\adjbox@pwidth=\dimen155
+\adjbox@pheight=\dimen156
+\adjbox@pdepth=\dimen157
+\adjbox@ptotalheight=\dimen158
+ (/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count195
+) (/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box54
+\sift@deathcycles=\count196
+\@vwid@loff=\dimen159
+\@vwid@roff=\dimen160
+)) (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip66
+\enit@outerparindent=\dimen161
+\enit@toks=\toks26
+\enit@inbox=\box55
+\enit@count@id=\count197
+\enitdp@description=\count198
+) (/usr/share/texlive/texmf-dist/tex/latex/sourcesanspro/sourcesanspro.sty
+Package: sourcesanspro 2016/12/03 v2.6 Adobe's Source Sans Pro typeface
+ (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+ (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2019/11/07 v1.0c TeX engine tests
+)) (/usr/share/texlive/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+) (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+ (/usr/share/texlive/texmf-dist/tex/latex/ly1/ly1enc.def
+File: ly1enc.def 2009/07/22 v0.7 TeX 'n ANSI encoding (DPC/KB)
+))) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count199
+\l__pdf_internal_box=\box56
+) (/home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/practica2.aux
+LaTeX Info: Redefining \. on input line 7.
+LaTeX Info: Redefining \% on input line 7.
+LaTeX Info: Redefining \. on input line 9.
+LaTeX Info: Redefining \% on input line 9.
+)
+\openout1 = `practica2.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 57.
+LaTeX Font Info:    Trying to load font information for LY1+ptm on input line 57.
+ (/usr/share/texlive/texmf-dist/tex/latex/ly1/ly1ptm.fd
+File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
+)
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Trying to load font information for T1+SourceSansPro-LF on input line 57.
+ (/usr/share/texlive/texmf-dist/tex/latex/sourcesanspro/T1SourceSansPro-LF.fd
+File: T1SourceSansPro-LF.fd 2016/12/03 (autoinst) Font definitions for T1/SourceSansPro-LF.
+)
+LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/n' will be
+(Font)              scaled to size 12.0pt on input line 57.
+LaTeX Info: Redefining \. on input line 57.
+LaTeX Info: Redefining \% on input line 57.
+ (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
+File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
+) (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count266
+\scratchdimen=\dimen162
+\scratchbox=\box57
+\nofMPsegments=\count267
+\nofMParguments=\count268
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count269
+\MPscratchDim=\dimen163
+\MPnumerator=\count270
+\makeMPintoPDFobject=\count271
+\everyMPtoPDFconversion=\toks28
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+ (/usr/share/texlive/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (/usr/share/texlive/texmf-dist/tex/latex/grfext/grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+ (/usr/share/texlive/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)) (/usr/share/texlive/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+ (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+\c@lstlisting=\count272
+<images/logoUGR.png, id=1, 1284.8pt x 722.7pt>
+File: images/logoUGR.png Graphic file (type png)
+<use images/logoUGR.png>
+Package pdftex.def Info: images/logoUGR.png  used on input line 63.
+(pdftex.def)             Requested size: 256.95544pt x 144.53743pt.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/sc' will be
+(Font)              scaled to size 12.0pt on input line 65.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/sc' will be
+(Font)              scaled to size 14.4pt on input line 65.
+ (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
+File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
+)
+LaTeX Font Info:    Trying to load font information for TS1+SourceSansPro-LF on input line 65.
+ (/usr/share/texlive/texmf-dist/tex/latex/sourcesanspro/TS1SourceSansPro-LF.fd
+File: TS1SourceSansPro-LF.fd 2016/12/03 (autoinst) Font definitions for TS1/SourceSansPro-LF.
+)
+
+LaTeX Font Warning: Font shape `TS1/SourceSansPro-LF/m/sc' undefined
+(Font)              using `TS1/SourceSansPro-LF/m/n' instead
+(Font)              for symbol `textordmasculine' on input line 65.
+
+LaTeX Font Info:    Font shape `TS1/SourceSansPro-LF/m/n' will be
+(Font)              scaled to size 14.4pt on input line 65.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/n' will be
+(Font)              scaled to size 24.88pt on input line 68.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/b/n' will be
+(Font)              scaled to size 24.88pt on input line 68.
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/logoUGR.png>]
+LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/n' will be
+(Font)              scaled to size 17.28pt on input line 83.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/b/n' will be
+(Font)              scaled to size 17.28pt on input line 83.
+ (/home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/practica2.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+LaTeX Info: Redefining \. on input line 2.
+LaTeX Info: Redefining \% on input line 2.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/b/n' will be
+(Font)              scaled to size 12.0pt on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 5.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 5.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 5.
+)
+\tf@toc=\write3
+\openout3 = `practica2.toc'.
+
+ [1]
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
+
+ []
+
+<images/Actores/Actor1.png, id=16, 676.77844pt x 475.7775pt>
+File: images/Actores/Actor1.png Graphic file (type png)
+<use images/Actores/Actor1.png>
+Package pdftex.def Info: images/Actores/Actor1.png  used on input line 100.
+(pdftex.def)             Requested size: 439.90077pt x 309.2517pt.
+<images/Actores/Actor2.png, id=17, 679.78969pt x 467.49657pt>
+File: images/Actores/Actor2.png Graphic file (type png)
+<use images/Actores/Actor2.png>
+Package pdftex.def Info: images/Actores/Actor2.png  used on input line 101.
+(pdftex.def)             Requested size: 441.85806pt x 303.86917pt.
+[2 </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/Actores/Actor1.png>]
+<images/Actores/Actor3.png, id=22, 680.5425pt x 480.29437pt>
+File: images/Actores/Actor3.png Graphic file (type png)
+<use images/Actores/Actor3.png>
+Package pdftex.def Info: images/Actores/Actor3.png  used on input line 102.
+(pdftex.def)             Requested size: 442.34738pt x 312.18762pt.
+<images/Actores/Actor4.png, id=23, 677.53125pt x 504.38437pt>
+File: images/Actores/Actor4.png Graphic file (type png)
+<use images/Actores/Actor4.png>
+Package pdftex.def Info: images/Actores/Actor4.png  used on input line 103.
+(pdftex.def)             Requested size: 440.39009pt x 327.84595pt.
+ [3 </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/Actores/Actor2.png> </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/Actores/Actor3.png>]
+<images/Actores/Actor5.png, id=29, 677.53125pt x 435.87843pt>
+File: images/Actores/Actor5.png Graphic file (type png)
+<use images/Actores/Actor5.png>
+Package pdftex.def Info: images/Actores/Actor5.png  used on input line 104.
+(pdftex.def)             Requested size: 440.39009pt x 283.31761pt.
+<images/Actores/Actor6.png, id=30, 675.27281pt x 506.6428pt>
+File: images/Actores/Actor6.png Graphic file (type png)
+<use images/Actores/Actor6.png>
+Package pdftex.def Info: images/Actores/Actor6.png  used on input line 105.
+(pdftex.def)             Requested size: 438.92213pt x 329.31392pt.
+ [4 </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/Actores/Actor4.png> </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/Actores/Actor5.png>]
+<images/Actores/Actor7.png, id=36, 675.27281pt x 506.6428pt>
+File: images/Actores/Actor7.png Graphic file (type png)
+<use images/Actores/Actor7.png>
+Package pdftex.def Info: images/Actores/Actor7.png  used on input line 106.
+(pdftex.def)             Requested size: 438.92213pt x 329.31392pt.
+ [5 </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/Actores/Actor6.png>]
+LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/m/n' will be
+(Font)              scaled to size 14.4pt on input line 114.
+LaTeX Font Info:    Font shape `T1/SourceSansPro-LF/b/n' will be
+(Font)              scaled to size 14.4pt on input line 114.
+<images/diagramas_cu/1.png, id=41, 904.88063pt x 905.63344pt>
+File: images/diagramas_cu/1.png Graphic file (type png)
+<use images/diagramas_cu/1.png>
+Package pdftex.def Info: images/diagramas_cu/1.png  used on input line 117.
+(pdftex.def)             Requested size: 452.43921pt x 452.81561pt.
+ [6 </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/Actores/Actor7.png>]
+<images/diagramas_cu/2.png, id=47, 971.12813pt x 904.1278pt>
+File: images/diagramas_cu/2.png Graphic file (type png)
+<use images/diagramas_cu/2.png>
+Package pdftex.def Info: images/diagramas_cu/2.png  used on input line 119.
+(pdftex.def)             Requested size: 485.56288pt x 452.06279pt.
+
+Overfull \hbox (1.22583pt too wide) in paragraph at lines 119--119
+ [][] 
+ []
+
+[7 </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/diagramas_cu/1.png>]
+<images/diagramas_cu/3.png, id=52, 995.21812pt x 531.48563pt>
+File: images/diagramas_cu/3.png Graphic file (type png)
+<use images/diagramas_cu/3.png>
+Package pdftex.def Info: images/diagramas_cu/3.png  used on input line 120.
+(pdftex.def)             Requested size: 497.60785pt x 265.74216pt.
+
+Overfull \hbox (13.2708pt too wide) in paragraph at lines 120--120
+ [][] 
+ []
+
+[8 </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/diagramas_cu/2.png>]
+<images/diagramas_cu/4.png, id=57, 941.01563pt x 892.83563pt>
+File: images/diagramas_cu/4.png Graphic file (type png)
+<use images/diagramas_cu/4.png>
+Package pdftex.def Info: images/diagramas_cu/4.png  used on input line 122.
+(pdftex.def)             Requested size: 470.50667pt x 446.41672pt.
+ [9 </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/diagramas_cu/3.png>]
+<images/paquetes.png, id=62, 691.83469pt x 437.38406pt>
+File: images/paquetes.png Graphic file (type png)
+<use images/paquetes.png>
+Package pdftex.def Info: images/paquetes.png  used on input line 128.
+(pdftex.def)             Requested size: 484.28098pt x 306.16675pt.
+ [10 </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/diagramas_cu/4.png>]
+<images/casos_de_uso/1.png, id=67, 593.21625pt x 322.20375pt>
+File: images/casos_de_uso/1.png Graphic file (type png)
+<use images/casos_de_uso/1.png>
+Package pdftex.def Info: images/casos_de_uso/1.png  used on input line 134.
+(pdftex.def)             Requested size: 415.24854pt x 225.54108pt.
+<images/casos_de_uso/2.png, id=68, 590.205pt x 336.25626pt>
+File: images/casos_de_uso/2.png Graphic file (type png)
+<use images/casos_de_uso/2.png>
+Package pdftex.def Info: images/casos_de_uso/2.png  used on input line 135.
+(pdftex.def)             Requested size: 413.14067pt x 235.37776pt.
+ [11 </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/paquetes.png> </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/casos_de_uso/1.png>]
+<images/casos_de_uso/3.png, id=74, 592.2125pt x 322.20375pt>
+File: images/casos_de_uso/3.png Graphic file (type png)
+<use images/casos_de_uso/3.png>
+Package pdftex.def Info: images/casos_de_uso/3.png  used on input line 136.
+(pdftex.def)             Requested size: 414.54591pt x 225.54108pt.
+<images/casos_de_uso/4.png, id=75, 591.20876pt x 307.1475pt>
+File: images/casos_de_uso/4.png Graphic file (type png)
+<use images/casos_de_uso/4.png>
+Package pdftex.def Info: images/casos_de_uso/4.png  used on input line 137.
+(pdftex.def)             Requested size: 413.8433pt x 215.00177pt.
+ [12 </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/casos_de_uso/2.png> </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/casos_de_uso/3.png>]
+<images/casos_de_uso/5.png, id=82, 592.2125pt x 324.21124pt>
+File: images/casos_de_uso/5.png Graphic file (type png)
+<use images/casos_de_uso/5.png>
+Package pdftex.def Info: images/casos_de_uso/5.png  used on input line 138.
+(pdftex.def)             Requested size: 414.54591pt x 226.94632pt.
+<images/casos_de_uso/6.png, id=83, 595.22375pt x 339.2675pt>
+File: images/casos_de_uso/6.png Graphic file (type png)
+<use images/casos_de_uso/6.png>
+Package pdftex.def Info: images/casos_de_uso/6.png  used on input line 139.
+(pdftex.def)             Requested size: 416.6538pt x 237.48563pt.
+ [13 </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/casos_de_uso/4.png> </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/casos_de_uso/5.png>]
+<images/casos_de_uso/7.png, id=89, 595.22375pt x 323.2075pt>
+File: images/casos_de_uso/7.png Graphic file (type png)
+<use images/casos_de_uso/7.png>
+Package pdftex.def Info: images/casos_de_uso/7.png  used on input line 140.
+(pdftex.def)             Requested size: 416.6538pt x 226.2437pt.
+<images/casos_de_uso/8.png, id=90, 593.21625pt x 305.14pt>
+File: images/casos_de_uso/8.png Graphic file (type png)
+<use images/casos_de_uso/8.png>
+Package pdftex.def Info: images/casos_de_uso/8.png  used on input line 141.
+(pdftex.def)             Requested size: 415.24854pt x 213.59653pt.
+ [14 </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/casos_de_uso/6.png> </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/casos_de_uso/7.png>]
+<images/casos_de_uso/9.png, id=96, 592.2125pt x 323.2075pt>
+File: images/casos_de_uso/9.png Graphic file (type png)
+<use images/casos_de_uso/9.png>
+Package pdftex.def Info: images/casos_de_uso/9.png  used on input line 142.
+(pdftex.def)             Requested size: 414.54591pt x 226.2437pt.
+<images/casos_de_uso/10.png, id=97, 590.205pt x 336.25626pt>
+File: images/casos_de_uso/10.png Graphic file (type png)
+<use images/casos_de_uso/10.png>
+Package pdftex.def Info: images/casos_de_uso/10.png  used on input line 143.
+(pdftex.def)             Requested size: 413.14067pt x 235.37776pt.
+ [15 </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/casos_de_uso/8.png> </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/casos_de_uso/9.png>]
+<images/casos_de_uso/11.png, id=103, 595.22375pt x 339.2675pt>
+File: images/casos_de_uso/11.png Graphic file (type png)
+<use images/casos_de_uso/11.png>
+Package pdftex.def Info: images/casos_de_uso/11.png  used on input line 144.
+(pdftex.def)             Requested size: 416.6538pt x 237.48563pt.
+<images/casos_de_uso/12.png, id=104, 595.22375pt x 306.14375pt>
+File: images/casos_de_uso/12.png Graphic file (type png)
+<use images/casos_de_uso/12.png>
+Package pdftex.def Info: images/casos_de_uso/12.png  used on input line 145.
+(pdftex.def)             Requested size: 416.6538pt x 214.29915pt.
+ [16 </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/casos_de_uso/10.png> </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/casos_de_uso/11.png>]
+<images/casos_de_uso/13.png, id=110, 663.22781pt x 394.47375pt>
+File: images/casos_de_uso/13.png Graphic file (type png)
+<use images/casos_de_uso/13.png>
+Package pdftex.def Info: images/casos_de_uso/13.png  used on input line 146.
+(pdftex.def)             Requested size: 411.19699pt x 244.57118pt.
+<images/casos_de_uso/14.png, id=111, 597.23125pt x 322.20375pt>
+File: images/casos_de_uso/14.png Graphic file (type png)
+<use images/casos_de_uso/14.png>
+Package pdftex.def Info: images/casos_de_uso/14.png  used on input line 147.
+(pdftex.def)             Requested size: 418.05902pt x 225.54108pt.
+ [17 </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/casos_de_uso/12.png> </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/casos_de_uso/13.png>]
+<images/casos_de_uso/15.png, id=117, 599.23875pt x 347.2975pt>
+File: images/casos_de_uso/15.png Graphic file (type png)
+<use images/casos_de_uso/15.png>
+Package pdftex.def Info: images/casos_de_uso/15.png  used on input line 148.
+(pdftex.def)             Requested size: 419.46426pt x 243.10658pt.
+<images/casos_de_uso/16.png, id=118, 592.2125pt x 337.26pt>
+File: images/casos_de_uso/16.png Graphic file (type png)
+<use images/casos_de_uso/16.png>
+Package pdftex.def Info: images/casos_de_uso/16.png  used on input line 149.
+(pdftex.def)             Requested size: 414.54591pt x 236.08038pt.
+ [18 </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/casos_de_uso/14.png> </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/casos_de_uso/15.png>]
+<images/casos_de_uso/17.png, id=125, 590.205pt x 319.1925pt>
+File: images/casos_de_uso/17.png Graphic file (type png)
+<use images/casos_de_uso/17.png>
+Package pdftex.def Info: images/casos_de_uso/17.png  used on input line 150.
+(pdftex.def)             Requested size: 413.14067pt x 223.43321pt.
+<images/casos_de_uso/18.png, id=126, 597.23125pt x 354.32375pt>
+File: images/casos_de_uso/18.png Graphic file (type png)
+<use images/casos_de_uso/18.png>
+Package pdftex.def Info: images/casos_de_uso/18.png  used on input line 151.
+(pdftex.def)             Requested size: 418.05902pt x 248.02492pt.
+ [19 </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/casos_de_uso/16.png> </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/casos_de_uso/17.png>]
+<images/casos_de_uso/19.png, id=132, 595.22375pt x 338.26375pt>
+File: images/casos_de_uso/19.png Graphic file (type png)
+<use images/casos_de_uso/19.png>
+Package pdftex.def Info: images/casos_de_uso/19.png  used on input line 152.
+(pdftex.def)             Requested size: 416.6538pt x 236.78299pt.
+<images/casos_de_uso/20.png, id=133, 598.235pt x 321.2pt>
+File: images/casos_de_uso/20.png Graphic file (type png)
+<use images/casos_de_uso/20.png>
+Package pdftex.def Info: images/casos_de_uso/20.png  used on input line 153.
+(pdftex.def)             Requested size: 418.76164pt x 224.83847pt.
+ [20 </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/casos_de_uso/18.png> </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/casos_de_uso/19.png>]
+<images/casos_de_uso/21.png, id=139, 597.23125pt x 358.33875pt>
+File: images/casos_de_uso/21.png Graphic file (type png)
+<use images/casos_de_uso/21.png>
+Package pdftex.def Info: images/casos_de_uso/21.png  used on input line 154.
+(pdftex.def)             Requested size: 418.05902pt x 250.83542pt.
+<images/casos_de_uso/22.png, id=140, 593.21625pt x 321.2pt>
+File: images/casos_de_uso/22.png Graphic file (type png)
+<use images/casos_de_uso/22.png>
+Package pdftex.def Info: images/casos_de_uso/22.png  used on input line 155.
+(pdftex.def)             Requested size: 415.24854pt x 224.83847pt.
+ [21 </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/casos_de_uso/20.png> </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/casos_de_uso/21.png>]
+<images/casos_de_uso/23.png, id=146, 595.22375pt x 337.26pt>
+File: images/casos_de_uso/23.png Graphic file (type png)
+<use images/casos_de_uso/23.png>
+Package pdftex.def Info: images/casos_de_uso/23.png  used on input line 156.
+(pdftex.def)             Requested size: 416.6538pt x 236.08038pt.
+<images/casos_de_uso/24.png, id=147, 595.22375pt x 324.21124pt>
+File: images/casos_de_uso/24.png Graphic file (type png)
+<use images/casos_de_uso/24.png>
+Package pdftex.def Info: images/casos_de_uso/24.png  used on input line 157.
+(pdftex.def)             Requested size: 416.6538pt x 226.94632pt.
+ [22 </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/casos_de_uso/22.png> </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/casos_de_uso/23.png>]
+<images/casos_de_uso/25.png, id=153, 593.21625pt x 323.2075pt>
+File: images/casos_de_uso/25.png Graphic file (type png)
+<use images/casos_de_uso/25.png>
+Package pdftex.def Info: images/casos_de_uso/25.png  used on input line 158.
+(pdftex.def)             Requested size: 415.24854pt x 226.2437pt.
+<images/casos_de_uso/26.png, id=154, 594.22pt x 308.15125pt>
+File: images/casos_de_uso/26.png Graphic file (type png)
+<use images/casos_de_uso/26.png>
+Package pdftex.def Info: images/casos_de_uso/26.png  used on input line 159.
+(pdftex.def)             Requested size: 415.95117pt x 215.70439pt.
+ [23 </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/casos_de_uso/24.png> </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/casos_de_uso/25.png>]
+<images/casos_de_uso/27.png, id=160, 599.23875pt x 326.21875pt>
+File: images/casos_de_uso/27.png Graphic file (type png)
+<use images/casos_de_uso/27.png>
+Package pdftex.def Info: images/casos_de_uso/27.png  used on input line 160.
+(pdftex.def)             Requested size: 419.46426pt x 228.35156pt.
+<images/casos_de_uso/28.png, id=161, 662.475pt x 342.5297pt>
+File: images/casos_de_uso/28.png Graphic file (type png)
+<use images/casos_de_uso/28.png>
+Package pdftex.def Info: images/casos_de_uso/28.png  used on input line 161.
+(pdftex.def)             Requested size: 410.73026pt x 212.36621pt.
+ [24 </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/casos_de_uso/26.png> </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/casos_de_uso/27.png>]
+<images/casos_de_uso/29.png, id=168, 597.23125pt x 308.15125pt>
+File: images/casos_de_uso/29.png Graphic file (type png)
+<use images/casos_de_uso/29.png>
+Package pdftex.def Info: images/casos_de_uso/29.png  used on input line 162.
+(pdftex.def)             Requested size: 418.05902pt x 215.70439pt.
+<images/casos_de_uso/30.png, id=169, 661.72218pt x 343.2825pt>
+File: images/casos_de_uso/30.png Graphic file (type png)
+<use images/casos_de_uso/30.png>
+Package pdftex.def Info: images/casos_de_uso/30.png  used on input line 163.
+(pdftex.def)             Requested size: 410.26352pt x 212.83293pt.
+ [25 </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/casos_de_uso/28.png> </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/casos_de_uso/29.png>]
+<images/casos_de_uso/31.png, id=175, 597.23125pt x 328.22626pt>
+File: images/casos_de_uso/31.png Graphic file (type png)
+<use images/casos_de_uso/31.png>
+Package pdftex.def Info: images/casos_de_uso/31.png  used on input line 164.
+(pdftex.def)             Requested size: 418.05902pt x 229.7568pt.
+<images/casos_de_uso/32.png, id=176, 663.22781pt x 359.09157pt>
+File: images/casos_de_uso/32.png Graphic file (type png)
+<use images/casos_de_uso/32.png>
+Package pdftex.def Info: images/casos_de_uso/32.png  used on input line 165.
+(pdftex.def)             Requested size: 411.19699pt x 222.63446pt.
+ [26 </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/casos_de_uso/30.png> </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/casos_de_uso/31.png>]
+<images/casos_de_uso/33.png, id=182, 662.475pt x 361.35pt>
+File: images/casos_de_uso/33.png Graphic file (type png)
+<use images/casos_de_uso/33.png>
+Package pdftex.def Info: images/casos_de_uso/33.png  used on input line 166.
+(pdftex.def)             Requested size: 410.73026pt x 224.03468pt.
+<images/casos_de_uso/34.png, id=183, 663.22781pt x 362.10281pt>
+File: images/casos_de_uso/34.png Graphic file (type png)
+<use images/casos_de_uso/34.png>
+Package pdftex.def Info: images/casos_de_uso/34.png  used on input line 167.
+(pdftex.def)             Requested size: 411.19699pt x 224.5014pt.
+ [27 </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/casos_de_uso/32.png> </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/casos_de_uso/33.png>]
+<images/casos_de_uso/35.png, id=189, 589.20125pt x 306.14375pt>
+File: images/casos_de_uso/35.png Graphic file (type png)
+<use images/casos_de_uso/35.png>
+Package pdftex.def Info: images/casos_de_uso/35.png  used on input line 168.
+(pdftex.def)             Requested size: 412.43805pt x 214.29915pt.
+<images/casos_de_uso/36.png, id=190, 597.23125pt x 328.22626pt>
+File: images/casos_de_uso/36.png Graphic file (type png)
+<use images/casos_de_uso/36.png>
+Package pdftex.def Info: images/casos_de_uso/36.png  used on input line 169.
+(pdftex.def)             Requested size: 418.05902pt x 229.7568pt.
+ [28 </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/casos_de_uso/34.png> </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/casos_de_uso/35.png>]
+<images/casos_de_uso/37.png, id=196, 594.22pt x 325.215pt>
+File: images/casos_de_uso/37.png Graphic file (type png)
+<use images/casos_de_uso/37.png>
+Package pdftex.def Info: images/casos_de_uso/37.png  used on input line 170.
+(pdftex.def)             Requested size: 415.95117pt x 227.64894pt.
+<images/casos_de_uso/38.png, id=197, 593.21625pt x 324.21124pt>
+File: images/casos_de_uso/38.png Graphic file (type png)
+<use images/casos_de_uso/38.png>
+Package pdftex.def Info: images/casos_de_uso/38.png  used on input line 171.
+(pdftex.def)             Requested size: 415.24854pt x 226.94632pt.
+ [29 </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/casos_de_uso/36.png> </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/casos_de_uso/37.png>] [30 </home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/images/casos_de_uso/38.png>] (/home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/practica2.aux
+LaTeX Info: Redefining \. on input line 7.
+LaTeX Info: Redefining \% on input line 7.
+LaTeX Info: Redefining \. on input line 9.
+LaTeX Info: Redefining \% on input line 9.
+)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 8062 strings out of 481239
+ 121226 string characters out of 5920378
+ 368227 words of memory out of 5000000
+ 23126 multiletter control sequences out of 15000+600000
+ 632482 words of font info for 52 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 34i,11n,45p,873b,571s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/sourcesanspro/a_ggs4wk.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/sourcesanspro/a_sd7igg.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/sourcesanspro/a_mhce32.enc}</usr/share/texlive/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-Bold.pfb></usr/share/texlive/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-Regular.pfb>
+Output written on /home/pabloariza/Documents/Segundo/FIS/FIS-Practicas/P2/practica2.pdf (31 pages, 3588204 bytes).
+PDF statistics:
+ 222 PDF objects out of 1000 (max. 8388607)
+ 84 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 256 words of extra memory for PDF output out of 10000 (max. 10000000)
+

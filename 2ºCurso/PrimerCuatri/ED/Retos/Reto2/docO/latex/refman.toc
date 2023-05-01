@@ -1,0 +1,109 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Class Index}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Class List}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}File Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}File List}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Class Documentation}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Bloque Class Reference}{5}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Detailed Description}{6}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Constructor \& Destructor Documentation}{6}{subsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.2.1}Bloque()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{6}{subsubsection.3.1.2.1}%
+\contentsline {subsubsection}{\numberline {3.1.2.2}Bloque()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{6}{subsubsection.3.1.2.2}%
+\contentsline {subsection}{\numberline {3.1.3}Member Function Documentation}{6}{subsection.3.1.3}%
+\contentsline {subsubsection}{\numberline {3.1.3.1}aniadirCasilla()}{6}{subsubsection.3.1.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.3.2}eliminarCasilla()}{7}{subsubsection.3.1.3.2}%
+\contentsline {subsubsection}{\numberline {3.1.3.3}esCasillaContigua()}{7}{subsubsection.3.1.3.3}%
+\contentsline {subsubsection}{\numberline {3.1.3.4}getCasilla()}{8}{subsubsection.3.1.3.4}%
+\contentsline {subsubsection}{\numberline {3.1.3.5}getSumaBloque()}{8}{subsubsection.3.1.3.5}%
+\contentsline {subsubsection}{\numberline {3.1.3.6}getTamanio()}{8}{subsubsection.3.1.3.6}%
+\contentsline {subsubsection}{\numberline {3.1.3.7}setCasilla()}{9}{subsubsection.3.1.3.7}%
+\contentsline {section}{\numberline {3.2}Bloques\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sudoku Class Reference}{9}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Detailed Description}{10}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Constructor \& Destructor Documentation}{10}{subsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.2.1}BloquesSudoku()}{10}{subsubsection.3.2.2.1}%
+\contentsline {subsection}{\numberline {3.2.3}Member Function Documentation}{10}{subsection.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.2.3.1}aniadirBloque()}{10}{subsubsection.3.2.3.1}%
+\contentsline {subsubsection}{\numberline {3.2.3.2}eliminarBloque()}{10}{subsubsection.3.2.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.3.3}getBloquesSudoku()}{11}{subsubsection.3.2.3.3}%
+\contentsline {subsubsection}{\numberline {3.2.3.4}setBloquesSudoku()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{11}{subsubsection.3.2.3.4}%
+\contentsline {subsubsection}{\numberline {3.2.3.5}setBloquesSudoku()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{11}{subsubsection.3.2.3.5}%
+\contentsline {subsubsection}{\numberline {3.2.3.6}sumaBloques()}{13}{subsubsection.3.2.3.6}%
+\contentsline {section}{\numberline {3.3}Casilla Class Reference}{13}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Detailed Description}{14}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Constructor \& Destructor Documentation}{14}{subsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.2.1}Casilla()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{14}{subsubsection.3.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.3.2.2}Casilla()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{14}{subsubsection.3.3.2.2}%
+\contentsline {subsection}{\numberline {3.3.3}Member Function Documentation}{15}{subsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.3.1}getColumna()}{15}{subsubsection.3.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.3.2}getFila()}{15}{subsubsection.3.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3.3}getValor()}{15}{subsubsection.3.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.3.4}isEmpty()}{16}{subsubsection.3.3.3.4}%
+\contentsline {subsubsection}{\numberline {3.3.3.5}setCasilla()}{16}{subsubsection.3.3.3.5}%
+\contentsline {subsubsection}{\numberline {3.3.3.6}setColumna()}{16}{subsubsection.3.3.3.6}%
+\contentsline {subsubsection}{\numberline {3.3.3.7}setFila()}{16}{subsubsection.3.3.3.7}%
+\contentsline {subsubsection}{\numberline {3.3.3.8}setPosicion()}{17}{subsubsection.3.3.3.8}%
+\contentsline {subsubsection}{\numberline {3.3.3.9}setValor()}{17}{subsubsection.3.3.3.9}%
+\contentsline {subsubsection}{\numberline {3.3.3.10}to\_string()}{17}{subsubsection.3.3.3.10}%
+\contentsline {section}{\numberline {3.4}Matriz$<$ M $>$ Class Template Reference}{18}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Detailed Description}{18}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Constructor \& Destructor Documentation}{18}{subsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.2.1}Matriz()}{18}{subsubsection.3.4.2.1}%
+\contentsline {subsection}{\numberline {3.4.3}Member Function Documentation}{19}{subsection.3.4.3}%
+\contentsline {subsubsection}{\numberline {3.4.3.1}eliminarValor()}{19}{subsubsection.3.4.3.1}%
+\contentsline {subsubsection}{\numberline {3.4.3.2}getCasilla()}{19}{subsubsection.3.4.3.2}%
+\contentsline {subsubsection}{\numberline {3.4.3.3}getColumna()}{20}{subsubsection.3.4.3.3}%
+\contentsline {subsubsection}{\numberline {3.4.3.4}getFila()}{20}{subsubsection.3.4.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.3.5}insertarValor()}{20}{subsubsection.3.4.3.5}%
+\contentsline {section}{\numberline {3.5}Resolver\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sudoku\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Killer Class Reference}{21}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Detailed Description}{21}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Member Function Documentation}{22}{subsection.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.5.2.1}DescartaSecuencias()}{22}{subsubsection.3.5.2.1}%
+\contentsline {subsubsection}{\numberline {3.5.2.2}ResuelveSudoku()}{22}{subsubsection.3.5.2.2}%
+\contentsline {subsubsection}{\numberline {3.5.2.3}SecuenciaBloqueKiller()}{22}{subsubsection.3.5.2.3}%
+\contentsline {subsubsection}{\numberline {3.5.2.4}SecuenciaCaja()}{23}{subsubsection.3.5.2.4}%
+\contentsline {subsubsection}{\numberline {3.5.2.5}SecuenciasPosibles()}{23}{subsubsection.3.5.2.5}%
+\contentsline {section}{\numberline {3.6}Sudoku Class Reference}{24}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Detailed Description}{24}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Constructor \& Destructor Documentation}{24}{subsection.3.6.2}%
+\contentsline {subsubsection}{\numberline {3.6.2.1}Sudoku()}{24}{subsubsection.3.6.2.1}%
+\contentsline {subsection}{\numberline {3.6.3}Member Function Documentation}{25}{subsection.3.6.3}%
+\contentsline {subsubsection}{\numberline {3.6.3.1}GenerarSudoku()}{25}{subsubsection.3.6.3.1}%
+\contentsline {subsubsection}{\numberline {3.6.3.2}getSudoku()}{25}{subsubsection.3.6.3.2}%
+\contentsline {subsubsection}{\numberline {3.6.3.3}getValorCasilla()}{25}{subsubsection.3.6.3.3}%
+\contentsline {section}{\numberline {3.7}Sudoku\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Killer Class Reference}{26}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Detailed Description}{26}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Constructor \& Destructor Documentation}{26}{subsection.3.7.2}%
+\contentsline {subsubsection}{\numberline {3.7.2.1}SudokuKiller()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{26}{subsubsection.3.7.2.1}%
+\contentsline {subsubsection}{\numberline {3.7.2.2}SudokuKiller()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{27}{subsubsection.3.7.2.2}%
+\contentsline {subsection}{\numberline {3.7.3}Member Function Documentation}{27}{subsection.3.7.3}%
+\contentsline {subsubsection}{\numberline {3.7.3.1}EstaResuelto()}{27}{subsubsection.3.7.3.1}%
+\contentsline {chapter}{\numberline {4}File Documentation}{29}{chapter.4}%
+\contentsline {section}{\numberline {4.1}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bloques\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sudoku.h File Reference}{29}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Detailed Description}{30}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Function Documentation}{30}{subsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.1}esMismoBloque()}{30}{subsubsection.4.1.2.1}%
+\contentsline {subsubsection}{\numberline {4.1.2.2}seSolapaBloques()}{30}{subsubsection.4.1.2.2}%
+\contentsline {section}{\numberline {4.2}Bloques\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sudoku.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{31}{section.4.2}%
+\contentsline {section}{\numberline {4.3}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Casilla.h File Reference}{32}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Detailed Description}{32}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Function Documentation}{32}{subsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.1}mismaCasilla()}{32}{subsubsection.4.3.2.1}%
+\contentsline {section}{\numberline {4.4}Casilla.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{33}{section.4.4}%
+\contentsline {section}{\numberline {4.5}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Matriz.h File Reference}{33}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Detailed Description}{34}{subsection.4.5.1}%
+\contentsline {section}{\numberline {4.6}Matriz.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{34}{section.4.6}%
+\contentsline {section}{\numberline {4.7}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Resolver\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sudoku\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Killer.h File Reference}{34}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Detailed Description}{35}{subsection.4.7.1}%
+\contentsline {section}{\numberline {4.8}Resolver\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sudoku\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Killer.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{35}{section.4.8}%
+\contentsline {section}{\numberline {4.9}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sudoku\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Killer.h File Reference}{35}{section.4.9}%
+\contentsline {subsection}{\numberline {4.9.1}Detailed Description}{36}{subsection.4.9.1}%
+\contentsline {subsection}{\numberline {4.9.2}Function Documentation}{36}{subsection.4.9.2}%
+\contentsline {subsubsection}{\numberline {4.9.2.1}BloquesValido()}{36}{subsubsection.4.9.2.1}%
+\contentsline {subsubsection}{\numberline {4.9.2.2}SudokuKillerValido()}{37}{subsubsection.4.9.2.2}%
+\contentsline {subsubsection}{\numberline {4.9.2.3}SudokuValido()}{37}{subsubsection.4.9.2.3}%
+\contentsline {section}{\numberline {4.10}Sudoku\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Killer.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{37}{section.4.10}%
+\contentsline {section}{\numberline {4.11}src/main.cpp File Reference}{38}{section.4.11}%
+\contentsline {subsection}{\numberline {4.11.1}Detailed Description}{38}{subsection.4.11.1}%
+\contentsline {subsection}{\numberline {4.11.2}Function Documentation}{39}{subsection.4.11.2}%
+\contentsline {subsubsection}{\numberline {4.11.2.1}main()}{39}{subsubsection.4.11.2.1}%
+\contentsline {chapter}{Index}{41}{section*.19}%

@@ -1,0 +1,40 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+*************************************************************************
+Mon Mar 21 15:20:52 2022
+
+
+FIT:    data read from \PYGZsq{}dijkstra.dat\PYGZsq{}
+        format = z
+        \PYGZsh{}datapoints = 25
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)=a3*x*x*x+a2*x*x+a1*x+a0
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda       a3             a2
+   0 1.5636145755e+19   0.00e+00  3.95e+08    1.000000e+00   1.000000e+00
+  12 4.3580634335e\PYGZhy{}01  \PYGZhy{}6.12e\PYGZhy{}03  3.95e\PYGZhy{}04    4.705614e\PYGZhy{}09  \PYGZhy{}1.473596e\PYGZhy{}07
+
+After 12 iterations the fit converged.
+final sum of squares of residuals : 0.435806
+rel. change during last iteration : \PYGZhy{}6.11875e\PYGZhy{}08
+
+degrees of freedom    (FIT\PYGZus{}NDF)                        : 21
+rms of residuals      (FIT\PYGZus{}STDFIT) = sqrt(WSSR/ndf)    : 0.144058
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0207527
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a3              = 4.70561e\PYGZhy{}09      +/\PYGZhy{} 7.894e\PYGZhy{}10    (16.78\PYGZpc{})
+a2              = \PYGZhy{}1.4736e\PYGZhy{}07      +/\PYGZhy{} 1.559e\PYGZhy{}06    (1058\PYGZpc{})
+a1              = 0.000192697      +/\PYGZhy{} 0.0008814    (457.4\PYGZpc{})
+a0              = \PYGZhy{}0.00275768      +/\PYGZhy{} 0.135        (4894\PYGZpc{})
+
+correlation matrix of the fit parameters:
+                a3     a2     a1     a0
+a3              1.000
+a2             \PYGZhy{}0.987  1.000
+a1              0.926 \PYGZhy{}0.973  1.000
+a0             \PYGZhy{}0.719  0.795 \PYGZhy{}0.898  1.000
+\end{Verbatim}

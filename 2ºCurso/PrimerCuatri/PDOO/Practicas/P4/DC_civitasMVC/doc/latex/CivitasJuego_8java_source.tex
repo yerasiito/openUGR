@@ -1,0 +1,182 @@
+\hypertarget{CivitasJuego_8java_source}{}\doxysection{Civitas\+Juego.\+java}
+\label{CivitasJuego_8java_source}\index{src/civitas/CivitasJuego.java@{src/civitas/CivitasJuego.java}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00001}00001 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00002}00002 \textcolor{comment}{ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-\/default.txt to change this license}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00003}00003 \textcolor{comment}{ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00004}00004 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00005}00005 \textcolor{keyword}{package }civitas;}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00007}00007 \textcolor{keyword}{import} java.util.ArrayList;}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00008}00008 \textcolor{keyword}{import} java.util.Collections;}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00013}\mbox{\hyperlink{classcivitas_1_1CivitasJuego}{00013}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{classcivitas_1_1CivitasJuego}{CivitasJuego}} \{}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00014}00014     \textcolor{keyword}{static} \textcolor{keyword}{final} \textcolor{keywordtype}{int} TAMANIOTABLERO = 20;}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00015}00015     \textcolor{keyword}{static} \textcolor{keyword}{final} \textcolor{keywordtype}{int} NUMEROJUGADORES = 4;}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00016}00016     \textcolor{keyword}{private} \textcolor{keywordtype}{int} indiceJugadorActual;}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00017}00017     \textcolor{keyword}{private} ArrayList<Jugador> jugadores;}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00018}00018     \textcolor{keyword}{private} \mbox{\hyperlink{classcivitas_1_1Tablero}{Tablero}} tablero;}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00019}00019     \textcolor{keyword}{private} \mbox{\hyperlink{classcivitas_1_1MazoSorpresas}{MazoSorpresas}} mazo;}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00020}00020     \textcolor{keyword}{private} GestorEstados gestorEstado;}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00021}00021     \textcolor{keyword}{private} EstadoJuego estadoJuego;}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00022}00022     \textcolor{keyword}{private} \mbox{\hyperlink{classcivitas_1_1Dado}{Dado}} dado = \mbox{\hyperlink{classcivitas_1_1Dado}{Dado}}.getInstance();}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00023}00023     }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00024}00024     \textcolor{keyword}{private} \textcolor{keywordtype}{void} init()\{}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00025}00025         indiceJugadorActual = 0;}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00026}00026         jugadores = \textcolor{keyword}{new} ArrayList<Jugador>();}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00027}00027         tablero = \textcolor{keyword}{new} \mbox{\hyperlink{classcivitas_1_1Tablero}{Tablero}}();}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00028}00028         mazo = \textcolor{keyword}{new} \mbox{\hyperlink{classcivitas_1_1MazoSorpresas}{MazoSorpresas}}();}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00029}00029         gestorEstado = \textcolor{keyword}{new} GestorEstados();}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00030}00030     \}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00031}00031     }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00032}00032     \textcolor{keyword}{public} \mbox{\hyperlink{classcivitas_1_1CivitasJuego}{CivitasJuego}}(ArrayList<String> nombres, \textcolor{keywordtype}{boolean} debug)\{}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00033}00033         init();}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00034}00034         \textcolor{comment}{//Inicializar jugadores}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00035}00035         jugadores = \textcolor{keyword}{new} ArrayList<>();}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00036}00036         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < NUMEROJUGADORES; i++)\{}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00037}00037             \mbox{\hyperlink{classcivitas_1_1Jugador}{Jugador}} nuevo = \textcolor{keyword}{new} \mbox{\hyperlink{classcivitas_1_1Jugador}{Jugador}}(nombres.get(i));}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00038}00038             jugadores.add(nuevo);}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00039}00039         \}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00040}00040         \textcolor{comment}{//Fijar estado inicial}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00041}00041         estadoJuego = gestorEstado.estadoInicial();}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00043}00043         \textcolor{comment}{//Poner el dado en modo debug(o no)}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00044}00044         \mbox{\hyperlink{classcivitas_1_1Dado}{Dado}}.getInstance().setDebug(debug);}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00045}00045         }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00046}00046         \textcolor{comment}{//Se sortea el jugador que empieza}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00047}00047         indiceJugadorActual = dado.quienEmpieza(NUMEROJUGADORES);}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00048}00048         }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00049}00049         mazo = \textcolor{keyword}{new} \mbox{\hyperlink{classcivitas_1_1MazoSorpresas}{MazoSorpresas}}(debug);}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00050}00050         }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00051}00051         inicializaTablero(mazo);}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00052}00052         inicializaMazoSorpresas();}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00053}00053     \}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00054}00054 }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00055}00055     \textcolor{keyword}{public} \textcolor{keywordtype}{void} inicializaTablero(\mbox{\hyperlink{classcivitas_1_1MazoSorpresas}{MazoSorpresas}} mazo)\{}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00056}00056         \textcolor{comment}{//PARTE INFERIOR DEL TABLERO}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00057}00057         tablero.aniadeCasilla(\textcolor{keyword}{new} \mbox{\hyperlink{classcivitas_1_1Casilla}{Casilla}}(\textcolor{stringliteral}{"{}Salida"{}})); \textcolor{comment}{//SALIDA}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00058}00058         }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00059}00059         tablero.aniadeCasilla(\textcolor{keyword}{new} \mbox{\hyperlink{classcivitas_1_1Casilla}{Casilla}}(\textcolor{stringliteral}{"{}Acera del Darro"{}}, 400, 250, 200)); \textcolor{comment}{//CALLE}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00060}00060         }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00061}00061         tablero.aniadeCasilla(\textcolor{keyword}{new} \mbox{\hyperlink{classcivitas_1_1Casilla}{Casilla}}(\textcolor{stringliteral}{"{}Rodrigo de Triana"{}}, 500, 300, 250)); \textcolor{comment}{//CALLE}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00062}00062         }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00063}00063         tablero.aniadeCasilla(\textcolor{keyword}{new} \mbox{\hyperlink{classcivitas_1_1Casilla}{Casilla}}(\textcolor{stringliteral}{"{}SUERTE"{}}, mazo)); \textcolor{comment}{//SORPRESA}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00064}00064         }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00065}00065         tablero.aniadeCasilla(\textcolor{keyword}{new} \mbox{\hyperlink{classcivitas_1_1Casilla}{Casilla}}(\textcolor{stringliteral}{"{}Cuesta de Gomerez"{}}, 600, 400, 300)); \textcolor{comment}{//CALLE;}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00066}00066         }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00067}00067         \textcolor{comment}{//PRIMER LATERAL}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00068}00068         tablero.aniadeCasilla(\textcolor{keyword}{new} \mbox{\hyperlink{classcivitas_1_1Casilla}{Casilla}}(\textcolor{stringliteral}{"{}Albaicin"{}}, 750, 500, 400)); \textcolor{comment}{//CALLE);}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00069}00069         }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00070}00070         tablero.aniadeCasilla(\textcolor{keyword}{new} \mbox{\hyperlink{classcivitas_1_1Casilla}{Casilla}}(\textcolor{stringliteral}{"{}SUERTE"{}}, mazo)); \textcolor{comment}{//SORPRESA}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00071}00071         }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00072}00072         tablero.aniadeCasilla(\textcolor{keyword}{new} \mbox{\hyperlink{classcivitas_1_1Casilla}{Casilla}}(\textcolor{stringliteral}{"{}Oficios"{}}, 1000, 750, 500)); \textcolor{comment}{//CALLE}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00073}00073 }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00074}00074         tablero.aniadeCasilla(\textcolor{keyword}{new} \mbox{\hyperlink{classcivitas_1_1Casilla}{Casilla}}(\textcolor{stringliteral}{"{}Recogidas"{}}, 1000, 750, 500)); \textcolor{comment}{//CALLE}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00075}00075 }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00076}00076         tablero.aniadeCasilla(\textcolor{keyword}{new} \mbox{\hyperlink{classcivitas_1_1Casilla}{Casilla}}(\textcolor{stringliteral}{"{}Parque FuenteNueva"{}})); \textcolor{comment}{//DESCANSO}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00077}00077         }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00078}00078         \textcolor{comment}{//PARTE SUPERIOR}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00079}00079         }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00080}00080         tablero.aniadeCasilla(\textcolor{keyword}{new} \mbox{\hyperlink{classcivitas_1_1Casilla}{Casilla}}(\textcolor{stringliteral}{"{}Camino del Sacromonte"{}}, 1250, 800, 600)); \textcolor{comment}{//CALLE}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00081}00081                }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00082}00082         tablero.aniadeCasilla(\textcolor{keyword}{new} \mbox{\hyperlink{classcivitas_1_1Casilla}{Casilla}}(\textcolor{stringliteral}{"{}Calle Real de la Alhambra"{}}, 1500, 900, 750)); \textcolor{comment}{//CALLE}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00083}00083         }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00084}00084         tablero.aniadeCasilla(\textcolor{keyword}{new} \mbox{\hyperlink{classcivitas_1_1Casilla}{Casilla}}(\textcolor{stringliteral}{"{}SUERTE"{}}, mazo)); \textcolor{comment}{//SORPRESA}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00085}00085                 }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00086}00086         tablero.aniadeCasilla(\textcolor{keyword}{new} \mbox{\hyperlink{classcivitas_1_1Casilla}{Casilla}}(\textcolor{stringliteral}{"{}Almona del Campillo"{}}, 1500, 900, 750)); \textcolor{comment}{//CALLE}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00087}00087 }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00088}00088         tablero.aniadeCasilla(\textcolor{keyword}{new} \mbox{\hyperlink{classcivitas_1_1Casilla}{Casilla}}(\textcolor{stringliteral}{"{}Caldederia"{}}, 1600, 950, 800)); \textcolor{comment}{//CALLE}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00089}00089         }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00090}00090         \textcolor{comment}{//SEGUNDO LATERAL}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00091}00091         tablero.aniadeCasilla(\textcolor{keyword}{new} \mbox{\hyperlink{classcivitas_1_1Casilla}{Casilla}}(\textcolor{stringliteral}{"{}Camino de Ronda"{}}, 1750, 1000, 900)); \textcolor{comment}{//CALLE}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00092}00092         }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00093}00093         tablero.aniadeCasilla(\textcolor{keyword}{new} \mbox{\hyperlink{classcivitas_1_1Casilla}{Casilla}}(\textcolor{stringliteral}{"{}SUERTE"{}}, mazo)); \textcolor{comment}{//SORPRESA}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00094}00094         }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00095}00095         tablero.aniadeCasilla(\textcolor{keyword}{new} \mbox{\hyperlink{classcivitas_1_1Casilla}{Casilla}}(\textcolor{stringliteral}{"{}Gran Via de Colon"{}}, 2000, 1250, 1100)); \textcolor{comment}{//CALLE}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00096}00096         }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00097}00097         tablero.aniadeCasilla(\textcolor{keyword}{new} \mbox{\hyperlink{classcivitas_1_1Casilla}{Casilla}}(\textcolor{stringliteral}{"{}Angel Gabinet"{}}, 2500, 1500, 1250)); \textcolor{comment}{//CALLE}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00098}00098 }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00099}00099         tablero.aniadeCasilla(\textcolor{keyword}{new} \mbox{\hyperlink{classcivitas_1_1Casilla}{Casilla}}(\textcolor{stringliteral}{"{}Horno de Oro"{}}, 3000, 2000, 1500)); \textcolor{comment}{//CALLE}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00100}00100     \}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00101}00101     }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00102}00102     \textcolor{keyword}{public} \textcolor{keywordtype}{void} inicializaMazoSorpresas()\{}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00103}00103         mazo.alMazo(\textcolor{keyword}{new} \mbox{\hyperlink{classcivitas_1_1Sorpresa}{Sorpresa}}(TipoSorpresa.PAGARCOBRAR, \textcolor{stringliteral}{"{}Te han robado la tarjeta de credito en el Almanjayar y pierdes 1000€ en una transferencia por una tele"{}},-\/1000));}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00104}00104         mazo.alMazo(\textcolor{keyword}{new} \mbox{\hyperlink{classcivitas_1_1Sorpresa}{Sorpresa}}(TipoSorpresa.PAGARCOBRAR, \textcolor{stringliteral}{"{}Te inspeccionan por monopolio y debes sobornar al estado para no acabar en la cárcel. Pagas 1500€"{}},-\/1500));}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00105}00105         mazo.alMazo(\textcolor{keyword}{new} \mbox{\hyperlink{classcivitas_1_1Sorpresa}{Sorpresa}}(TipoSorpresa.PAGARCOBRAR, \textcolor{stringliteral}{"{}Has ganado la quiniela, tantas horas de futbol no fueron en vano. Ganas 1000€"{}},1000));}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00106}00106         mazo.alMazo(\textcolor{keyword}{new} \mbox{\hyperlink{classcivitas_1_1Sorpresa}{Sorpresa}}(TipoSorpresa.PORCASAHOTEL, \textcolor{stringliteral}{"{}Inviertes 500€ en TrollCoin y su valor se cuatriplica al dia siguiente. Ganas 1500€"{}},1500));}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00107}00107         }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00108}00108         mazo.alMazo(\textcolor{keyword}{new} \mbox{\hyperlink{classcivitas_1_1Sorpresa}{Sorpresa}}(TipoSorpresa.PORCASAHOTEL, \textcolor{stringliteral}{"{}La luz ha subido tanto que los inquilinos no pagan. Pierdes 150€ por propiedad"{}},-\/150));}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00109}00109         mazo.alMazo(\textcolor{keyword}{new} \mbox{\hyperlink{classcivitas_1_1Sorpresa}{Sorpresa}}(TipoSorpresa.PORCASAHOTEL, \textcolor{stringliteral}{"{}Un terremoto sacude la ciudad(y a tus propiedades). Pierdes 250€ por propiedad"{}},-\/250));}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00110}00110         mazo.alMazo(\textcolor{keyword}{new} \mbox{\hyperlink{classcivitas_1_1Sorpresa}{Sorpresa}}(TipoSorpresa.PORCASAHOTEL, \textcolor{stringliteral}{"{}Ayudas a una persona y resulta ser un youtuber, te haces una foto y se hace viral. Ganas 250€ por propiedad"{}},250));}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00111}00111         mazo.alMazo(\textcolor{keyword}{new} \mbox{\hyperlink{classcivitas_1_1Sorpresa}{Sorpresa}}(TipoSorpresa.PORCASAHOTEL, \textcolor{stringliteral}{"{}El FBI irrumpe en tus propiedades por presunto soborno y te llevan a juicio. "{}}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00112}00112                                                             + \textcolor{stringliteral}{"{}No sabes como, ganas el juicio y te compensan 150€ por daños en tus propiedades"{}},150));}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00113}00113         }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00114}00114     \}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00115}00115     }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00116}00116     \textcolor{keyword}{public} \textcolor{keywordtype}{int} getIndiceJugadorActual()\{}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00117}00117         \textcolor{keywordflow}{return} indiceJugadorActual;}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00118}00118     \}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00119}00119     }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00120}00120     \textcolor{keyword}{public} \mbox{\hyperlink{classcivitas_1_1Jugador}{Jugador}} getJugadorActual()\{}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00121}00121         \textcolor{keywordflow}{return} jugadores.get(indiceJugadorActual);}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00122}00122     \}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00123}00123     }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00124}00124     \textcolor{keyword}{public} ArrayList<Jugador> getJugadores()\{}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00125}00125         \textcolor{keywordflow}{return} jugadores;}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00126}00126     \}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00127}00127     }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00128}00128     \textcolor{keyword}{public} \mbox{\hyperlink{classcivitas_1_1Tablero}{Tablero}} getTablero()\{}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00129}00129         \textcolor{keywordflow}{return} tablero;}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00130}00130     \}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00131}00131 }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00132}00132     \textcolor{keyword}{public} \mbox{\hyperlink{classcivitas_1_1MazoSorpresas}{MazoSorpresas}} getMazo() \{}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00133}00133         \textcolor{keywordflow}{return} mazo;}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00134}00134     \}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00135}00135     }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00136}00136     \textcolor{keyword}{public} \textcolor{keywordtype}{void} PasarTurno()\{}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00137}00137         indiceJugadorActual = indiceJugadorActual++ \% NUMEROJUGADORES;}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00138}00138     \}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00139}00139     }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00140}00140     \textcolor{keyword}{public} ArrayList<Jugador> Ranking()\{}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00141}00141         Collections.sort(jugadores);}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00142}00142         \textcolor{keywordflow}{return} jugadores;}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00143}00143     \}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00144}00144     }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00145}00145     \textcolor{keyword}{public} OperacionJuego siguientePaso()\{}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00146}00146         \textcolor{comment}{//pendiente}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00147}00147         \textcolor{keywordflow}{return} \textcolor{keyword}{null};}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00148}00148     \}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00149}00149     }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00150}00150     \textcolor{keyword}{public} \textcolor{keywordtype}{void} siguientePasoCompletado(OperacionJuego operacion)\{}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00151}00151         gestorEstado.siguienteEstado(getJugadorActual(), estadoJuego, operacion);}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00152}00152     \}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00153}00153     }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00154}00154     \textcolor{keyword}{public} \textcolor{keywordtype}{boolean} comprar()\{}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00155}00155        \textcolor{comment}{//pendiente}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00156}00156        \textcolor{keywordflow}{return} \textcolor{keyword}{true}; }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00157}00157     \}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00158}00158     }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00159}00159     \textcolor{keyword}{public} \textcolor{keywordtype}{boolean} construirCasa(\textcolor{keywordtype}{int} ip)\{}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00160}00160         \textcolor{keywordflow}{return} getJugadorActual().construirCasa(ip);}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00161}00161     \}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00162}00162         }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00163}00163     \textcolor{keyword}{public} \textcolor{keywordtype}{boolean} construirHotel(\textcolor{keywordtype}{int} ip)\{}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00164}00164         \textcolor{keywordflow}{return} getJugadorActual().construirHotel(ip);}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00165}00165     \}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00166}00166     }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00167}00167     \textcolor{keyword}{public} \textcolor{keywordtype}{void} ContabilizarPasosPorSalida()\{}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00168}00168         \textcolor{keywordflow}{if}(tablero.computarPasoPorSalida())}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00169}00169             getJugadorActual().pasaPorSalida();}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00170}00170     \}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00171}00171     }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00172}00172     \textcolor{keyword}{public} \textcolor{keywordtype}{boolean} finalDelJuego()\{}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00173}00173         \textcolor{keywordtype}{boolean} fin = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00174}00174         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < NUMEROJUGADORES \&\& !fin; i++)}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00175}00175             \textcolor{keywordflow}{if}(jugadores.get(i).enBancarrota())}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00176}00176                 fin = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00177}00177         }
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00178}00178         \textcolor{keywordflow}{return} fin;}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00179}00179     \}}
+\DoxyCodeLine{\Hypertarget{CivitasJuego_8java_source_l00180}00180 \}}
+
+\end{DoxyCode}

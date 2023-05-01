@@ -1,0 +1,184 @@
+\begin{theindex}
+
+  \item {aniadirBloque}
+    \subitem {BloquesSudoku}, \hyperpage{10}
+  \item {aniadirCasilla}
+    \subitem {Bloque}, \hyperpage{6}
+
+  \indexspace
+
+  \item {Bloque}, \hyperpage{5}
+    \subitem {aniadirCasilla}, \hyperpage{6}
+    \subitem {Bloque}, \hyperpage{6}
+    \subitem {eliminarCasilla}, \hyperpage{7}
+    \subitem {esCasillaContigua}, \hyperpage{7}
+    \subitem {getCasilla}, \hyperpage{8}
+    \subitem {getSumaBloque}, \hyperpage{8}
+    \subitem {getTamanio}, \hyperpage{8}
+    \subitem {setCasilla}, \hyperpage{8}
+  \item {BloquesSudoku}, \hyperpage{9}
+    \subitem {aniadirBloque}, \hyperpage{10}
+    \subitem {BloquesSudoku}, \hyperpage{10}
+    \subitem {eliminarBloque}, \hyperpage{10}
+    \subitem {getBloquesSudoku}, \hyperpage{11}
+    \subitem {setBloquesSudoku}, \hyperpage{11}
+    \subitem {sumaBloques}, \hyperpage{13}
+  \item {BloquesSudoku.h}
+    \subitem {esMismoBloque}, \hyperpage{30}
+    \subitem {seSolapaBloques}, \hyperpage{30}
+  \item {BloquesValido}
+    \subitem {SudokuKiller.h}, \hyperpage{36}
+
+  \indexspace
+
+  \item {Casilla}, \hyperpage{13}
+    \subitem {Casilla}, \hyperpage{14}
+    \subitem {getColumna}, \hyperpage{15}
+    \subitem {getFila}, \hyperpage{15}
+    \subitem {getValor}, \hyperpage{15}
+    \subitem {isEmpty}, \hyperpage{15}
+    \subitem {setCasilla}, \hyperpage{16}
+    \subitem {setColumna}, \hyperpage{16}
+    \subitem {setFila}, \hyperpage{16}
+    \subitem {setPosicion}, \hyperpage{17}
+    \subitem {setValor}, \hyperpage{17}
+    \subitem {to\_string}, \hyperpage{17}
+  \item {Casilla.h}
+    \subitem {mismaCasilla}, \hyperpage{32}
+
+  \indexspace
+
+  \item {DescartaSecuencias}
+    \subitem {ResolverSudokuKiller}, \hyperpage{22}
+
+  \indexspace
+
+  \item {eliminarBloque}
+    \subitem {BloquesSudoku}, \hyperpage{10}
+  \item {eliminarCasilla}
+    \subitem {Bloque}, \hyperpage{7}
+  \item {eliminarValor}
+    \subitem {Matriz$<$ M $>$}, \hyperpage{19}
+  \item {esCasillaContigua}
+    \subitem {Bloque}, \hyperpage{7}
+  \item {esMismoBloque}
+    \subitem {BloquesSudoku.h}, \hyperpage{30}
+  \item {EstaResuelto}
+    \subitem {SudokuKiller}, \hyperpage{27}
+
+  \indexspace
+
+  \item {GenerarSudoku}
+    \subitem {Sudoku}, \hyperpage{25}
+  \item {getBloquesSudoku}
+    \subitem {BloquesSudoku}, \hyperpage{11}
+  \item {getCasilla}
+    \subitem {Bloque}, \hyperpage{8}
+    \subitem {Matriz$<$ M $>$}, \hyperpage{19}
+  \item {getColumna}
+    \subitem {Casilla}, \hyperpage{15}
+    \subitem {Matriz$<$ M $>$}, \hyperpage{20}
+  \item {getFila}
+    \subitem {Casilla}, \hyperpage{15}
+    \subitem {Matriz$<$ M $>$}, \hyperpage{20}
+  \item {getSudoku}
+    \subitem {Sudoku}, \hyperpage{25}
+  \item {getSumaBloque}
+    \subitem {Bloque}, \hyperpage{8}
+  \item {getTamanio}
+    \subitem {Bloque}, \hyperpage{8}
+  \item {getValor}
+    \subitem {Casilla}, \hyperpage{15}
+  \item {getValorCasilla}
+    \subitem {Sudoku}, \hyperpage{25}
+
+  \indexspace
+
+  \item {include/BloquesSudoku.h}, \hyperpage{29}, \hyperpage{31}
+  \item {include/Casilla.h}, \hyperpage{32, 33}
+  \item {include/Matriz.h}, \hyperpage{33, 34}
+  \item {include/ResolverSudokuKiller.h}, \hyperpage{34, 35}
+  \item {include/SudokuKiller.h}, \hyperpage{35}, \hyperpage{37}
+  \item {insertarValor}
+    \subitem {Matriz$<$ M $>$}, \hyperpage{20}
+  \item {isEmpty}
+    \subitem {Casilla}, \hyperpage{15}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.cpp}, \hyperpage{39}
+  \item {main.cpp}
+    \subitem {main}, \hyperpage{39}
+  \item {Matriz}
+    \subitem {Matriz$<$ M $>$}, \hyperpage{18}
+  \item {Matriz$<$ M $>$}, \hyperpage{18}
+    \subitem {eliminarValor}, \hyperpage{19}
+    \subitem {getCasilla}, \hyperpage{19}
+    \subitem {getColumna}, \hyperpage{20}
+    \subitem {getFila}, \hyperpage{20}
+    \subitem {insertarValor}, \hyperpage{20}
+    \subitem {Matriz}, \hyperpage{18}
+  \item {mismaCasilla}
+    \subitem {Casilla.h}, \hyperpage{32}
+
+  \indexspace
+
+  \item {ResolverSudokuKiller}, \hyperpage{21}
+    \subitem {DescartaSecuencias}, \hyperpage{22}
+    \subitem {ResuelveSudoku}, \hyperpage{22}
+    \subitem {SecuenciaBloqueKiller}, \hyperpage{22}
+    \subitem {SecuenciaCaja}, \hyperpage{23}
+    \subitem {SecuenciasPosibles}, \hyperpage{23}
+  \item {ResuelveSudoku}
+    \subitem {ResolverSudokuKiller}, \hyperpage{22}
+
+  \indexspace
+
+  \item {SecuenciaBloqueKiller}
+    \subitem {ResolverSudokuKiller}, \hyperpage{22}
+  \item {SecuenciaCaja}
+    \subitem {ResolverSudokuKiller}, \hyperpage{23}
+  \item {SecuenciasPosibles}
+    \subitem {ResolverSudokuKiller}, \hyperpage{23}
+  \item {seSolapaBloques}
+    \subitem {BloquesSudoku.h}, \hyperpage{30}
+  \item {setBloquesSudoku}
+    \subitem {BloquesSudoku}, \hyperpage{11}
+  \item {setCasilla}
+    \subitem {Bloque}, \hyperpage{8}
+    \subitem {Casilla}, \hyperpage{16}
+  \item {setColumna}
+    \subitem {Casilla}, \hyperpage{16}
+  \item {setFila}
+    \subitem {Casilla}, \hyperpage{16}
+  \item {setPosicion}
+    \subitem {Casilla}, \hyperpage{17}
+  \item {setValor}
+    \subitem {Casilla}, \hyperpage{17}
+  \item {src/main.cpp}, \hyperpage{38}
+  \item {Sudoku}, \hyperpage{24}
+    \subitem {GenerarSudoku}, \hyperpage{25}
+    \subitem {getSudoku}, \hyperpage{25}
+    \subitem {getValorCasilla}, \hyperpage{25}
+    \subitem {Sudoku}, \hyperpage{24}
+  \item {SudokuKiller}, \hyperpage{26}
+    \subitem {EstaResuelto}, \hyperpage{27}
+    \subitem {SudokuKiller}, \hyperpage{26}
+  \item {SudokuKiller.h}
+    \subitem {BloquesValido}, \hyperpage{36}
+    \subitem {SudokuKillerValido}, \hyperpage{37}
+    \subitem {SudokuValido}, \hyperpage{37}
+  \item {SudokuKillerValido}
+    \subitem {SudokuKiller.h}, \hyperpage{37}
+  \item {SudokuValido}
+    \subitem {SudokuKiller.h}, \hyperpage{37}
+  \item {sumaBloques}
+    \subitem {BloquesSudoku}, \hyperpage{13}
+
+  \indexspace
+
+  \item {to\_string}
+    \subitem {Casilla}, \hyperpage{17}
+
+\end{theindex}

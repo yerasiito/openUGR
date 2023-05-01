@@ -1,0 +1,88 @@
+\hypertarget{class_sudoku_killer}{}\doxysection{Sudoku\+Killer Class Reference}
+\label{class_sudoku_killer}\index{SudokuKiller@{SudokuKiller}}
+
+
+\mbox{\hyperlink{class_sudoku_killer}{Sudoku\+Killer}} Una clase para crear y gestionar el sudoku killer completo, se utiliza la clase \mbox{\hyperlink{class_matriz}{Matriz}} y la utiliza \mbox{\hyperlink{class_resolver_sudoku_killer}{Resolver\+Sudoku\+Killer}}.  
+
+
+
+
+{\ttfamily \#include $<$Sudoku\+Killer.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sudoku_killer_a175de207a51168d2ad80d187c459d94d}\label{class_sudoku_killer_a175de207a51168d2ad80d187c459d94d}} 
+{\bfseries Sudoku\+Killer} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto, llama a Generarsudoku de la clase \mbox{\hyperlink{class_sudoku}{Sudoku}} y lo devuelve como parametro a Generar\+Sudoku\+Killer\+Completo. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sudoku_killer_a4d2c381ab0a91a13ac8b39c1f0e58747}{Sudoku\+Killer}} (\mbox{\hyperlink{class_matriz}{Matriz}} sudoku)
+\begin{DoxyCompactList}\small\item\em Constructor con parametros. Crea un sudoku nuevo a partir de la matriz dada y llama al siguiente constructor. Si es incorrecta, se llama al constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sudoku_killer_adfaff24812b2460ec48df65946429498}{Sudoku\+Killer}} (\mbox{\hyperlink{class_sudoku}{Sudoku}} sudoku)
+\begin{DoxyCompactList}\small\item\em Constructor con parametros, llama al metodo Generar\+Sudoku\+Killer\+Completo. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_sudoku_killer_a3af83cc90417280d7eb274537d28c954}\label{class_sudoku_killer_a3af83cc90417280d7eb274537d28c954}} 
+\mbox{\hyperlink{class_sudoku_killer}{Sudoku\+Killer}} {\bfseries Generar\+Sudokiller} ()
+\begin{DoxyCompactList}\small\item\em Devuelve un objeto \mbox{\hyperlink{class_sudoku_killer}{Sudoku\+Killer}} vacio listo para jugar. Usa el metodo Generar\+Sudoku\+Killer\+Completo, copia el objeto e inicializa sus valores a null para el jugador. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_sudoku_killer_a30dfe09a62e70b6e8e9b45839d7bfd0c}{Esta\+Resuelto}} (\mbox{\hyperlink{class_sudoku_killer}{Sudoku\+Killer}} resuelto)
+\begin{DoxyCompactList}\small\item\em Verifica si el sudoku dado está completo y cumple las reglas para considerarse resuelto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_sudoku_killer}{Sudoku\+Killer}} Una clase para crear y gestionar el sudoku killer completo, se utiliza la clase \mbox{\hyperlink{class_matriz}{Matriz}} y la utiliza \mbox{\hyperlink{class_resolver_sudoku_killer}{Resolver\+Sudoku\+Killer}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sudoku_killer_a4d2c381ab0a91a13ac8b39c1f0e58747}\label{class_sudoku_killer_a4d2c381ab0a91a13ac8b39c1f0e58747}} 
+\index{SudokuKiller@{SudokuKiller}!SudokuKiller@{SudokuKiller}}
+\index{SudokuKiller@{SudokuKiller}!SudokuKiller@{SudokuKiller}}
+\doxysubsubsection{\texorpdfstring{SudokuKiller()}{SudokuKiller()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Sudoku\+Killer\+::\+Sudoku\+Killer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_matriz}{Matriz}}}]{sudoku }\end{DoxyParamCaption})}
+
+
+
+Constructor con parametros. Crea un sudoku nuevo a partir de la matriz dada y llama al siguiente constructor. Si es incorrecta, se llama al constructor por defecto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sudoku} & \+: \mbox{\hyperlink{class_matriz}{Matriz}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_sudoku_killer_adfaff24812b2460ec48df65946429498}\label{class_sudoku_killer_adfaff24812b2460ec48df65946429498}} 
+\index{SudokuKiller@{SudokuKiller}!SudokuKiller@{SudokuKiller}}
+\index{SudokuKiller@{SudokuKiller}!SudokuKiller@{SudokuKiller}}
+\doxysubsubsection{\texorpdfstring{SudokuKiller()}{SudokuKiller()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Sudoku\+Killer\+::\+Sudoku\+Killer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sudoku}{Sudoku}}}]{sudoku }\end{DoxyParamCaption})}
+
+
+
+Constructor con parametros, llama al metodo Generar\+Sudoku\+Killer\+Completo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sudoku} & \+: \mbox{\hyperlink{class_sudoku}{Sudoku}} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sudoku_killer_a30dfe09a62e70b6e8e9b45839d7bfd0c}\label{class_sudoku_killer_a30dfe09a62e70b6e8e9b45839d7bfd0c}} 
+\index{SudokuKiller@{SudokuKiller}!EstaResuelto@{EstaResuelto}}
+\index{EstaResuelto@{EstaResuelto}!SudokuKiller@{SudokuKiller}}
+\doxysubsubsection{\texorpdfstring{EstaResuelto()}{EstaResuelto()}}
+{\footnotesize\ttfamily bool Sudoku\+Killer\+::\+Esta\+Resuelto (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sudoku_killer}{Sudoku\+Killer}}}]{resuelto }\end{DoxyParamCaption})}
+
+
+
+Verifica si el sudoku dado está completo y cumple las reglas para considerarse resuelto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em resuelto} & \+: \mbox{\hyperlink{class_sudoku_killer}{Sudoku\+Killer}}, El sudoku a comprobar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si está completamente resuelto, false en otro caso 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_sudoku_killer_8h}{Sudoku\+Killer.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,75 @@
+\hypertarget{classJuegoTexto_1_1JuegoTexto}{}\doxysection{Juego\+Texto.\+Juego\+Texto Class Reference}
+\label{classJuegoTexto_1_1JuegoTexto}\index{JuegoTexto.JuegoTexto@{JuegoTexto.JuegoTexto}}
+
+
+Clase Principal donde se juega al Civitas en Modo Texto.  
+
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classJuegoTexto_1_1JuegoTexto_a0901049bce0235a31bf5d19884a90c61}{main}} (String\mbox{[}$\,$\mbox{]} args)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase Principal donde se juega al Civitas en Modo Texto. 
+
+Definition at line \mbox{\hyperlink{JuegoTexto_8java_source_l00019}{19}} of file \mbox{\hyperlink{JuegoTexto_8java_source}{Juego\+Texto.\+java}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classJuegoTexto_1_1JuegoTexto_a0901049bce0235a31bf5d19884a90c61}\label{classJuegoTexto_1_1JuegoTexto_a0901049bce0235a31bf5d19884a90c61}} 
+\index{JuegoTexto.JuegoTexto@{JuegoTexto.JuegoTexto}!main@{main}}
+\index{main@{main}!JuegoTexto.JuegoTexto@{JuegoTexto.JuegoTexto}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void Juego\+Texto.\+Juego\+Texto.\+main (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em args} & the command line arguments \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{JuegoTexto_8java_source_l00023}{23}} of file \mbox{\hyperlink{JuegoTexto_8java_source}{Juego\+Texto.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classJuegoTexto_1_1JuegoTexto_l00023}00023                                            \{}
+\DoxyCodeLine{\Hypertarget{classJuegoTexto_1_1JuegoTexto_l00024}00024         \textcolor{keyword}{final} \textcolor{keywordtype}{int} MINJUGADORES = 2, MAXJUGADORES = 4;}
+\DoxyCodeLine{\Hypertarget{classJuegoTexto_1_1JuegoTexto_l00025}00025         }
+\DoxyCodeLine{\Hypertarget{classJuegoTexto_1_1JuegoTexto_l00026}00026         Scanner in = \textcolor{keyword}{new} Scanner (System.in); \textcolor{comment}{//El objeto que leerá el teclado}}
+\DoxyCodeLine{\Hypertarget{classJuegoTexto_1_1JuegoTexto_l00027}00027         }
+\DoxyCodeLine{\Hypertarget{classJuegoTexto_1_1JuegoTexto_l00028}00028         \textcolor{comment}{//Leemos los jugadores}}
+\DoxyCodeLine{\Hypertarget{classJuegoTexto_1_1JuegoTexto_l00029}00029         ArrayList<String> jugadores = \textcolor{keyword}{new} ArrayList<String>()\{}
+\DoxyCodeLine{\Hypertarget{classJuegoTexto_1_1JuegoTexto_l00030}00030             \{}
+\DoxyCodeLine{\Hypertarget{classJuegoTexto_1_1JuegoTexto_l00031}00031                 System.out.println(\textcolor{stringliteral}{"{}¿Cuantos jugadores van a jugar?"{}});}
+\DoxyCodeLine{\Hypertarget{classJuegoTexto_1_1JuegoTexto_l00032}00032                 \textcolor{keywordtype}{int} numJugadores = in.nextInt();}
+\DoxyCodeLine{\Hypertarget{classJuegoTexto_1_1JuegoTexto_l00033}00033                 \textcolor{keywordflow}{while}(numJugadores > MAXJUGADORES || numJugadores < MINJUGADORES)\{}
+\DoxyCodeLine{\Hypertarget{classJuegoTexto_1_1JuegoTexto_l00034}00034                     System.out.println(\textcolor{stringliteral}{"{}¿Cuantos jugadores van a jugar?"{}});        }
+\DoxyCodeLine{\Hypertarget{classJuegoTexto_1_1JuegoTexto_l00035}00035                     numJugadores = in.nextInt();    }
+\DoxyCodeLine{\Hypertarget{classJuegoTexto_1_1JuegoTexto_l00036}00036                 \}}
+\DoxyCodeLine{\Hypertarget{classJuegoTexto_1_1JuegoTexto_l00037}00037                 \textcolor{keywordtype}{int} contador = 0;}
+\DoxyCodeLine{\Hypertarget{classJuegoTexto_1_1JuegoTexto_l00038}00038                 System.out.println(\textcolor{stringliteral}{"{}Introduce el nombre de los jugadores:"{}});}
+\DoxyCodeLine{\Hypertarget{classJuegoTexto_1_1JuegoTexto_l00039}00039                 \textcolor{keywordflow}{while}(contador < numJugadores)\{}
+\DoxyCodeLine{\Hypertarget{classJuegoTexto_1_1JuegoTexto_l00040}00040                     add(in.next());}
+\DoxyCodeLine{\Hypertarget{classJuegoTexto_1_1JuegoTexto_l00041}00041                     contador++;}
+\DoxyCodeLine{\Hypertarget{classJuegoTexto_1_1JuegoTexto_l00042}00042                 \}}
+\DoxyCodeLine{\Hypertarget{classJuegoTexto_1_1JuegoTexto_l00043}00043             \}}
+\DoxyCodeLine{\Hypertarget{classJuegoTexto_1_1JuegoTexto_l00044}00044         \};}
+\DoxyCodeLine{\Hypertarget{classJuegoTexto_1_1JuegoTexto_l00045}00045         }
+\DoxyCodeLine{\Hypertarget{classJuegoTexto_1_1JuegoTexto_l00046}00046         CivitasJuego juego = \textcolor{keyword}{new} CivitasJuego(jugadores, \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{classJuegoTexto_1_1JuegoTexto_l00047}00047         VistaTextual vista = \textcolor{keyword}{new} VistaTextual(juego);}
+\DoxyCodeLine{\Hypertarget{classJuegoTexto_1_1JuegoTexto_l00048}00048         Controlador controlador = \textcolor{keyword}{new} Controlador(juego,vista);}
+\DoxyCodeLine{\Hypertarget{classJuegoTexto_1_1JuegoTexto_l00049}00049         }
+\DoxyCodeLine{\Hypertarget{classJuegoTexto_1_1JuegoTexto_l00050}00050         controlador.juega();}
+\DoxyCodeLine{\Hypertarget{classJuegoTexto_1_1JuegoTexto_l00051}00051     \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Juego\+Texto/\mbox{\hyperlink{JuegoTexto_8java}{Juego\+Texto.\+java}}\end{DoxyCompactItemize}

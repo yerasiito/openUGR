@@ -1,0 +1,82 @@
+\hypertarget{_bloques_sudoku_8h_source}{}\doxysection{Bloques\+Sudoku.\+h}
+\label{_bloques_sudoku_8h_source}\index{include/BloquesSudoku.h@{include/BloquesSudoku.h}}
+\mbox{\hyperlink{_bloques_sudoku_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#ifndef BLOQUESSUDOKU\_H}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#define BLOQUESSUDOKU\_H}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_casilla_8h}{Casilla.h}}"{}}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#define TAMA\_MAX = 5}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{24 \textcolor{keyword}{class }\mbox{\hyperlink{class_bloque}{Bloque}}\{}
+\DoxyCodeLine{25     \textcolor{keyword}{private}:}
+\DoxyCodeLine{26         \textcolor{keywordtype}{int} tama, suma; \textcolor{comment}{//tamaño de bloque y la suma de sus valores}}
+\DoxyCodeLine{27         vector<pair> casillas; \textcolor{comment}{//vector de pares de posiciones de casillas(fil, col)}}
+\DoxyCodeLine{28     }
+\DoxyCodeLine{29     \textcolor{keyword}{public}:}
+\DoxyCodeLine{30         }
+\DoxyCodeLine{34         \mbox{\hyperlink{class_bloque_a3ea37861f40b57e2790fcd220a640ac7}{Bloque}}();}
+\DoxyCodeLine{35         }
+\DoxyCodeLine{40         \mbox{\hyperlink{class_bloque_a0f440ffbe43b4dabfc2d2e4f5b184ed3}{Bloque}}(\textcolor{keywordtype}{int} tam);}
+\DoxyCodeLine{41         }
+\DoxyCodeLine{46         \mbox{\hyperlink{class_bloque_a1bff2374493ff006016c6fd99cc07224}{Bloque}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_bloque}{Bloque}} \&b);}
+\DoxyCodeLine{47         }
+\DoxyCodeLine{52         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_bloque_a06bcf2578f817b91e66a80957a500c29}{getTamanio}}();}
+\DoxyCodeLine{53         }
+\DoxyCodeLine{58         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_bloque_accc4b84ebad376dceaf6e0266795d58a}{getSumaBloque}}();}
+\DoxyCodeLine{59         }
+\DoxyCodeLine{65         \mbox{\hyperlink{class_casilla}{Casilla}} \mbox{\hyperlink{class_bloque_a1d350ad864c09535aa2bc75d32d37e51}{getCasilla}}(\textcolor{keywordtype}{int} i);}
+\DoxyCodeLine{66         }
+\DoxyCodeLine{74         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_bloque_a828590f76163833678ffe3bde916ee3c}{setCasilla}}(\textcolor{keywordtype}{int} i, \textcolor{keywordtype}{int} fil, \textcolor{keywordtype}{int} col, \textcolor{keywordtype}{int} val);}
+\DoxyCodeLine{75         }
+\DoxyCodeLine{86         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_bloque_aa63f81eb9cc5e7fad7d69dc34500db29}{aniadirCasilla}}(\textcolor{keywordtype}{int} val, \textcolor{keywordtype}{int} fil, \textcolor{keywordtype}{int} col);}
+\DoxyCodeLine{87         }
+\DoxyCodeLine{94         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_bloque_acb1e1d1438eeebd2e35ad63501f92839}{eliminarCasilla}}(\textcolor{keywordtype}{int} i);}
+\DoxyCodeLine{95         }
+\DoxyCodeLine{103         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_bloque_a959450745a65ae7b5afe7b99fb7710d8}{esCasillaContigua}}(\mbox{\hyperlink{class_casilla}{Casilla}} nueva);}
+\DoxyCodeLine{104         }
+\DoxyCodeLine{109         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_bloque_a1d718fa55711f4ccb36c8ab52f56551c}{sumaValores}}();}
+\DoxyCodeLine{110         }
+\DoxyCodeLine{111         }
+\DoxyCodeLine{112 \};}
+\DoxyCodeLine{113 }
+\DoxyCodeLine{119 \textcolor{keyword}{class }\mbox{\hyperlink{class_bloques_sudoku}{BloquesSudoku}}\{}
+\DoxyCodeLine{120     \textcolor{keyword}{private}:}
+\DoxyCodeLine{121         \textcolor{keywordtype}{int} numBloques;}
+\DoxyCodeLine{122         vector<Bloque> \mbox{\hyperlink{class_bloques_sudoku}{BloquesSudoku}}; \textcolor{comment}{//vector de bloques}}
+\DoxyCodeLine{123     \textcolor{keyword}{public}:}
+\DoxyCodeLine{124         }
+\DoxyCodeLine{128         \mbox{\hyperlink{class_bloques_sudoku_a20964ba619a47f7d54aa30ab707dc9f3}{BloquesSudoku}}();}
+\DoxyCodeLine{129         }
+\DoxyCodeLine{134         \mbox{\hyperlink{class_bloques_sudoku_a7f2ff074f362f1c52df4369a463dd80c}{BloquesSudoku}}(\textcolor{keywordtype}{int} num);}
+\DoxyCodeLine{135         }
+\DoxyCodeLine{141         \mbox{\hyperlink{class_bloque}{Bloque}} \mbox{\hyperlink{class_bloques_sudoku_aac2687b30842fa0eabe48bd53a7fefbd}{getBloquesSudoku}}(\textcolor{keywordtype}{int} i);}
+\DoxyCodeLine{142         }
+\DoxyCodeLine{148         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_bloques_sudoku_a9ee48c1f6a954f4ff94033635a635cfa}{setBloquesSudoku}}(\textcolor{keywordtype}{int} i, \mbox{\hyperlink{class_bloque}{Bloque}} b);}
+\DoxyCodeLine{149         }
+\DoxyCodeLine{155         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_bloques_sudoku_aa131e5a9273ce5c0641ab75df9b5be81}{setBloquesSudoku}}(\textcolor{keywordtype}{int} i, vector<Casilla>);}
+\DoxyCodeLine{156         }
+\DoxyCodeLine{162         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_bloques_sudoku_a3db4e5b24b16ce1d814a32ae6a3e3412}{aniadirBloque}}(\mbox{\hyperlink{class_bloque}{Bloque}} b);}
+\DoxyCodeLine{163         }
+\DoxyCodeLine{169         \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_bloques_sudoku_ab57b35eda00054b58ae71931208895ad}{eliminarBloque}}(\textcolor{keywordtype}{int} i);}
+\DoxyCodeLine{170         }
+\DoxyCodeLine{176         \textcolor{keywordtype}{int} \mbox{\hyperlink{class_bloques_sudoku_a81138ce70d7db1903317edb749d44b93}{sumaBloques}}(vector<int> ibloques);}
+\DoxyCodeLine{177         }
+\DoxyCodeLine{178     }
+\DoxyCodeLine{179 \};}
+\DoxyCodeLine{180 }
+\DoxyCodeLine{187 \textcolor{keywordtype}{bool} \mbox{\hyperlink{_bloques_sudoku_8h_a192922a3f82f49d05b913e496bf66e68}{seSolapaBloques}}(\mbox{\hyperlink{class_bloque}{Bloque}} izq, \mbox{\hyperlink{class_bloque}{Bloque}} dcha);}
+\DoxyCodeLine{188 }
+\DoxyCodeLine{195 \textcolor{keywordtype}{bool} \mbox{\hyperlink{_bloques_sudoku_8h_a86c81c014f5776a37c238444cfcc58f8}{esMismoBloque}}(\mbox{\hyperlink{class_bloque}{Bloque}} izq, \mbox{\hyperlink{class_bloque}{Bloque}} dcha);}
+\DoxyCodeLine{196 }
+\DoxyCodeLine{197     }
+\DoxyCodeLine{198 \textcolor{preprocessor}{\#endif }\textcolor{comment}{/* BLOQUESSUDOKU\_H */}\textcolor{preprocessor}{}}
+\DoxyCodeLine{199 }
+
+\end{DoxyCode}

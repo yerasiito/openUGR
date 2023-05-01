@@ -1,0 +1,893 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <logicalFolder name="include" displayName="include" projectFiles="true">
+        <logicalFolder name="comportamientos"
+                       displayName="comportamientos"
+                       projectFiles="true">
+          <itemPath>include/comportamientos/comportamiento.hpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="glui" displayName="glui" projectFiles="true">
+          <itemPath>include/glui/LICENSE.txt</itemPath>
+          <itemPath>include/glui/algebra3.h</itemPath>
+          <itemPath>include/glui/arcball.h</itemPath>
+          <itemPath>include/glui/glui.h</itemPath>
+          <itemPath>include/glui/glui_internal.h</itemPath>
+          <itemPath>include/glui/glui_internal_control.h</itemPath>
+          <itemPath>include/glui/quaternion.h</itemPath>
+          <itemPath>include/glui/viewmodel.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="modelos" displayName="modelos" projectFiles="true">
+          <logicalFolder name="aldeano" displayName="aldeano" projectFiles="true">
+            <itemPath>include/modelos/aldeano/aldeano.hpp</itemPath>
+            <itemPath>include/modelos/aldeano/brazo.hpp</itemPath>
+            <itemPath>include/modelos/aldeano/cabeza.hpp</itemPath>
+            <itemPath>include/modelos/aldeano/cintura.hpp</itemPath>
+            <itemPath>include/modelos/aldeano/pierna.hpp</itemPath>
+            <itemPath>include/modelos/aldeano/torso.hpp</itemPath>
+          </logicalFolder>
+          <logicalFolder name="arbol" displayName="arbol" projectFiles="true">
+            <itemPath>include/modelos/arbol/arbol.hpp</itemPath>
+          </logicalFolder>
+          <logicalFolder name="item" displayName="item" projectFiles="true">
+            <itemPath>include/modelos/item/item.hpp</itemPath>
+          </logicalFolder>
+          <logicalFolder name="jugador" displayName="jugador" projectFiles="true">
+            <itemPath>include/modelos/jugador/jugador3d.hpp</itemPath>
+            <itemPath>include/modelos/jugador/linea.ply</itemPath>
+            <itemPath>include/modelos/jugador/quesito.hpp</itemPath>
+          </logicalFolder>
+          <logicalFolder name="perro" displayName="perro" projectFiles="true">
+            <itemPath>include/modelos/perro/cabeza.hpp</itemPath>
+            <itemPath>include/modelos/perro/lomo.hpp</itemPath>
+            <itemPath>include/modelos/perro/perro.hpp</itemPath>
+          </logicalFolder>
+          <itemPath>include/modelos/retrato.hpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="motorlib" displayName="motorlib" projectFiles="true">
+          <itemPath>include/motorlib/entidad.hpp</itemPath>
+          <itemPath>include/motorlib/mapa.hpp</itemPath>
+          <itemPath>include/motorlib/monitor.hpp</itemPath>
+          <itemPath>include/motorlib/util.h</itemPath>
+        </logicalFolder>
+        <logicalFolder name="obj3dlib" displayName="obj3dlib" projectFiles="true">
+          <logicalFolder name="jpeg_reader" displayName="jpeg_reader" projectFiles="true">
+            <itemPath>include/obj3dlib/jpeg_reader/jpg_imagen.hpp</itemPath>
+            <itemPath>include/obj3dlib/jpeg_reader/jpg_jinclude.h</itemPath>
+            <itemPath>include/obj3dlib/jpeg_reader/jpg_memsrc.hpp</itemPath>
+            <itemPath>include/obj3dlib/jpeg_reader/jpg_readwrite.hpp</itemPath>
+          </logicalFolder>
+          <itemPath>include/obj3dlib/cono3d.h</itemPath>
+          <itemPath>include/obj3dlib/cono3dwire.h</itemPath>
+          <itemPath>include/obj3dlib/cubo3d.h</itemPath>
+          <itemPath>include/obj3dlib/dodecaedro3d.h</itemPath>
+          <itemPath>include/obj3dlib/esfera3d.h</itemPath>
+          <itemPath>include/obj3dlib/file_ply_stl.h</itemPath>
+          <itemPath>include/obj3dlib/icosaedro3d.h</itemPath>
+          <itemPath>include/obj3dlib/luz.hpp</itemPath>
+          <itemPath>include/obj3dlib/objeto3d.h</itemPath>
+          <itemPath>include/obj3dlib/objrevolucion3d.h</itemPath>
+          <itemPath>include/obj3dlib/octaedro3d.h</itemPath>
+          <itemPath>include/obj3dlib/tetraedro3d.h</itemPath>
+          <itemPath>include/obj3dlib/toro3d.h</itemPath>
+          <itemPath>include/obj3dlib/vertex.h</itemPath>
+        </logicalFolder>
+        <itemPath>include/comportamientolib.hpp</itemPath>
+        <itemPath>include/modelos_belkan.hpp</itemPath>
+        <itemPath>include/motorlib.hpp</itemPath>
+        <itemPath>include/obj3dlib.hpp</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <logicalFolder name="Comportamientos_Jugador"
+                     displayName="Comportamientos_Jugador"
+                     projectFiles="true">
+        <itemPath>Comportamientos_Jugador/aldeano.cpp</itemPath>
+        <itemPath>Comportamientos_Jugador/aldeano.hpp</itemPath>
+        <itemPath>Comportamientos_Jugador/jugador.cpp</itemPath>
+        <itemPath>Comportamientos_Jugador/jugador.hpp</itemPath>
+        <itemPath>Comportamientos_Jugador/perro.cpp</itemPath>
+        <itemPath>Comportamientos_Jugador/perro.hpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="src" displayName="src" projectFiles="true">
+        <logicalFolder name="comportamientos"
+                       displayName="comportamientos"
+                       projectFiles="true">
+          <itemPath>src/comportamientos/comportamiento.cpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="glui" displayName="glui" projectFiles="true">
+          <itemPath>src/glui/algebra3.cpp</itemPath>
+          <itemPath>src/glui/arcball.cpp</itemPath>
+          <itemPath>src/glui/glui.cpp</itemPath>
+          <itemPath>src/glui/glui_add_controls.cpp</itemPath>
+          <itemPath>src/glui/glui_bitmap_img_data.cpp</itemPath>
+          <itemPath>src/glui/glui_bitmaps.cpp</itemPath>
+          <itemPath>src/glui/glui_button.cpp</itemPath>
+          <itemPath>src/glui/glui_checkbox.cpp</itemPath>
+          <itemPath>src/glui/glui_column.cpp</itemPath>
+          <itemPath>src/glui/glui_commandline.cpp</itemPath>
+          <itemPath>src/glui/glui_control.cpp</itemPath>
+          <itemPath>src/glui/glui_edittext.cpp</itemPath>
+          <itemPath>src/glui/glui_filebrowser.cpp</itemPath>
+          <itemPath>src/glui/glui_list.cpp</itemPath>
+          <itemPath>src/glui/glui_listbox.cpp</itemPath>
+          <itemPath>src/glui/glui_mouse_iaction.cpp</itemPath>
+          <itemPath>src/glui/glui_node.cpp</itemPath>
+          <itemPath>src/glui/glui_panel.cpp</itemPath>
+          <itemPath>src/glui/glui_radio.cpp</itemPath>
+          <itemPath>src/glui/glui_rollout.cpp</itemPath>
+          <itemPath>src/glui/glui_rotation.cpp</itemPath>
+          <itemPath>src/glui/glui_scrollbar.cpp</itemPath>
+          <itemPath>src/glui/glui_separator.cpp</itemPath>
+          <itemPath>src/glui/glui_spinner.cpp</itemPath>
+          <itemPath>src/glui/glui_statictext.cpp</itemPath>
+          <itemPath>src/glui/glui_string.cpp</itemPath>
+          <itemPath>src/glui/glui_textbox.cpp</itemPath>
+          <itemPath>src/glui/glui_translation.cpp</itemPath>
+          <itemPath>src/glui/glui_tree.cpp</itemPath>
+          <itemPath>src/glui/glui_treepanel.cpp</itemPath>
+          <itemPath>src/glui/glui_window.cpp</itemPath>
+          <itemPath>src/glui/quaternion.cpp</itemPath>
+          <itemPath>src/glui/viewmodel.cpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="modelos" displayName="modelos" projectFiles="true">
+          <logicalFolder name="aldeano" displayName="aldeano" projectFiles="true">
+            <itemPath>src/modelos/aldeano/aldeano.cpp</itemPath>
+            <itemPath>src/modelos/aldeano/brazo.cpp</itemPath>
+            <itemPath>src/modelos/aldeano/cabeza.cpp</itemPath>
+            <itemPath>src/modelos/aldeano/cintura.cpp</itemPath>
+            <itemPath>src/modelos/aldeano/pierna.cpp</itemPath>
+            <itemPath>src/modelos/aldeano/torso.cpp</itemPath>
+          </logicalFolder>
+          <logicalFolder name="arbol" displayName="arbol" projectFiles="true">
+            <itemPath>src/modelos/arbol/arbol.cpp</itemPath>
+          </logicalFolder>
+          <logicalFolder name="item" displayName="item" projectFiles="true">
+            <itemPath>src/modelos/item/item.cpp</itemPath>
+          </logicalFolder>
+          <logicalFolder name="jugador" displayName="jugador" projectFiles="true">
+            <itemPath>src/modelos/jugador/jugador3d.cpp</itemPath>
+            <itemPath>src/modelos/jugador/quesito.cpp</itemPath>
+          </logicalFolder>
+          <logicalFolder name="perro" displayName="perro" projectFiles="true">
+            <itemPath>src/modelos/perro/cabeza.cpp</itemPath>
+            <itemPath>src/modelos/perro/lomo.cpp</itemPath>
+            <itemPath>src/modelos/perro/perro.cpp</itemPath>
+          </logicalFolder>
+          <itemPath>src/modelos/retrato.cpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="motorlib" displayName="motorlib" projectFiles="true">
+          <itemPath>src/motorlib/entidad.cpp</itemPath>
+          <itemPath>src/motorlib/mapa.cpp</itemPath>
+          <itemPath>src/motorlib/monitor.cpp</itemPath>
+          <itemPath>src/motorlib/motor_grafico.cpp</itemPath>
+          <itemPath>src/motorlib/motor_juego.cpp</itemPath>
+          <itemPath>src/motorlib/util.cpp</itemPath>
+        </logicalFolder>
+        <logicalFolder name="obj3dlib" displayName="obj3dlib" projectFiles="true">
+          <logicalFolder name="jpeg_reader" displayName="jpeg_reader" projectFiles="true">
+            <itemPath>src/obj3dlib/jpeg_reader/jpg_imagen.cpp</itemPath>
+            <itemPath>src/obj3dlib/jpeg_reader/jpg_memsrc.cpp</itemPath>
+            <itemPath>src/obj3dlib/jpeg_reader/jpg_readwrite.cpp</itemPath>
+          </logicalFolder>
+          <itemPath>src/obj3dlib/cono3d.cc</itemPath>
+          <itemPath>src/obj3dlib/cono3dwire.cc</itemPath>
+          <itemPath>src/obj3dlib/cubo3d.cc</itemPath>
+          <itemPath>src/obj3dlib/dodecaedro3d.cc</itemPath>
+          <itemPath>src/obj3dlib/esfera3d.cc</itemPath>
+          <itemPath>src/obj3dlib/file_ply_stl.cc</itemPath>
+          <itemPath>src/obj3dlib/icosaedro3d.cc</itemPath>
+          <itemPath>src/obj3dlib/luz.cpp</itemPath>
+          <itemPath>src/obj3dlib/objeto3d.cc</itemPath>
+          <itemPath>src/obj3dlib/objrevolucion3d.cc</itemPath>
+          <itemPath>src/obj3dlib/octaedro3d.cc</itemPath>
+          <itemPath>src/obj3dlib/tetraedro3d.cc</itemPath>
+          <itemPath>src/obj3dlib/toro3d.cc</itemPath>
+        </logicalFolder>
+        <logicalFolder name="ply" displayName="ply" projectFiles="true">
+          <itemPath>src/ply/ant.ply</itemPath>
+          <itemPath>src/ply/beethoven.ply</itemPath>
+          <itemPath>src/ply/big_dodge.ply</itemPath>
+          <itemPath>src/ply/cilindro.ply</itemPath>
+        </logicalFolder>
+      </logicalFolder>
+      <itemPath>main.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>src</Elem>
+    <Elem>Comportamientos_Jugador</Elem>
+    <Elem>include</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <incDir>
+            <pElem>include</pElem>
+          </incDir>
+          <commandLine>-lGL -lGLU -lglut -ljpeg</commandLine>
+        </ccTool>
+      </compileType>
+      <item path="Comportamientos_Jugador/aldeano.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="Comportamientos_Jugador/aldeano.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Comportamientos_Jugador/jugador.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="Comportamientos_Jugador/jugador.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Comportamientos_Jugador/perro.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Comportamientos_Jugador/perro.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/comportamientolib.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/comportamientos/comportamiento.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/glui/LICENSE.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/glui/algebra3.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/glui/arcball.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/glui/glui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/glui/glui_internal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/glui/glui_internal_control.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/glui/quaternion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/glui/viewmodel.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/modelos/aldeano/aldeano.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/modelos/aldeano/brazo.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/modelos/aldeano/cabeza.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/modelos/aldeano/cintura.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/modelos/aldeano/pierna.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/modelos/aldeano/torso.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/modelos/arbol/arbol.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/modelos/item/item.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/modelos/jugador/jugador3d.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/modelos/jugador/linea.ply" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/modelos/jugador/quesito.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/modelos/perro/cabeza.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/modelos/perro/lomo.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/modelos/perro/perro.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/modelos/retrato.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/modelos_belkan.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/motorlib.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/motorlib/entidad.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/motorlib/mapa.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/motorlib/monitor.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/motorlib/util.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/obj3dlib.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/obj3dlib/cono3d.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/obj3dlib/cono3dwire.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/obj3dlib/cubo3d.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/obj3dlib/dodecaedro3d.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/obj3dlib/esfera3d.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/obj3dlib/file_ply_stl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/obj3dlib/icosaedro3d.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/obj3dlib/jpeg_reader/jpg_imagen.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/obj3dlib/jpeg_reader/jpg_jinclude.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/obj3dlib/jpeg_reader/jpg_memsrc.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/obj3dlib/jpeg_reader/jpg_readwrite.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/obj3dlib/luz.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/obj3dlib/objeto3d.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/obj3dlib/objrevolucion3d.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/obj3dlib/octaedro3d.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/obj3dlib/tetraedro3d.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/obj3dlib/toro3d.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/obj3dlib/vertex.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/comportamientos/comportamiento.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/glui/algebra3.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/arcball.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_add_controls.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_bitmap_img_data.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_bitmaps.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_button.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_checkbox.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_column.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_commandline.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_control.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_edittext.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_filebrowser.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_list.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_listbox.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_mouse_iaction.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_node.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_panel.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_radio.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_rollout.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_rotation.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_scrollbar.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_separator.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_spinner.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_statictext.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_string.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_textbox.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_translation.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_tree.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_treepanel.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_window.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/quaternion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/viewmodel.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/modelos/aldeano/aldeano.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/modelos/aldeano/brazo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/modelos/aldeano/cabeza.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/modelos/aldeano/cintura.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/modelos/aldeano/pierna.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/modelos/aldeano/torso.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/modelos/arbol/arbol.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/modelos/item/item.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/modelos/jugador/jugador3d.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/modelos/jugador/quesito.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/modelos/perro/cabeza.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/modelos/perro/lomo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/modelos/perro/perro.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/modelos/retrato.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/motorlib/entidad.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/motorlib/mapa.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/motorlib/monitor.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/motorlib/motor_grafico.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/motorlib/motor_juego.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/motorlib/util.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/obj3dlib/cono3d.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/obj3dlib/cono3dwire.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/obj3dlib/cubo3d.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/obj3dlib/dodecaedro3d.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/obj3dlib/esfera3d.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/obj3dlib/file_ply_stl.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/obj3dlib/icosaedro3d.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/obj3dlib/jpeg_reader/jpg_imagen.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/obj3dlib/jpeg_reader/jpg_memsrc.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/obj3dlib/jpeg_reader/jpg_readwrite.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/obj3dlib/luz.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/obj3dlib/objeto3d.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/obj3dlib/objrevolucion3d.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/obj3dlib/octaedro3d.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/obj3dlib/tetraedro3d.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/obj3dlib/toro3d.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ply/ant.ply" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ply/beethoven.ply" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ply/big_dodge.ply" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ply/cilindro.ply" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="Comportamientos_Jugador/aldeano.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="Comportamientos_Jugador/aldeano.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Comportamientos_Jugador/jugador.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="Comportamientos_Jugador/jugador.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="Comportamientos_Jugador/perro.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Comportamientos_Jugador/perro.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/comportamientolib.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/comportamientos/comportamiento.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/glui/LICENSE.txt" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/glui/algebra3.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/glui/arcball.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/glui/glui.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/glui/glui_internal.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/glui/glui_internal_control.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/glui/quaternion.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/glui/viewmodel.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/modelos/aldeano/aldeano.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/modelos/aldeano/brazo.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/modelos/aldeano/cabeza.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/modelos/aldeano/cintura.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/modelos/aldeano/pierna.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/modelos/aldeano/torso.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/modelos/arbol/arbol.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/modelos/item/item.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/modelos/jugador/jugador3d.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/modelos/jugador/linea.ply" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/modelos/jugador/quesito.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/modelos/perro/cabeza.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/modelos/perro/lomo.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/modelos/perro/perro.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/modelos/retrato.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/modelos_belkan.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/motorlib.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/motorlib/entidad.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/motorlib/mapa.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/motorlib/monitor.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/motorlib/util.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/obj3dlib.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/obj3dlib/cono3d.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/obj3dlib/cono3dwire.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/obj3dlib/cubo3d.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/obj3dlib/dodecaedro3d.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/obj3dlib/esfera3d.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/obj3dlib/file_ply_stl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/obj3dlib/icosaedro3d.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/obj3dlib/jpeg_reader/jpg_imagen.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/obj3dlib/jpeg_reader/jpg_jinclude.h"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/obj3dlib/jpeg_reader/jpg_memsrc.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/obj3dlib/jpeg_reader/jpg_readwrite.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="include/obj3dlib/luz.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/obj3dlib/objeto3d.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/obj3dlib/objrevolucion3d.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/obj3dlib/octaedro3d.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/obj3dlib/tetraedro3d.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/obj3dlib/toro3d.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/obj3dlib/vertex.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/comportamientos/comportamiento.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/glui/algebra3.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/arcball.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_add_controls.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_bitmap_img_data.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_bitmaps.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_button.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_checkbox.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_column.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_commandline.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_control.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_edittext.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_filebrowser.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_list.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_listbox.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_mouse_iaction.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_node.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_panel.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_radio.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_rollout.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_rotation.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_scrollbar.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_separator.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_spinner.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_statictext.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_string.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_textbox.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_translation.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_tree.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_treepanel.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/glui_window.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/quaternion.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/glui/viewmodel.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/modelos/aldeano/aldeano.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/modelos/aldeano/brazo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/modelos/aldeano/cabeza.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/modelos/aldeano/cintura.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/modelos/aldeano/pierna.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/modelos/aldeano/torso.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/modelos/arbol/arbol.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/modelos/item/item.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/modelos/jugador/jugador3d.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/modelos/jugador/quesito.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/modelos/perro/cabeza.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/modelos/perro/lomo.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/modelos/perro/perro.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/modelos/retrato.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/motorlib/entidad.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/motorlib/mapa.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/motorlib/monitor.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/motorlib/motor_grafico.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/motorlib/motor_juego.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/motorlib/util.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/obj3dlib/cono3d.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/obj3dlib/cono3dwire.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/obj3dlib/cubo3d.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/obj3dlib/dodecaedro3d.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/obj3dlib/esfera3d.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/obj3dlib/file_ply_stl.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/obj3dlib/icosaedro3d.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/obj3dlib/jpeg_reader/jpg_imagen.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/obj3dlib/jpeg_reader/jpg_memsrc.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/obj3dlib/jpeg_reader/jpg_readwrite.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="src/obj3dlib/luz.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/obj3dlib/objeto3d.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/obj3dlib/objrevolucion3d.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/obj3dlib/octaedro3d.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/obj3dlib/tetraedro3d.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/obj3dlib/toro3d.cc" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/ply/ant.ply" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ply/beethoven.ply" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ply/big_dodge.ply" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/ply/cilindro.ply" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

@@ -1,0 +1,146 @@
+\hypertarget{class_conjunto___reales}{}\doxysection{Referencia de la Clase Conjunto\+\_\+\+Reales}
+\label{class_conjunto___reales}\index{Conjunto\_Reales@{Conjunto\_Reales}}
+
+
+T.\+D.\+A. \mbox{\hyperlink{class_conjunto___reales}{Conjunto\+\_\+\+Reales}}.  
+
+
+
+
+{\ttfamily \#include $<$conjunto\+\_\+reales.\+h$>$}
+
+\doxysubsection*{M茅todos p煤blicos}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_conjunto___reales_aed1485ad5799eb1662d5ee49a0b62772}{Insertar}} (float f)
+\begin{DoxyCompactList}\small\item\em A馻dir un elemento. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_conjunto___reales_ab52fefbe5e399f98a0ec67ef48008616}{Borrar}} (float f)
+\begin{DoxyCompactList}\small\item\em Eliminar un elemento. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_conjunto___reales_aa4e1c080cf2c90e9b4451b87ce11bbf3}{Pertenece}} (float f) const
+\begin{DoxyCompactList}\small\item\em Consultar la existencia de un elemento. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{class_conjunto___reales_aa31c562605e4711c7755a5df24a2755c}{Elemento}} (int i) const
+\begin{DoxyCompactList}\small\item\em Valor del i-\/閟imo elemento. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_conjunto___reales_af173f1a2579c2845e6b44ee86cfef0aa}{size}} () const
+\begin{DoxyCompactList}\small\item\em Cardinal del conjunto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripci贸n detallada}
+T.\+D.\+A. \mbox{\hyperlink{class_conjunto___reales}{Conjunto\+\_\+\+Reales}}. 
+
+Una instancia {\itshape c} del tipo de datos abstracto {\ttfamily \mbox{\hyperlink{class_conjunto___reales}{Conjunto\+\_\+\+Reales}}} es un conjunto de n鷐eros de tipo {\ttfamily float}.
+
+El n鷐ero de elementos del conjunto se denomina {\itshape cardinal} o {\itshape tama駉} del conjunto. Un conjunto de tama駉 cero se denomina vac韔. Lo podemos representar como
+
+\{e1,e2,e3...,en\}
+
+donde n es el n鷐ero de elementos del conjunto. La eficiencia en espacio es {\itshape O(n)}.
+
+Un ejemplo de su uso\+: 
+\begin{DoxyCodeInclude}{0}
+
+\end{DoxyCodeInclude}
+
+
+\begin{DoxyAuthor}{Autor}
+A. Garrido 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Fecha}
+Octubre-\/2011 
+\end{DoxyDate}
+
+
+\doxysubsection{Documentaci贸n de las funciones miembro}
+\mbox{\Hypertarget{class_conjunto___reales_ab52fefbe5e399f98a0ec67ef48008616}\label{class_conjunto___reales_ab52fefbe5e399f98a0ec67ef48008616}} 
+\index{Conjunto\_Reales@{Conjunto\_Reales}!Borrar@{Borrar}}
+\index{Borrar@{Borrar}!Conjunto\_Reales@{Conjunto\_Reales}}
+\doxysubsubsection{\texorpdfstring{Borrar()}{Borrar()}}
+{\footnotesize\ttfamily bool Conjunto\+\_\+\+Reales\+::\+Borrar (\begin{DoxyParamCaption}\item[{float}]{f }\end{DoxyParamCaption})}
+
+
+
+Eliminar un elemento. 
+
+
+\begin{DoxyParams}{Par谩metros}
+{\em f} & valor a eliminar del conjunto. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Si el n鷐ero de elementos ha disminuido (false en caso de que el elemento no estuviera en el conjunto) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_conjunto___reales_aa31c562605e4711c7755a5df24a2755c}\label{class_conjunto___reales_aa31c562605e4711c7755a5df24a2755c}} 
+\index{Conjunto\_Reales@{Conjunto\_Reales}!Elemento@{Elemento}}
+\index{Elemento@{Elemento}!Conjunto\_Reales@{Conjunto\_Reales}}
+\doxysubsubsection{\texorpdfstring{Elemento()}{Elemento()}}
+{\footnotesize\ttfamily float Conjunto\+\_\+\+Reales\+::\+Elemento (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Valor del i-\/閟imo elemento. 
+
+
+\begin{DoxyParams}{Par谩metros}
+{\em i} & indica el elemento del conjunto que queremos obtener. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondici贸n}
+0\texorpdfstring{$<$}{<}=i\texorpdfstring{$<$}{<}\mbox{\hyperlink{class_conjunto___reales_af173f1a2579c2845e6b44ee86cfef0aa}{size()}} 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Devuelve}
+El valor del i-\/閟imo elemento. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_conjunto___reales_aed1485ad5799eb1662d5ee49a0b62772}\label{class_conjunto___reales_aed1485ad5799eb1662d5ee49a0b62772}} 
+\index{Conjunto\_Reales@{Conjunto\_Reales}!Insertar@{Insertar}}
+\index{Insertar@{Insertar}!Conjunto\_Reales@{Conjunto\_Reales}}
+\doxysubsubsection{\texorpdfstring{Insertar()}{Insertar()}}
+{\footnotesize\ttfamily bool Conjunto\+\_\+\+Reales\+::\+Insertar (\begin{DoxyParamCaption}\item[{float}]{f }\end{DoxyParamCaption})}
+
+
+
+A馻dir un elemento. 
+
+
+\begin{DoxyParams}{Par谩metros}
+{\em f} & valor a insertar en el conjunto. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Si el n鷐ero de elementos ha aumentado (false en caso de que el elemento ya estaba en el conjunto) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_conjunto___reales_aa4e1c080cf2c90e9b4451b87ce11bbf3}\label{class_conjunto___reales_aa4e1c080cf2c90e9b4451b87ce11bbf3}} 
+\index{Conjunto\_Reales@{Conjunto\_Reales}!Pertenece@{Pertenece}}
+\index{Pertenece@{Pertenece}!Conjunto\_Reales@{Conjunto\_Reales}}
+\doxysubsubsection{\texorpdfstring{Pertenece()}{Pertenece()}}
+{\footnotesize\ttfamily bool Conjunto\+\_\+\+Reales\+::\+Pertenece (\begin{DoxyParamCaption}\item[{float}]{f }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Consultar la existencia de un elemento. 
+
+
+\begin{DoxyParams}{Par谩metros}
+{\em f} & valor a consultar en el conjunto. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Si el elemento pertenece al conjunto 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_conjunto___reales_af173f1a2579c2845e6b44ee86cfef0aa}\label{class_conjunto___reales_af173f1a2579c2845e6b44ee86cfef0aa}} 
+\index{Conjunto\_Reales@{Conjunto\_Reales}!size@{size}}
+\index{size@{size}!Conjunto\_Reales@{Conjunto\_Reales}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily int Conjunto\+\_\+\+Reales\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Cardinal del conjunto. 
+
+\begin{DoxyReturn}{Devuelve}
+El n鷐ero de elementos del conjunto 
+\end{DoxyReturn}
+
+
+La documentaci贸n para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+racional-\/mas-\/vd/vdinamico/claselab/conjuntoreales/\mbox{\hyperlink{conjunto__reales_8h}{conjunto\+\_\+reales.\+h}}\item 
+racional-\/mas-\/vd/vdinamico/claselab/conjuntoreales/\mbox{\hyperlink{conjunto__reales_8cpp}{conjunto\+\_\+reales.\+cpp}}\end{DoxyCompactItemize}

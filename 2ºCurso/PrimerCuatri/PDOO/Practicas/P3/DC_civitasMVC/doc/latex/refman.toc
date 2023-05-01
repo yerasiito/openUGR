@@ -1,0 +1,118 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\babel@toc {spanish}{}
+\contentsline {chapter}{\numberline {1}Indice jerárquico}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Jerarquía de la clase}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Índice de clases}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Lista de clases}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Indice de archivos}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Lista de archivos}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Documentación de las clases}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Referencia de la Clase civitas.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Casilla}{7}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Descripción detallada}{8}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Documentación del constructor y destructor}{8}{subsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.1}Casilla()\hspace {0.1cm}{\footnotesize \ttfamily [1/3]}}{8}{subsubsection.4.1.2.1}%
+\contentsline {subsubsection}{\numberline {4.1.2.2}Casilla()\hspace {0.1cm}{\footnotesize \ttfamily [2/3]}}{8}{subsubsection.4.1.2.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.3}Casilla()\hspace {0.1cm}{\footnotesize \ttfamily [3/3]}}{8}{subsubsection.4.1.2.3}%
+\contentsline {subsection}{\numberline {4.1.3}Documentación de las funciones miembro}{9}{subsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.3.1}cantidadCasasHoteles()}{9}{subsubsection.4.1.3.1}%
+\contentsline {subsubsection}{\numberline {4.1.3.2}comprar()}{9}{subsubsection.4.1.3.2}%
+\contentsline {subsubsection}{\numberline {4.1.3.3}construirCasa()}{9}{subsubsection.4.1.3.3}%
+\contentsline {subsubsection}{\numberline {4.1.3.4}construirHotel()}{9}{subsubsection.4.1.3.4}%
+\contentsline {subsubsection}{\numberline {4.1.3.5}derruirCasas()}{10}{subsubsection.4.1.3.5}%
+\contentsline {subsubsection}{\numberline {4.1.3.6}esEsteElPropietario()}{10}{subsubsection.4.1.3.6}%
+\contentsline {subsubsection}{\numberline {4.1.3.7}getFACTORALQUILERCALLE()}{10}{subsubsection.4.1.3.7}%
+\contentsline {subsubsection}{\numberline {4.1.3.8}getFACTORALQUILERCASA()}{10}{subsubsection.4.1.3.8}%
+\contentsline {subsubsection}{\numberline {4.1.3.9}getFACTORALQUILERHOTEL()}{11}{subsubsection.4.1.3.9}%
+\contentsline {subsubsection}{\numberline {4.1.3.10}getNombre()}{11}{subsubsection.4.1.3.10}%
+\contentsline {subsubsection}{\numberline {4.1.3.11}getNumCasas()}{11}{subsubsection.4.1.3.11}%
+\contentsline {subsubsection}{\numberline {4.1.3.12}getNumHoteles()}{11}{subsubsection.4.1.3.12}%
+\contentsline {subsubsection}{\numberline {4.1.3.13}getPrecioAlquilerCompleto()}{11}{subsubsection.4.1.3.13}%
+\contentsline {subsubsection}{\numberline {4.1.3.14}getPrecioCompra()}{12}{subsubsection.4.1.3.14}%
+\contentsline {subsubsection}{\numberline {4.1.3.15}getPrecioEdificar()}{12}{subsubsection.4.1.3.15}%
+\contentsline {subsubsection}{\numberline {4.1.3.16}informe()}{12}{subsubsection.4.1.3.16}%
+\contentsline {subsubsection}{\numberline {4.1.3.17}recibeJugador()}{12}{subsubsection.4.1.3.17}%
+\contentsline {subsubsection}{\numberline {4.1.3.18}recibeJugador\_calle()}{13}{subsubsection.4.1.3.18}%
+\contentsline {subsubsection}{\numberline {4.1.3.19}recibeJugador\_sorpresa()}{13}{subsubsection.4.1.3.19}%
+\contentsline {subsubsection}{\numberline {4.1.3.20}tienePropietario()}{13}{subsubsection.4.1.3.20}%
+\contentsline {subsubsection}{\numberline {4.1.3.21}toString()}{13}{subsubsection.4.1.3.21}%
+\contentsline {subsubsection}{\numberline {4.1.3.22}tramitarAlquiler()}{14}{subsubsection.4.1.3.22}%
+\contentsline {section}{\numberline {4.2}Referencia de la Clase civitas.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Civitas}{14}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Descripción detallada}{14}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Documentación de las funciones miembro}{14}{subsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.2.1}main()}{14}{subsubsection.4.2.2.1}%
+\contentsline {section}{\numberline {4.3}Referencia de la Clase civitas.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Civitas\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Juego}{15}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Descripción detallada}{15}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Documentación del constructor y destructor}{15}{subsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.1}CivitasJuego()}{16}{subsubsection.4.3.2.1}%
+\contentsline {subsection}{\numberline {4.3.3}Documentación de las funciones miembro}{16}{subsection.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.3.3.1}comprar()}{16}{subsubsection.4.3.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.3.2}construirCasa()}{16}{subsubsection.4.3.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3.3}construirHotel()}{17}{subsubsection.4.3.3.3}%
+\contentsline {subsubsection}{\numberline {4.3.3.4}ContabilizarPasosPorSalida()}{17}{subsubsection.4.3.3.4}%
+\contentsline {subsubsection}{\numberline {4.3.3.5}finalDelJuego()}{17}{subsubsection.4.3.3.5}%
+\contentsline {subsubsection}{\numberline {4.3.3.6}getIndiceJugadorActual()}{17}{subsubsection.4.3.3.6}%
+\contentsline {subsubsection}{\numberline {4.3.3.7}getJugadorActual()}{17}{subsubsection.4.3.3.7}%
+\contentsline {subsubsection}{\numberline {4.3.3.8}getJugadores()}{18}{subsubsection.4.3.3.8}%
+\contentsline {subsubsection}{\numberline {4.3.3.9}getMazo()}{18}{subsubsection.4.3.3.9}%
+\contentsline {subsubsection}{\numberline {4.3.3.10}getTablero()}{18}{subsubsection.4.3.3.10}%
+\contentsline {subsubsection}{\numberline {4.3.3.11}inicializaMazoSorpresas()}{18}{subsubsection.4.3.3.11}%
+\contentsline {subsubsection}{\numberline {4.3.3.12}inicializaTablero()}{19}{subsubsection.4.3.3.12}%
+\contentsline {subsubsection}{\numberline {4.3.3.13}PasarTurno()}{19}{subsubsection.4.3.3.13}%
+\contentsline {subsubsection}{\numberline {4.3.3.14}Ranking()}{19}{subsubsection.4.3.3.14}%
+\contentsline {subsubsection}{\numberline {4.3.3.15}siguientePaso()}{20}{subsubsection.4.3.3.15}%
+\contentsline {subsubsection}{\numberline {4.3.3.16}siguientePasoCompletado()}{20}{subsubsection.4.3.3.16}%
+\contentsline {section}{\numberline {4.4}Referencia de la Clase civitas.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Dado}{20}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Descripción detallada}{20}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Documentación de las funciones miembro}{20}{subsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.1}getInstance()}{21}{subsubsection.4.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.4.2.2}getUltimoResultado()}{21}{subsubsection.4.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.3}quienEmpieza()}{21}{subsubsection.4.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.4.2.4}setDebug()}{21}{subsubsection.4.4.2.4}%
+\contentsline {subsubsection}{\numberline {4.4.2.5}tirar()}{21}{subsubsection.4.4.2.5}%
+\contentsline {section}{\numberline {4.5}Referencia de la Clase civitas.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Diario}{22}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Descripción detallada}{22}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Documentación de las funciones miembro}{22}{subsection.4.5.2}%
+\contentsline {subsubsection}{\numberline {4.5.2.1}eventosPendientes()}{22}{subsubsection.4.5.2.1}%
+\contentsline {subsubsection}{\numberline {4.5.2.2}getEventos()}{22}{subsubsection.4.5.2.2}%
+\contentsline {subsubsection}{\numberline {4.5.2.3}getInstance()}{22}{subsubsection.4.5.2.3}%
+\contentsline {subsubsection}{\numberline {4.5.2.4}leerEvento()}{23}{subsubsection.4.5.2.4}%
+\contentsline {section}{\numberline {4.6}Referencia de la Clase civitas.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Jugador}{23}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Referencia de la Clase civitas.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mazo\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sorpresas}{23}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Descripción detallada}{23}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.2}Documentación del constructor y destructor}{23}{subsection.4.7.2}%
+\contentsline {subsubsection}{\numberline {4.7.2.1}MazoSorpresas()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{23}{subsubsection.4.7.2.1}%
+\contentsline {subsubsection}{\numberline {4.7.2.2}MazoSorpresas()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{24}{subsubsection.4.7.2.2}%
+\contentsline {subsection}{\numberline {4.7.3}Documentación de las funciones miembro}{24}{subsection.4.7.3}%
+\contentsline {subsubsection}{\numberline {4.7.3.1}alMazo()}{24}{subsubsection.4.7.3.1}%
+\contentsline {subsubsection}{\numberline {4.7.3.2}getMazoSorpresas()}{24}{subsubsection.4.7.3.2}%
+\contentsline {subsubsection}{\numberline {4.7.3.3}siguiente()}{24}{subsubsection.4.7.3.3}%
+\contentsline {section}{\numberline {4.8}Referencia de la Clase civitas.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sorpresa}{25}{section.4.8}%
+\contentsline {subsection}{\numberline {4.8.1}Descripción detallada}{25}{subsection.4.8.1}%
+\contentsline {subsection}{\numberline {4.8.2}Documentación de las funciones miembro}{25}{subsection.4.8.2}%
+\contentsline {subsubsection}{\numberline {4.8.2.1}toString()}{25}{subsubsection.4.8.2.1}%
+\contentsline {section}{\numberline {4.9}Referencia de la Clase civitas.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Tablero}{25}{section.4.9}%
+\contentsline {subsection}{\numberline {4.9.1}Descripción detallada}{25}{subsection.4.9.1}%
+\contentsline {subsection}{\numberline {4.9.2}Documentación del constructor y destructor}{26}{subsection.4.9.2}%
+\contentsline {subsubsection}{\numberline {4.9.2.1}Tablero()}{26}{subsubsection.4.9.2.1}%
+\contentsline {subsection}{\numberline {4.9.3}Documentación de las funciones miembro}{26}{subsection.4.9.3}%
+\contentsline {subsubsection}{\numberline {4.9.3.1}aniadeCasilla()}{26}{subsubsection.4.9.3.1}%
+\contentsline {subsubsection}{\numberline {4.9.3.2}computarPasoPorSalida()}{26}{subsubsection.4.9.3.2}%
+\contentsline {subsubsection}{\numberline {4.9.3.3}correcto()}{26}{subsubsection.4.9.3.3}%
+\contentsline {subsubsection}{\numberline {4.9.3.4}getCasilla()}{27}{subsubsection.4.9.3.4}%
+\contentsline {subsubsection}{\numberline {4.9.3.5}getCasillas()}{27}{subsubsection.4.9.3.5}%
+\contentsline {subsubsection}{\numberline {4.9.3.6}getPasoPorSalida()}{27}{subsubsection.4.9.3.6}%
+\contentsline {subsubsection}{\numberline {4.9.3.7}nuevaPosicion()}{27}{subsubsection.4.9.3.7}%
+\contentsline {chapter}{\numberline {5}Documentación de archivos}{29}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Casilla.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}java}{29}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Civitas.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}java}{31}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Civitas\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Juego.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}java}{32}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Dado.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}java}{34}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Diario.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}java}{35}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Enumerados.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}java}{35}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Estado\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Juego.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}java}{35}{section.5.7}%
+\contentsline {section}{\numberline {5.8}Gestor\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Estados.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}java}{36}{section.5.8}%
+\contentsline {section}{\numberline {5.9}Jugador.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}java}{37}{section.5.9}%
+\contentsline {section}{\numberline {5.10}Mazo\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Sorpresas.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}java}{39}{section.5.10}%
+\contentsline {section}{\numberline {5.11}Sorpresa.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}java}{39}{section.5.11}%
+\contentsline {section}{\numberline {5.12}Tablero.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}java}{40}{section.5.12}%
+\contentsline {chapter}{\'{I}ndice alfab\'{e}tico}{43}{section*.12}%

@@ -1,0 +1,246 @@
+\hypertarget{class_casilla}{}\doxysection{Casilla Class Reference}
+\label{class_casilla}\index{Casilla@{Casilla}}
+
+
+\mbox{\hyperlink{class_casilla}{Casilla}} Una clase que contiene los datos básicos de una casilla del sudoku, a partir de una matriz sudoku proporcionada por la clase \mbox{\hyperlink{class_sudoku_killer}{Sudoku\+Killer}}.  
+
+
+
+
+{\ttfamily \#include $<$Casilla.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_casilla_a3845e29668cd4299582334c29f3e28a8}\label{class_casilla_a3845e29668cd4299582334c29f3e28a8}} 
+{\bfseries Casilla} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_casilla_a7aeccc6de898539fa30efeb6934009dd}{Casilla}} (int fil, int col)
+\begin{DoxyCompactList}\small\item\em Constructor con parametros. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_casilla_a64a7671b864257e35fdf1524e2a11eb6}{Casilla}} (int fil, int col, int valor)
+\begin{DoxyCompactList}\small\item\em Constructor con parametros. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_casilla_ac217e974b3f45bbec6611ed2a545c494}{is\+Empty}} () const
+\begin{DoxyCompactList}\small\item\em Detecta pares invalidos. \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{class_casilla_a6f23ecad8f544de4e3a32eb9197216ba}{get\+Fila}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene la fila. \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{class_casilla_a4e1c2ab4cfaa94de21d12a7ff7b5157c}{get\+Columna}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene la columna. \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{class_casilla_ad80e679c8981b3edd21b32990d5b79b9}{get\+Valor}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el valor de la casilla. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_casilla_a06023f875ed9d9eb788efbfa7c0accca}{set\+Fila}} (const int fil)
+\begin{DoxyCompactList}\small\item\em Modifica el valor de la fila al valor dado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_casilla_aa54b32db4e6d5d7d71599f3d0d61565b}{set\+Columna}} (const int col)
+\begin{DoxyCompactList}\small\item\em Modifica el valor de la columna al valor dado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_casilla_a797946d86d65b4181c73b2a623c7e3c2}{set\+Valor}} (const int valor)
+\begin{DoxyCompactList}\small\item\em Modifica el valor de la casilla al valor dado. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_casilla_ac6933ccc16a1b94fb54c892778aa8995}{set\+Posicion}} (int fil, int col)
+\begin{DoxyCompactList}\small\item\em Modifica la fila y columna. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_casilla_ac17581563f00ee0dc68b8aaa6cc7645b}{set\+Casilla}} (int fil, int col, int valor)
+\begin{DoxyCompactList}\small\item\em modifica todos los valores propios de una casilla \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_casilla_af2057bd2f72813c270d705ab288ffa18}{to\+\_\+string}} () const
+\begin{DoxyCompactList}\small\item\em Convierte el objeto \mbox{\hyperlink{class_casilla}{Casilla}} en un string. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_casilla_ad0bf2cabec12867bb224e4cc82d6e0c2}\label{class_casilla_ad0bf2cabec12867bb224e4cc82d6e0c2}} 
+void {\bfseries init\+Default} ()
+\begin{DoxyCompactList}\small\item\em Establece el par por defecto. Filas, columnas, valor == -\/1. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_casilla}{Casilla}} Una clase que contiene los datos básicos de una casilla del sudoku, a partir de una matriz sudoku proporcionada por la clase \mbox{\hyperlink{class_sudoku_killer}{Sudoku\+Killer}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_casilla_a7aeccc6de898539fa30efeb6934009dd}\label{class_casilla_a7aeccc6de898539fa30efeb6934009dd}} 
+\index{Casilla@{Casilla}!Casilla@{Casilla}}
+\index{Casilla@{Casilla}!Casilla@{Casilla}}
+\doxysubsubsection{\texorpdfstring{Casilla()}{Casilla()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Casilla\+::\+Casilla (\begin{DoxyParamCaption}\item[{int}]{fil,  }\item[{int}]{col }\end{DoxyParamCaption})}
+
+
+
+Constructor con parametros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fil} & \+: int \\
+\hline
+{\em col} & \+: int \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_casilla_a64a7671b864257e35fdf1524e2a11eb6}\label{class_casilla_a64a7671b864257e35fdf1524e2a11eb6}} 
+\index{Casilla@{Casilla}!Casilla@{Casilla}}
+\index{Casilla@{Casilla}!Casilla@{Casilla}}
+\doxysubsubsection{\texorpdfstring{Casilla()}{Casilla()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Casilla\+::\+Casilla (\begin{DoxyParamCaption}\item[{int}]{fil,  }\item[{int}]{col,  }\item[{int}]{valor }\end{DoxyParamCaption})}
+
+
+
+Constructor con parametros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fil} & \+: int \\
+\hline
+{\em col} & \+: int \\
+\hline
+{\em valor} & \+: int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+valor\texorpdfstring{$>$}{>}0 \&\& valor\texorpdfstring{$<$}{<}10 
+\end{DoxyPrecond}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_casilla_a4e1c2ab4cfaa94de21d12a7ff7b5157c}\label{class_casilla_a4e1c2ab4cfaa94de21d12a7ff7b5157c}} 
+\index{Casilla@{Casilla}!getColumna@{getColumna}}
+\index{getColumna@{getColumna}!Casilla@{Casilla}}
+\doxysubsubsection{\texorpdfstring{getColumna()}{getColumna()}}
+{\footnotesize\ttfamily const int Casilla\+::get\+Columna (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtiene la columna. 
+
+\begin{DoxyReturn}{Returns}
+La columna de la casilla 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_casilla_a6f23ecad8f544de4e3a32eb9197216ba}\label{class_casilla_a6f23ecad8f544de4e3a32eb9197216ba}} 
+\index{Casilla@{Casilla}!getFila@{getFila}}
+\index{getFila@{getFila}!Casilla@{Casilla}}
+\doxysubsubsection{\texorpdfstring{getFila()}{getFila()}}
+{\footnotesize\ttfamily const int Casilla\+::get\+Fila (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtiene la fila. 
+
+\begin{DoxyReturn}{Returns}
+La fila de la casilla 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_casilla_ad80e679c8981b3edd21b32990d5b79b9}\label{class_casilla_ad80e679c8981b3edd21b32990d5b79b9}} 
+\index{Casilla@{Casilla}!getValor@{getValor}}
+\index{getValor@{getValor}!Casilla@{Casilla}}
+\doxysubsubsection{\texorpdfstring{getValor()}{getValor()}}
+{\footnotesize\ttfamily const int Casilla\+::get\+Valor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtiene el valor de la casilla. 
+
+\begin{DoxyReturn}{Returns}
+El valor 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_casilla_ac217e974b3f45bbec6611ed2a545c494}\label{class_casilla_ac217e974b3f45bbec6611ed2a545c494}} 
+\index{Casilla@{Casilla}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!Casilla@{Casilla}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily bool Casilla\+::is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Detecta pares invalidos. 
+
+\begin{DoxyReturn}{Returns}
+Devuelve true cuando sus parametros son -\/1, y falso en otro caso 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_casilla_ac17581563f00ee0dc68b8aaa6cc7645b}\label{class_casilla_ac17581563f00ee0dc68b8aaa6cc7645b}} 
+\index{Casilla@{Casilla}!setCasilla@{setCasilla}}
+\index{setCasilla@{setCasilla}!Casilla@{Casilla}}
+\doxysubsubsection{\texorpdfstring{setCasilla()}{setCasilla()}}
+{\footnotesize\ttfamily void Casilla\+::set\+Casilla (\begin{DoxyParamCaption}\item[{int}]{fil,  }\item[{int}]{col,  }\item[{int}]{valor }\end{DoxyParamCaption})}
+
+
+
+modifica todos los valores propios de una casilla 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fil} & \+: int \\
+\hline
+{\em col} & \+: int \\
+\hline
+{\em valor} & \+: int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+valor\texorpdfstring{$>$}{>}0 \&\& valor\texorpdfstring{$<$}{<}10 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{class_casilla_aa54b32db4e6d5d7d71599f3d0d61565b}\label{class_casilla_aa54b32db4e6d5d7d71599f3d0d61565b}} 
+\index{Casilla@{Casilla}!setColumna@{setColumna}}
+\index{setColumna@{setColumna}!Casilla@{Casilla}}
+\doxysubsubsection{\texorpdfstring{setColumna()}{setColumna()}}
+{\footnotesize\ttfamily void Casilla\+::set\+Columna (\begin{DoxyParamCaption}\item[{const int}]{col }\end{DoxyParamCaption})}
+
+
+
+Modifica el valor de la columna al valor dado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em col} & \+: int \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_casilla_a06023f875ed9d9eb788efbfa7c0accca}\label{class_casilla_a06023f875ed9d9eb788efbfa7c0accca}} 
+\index{Casilla@{Casilla}!setFila@{setFila}}
+\index{setFila@{setFila}!Casilla@{Casilla}}
+\doxysubsubsection{\texorpdfstring{setFila()}{setFila()}}
+{\footnotesize\ttfamily void Casilla\+::set\+Fila (\begin{DoxyParamCaption}\item[{const int}]{fil }\end{DoxyParamCaption})}
+
+
+
+Modifica el valor de la fila al valor dado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fil} & \+: int \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_casilla_ac6933ccc16a1b94fb54c892778aa8995}\label{class_casilla_ac6933ccc16a1b94fb54c892778aa8995}} 
+\index{Casilla@{Casilla}!setPosicion@{setPosicion}}
+\index{setPosicion@{setPosicion}!Casilla@{Casilla}}
+\doxysubsubsection{\texorpdfstring{setPosicion()}{setPosicion()}}
+{\footnotesize\ttfamily void Casilla\+::set\+Posicion (\begin{DoxyParamCaption}\item[{int}]{fil,  }\item[{int}]{col }\end{DoxyParamCaption})}
+
+
+
+Modifica la fila y columna. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fil} & \+: int \\
+\hline
+{\em col} & \+: int \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_casilla_a797946d86d65b4181c73b2a623c7e3c2}\label{class_casilla_a797946d86d65b4181c73b2a623c7e3c2}} 
+\index{Casilla@{Casilla}!setValor@{setValor}}
+\index{setValor@{setValor}!Casilla@{Casilla}}
+\doxysubsubsection{\texorpdfstring{setValor()}{setValor()}}
+{\footnotesize\ttfamily void Casilla\+::set\+Valor (\begin{DoxyParamCaption}\item[{const int}]{valor }\end{DoxyParamCaption})}
+
+
+
+Modifica el valor de la casilla al valor dado. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em valor} & \+: int \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_casilla_af2057bd2f72813c270d705ab288ffa18}\label{class_casilla_af2057bd2f72813c270d705ab288ffa18}} 
+\index{Casilla@{Casilla}!to\_string@{to\_string}}
+\index{to\_string@{to\_string}!Casilla@{Casilla}}
+\doxysubsubsection{\texorpdfstring{to\_string()}{to\_string()}}
+{\footnotesize\ttfamily std\+::string Casilla\+::to\+\_\+string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Convierte el objeto \mbox{\hyperlink{class_casilla}{Casilla}} en un string. 
+
+\begin{DoxyReturn}{Returns}
+un string en el formato -\/\texorpdfstring{$>$}{>} Fila\+: fil , Columna; col , Valor\+: val 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_casilla_8h}{Casilla.\+h}}\end{DoxyCompactItemize}

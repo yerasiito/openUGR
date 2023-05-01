@@ -1,0 +1,31 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{ }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n+nf}{Dijkstra}\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{o}{**}\PYG{n}{M}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{o}{**}\PYG{n}{Sal}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{dim}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{src}\PYG{p}{)}\PYG{+w}{ }\PYG{c+c1}{// adjacency matrix}
+\PYG{p}{\PYGZob{}}
+\PYG{+w}{	}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{dist}\PYG{p}{[}\PYG{n}{dim}\PYG{p}{];}\PYG{+w}{ }\PYG{c+c1}{// integer array to calculate minimum distance}
+\PYG{+w}{	}\PYG{k+kt}{bool}\PYG{+w}{ }\PYG{n}{Tset}\PYG{p}{[}\PYG{n}{dim}\PYG{p}{];}\PYG{c+c1}{// boolean array to mark visted/unvisted}
+
+\PYG{+w}{	}\PYG{c+c1}{// set the nodes with infinity distance}
+\PYG{+w}{	}\PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{i}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{i}\PYG{o}{\PYGZlt{}}\PYG{n}{dim}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{i}\PYG{o}{++}\PYG{p}{)}
+\PYG{+w}{	}\PYG{p}{\PYGZob{}}
+\PYG{+w}{		}\PYG{n}{dist}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{INT\PYGZus{}MAX}\PYG{p}{;}
+\PYG{+w}{		}\PYG{n}{Tset}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n+nb}{false}\PYG{p}{;}
+\PYG{+w}{	}\PYG{p}{\PYGZcb{}}
+
+\PYG{+w}{	}\PYG{n}{dist}\PYG{p}{[}\PYG{n}{src}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{+w}{   }\PYG{c+c1}{// Source vertex distance is set to zero.}
+
+\PYG{+w}{	}\PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{k}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{k}\PYG{o}{\PYGZlt{}}\PYG{n}{dim}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{k}\PYG{o}{++}\PYG{p}{)}
+\PYG{+w}{	}\PYG{p}{\PYGZob{}}
+\PYG{+w}{		}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{m}\PYG{o}{=}\PYG{n}{minimumDist}\PYG{p}{(}\PYG{n}{dist}\PYG{p}{,}\PYG{n}{Tset}\PYG{p}{,}\PYG{n}{dim}\PYG{p}{);}
+\PYG{+w}{		}\PYG{n}{Tset}\PYG{p}{[}\PYG{n}{m}\PYG{p}{]}\PYG{o}{=}\PYG{n+nb}{true}\PYG{p}{;}\PYG{c+c1}{// m with minimum distance included in Tset.}
+\PYG{+w}{		}\PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{i}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{i}\PYG{o}{\PYGZlt{}}\PYG{n}{dim}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{i}\PYG{o}{++}\PYG{p}{)}
+\PYG{+w}{		}\PYG{p}{\PYGZob{}}
+\PYG{+w}{			}\PYG{c+c1}{// Updating the minimum distance}
+\PYG{+w}{			}\PYG{k}{if}\PYG{p}{(}\PYG{o}{!}\PYG{n}{Tset}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{\PYGZam{}\PYGZam{}}\PYG{+w}{ }\PYG{n}{dist}\PYG{p}{[}\PYG{n}{m}\PYG{p}{]}\PYG{o}{!=}\PYG{n}{INT\PYGZus{}MAX}
+\PYG{+w}{              }\PYG{o}{\PYGZam{}\PYGZam{}}\PYG{+w}{ }\PYG{n}{dist}\PYG{p}{[}\PYG{n}{m}\PYG{p}{]}\PYG{o}{+}\PYG{n}{M}\PYG{p}{[}\PYG{n}{m}\PYG{p}{][}\PYG{n}{i}\PYG{p}{]}\PYG{o}{\PYGZlt{}}\PYG{n}{dist}\PYG{p}{[}\PYG{n}{i}\PYG{p}{])}
+\PYG{+w}{				}\PYG{n}{dist}\PYG{p}{[}\PYG{n}{i}\PYG{p}{]}\PYG{o}{=}\PYG{n}{dist}\PYG{p}{[}\PYG{n}{m}\PYG{p}{]}\PYG{o}{+}\PYG{n}{M}\PYG{p}{[}\PYG{n}{m}\PYG{p}{][}\PYG{n}{i}\PYG{p}{];}
+\PYG{+w}{		}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{	}\PYG{p}{\PYGZcb{}}
+\PYG{+w}{	}\PYG{k}{for}\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{i}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{i}\PYG{o}{\PYGZlt{}}\PYG{n}{dim}\PYG{p}{;}\PYG{+w}{ }\PYG{n}{i}\PYG{o}{++}\PYG{p}{)}
+\PYG{+w}{	   }\PYG{n}{Sal}\PYG{p}{[}\PYG{n}{src}\PYG{p}{][}\PYG{n}{i}\PYG{p}{]}\PYG{o}{=}\PYG{n}{dist}\PYG{p}{[}\PYG{n}{i}\PYG{p}{];}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kr}{inline}\PYG{+w}{ }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n+nf}{quicksort}\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{T}\PYG{p}{[],}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{num\PYGZus{}elem}\PYG{p}{)}
+\PYG{k}{static}\PYG{+w}{ }\PYG{k+kt}{void}\PYG{+w}{ }\PYG{n}{quicksort\PYGZus{}lims}\PYG{p}{(}\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{T}\PYG{p}{[],}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{inicial}\PYG{p}{,}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{k}{final}\PYG{p}{)}
+\PYG{p}{\PYGZob{}}
+\PYG{+w}{  }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{n}{k}\PYG{p}{;}
+\PYG{+w}{  }\PYG{k}{if}\PYG{+w}{ }\PYG{p}{(}\PYG{k}{final}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n}{inicial}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{n}{UMBRAL\PYGZus{}QS}\PYG{p}{)}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{n}{insercion\PYGZus{}lims}\PYG{p}{(}\PYG{n}{T}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{inicial}\PYG{p}{,}\PYG{+w}{ }\PYG{k}{final}\PYG{p}{);}
+\PYG{+w}{  }\PYG{p}{\PYGZcb{}}\PYG{+w}{ }\PYG{k}{else}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{    }\PYG{n}{dividir\PYGZus{}qs}\PYG{p}{(}\PYG{n}{T}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{inicial}\PYG{p}{,}\PYG{+w}{ }\PYG{k}{final}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{k}\PYG{p}{);}
+\PYG{+w}{    }\PYG{n}{quicksort\PYGZus{}lims}\PYG{p}{(}\PYG{n}{T}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{inicial}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{k}\PYG{p}{);}
+\PYG{+w}{    }\PYG{n}{quicksort\PYGZus{}lims}\PYG{p}{(}\PYG{n}{T}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{k}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{+w}{ }\PYG{k}{final}\PYG{p}{);}
+\PYG{+w}{  }\PYG{p}{\PYGZcb{};}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}

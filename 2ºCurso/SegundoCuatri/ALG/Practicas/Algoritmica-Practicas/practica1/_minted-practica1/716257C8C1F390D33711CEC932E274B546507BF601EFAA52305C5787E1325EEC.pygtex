@@ -1,0 +1,20 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+Ajustada a la fórmula a0*x*log(x) + a1
+iter  	chisq   	delta/lim  lambda   a0
+   0 2.6033979525e+15   0.00e+00  1.02e+07	1.000000e+00
+   * 9.3808481861e\PYGZhy{}04   5.78e\PYGZhy{}11  1.02e+04	1.418029e\PYGZhy{}08
+iter  	chisq   	delta/lim  lambda   a0
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.000938085
+rel. change during last iteration : \PYGZhy{}5.77881e\PYGZhy{}16
+
+degrees of freedom	(FIT\PYGZus{}NDF)                       : 24
+rms of residuals  	(FIT\PYGZus{}STDFIT) = sqrt(WSSR/ndf)   : 0.00625195
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.90869e\PYGZhy{}05
+
+Final set of parameters        	Asymptotic Standard Error
+=======================        	==========================
+a0          	= 1.41803e\PYGZhy{}08  	+/\PYGZhy{} 1.225e\PYGZhy{}10	(0.8641\PYGZpc{})
+a1               = 0.001932       +/\PYGZhy{} 0.0006271    (32.68\PYGZpc{})
+\end{Verbatim}

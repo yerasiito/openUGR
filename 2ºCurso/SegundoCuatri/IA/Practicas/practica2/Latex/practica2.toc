@@ -1,0 +1,10 @@
+\babel@toc {spanish}{}\relax 
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Objetivo de la Pr\IeC {\'a}ctica}{2}{}%
+\contentsline {section}{\numberline {2}Comportamiento general}{2}{}%
+\contentsline {section}{\numberline {3}Comportaiento Avanzado: PathFinding}{2}{}%
+\contentsline {subsection}{\numberline {3.1}pathFindingProfundidad}{2}{}%
+\contentsline {subsection}{\numberline {3.2}pathFindingAnchura}{2}{}%
+\contentsline {subsection}{\numberline {3.3}pathFindingCosteUniforme}{3}{}%
+\contentsline {subsection}{\numberline {3.4}Nivel 3}{3}{}%
+\contentsline {subsection}{\numberline {3.5}Nivel 4}{3}{}%

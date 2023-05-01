@@ -1,0 +1,39 @@
+\hypertarget{JugadorEspeculador_8java_source}{}\doxysection{Jugador\+Especulador.\+java}
+\label{JugadorEspeculador_8java_source}\index{src/civitas/JugadorEspeculador.java@{src/civitas/JugadorEspeculador.java}}
+\mbox{\hyperlink{JugadorEspeculador_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{JugadorEspeculador_8java_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{JugadorEspeculador_8java_source_l00007}00007 \textcolor{keyword}{package }civitas;}
+\DoxyCodeLine{\Hypertarget{JugadorEspeculador_8java_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{JugadorEspeculador_8java_source_l00018}\mbox{\hyperlink{classcivitas_1_1JugadorEspeculador}{00018}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{classcivitas_1_1JugadorEspeculador}{JugadorEspeculador}} \textcolor{keyword}{extends} \mbox{\hyperlink{classcivitas_1_1Jugador}{Jugador}}\{}
+\DoxyCodeLine{\Hypertarget{JugadorEspeculador_8java_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{JugadorEspeculador_8java_source_l00020}00020     \textcolor{keyword}{protected} \textcolor{keyword}{static} \textcolor{keywordtype}{float} FactorEspeculador = 2;}
+\DoxyCodeLine{\Hypertarget{JugadorEspeculador_8java_source_l00021}00021     }
+\DoxyCodeLine{\Hypertarget{JugadorEspeculador_8java_source_l00022}00022     \textcolor{keyword}{protected} \mbox{\hyperlink{classcivitas_1_1JugadorEspeculador}{JugadorEspeculador}}(\mbox{\hyperlink{classcivitas_1_1Jugador}{Jugador}} otro)\{}
+\DoxyCodeLine{\Hypertarget{JugadorEspeculador_8java_source_l00023}00023         super(otro); \textcolor{comment}{//Copia atributos}}
+\DoxyCodeLine{\Hypertarget{JugadorEspeculador_8java_source_l00024}00024         CasasMax*= FactorEspeculador;}
+\DoxyCodeLine{\Hypertarget{JugadorEspeculador_8java_source_l00025}00025         HotelesMax*=FactorEspeculador;}
+\DoxyCodeLine{\Hypertarget{JugadorEspeculador_8java_source_l00026}00026         ActualizaPropiedadesPorConversion(otro); \textcolor{comment}{//Convierte propiedades}}
+\DoxyCodeLine{\Hypertarget{JugadorEspeculador_8java_source_l00027}00027     \}}
+\DoxyCodeLine{\Hypertarget{JugadorEspeculador_8java_source_l00028}00028     }
+\DoxyCodeLine{\Hypertarget{JugadorEspeculador_8java_source_l00029}00029     \textcolor{keywordtype}{float} getFactorEspeculador()\{}
+\DoxyCodeLine{\Hypertarget{JugadorEspeculador_8java_source_l00030}00030         \textcolor{keywordflow}{return} FactorEspeculador;}
+\DoxyCodeLine{\Hypertarget{JugadorEspeculador_8java_source_l00031}00031     \}}
+\DoxyCodeLine{\Hypertarget{JugadorEspeculador_8java_source_l00032}00032     }
+\DoxyCodeLine{\Hypertarget{JugadorEspeculador_8java_source_l00033}00033     \textcolor{keyword}{private} \textcolor{keywordtype}{void} ActualizaPropiedadesPorConversion(\mbox{\hyperlink{classcivitas_1_1Jugador}{Jugador}} jugador)\{}
+\DoxyCodeLine{\Hypertarget{JugadorEspeculador_8java_source_l00034}00034         jugador.getPropiedades().forEach(propiedad -\/> \{}
+\DoxyCodeLine{\Hypertarget{JugadorEspeculador_8java_source_l00035}00035             propiedad.actualizaPropietarioPorConversion(\textcolor{keyword}{this}); \textcolor{comment}{//cambia las propiedades}}
+\DoxyCodeLine{\Hypertarget{JugadorEspeculador_8java_source_l00036}00036         \});}
+\DoxyCodeLine{\Hypertarget{JugadorEspeculador_8java_source_l00037}00037     \}}
+\DoxyCodeLine{\Hypertarget{JugadorEspeculador_8java_source_l00038}00038     }
+\DoxyCodeLine{\Hypertarget{JugadorEspeculador_8java_source_l00039}00039     @Override}
+\DoxyCodeLine{\Hypertarget{JugadorEspeculador_8java_source_l00040}00040     \textcolor{keywordtype}{boolean} paga(\textcolor{keywordtype}{float} cantidad)\{}
+\DoxyCodeLine{\Hypertarget{JugadorEspeculador_8java_source_l00041}00041         \textcolor{keywordtype}{float} nuevaC = cantidad/FactorEspeculador;}
+\DoxyCodeLine{\Hypertarget{JugadorEspeculador_8java_source_l00042}00042         \mbox{\hyperlink{classcivitas_1_1Diario}{Diario}}.getInstance().ocurreEvento(\textcolor{stringliteral}{"{}Paco paga "{}} + nuevaC + \textcolor{stringliteral}{"{} en vez de "{}}}
+\DoxyCodeLine{\Hypertarget{JugadorEspeculador_8java_source_l00043}00043                 + cantidad + \textcolor{stringliteral}{"{} por ser especulador!"{}});}
+\DoxyCodeLine{\Hypertarget{JugadorEspeculador_8java_source_l00044}00044         \textcolor{keywordflow}{return} super.paga(nuevaC);}
+\DoxyCodeLine{\Hypertarget{JugadorEspeculador_8java_source_l00045}00045     \}}
+\DoxyCodeLine{\Hypertarget{JugadorEspeculador_8java_source_l00046}00046     }
+\DoxyCodeLine{\Hypertarget{JugadorEspeculador_8java_source_l00047}00047 \}}
+
+\end{DoxyCode}

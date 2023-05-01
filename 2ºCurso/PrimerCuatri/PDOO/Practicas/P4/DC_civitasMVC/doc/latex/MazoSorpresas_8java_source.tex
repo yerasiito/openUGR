@@ -1,0 +1,58 @@
+\hypertarget{MazoSorpresas_8java_source}{}\doxysection{Mazo\+Sorpresas.\+java}
+\label{MazoSorpresas_8java_source}\index{src/civitas/MazoSorpresas.java@{src/civitas/MazoSorpresas.java}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00001}00001 \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00002}00002 \textcolor{comment}{ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-\/default.txt to change this license}}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00003}00003 \textcolor{comment}{ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template}}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00004}00004 \textcolor{comment}{ */}}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00005}00005 \textcolor{keyword}{package }civitas;}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00007}00007 \textcolor{keyword}{import} java.util.ArrayList;}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00008}00008 \textcolor{keyword}{import} java.util.Collections;}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00014}\mbox{\hyperlink{classcivitas_1_1MazoSorpresas}{00014}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{classcivitas_1_1MazoSorpresas}{MazoSorpresas}} \{}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00015}00015         \textcolor{keyword}{private} \textcolor{keywordtype}{boolean} barajada;}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00016}00016         \textcolor{keyword}{private} \textcolor{keywordtype}{boolean} debug;}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00017}00017         \textcolor{keyword}{private} \textcolor{keywordtype}{int} usadas;}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00018}00018         \textcolor{keyword}{private} ArrayList<Sorpresa> sorpresas;}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00019}00019         }
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00020}00020         \textcolor{keyword}{private} \textcolor{keywordtype}{void} init()\{}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00021}00021             barajada = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00022}00022             debug = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00023}00023             usadas = 0;}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00024}00024             sorpresas = \textcolor{keyword}{new} ArrayList<>();}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00025}00025         \}}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00026}00026         }
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00027}00027         \textcolor{keyword}{public} \mbox{\hyperlink{classcivitas_1_1MazoSorpresas}{MazoSorpresas}}()\{}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00028}00028             init();}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00029}00029         \}}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00030}00030         }
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00031}00031         \textcolor{keyword}{public} \mbox{\hyperlink{classcivitas_1_1MazoSorpresas}{MazoSorpresas}}(\textcolor{keywordtype}{boolean} d)\{}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00032}00032             init();}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00033}00033             debug = d;}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00034}00034             \mbox{\hyperlink{classcivitas_1_1Diario}{Diario}}.getInstance().ocurreEvento(\textcolor{stringliteral}{"{}El mazo ha cambiado debug a "{}} + debug);}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00035}00035         \}}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00036}00036         }
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00037}00037         \textcolor{keyword}{public} ArrayList<Sorpresa> getMazoSorpresas()\{}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00038}00038             \textcolor{keywordflow}{return} sorpresas;}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00039}00039         \}}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00040}00040         }
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00041}00041         \textcolor{keyword}{public} \textcolor{keywordtype}{void} alMazo(\mbox{\hyperlink{classcivitas_1_1Sorpresa}{Sorpresa}} s)\{}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00042}00042             \textcolor{keywordflow}{if}(!barajada)}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00043}00043                 sorpresas.add(s);}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00044}00044         \}}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00045}00045         }
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00046}00046         \textcolor{keyword}{public} \mbox{\hyperlink{classcivitas_1_1Sorpresa}{Sorpresa}} siguiente()\{}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00047}00047             \textcolor{keywordflow}{if}((!barajada || usadas == sorpresas.size()) \&\& !debug)\{}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00048}00048                 Collections.shuffle(sorpresas); \textcolor{comment}{//mezclamos los objetos}}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00049}00049                 usadas = 0;}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00050}00050                 barajada = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00051}00051             \}}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00052}00052             usadas++;}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00053}00053             Collections.rotate(sorpresas, -\/1);}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00054}00054             \textcolor{keywordflow}{return} sorpresas.get(sorpresas.size()-\/1);}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00055}00055         \}}
+\DoxyCodeLine{\Hypertarget{MazoSorpresas_8java_source_l00056}00056 \}}
+
+\end{DoxyCode}

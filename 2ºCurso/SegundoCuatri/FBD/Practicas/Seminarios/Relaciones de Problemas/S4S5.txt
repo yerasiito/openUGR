@@ -1,0 +1,39 @@
+-- g) Encontrar los códigos de los proyectos que tienen al menos un proveedor que no se encuentre en su misma ciudad.
+π v.codpj (σ s.codpro=v.codpro ∧ v.codpj=j.codpj ∧ s.ciudad ≠ j.ciudad (ρ s proveedor x ρ v ventas x ρ j proyecto))
+    -- SQL
+select distinct j.codpj
+from proveedor s, ventas v, proyecto j
+where s.codpro=v.codpro and v.codpj=j.codpj and s.ciudad <> j.ciudad
+
+-- i) Mostrar todas las ciudades de los proveedores en las que no fabriquen piezas.
+π ciudad (proveedor) - π ciudad (pieza)
+    -- SQL
+(select ciudad from proveedor) minus (select ciudad from pieza)
+
+-- j) Mostrar todas las ciudades de los proveedores en las que además se fabriquen piezas.
+π ciudad (proveedor) ∩ π ciudad (pieza)
+    -- SQL
+select distinct P.ciudad from proveedor P, pieza C where P.ciudad = C.ciudad;
+
+-- k) Encontrar los códigos de los proyectos que usan una pieza que vende S1.
+π codpj (π codpie (σ codpro='S1' (ventas)) ⨝ ventas)
+    -- SQL
+select distinct codpj from ventas natural join (select distinct codpie from ventas where codpro='S1')
+
+-- l) Encontrar la cantidad más pequeña enviada en algún suministro.
+π ventas.codpie, ventas.cantidad (ventas) - π ventas.codpie, ventas.cantidad (σ ventas.cantidad > v.cantidad (ventas x ρ v (ventas) ))
+    -- SQL
+select distinct ventas.codpie, ventas.cantidad from ventas
+minus
+select distinct ventas.codpie, ventas.cantidad from ventas, ventas v where ventas.cantidad > v.cantidad
+
+-- m) Encontrar los códigos de los proyectos que no utilizan una pieza roja suministrada por un
+proveedor de Londres.
+π proyecto.codpj (proyecto) - π ventas.codpj (σ pieza.color='Rojo' ∧ proveedor.ciudad='Londres' (ventas ⨝ (π codpie, color (pieza)) ⨝ proveedor))
+    -- SQL
+SELECT codpj
+        FROM proyecto
+        MINUS
+        SELECT ventas.codpj
+        FROM (ventas NATURAL JOIN (SELECT codpie, color FROM pieza)) NATUERAL JOIN proveedor
+        WHERE color='Rojo and proovedor='Londres'

@@ -1,0 +1,92 @@
+\begin{theindex}
+
+  \item {$\sim$Pila}
+    \subitem {Pila$<$ T $>$}, \hyperpage{11}
+
+  \indexspace
+
+  \item {Cola\_max}, \hyperpage{5}
+    \subitem {elementos\_size}, \hyperpage{5}
+    \subitem {empty}, \hyperpage{5}
+    \subitem {frente}, \hyperpage{6}
+    \subitem {poner}, \hyperpage{6}
+    \subitem {quitar}, \hyperpage{7}
+
+  \indexspace
+
+  \item {Elemento}, \hyperpage{8}
+    \subitem {elemento}, \hyperpage{9}
+    \subitem {maximo}, \hyperpage{9}
+    \subitem {operator$<$$<$}, \hyperpage{9}
+  \item {elemento}
+    \subitem {Elemento}, \hyperpage{9}
+  \item {elementos\_size}
+    \subitem {Cola\_max}, \hyperpage{5}
+  \item {empty}
+    \subitem {Cola\_max}, \hyperpage{5}
+
+  \indexspace
+
+  \item {frente}
+    \subitem {Cola\_max}, \hyperpage{6}
+
+  \indexspace
+
+  \item {maximo}
+    \subitem {Elemento}, \hyperpage{9}
+
+  \indexspace
+
+  \item {num\_elementos}
+    \subitem {Pila$<$ T $>$}, \hyperpage{12}
+
+  \indexspace
+
+  \item {operator$<$$<$}
+    \subitem {Elemento}, \hyperpage{9}
+  \item {operator=}
+    \subitem {Pila$<$ T $>$}, \hyperpage{12}
+
+  \indexspace
+
+  \item {Pila}
+    \subitem {Pila$<$ T $>$}, \hyperpage{11}
+  \item {Pila$<$ T $>$}, \hyperpage{10}
+    \subitem {$\sim$Pila}, \hyperpage{11}
+    \subitem {num\_elementos}, \hyperpage{12}
+    \subitem {operator=}, \hyperpage{12}
+    \subitem {Pila}, \hyperpage{11}
+    \subitem {poner}, \hyperpage{13}
+    \subitem {quitar}, \hyperpage{13}
+    \subitem {tope}, \hyperpage{13}
+    \subitem {vacia}, \hyperpage{14}
+  \item {poner}
+    \subitem {Cola\_max}, \hyperpage{6}
+    \subitem {Pila$<$ T $>$}, \hyperpage{13}
+
+  \indexspace
+
+  \item {quitar}
+    \subitem {Cola\_max}, \hyperpage{7}
+    \subitem {Pila$<$ T $>$}, \hyperpage{13}
+
+  \indexspace
+
+  \item {src/Cola\_max\_Pila.cpp}, \hyperpage{15}
+  \item {src/Cola\_max\_Pila.h}, \hyperpage{16, 17}
+  \item {src/cola\_teclado.cpp}, \hyperpage{17}
+  \item {src/pila.cpp}, \hyperpage{18, 19}
+  \item {src/pila.h}, \hyperpage{20, 21}
+  \item {src/usocolas\_max.cpp}, \hyperpage{22}
+
+  \indexspace
+
+  \item {tope}
+    \subitem {Pila$<$ T $>$}, \hyperpage{13}
+
+  \indexspace
+
+  \item {vacia}
+    \subitem {Pila$<$ T $>$}, \hyperpage{14}
+
+\end{theindex}

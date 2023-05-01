@@ -1,0 +1,187 @@
+\hypertarget{classPila__max}{}\doxysection{Pila\+\_\+max Class Reference}
+\label{classPila__max}\index{Pila\_max@{Pila\_max}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structElemento}{Elemento}} \mbox{\hyperlink{classPila__max_a3dc117c7738903c47b3e01b7c47c6464}{frente}} ()
+\begin{DoxyCompactList}\small\item\em Función frente. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPila__max_a39f4b9afeb0e3b77e7d329484f139348}{elementos\+\_\+size}} ()
+\begin{DoxyCompactList}\small\item\em Funcion elementos\+\_\+size. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPila__max_a194ea495b04487a300c9edb5a923123b}{empty}} ()
+\begin{DoxyCompactList}\small\item\em Función empty. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPila__max_ac4615eccf7d95bf4433e3da16c9aa2a2}{quitar}} ()
+\begin{DoxyCompactList}\small\item\em Función quitar, elimina el elemento que se encuentra en el frente de la pila y su máximo correpondiente. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPila__max_abae1e122ae6a8226050e5dd634f2759e}{poner}} (int elemento)
+\begin{DoxyCompactList}\small\item\em Función poner, añade un nuevo elemento a la pila y actualiza el máximo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{Pila__max__Cola_8h_source_l00053}{53}} of file \mbox{\hyperlink{Pila__max__Cola_8h_source}{Pila\+\_\+max\+\_\+\+Cola.\+h}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPila__max_a39f4b9afeb0e3b77e7d329484f139348}\label{classPila__max_a39f4b9afeb0e3b77e7d329484f139348}} 
+\index{Pila\_max@{Pila\_max}!elementos\_size@{elementos\_size}}
+\index{elementos\_size@{elementos\_size}!Pila\_max@{Pila\_max}}
+\doxysubsubsection{\texorpdfstring{elementos\_size()}{elementos\_size()}}
+{\footnotesize\ttfamily int Pila\+\_\+max\+::elementos\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funcion elementos\+\_\+size. 
+
+\begin{DoxyReturn}{Returns}
+Devuelve la cantidad de elementos que contiene la pila 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{Pila__max__Cola_8cpp_source_l00018}{18}} of file \mbox{\hyperlink{Pila__max__Cola_8cpp_source}{Pila\+\_\+max\+\_\+\+Cola.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classPila__max_l00018}00018                             \{}
+\DoxyCodeLine{\Hypertarget{classPila__max_l00019}00019    \textcolor{keywordflow}{return} pila.num\_elementos();}
+\DoxyCodeLine{\Hypertarget{classPila__max_l00020}00020 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classPila__max_a194ea495b04487a300c9edb5a923123b}\label{classPila__max_a194ea495b04487a300c9edb5a923123b}} 
+\index{Pila\_max@{Pila\_max}!empty@{empty}}
+\index{empty@{empty}!Pila\_max@{Pila\_max}}
+\doxysubsubsection{\texorpdfstring{empty()}{empty()}}
+{\footnotesize\ttfamily bool Pila\+\_\+max\+::empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Función empty. 
+
+\begin{DoxyReturn}{Returns}
+Devuelve true si la pila está vacía 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{Pila__max__Cola_8cpp_source_l00023}{23}} of file \mbox{\hyperlink{Pila__max__Cola_8cpp_source}{Pila\+\_\+max\+\_\+\+Cola.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classPila__max_l00023}00023                     \{}
+\DoxyCodeLine{\Hypertarget{classPila__max_l00024}00024    \textcolor{keywordflow}{return} pila.vacia();}
+\DoxyCodeLine{\Hypertarget{classPila__max_l00025}00025 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classPila__max_a3dc117c7738903c47b3e01b7c47c6464}\label{classPila__max_a3dc117c7738903c47b3e01b7c47c6464}} 
+\index{Pila\_max@{Pila\_max}!frente@{frente}}
+\index{frente@{frente}!Pila\_max@{Pila\_max}}
+\doxysubsubsection{\texorpdfstring{frente()}{frente()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structElemento}{Elemento}} Pila\+\_\+max\+::frente (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Función frente. 
+
+\begin{DoxyPrecond}{Precondition}
+Se necesita mínimo un valor en la pila previo 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+Devuelve el elemento en el frente de la pila 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{Pila__max__Cola_8cpp_source_l00012}{12}} of file \mbox{\hyperlink{Pila__max__Cola_8cpp_source}{Pila\+\_\+max\+\_\+\+Cola.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classPila__max_l00012}00012                          \{}
+\DoxyCodeLine{\Hypertarget{classPila__max_l00013}00013   \textcolor{keywordflow}{return} pila.frente();}
+\DoxyCodeLine{\Hypertarget{classPila__max_l00014}00014 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classPila__max_abae1e122ae6a8226050e5dd634f2759e}\label{classPila__max_abae1e122ae6a8226050e5dd634f2759e}} 
+\index{Pila\_max@{Pila\_max}!poner@{poner}}
+\index{poner@{poner}!Pila\_max@{Pila\_max}}
+\doxysubsubsection{\texorpdfstring{poner()}{poner()}}
+{\footnotesize\ttfamily void Pila\+\_\+max\+::poner (\begin{DoxyParamCaption}\item[{int}]{elemento }\end{DoxyParamCaption})}
+
+
+
+Función poner, añade un nuevo elemento a la pila y actualiza el máximo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{structElemento}{Elemento}}} & a añadir \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{Pila__max__Cola_8cpp_source_l00033}{33}} of file \mbox{\hyperlink{Pila__max__Cola_8cpp_source}{Pila\+\_\+max\+\_\+\+Cola.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classPila__max_l00033}00033                                 \{}
+\DoxyCodeLine{\Hypertarget{classPila__max_l00034}00034     \textcolor{keywordflow}{if}(\mbox{\hyperlink{classPila__max_a194ea495b04487a300c9edb5a923123b}{empty}}())\{}
+\DoxyCodeLine{\Hypertarget{classPila__max_l00035}00035         \mbox{\hyperlink{structElemento}{Elemento}} nuevo = \{elemento, elemento\};}
+\DoxyCodeLine{\Hypertarget{classPila__max_l00036}00036         pila.poner(nuevo);}
+\DoxyCodeLine{\Hypertarget{classPila__max_l00037}00037         \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{classPila__max_l00038}00038     \}}
+\DoxyCodeLine{\Hypertarget{classPila__max_l00039}00039     queue<Elemento> aux;}
+\DoxyCodeLine{\Hypertarget{classPila__max_l00040}00040     \textcolor{keywordflow}{while}(!\mbox{\hyperlink{classPila__max_a194ea495b04487a300c9edb5a923123b}{empty}}())\{}
+\DoxyCodeLine{\Hypertarget{classPila__max_l00041}00041         aux.push(\mbox{\hyperlink{classPila__max_a3dc117c7738903c47b3e01b7c47c6464}{frente}}());}
+\DoxyCodeLine{\Hypertarget{classPila__max_l00042}00042         \mbox{\hyperlink{classPila__max_ac4615eccf7d95bf4433e3da16c9aa2a2}{quitar}}(); }
+\DoxyCodeLine{\Hypertarget{classPila__max_l00043}00043     \}}
+\DoxyCodeLine{\Hypertarget{classPila__max_l00044}00044     \textcolor{keywordtype}{int} maximo = aux.front().maximo;}
+\DoxyCodeLine{\Hypertarget{classPila__max_l00045}00045     \mbox{\hyperlink{structElemento}{Elemento}} nuevo;}
+\DoxyCodeLine{\Hypertarget{classPila__max_l00046}00046     \textcolor{keywordflow}{if}(elemento>maximo)\{}
+\DoxyCodeLine{\Hypertarget{classPila__max_l00047}00047      nuevo = \{elemento, elemento\};}
+\DoxyCodeLine{\Hypertarget{classPila__max_l00048}00048     \}}
+\DoxyCodeLine{\Hypertarget{classPila__max_l00049}00049     \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{\Hypertarget{classPila__max_l00050}00050      nuevo = \{elemento, maximo\};}
+\DoxyCodeLine{\Hypertarget{classPila__max_l00051}00051     \}}
+\DoxyCodeLine{\Hypertarget{classPila__max_l00052}00052     pila.poner(nuevo);}
+\DoxyCodeLine{\Hypertarget{classPila__max_l00053}00053     }
+\DoxyCodeLine{\Hypertarget{classPila__max_l00054}00054     \textcolor{keywordflow}{while}(!aux.empty()) \{}
+\DoxyCodeLine{\Hypertarget{classPila__max_l00055}00055         pila.poner(aux.front());}
+\DoxyCodeLine{\Hypertarget{classPila__max_l00056}00056         aux.pop();}
+\DoxyCodeLine{\Hypertarget{classPila__max_l00057}00057     \}}
+\DoxyCodeLine{\Hypertarget{classPila__max_l00058}00058 \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{classPila__max_abae1e122ae6a8226050e5dd634f2759e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classPila__max_ac4615eccf7d95bf4433e3da16c9aa2a2}\label{classPila__max_ac4615eccf7d95bf4433e3da16c9aa2a2}} 
+\index{Pila\_max@{Pila\_max}!quitar@{quitar}}
+\index{quitar@{quitar}!Pila\_max@{Pila\_max}}
+\doxysubsubsection{\texorpdfstring{quitar()}{quitar()}}
+{\footnotesize\ttfamily void Pila\+\_\+max\+::quitar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Función quitar, elimina el elemento que se encuentra en el frente de la pila y su máximo correpondiente. 
+
+\begin{DoxyPrecond}{Precondition}
+Se necesita mínimo un valor en la pila previo 
+\end{DoxyPrecond}
+
+
+Definition at line \mbox{\hyperlink{Pila__max__Cola_8cpp_source_l00027}{27}} of file \mbox{\hyperlink{Pila__max__Cola_8cpp_source}{Pila\+\_\+max\+\_\+\+Cola.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classPila__max_l00027}00027                      \{}
+\DoxyCodeLine{\Hypertarget{classPila__max_l00028}00028    pila.quitar();}
+\DoxyCodeLine{\Hypertarget{classPila__max_l00029}00029 \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{Pila__max__Cola_8h}{Pila\+\_\+max\+\_\+\+Cola.\+h}}\item 
+src/\mbox{\hyperlink{Pila__max__Cola_8cpp}{Pila\+\_\+max\+\_\+\+Cola.\+cpp}}\end{DoxyCompactItemize}

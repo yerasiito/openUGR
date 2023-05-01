@@ -1,0 +1,48 @@
+\indexentry{Cola\_max@{Cola\_max}|hyperpage}{5}
+\indexentry{Cola\_max@{Cola\_max}!elementos\_size@{elementos\_size}|hyperpage}{5}
+\indexentry{elementos\_size@{elementos\_size}!Cola\_max@{Cola\_max}|hyperpage}{5}
+\indexentry{Cola\_max@{Cola\_max}!empty@{empty}|hyperpage}{5}
+\indexentry{empty@{empty}!Cola\_max@{Cola\_max}|hyperpage}{5}
+\indexentry{Cola\_max@{Cola\_max}!frente@{frente}|hyperpage}{6}
+\indexentry{frente@{frente}!Cola\_max@{Cola\_max}|hyperpage}{6}
+\indexentry{Cola\_max@{Cola\_max}!poner@{poner}|hyperpage}{6}
+\indexentry{poner@{poner}!Cola\_max@{Cola\_max}|hyperpage}{6}
+\indexentry{Cola\_max@{Cola\_max}!quitar@{quitar}|hyperpage}{7}
+\indexentry{quitar@{quitar}!Cola\_max@{Cola\_max}|hyperpage}{7}
+\indexentry{Elemento@{Elemento}|hyperpage}{8}
+\indexentry{Elemento@{Elemento}!operator$<$$<$@{operator$<$$<$}|hyperpage}{9}
+\indexentry{operator$<$$<$@{operator$<$$<$}!Elemento@{Elemento}|hyperpage}{9}
+\indexentry{Elemento@{Elemento}!elemento@{elemento}|hyperpage}{9}
+\indexentry{elemento@{elemento}!Elemento@{Elemento}|hyperpage}{9}
+\indexentry{Elemento@{Elemento}!maximo@{maximo}|hyperpage}{9}
+\indexentry{maximo@{maximo}!Elemento@{Elemento}|hyperpage}{9}
+\indexentry{Pila$<$ T $>$@{Pila$<$ T $>$}|hyperpage}{10}
+\indexentry{Pila$<$ T $>$@{Pila$<$ T $>$}!Pila@{Pila}|hyperpage}{11}
+\indexentry{Pila@{Pila}!Pila$<$ T $>$@{Pila$<$ T $>$}|hyperpage}{11}
+\indexentry{Pila$<$ T $>$@{Pila$<$ T $>$}!Pila@{Pila}|hyperpage}{11}
+\indexentry{Pila@{Pila}!Pila$<$ T $>$@{Pila$<$ T $>$}|hyperpage}{11}
+\indexentry{Pila$<$ T $>$@{Pila$<$ T $>$}!````~Pila@{$\sim$Pila}|hyperpage}{11}
+\indexentry{````~Pila@{$\sim$Pila}!Pila$<$ T $>$@{Pila$<$ T $>$}|hyperpage}{11}
+\indexentry{Pila$<$ T $>$@{Pila$<$ T $>$}!num\_elementos@{num\_elementos}|hyperpage}{12}
+\indexentry{num\_elementos@{num\_elementos}!Pila$<$ T $>$@{Pila$<$ T $>$}|hyperpage}{12}
+\indexentry{Pila$<$ T $>$@{Pila$<$ T $>$}!operator=@{operator=}|hyperpage}{12}
+\indexentry{operator=@{operator=}!Pila$<$ T $>$@{Pila$<$ T $>$}|hyperpage}{12}
+\indexentry{Pila$<$ T $>$@{Pila$<$ T $>$}!poner@{poner}|hyperpage}{13}
+\indexentry{poner@{poner}!Pila$<$ T $>$@{Pila$<$ T $>$}|hyperpage}{13}
+\indexentry{Pila$<$ T $>$@{Pila$<$ T $>$}!quitar@{quitar}|hyperpage}{13}
+\indexentry{quitar@{quitar}!Pila$<$ T $>$@{Pila$<$ T $>$}|hyperpage}{13}
+\indexentry{Pila$<$ T $>$@{Pila$<$ T $>$}!tope@{tope}|hyperpage}{13}
+\indexentry{tope@{tope}!Pila$<$ T $>$@{Pila$<$ T $>$}|hyperpage}{13}
+\indexentry{Pila$<$ T $>$@{Pila$<$ T $>$}!tope@{tope}|hyperpage}{13}
+\indexentry{tope@{tope}!Pila$<$ T $>$@{Pila$<$ T $>$}|hyperpage}{13}
+\indexentry{Pila$<$ T $>$@{Pila$<$ T $>$}!vacia@{vacia}|hyperpage}{14}
+\indexentry{vacia@{vacia}!Pila$<$ T $>$@{Pila$<$ T $>$}|hyperpage}{14}
+\indexentry{src/Cola\_max\_Pila.cpp@{src/Cola\_max\_Pila.cpp}|hyperpage}{15}
+\indexentry{src/Cola\_max\_Pila.h@{src/Cola\_max\_Pila.h}|hyperpage}{16}
+\indexentry{src/Cola\_max\_Pila.h@{src/Cola\_max\_Pila.h}|hyperpage}{17}
+\indexentry{src/cola\_teclado.cpp@{src/cola\_teclado.cpp}|hyperpage}{17}
+\indexentry{src/pila.cpp@{src/pila.cpp}|hyperpage}{18}
+\indexentry{src/pila.cpp@{src/pila.cpp}|hyperpage}{19}
+\indexentry{src/pila.h@{src/pila.h}|hyperpage}{20}
+\indexentry{src/pila.h@{src/pila.h}|hyperpage}{21}
+\indexentry{src/usocolas\_max.cpp@{src/usocolas\_max.cpp}|hyperpage}{22}

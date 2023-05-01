@@ -1,0 +1,49 @@
+\indexentry{Cola$<$ T $>$@{Cola$<$ T $>$}|hyperpage}{5}
+\indexentry{Cola$<$ T $>$@{Cola$<$ T $>$}!Cola@{Cola}|hyperpage}{6}
+\indexentry{Cola@{Cola}!Cola$<$ T $>$@{Cola$<$ T $>$}|hyperpage}{6}
+\indexentry{Cola$<$ T $>$@{Cola$<$ T $>$}!Cola@{Cola}|hyperpage}{6}
+\indexentry{Cola@{Cola}!Cola$<$ T $>$@{Cola$<$ T $>$}|hyperpage}{6}
+\indexentry{Cola$<$ T $>$@{Cola$<$ T $>$}!````~Cola@{$\sim$Cola}|hyperpage}{7}
+\indexentry{````~Cola@{$\sim$Cola}!Cola$<$ T $>$@{Cola$<$ T $>$}|hyperpage}{7}
+\indexentry{Cola$<$ T $>$@{Cola$<$ T $>$}!frente@{frente}|hyperpage}{7}
+\indexentry{frente@{frente}!Cola$<$ T $>$@{Cola$<$ T $>$}|hyperpage}{7}
+\indexentry{Cola$<$ T $>$@{Cola$<$ T $>$}!frente@{frente}|hyperpage}{7}
+\indexentry{frente@{frente}!Cola$<$ T $>$@{Cola$<$ T $>$}|hyperpage}{7}
+\indexentry{Cola$<$ T $>$@{Cola$<$ T $>$}!num\_elementos@{num\_elementos}|hyperpage}{8}
+\indexentry{num\_elementos@{num\_elementos}!Cola$<$ T $>$@{Cola$<$ T $>$}|hyperpage}{8}
+\indexentry{Cola$<$ T $>$@{Cola$<$ T $>$}!operator=@{operator=}|hyperpage}{8}
+\indexentry{operator=@{operator=}!Cola$<$ T $>$@{Cola$<$ T $>$}|hyperpage}{8}
+\indexentry{Cola$<$ T $>$@{Cola$<$ T $>$}!poner@{poner}|hyperpage}{9}
+\indexentry{poner@{poner}!Cola$<$ T $>$@{Cola$<$ T $>$}|hyperpage}{9}
+\indexentry{Cola$<$ T $>$@{Cola$<$ T $>$}!quitar@{quitar}|hyperpage}{9}
+\indexentry{quitar@{quitar}!Cola$<$ T $>$@{Cola$<$ T $>$}|hyperpage}{9}
+\indexentry{Cola$<$ T $>$@{Cola$<$ T $>$}!vacia@{vacia}|hyperpage}{9}
+\indexentry{vacia@{vacia}!Cola$<$ T $>$@{Cola$<$ T $>$}|hyperpage}{9}
+\indexentry{Elemento@{Elemento}|hyperpage}{10}
+\indexentry{Elemento@{Elemento}!operator$<$$<$@{operator$<$$<$}|hyperpage}{11}
+\indexentry{operator$<$$<$@{operator$<$$<$}!Elemento@{Elemento}|hyperpage}{11}
+\indexentry{Elemento@{Elemento}!elemento@{elemento}|hyperpage}{11}
+\indexentry{elemento@{elemento}!Elemento@{Elemento}|hyperpage}{11}
+\indexentry{Elemento@{Elemento}!maximo@{maximo}|hyperpage}{11}
+\indexentry{maximo@{maximo}!Elemento@{Elemento}|hyperpage}{11}
+\indexentry{Pila\_max@{Pila\_max}|hyperpage}{12}
+\indexentry{Pila\_max@{Pila\_max}!elementos\_size@{elementos\_size}|hyperpage}{12}
+\indexentry{elementos\_size@{elementos\_size}!Pila\_max@{Pila\_max}|hyperpage}{12}
+\indexentry{Pila\_max@{Pila\_max}!empty@{empty}|hyperpage}{12}
+\indexentry{empty@{empty}!Pila\_max@{Pila\_max}|hyperpage}{12}
+\indexentry{Pila\_max@{Pila\_max}!frente@{frente}|hyperpage}{12}
+\indexentry{frente@{frente}!Pila\_max@{Pila\_max}|hyperpage}{12}
+\indexentry{Pila\_max@{Pila\_max}!poner@{poner}|hyperpage}{13}
+\indexentry{poner@{poner}!Pila\_max@{Pila\_max}|hyperpage}{13}
+\indexentry{Pila\_max@{Pila\_max}!quitar@{quitar}|hyperpage}{14}
+\indexentry{quitar@{quitar}!Pila\_max@{Pila\_max}|hyperpage}{14}
+\indexentry{src/cola.cpp@{src/cola.cpp}|hyperpage}{15}
+\indexentry{src/cola.cpp@{src/cola.cpp}|hyperpage}{16}
+\indexentry{src/cola.h@{src/cola.h}|hyperpage}{17}
+\indexentry{src/cola.h@{src/cola.h}|hyperpage}{18}
+\indexentry{src/Pila\_max\_Cola.cpp@{src/Pila\_max\_Cola.cpp}|hyperpage}{19}
+\indexentry{src/Pila\_max\_Cola.cpp@{src/Pila\_max\_Cola.cpp}|hyperpage}{20}
+\indexentry{src/Pila\_max\_Cola.h@{src/Pila\_max\_Cola.h}|hyperpage}{20}
+\indexentry{src/Pila\_max\_Cola.h@{src/Pila\_max\_Cola.h}|hyperpage}{22}
+\indexentry{src/pila\_teclado.cpp@{src/pila\_teclado.cpp}|hyperpage}{22}
+\indexentry{src/usopilas\_max.cpp@{src/usopilas\_max.cpp}|hyperpage}{23}

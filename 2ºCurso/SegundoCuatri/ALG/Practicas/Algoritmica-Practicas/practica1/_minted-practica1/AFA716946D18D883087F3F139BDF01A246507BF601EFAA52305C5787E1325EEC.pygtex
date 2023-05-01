@@ -1,0 +1,38 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+************************************************************************
+Mon Mar 21 16:14:53 2022
+
+
+FIT:	data read from \PYGZdq{}insercion2.dat\PYGZdq{}
+    	format = z
+    	\PYGZsh{}datapoints = 25
+    	residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+    f(x) = a0*x*x+a1*x+a2
+fitted parameters initialized with current variable values
+
+iter  	chisq          delta/lim  lambda    a0
+   0 1.1054819544e+02   0.00e+00  3.59e+00	6.294092e\PYGZhy{}10
+   4 1.4550871377e+00  \PYGZhy{}1.09e\PYGZhy{}03  3.59e\PYGZhy{}04	8.460509e\PYGZhy{}10
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 1.45509
+rel. change during last iteration : \PYGZhy{}1.08883e\PYGZhy{}08
+
+degrees of freedom	(FIT\PYGZus{}NDF)                    	: 22
+rms of residuals  	(FIT\PYGZus{}STDFIT) = sqrt(WSSR/ndf)	: 0.257178
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0661403
+
+Final set of parameters        	Asymptotic Standard Error
+=======================        	==========================
+a0          	= 8.46051e\PYGZhy{}10  	+/\PYGZhy{} 4.434e\PYGZhy{}11	(5.241\PYGZpc{})
+a1          	= \PYGZhy{}6.43769e\PYGZhy{}06 	+/\PYGZhy{} 5.938e\PYGZhy{}06	(92.24\PYGZpc{})
+a2          	= 0.144484     	+/\PYGZhy{} 0.1675   	(116\PYGZpc{})
+
+correlation matrix of the fit parameters:
+            	a0   a1 	a2
+a0          	1.000
+a1         	\PYGZhy{}0.971  1.000
+a2          	0.774 \PYGZhy{}0.884  1.000
+\end{Verbatim}

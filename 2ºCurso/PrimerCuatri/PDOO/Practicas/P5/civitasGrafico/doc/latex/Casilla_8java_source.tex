@@ -1,0 +1,38 @@
+\hypertarget{Casilla_8java_source}{}\doxysection{Casilla.\+java}
+\label{Casilla_8java_source}\index{src/civitas/Casilla.java@{src/civitas/Casilla.java}}
+\mbox{\hyperlink{Casilla_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{Casilla_8java_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{Casilla_8java_source_l00007}00007 \textcolor{keyword}{package }civitas;}
+\DoxyCodeLine{\Hypertarget{Casilla_8java_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{Casilla_8java_source_l00009}00009 \textcolor{keyword}{import} java.util.ArrayList;}
+\DoxyCodeLine{\Hypertarget{Casilla_8java_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{Casilla_8java_source_l00015}\mbox{\hyperlink{classcivitas_1_1Casilla}{00015}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{classcivitas_1_1Casilla}{Casilla}} \{}
+\DoxyCodeLine{\Hypertarget{Casilla_8java_source_l00016}00016     \textcolor{keyword}{private} \textcolor{keyword}{final} String nombre;}
+\DoxyCodeLine{\Hypertarget{Casilla_8java_source_l00017}00017         }
+\DoxyCodeLine{\Hypertarget{Casilla_8java_source_l00018}00018     \textcolor{comment}{//DESCANSO}}
+\DoxyCodeLine{\Hypertarget{Casilla_8java_source_l00019}00019     \mbox{\hyperlink{classcivitas_1_1Casilla}{Casilla}}(String nombre)\{}
+\DoxyCodeLine{\Hypertarget{Casilla_8java_source_l00020}00020         this.nombre = nombre;}
+\DoxyCodeLine{\Hypertarget{Casilla_8java_source_l00021}00021     \}}
+\DoxyCodeLine{\Hypertarget{Casilla_8java_source_l00022}00022     }
+\DoxyCodeLine{\Hypertarget{Casilla_8java_source_l00023}00023     \textcolor{keyword}{public} String getNombre()\{}
+\DoxyCodeLine{\Hypertarget{Casilla_8java_source_l00024}00024         \textcolor{keywordflow}{return} nombre;}
+\DoxyCodeLine{\Hypertarget{Casilla_8java_source_l00025}00025     \}}
+\DoxyCodeLine{\Hypertarget{Casilla_8java_source_l00026}00026     }
+\DoxyCodeLine{\Hypertarget{Casilla_8java_source_l00027}00027     \textcolor{keywordtype}{void} informe(\textcolor{keywordtype}{int} actual, ArrayList<Jugador> todos)\{}
+\DoxyCodeLine{\Hypertarget{Casilla_8java_source_l00028}00028         String informe = \textcolor{stringliteral}{"{}El jugador "{}} + todos.get(actual).getNombre() + }
+\DoxyCodeLine{\Hypertarget{Casilla_8java_source_l00029}00029                 \textcolor{stringliteral}{"{} ha caido en "{}} + toString();}
+\DoxyCodeLine{\Hypertarget{Casilla_8java_source_l00030}00030         \mbox{\hyperlink{classcivitas_1_1Diario}{Diario}}.getInstance().ocurreEvento(informe);}
+\DoxyCodeLine{\Hypertarget{Casilla_8java_source_l00031}00031     \}}
+\DoxyCodeLine{\Hypertarget{Casilla_8java_source_l00032}00032     }
+\DoxyCodeLine{\Hypertarget{Casilla_8java_source_l00033}00033     \textcolor{keywordtype}{void} recibeJugador(\textcolor{keywordtype}{int} iactual, ArrayList<Jugador> todos)\{}
+\DoxyCodeLine{\Hypertarget{Casilla_8java_source_l00034}00034         informe(iactual, todos);}
+\DoxyCodeLine{\Hypertarget{Casilla_8java_source_l00035}00035     \}}
+\DoxyCodeLine{\Hypertarget{Casilla_8java_source_l00036}00036     }
+\DoxyCodeLine{\Hypertarget{Casilla_8java_source_l00037}00037     @Override}
+\DoxyCodeLine{\Hypertarget{Casilla_8java_source_l00038}00038     \textcolor{keyword}{public} String toString()\{}
+\DoxyCodeLine{\Hypertarget{Casilla_8java_source_l00039}00039         \textcolor{keywordflow}{return} nombre;}
+\DoxyCodeLine{\Hypertarget{Casilla_8java_source_l00040}00040     \}}
+\DoxyCodeLine{\Hypertarget{Casilla_8java_source_l00041}00041 \}}
+
+\end{DoxyCode}

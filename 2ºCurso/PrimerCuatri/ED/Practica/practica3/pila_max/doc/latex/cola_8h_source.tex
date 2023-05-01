@@ -1,0 +1,60 @@
+\hypertarget{cola_8h_source}{}\doxysection{cola.\+h}
+\label{cola_8h_source}\index{src/cola.h@{src/cola.h}}
+\mbox{\hyperlink{cola_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00009}00009 \textcolor{preprocessor}{\#ifndef \_\_Cola\_H\_\_}}
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00010}00010 \textcolor{preprocessor}{\#define \_\_Cola\_H\_\_}}
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00012}00012 \textcolor{preprocessor}{\#include <cassert>}}
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00040}00040 \textcolor{keyword}{template} <\textcolor{keyword}{class} T>}
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00041}\mbox{\hyperlink{classCola}{00041}} \textcolor{keyword}{class }\mbox{\hyperlink{classCola}{Cola}}\{}
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00042}00042     }
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00043}00043   \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00044}00044     \textcolor{keyword}{struct }Celda \{       }
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00045}00045       T elemento;        }
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00046}00046       Celda * siguiente; }
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00051}00051       Celda() : siguiente(0)\{}
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00052}00052       \}}
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00058}00058       Celda(\textcolor{keyword}{const} T \& elem, Celda * sig): elemento(elem), siguiente(sig)\{}
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00059}00059       \}}
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00060}00060     \};}
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00061}00061 }
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00062}00062     Celda * primera; }
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00063}00063     Celda * ultima;  }
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00064}00064     \textcolor{keywordtype}{int} num\_elem;    }
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00065}00065     }
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00066}00066   \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00067}00067     \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/  Constructores -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00071}\mbox{\hyperlink{classCola_aea3a971c7c522618f4dc972e8b4ff153}{00071}} \textcolor{comment}{}    \mbox{\hyperlink{classCola_aea3a971c7c522618f4dc972e8b4ff153}{Cola}}(): primera(0), ultima(0), num\_elem(0)\{}
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00072}00072     \}}
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00077}00077     \mbox{\hyperlink{classCola_aea3a971c7c522618f4dc972e8b4ff153}{Cola}}(\textcolor{keyword}{const} \mbox{\hyperlink{classCola}{Cola<T>}} \& original);}
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00078}00078     \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/ Destructor -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00082}00082 \textcolor{comment}{}    \mbox{\hyperlink{classCola_af4d55930921c93c626006ba2e842530b}{\string~Cola}}();}
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00083}00083     \textcolor{comment}{// -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/ Otras funciones -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/}}
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00088}00088 \textcolor{comment}{}    \mbox{\hyperlink{classCola}{Cola}}\& \mbox{\hyperlink{classCola_a2ac480681dec95b8ffeea075507849e2}{operator= }}(\textcolor{keyword}{const} \mbox{\hyperlink{classCola}{Cola<T>}} \& otra);}
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00092}\mbox{\hyperlink{classCola_a2c746a66289cd4f90d4e43f712b72fb6}{00092}}     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classCola_a2c746a66289cd4f90d4e43f712b72fb6}{vacia}}()\textcolor{keyword}{ const}\{}
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00093}00093       \textcolor{keywordflow}{return} num\_elem==0;}
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00094}00094     \}}
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00098}\mbox{\hyperlink{classCola_a125323973ff1a498fc568a63489a09bc}{00098}}     T\& \mbox{\hyperlink{classCola_a125323973ff1a498fc568a63489a09bc}{frente}} ()\{}
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00099}00099       assert(primera!=0);        \textcolor{comment}{//Si la cola está vacía, abortar}}
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00100}00100       \textcolor{keywordflow}{return} primera-\/>elemento;  \textcolor{comment}{//Devuelve el elemento del frente de la cola}}
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00101}00101     \}}
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00105}\mbox{\hyperlink{classCola_adb148ac9e0c44117f5304b9b96ec31ef}{00105}}     \textcolor{keyword}{const} T \& \mbox{\hyperlink{classCola_adb148ac9e0c44117f5304b9b96ec31ef}{frente}} ()\textcolor{keyword}{ const}\{}
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00106}00106       assert(primera!=0);        \textcolor{comment}{//Si la cola está vacía, abortar}}
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00107}00107       \textcolor{keywordflow}{return} primera-\/>elemento;  \textcolor{comment}{//Devuelve el elemento del frente de la cola}}
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00108}00108     \}}
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00113}00113     \textcolor{keywordtype}{void} \mbox{\hyperlink{classCola_a4a902e5805ae74f8d80c6f3267fd14c4}{poner}}(\textcolor{keyword}{const} T \& elem);}
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00117}00117     \textcolor{keywordtype}{void} \mbox{\hyperlink{classCola_a320766ddc7020424052c99e5c82a105d}{quitar}}();}
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00121}\mbox{\hyperlink{classCola_a26e5b0df5411aa23114d790f0a8c023b}{00121}}     \textcolor{keywordtype}{int} \mbox{\hyperlink{classCola_a26e5b0df5411aa23114d790f0a8c023b}{num\_elementos}}()\textcolor{keyword}{ const}\{ }
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00122}00122       \textcolor{keywordflow}{return} num\_elem; }
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00123}00123     \}}
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00124}00124 \};}
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00125}00125 }
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00126}00126 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{cola_8cpp}{cola.cpp}}"{}}}
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00127}00127 }
+\DoxyCodeLine{\Hypertarget{cola_8h_source_l00128}00128 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// \_\_Cola\_H\_\_}}
+
+\end{DoxyCode}

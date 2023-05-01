@@ -1,0 +1,127 @@
+\hypertarget{classcivitas_1_1Dado}{}\doxysection{Referencia de la Clase civitas.\+Dado}
+\label{classcivitas_1_1Dado}\index{civitas.Dado@{civitas.Dado}}
+\doxysubsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classcivitas_1_1Dado_a7ed26455a30faedfff9878177cf72861}{get\+Ultimo\+Resultado}} ()
+\item 
+int \mbox{\hyperlink{classcivitas_1_1Dado_afac7574436f47c7a4d5f019b5a43c5bf}{quien\+Empieza}} (int n)
+\item 
+void \mbox{\hyperlink{classcivitas_1_1Dado_aa12af1adaeed10bfb47e314712bf3b7f}{set\+Debug}} (boolean d)
+\item 
+int \mbox{\hyperlink{classcivitas_1_1Dado_a178066d320c6cd7c79ac3a5863702fb8}{tirar}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Métodos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classcivitas_1_1Dado}{Dado}} \mbox{\hyperlink{classcivitas_1_1Dado_a09462f46d46e9555b8cc92ba6a3adc92}{get\+Instance}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+\begin{DoxyAuthor}{Autor}
+ylope 
+\end{DoxyAuthor}
+
+
+Definición en la línea \mbox{\hyperlink{Dado_8java_source_l00012}{12}} del archivo \mbox{\hyperlink{Dado_8java_source}{Dado.\+java}}.
+
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classcivitas_1_1Dado_a09462f46d46e9555b8cc92ba6a3adc92}\label{classcivitas_1_1Dado_a09462f46d46e9555b8cc92ba6a3adc92}} 
+\index{civitas.Dado@{civitas.Dado}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!civitas.Dado@{civitas.Dado}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classcivitas_1_1Dado}{Dado}} civitas.\+Dado.\+get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{Dado_8java_source_l00027}{27}} del archivo \mbox{\hyperlink{Dado_8java_source}{Dado.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Dado_l00027}00027                                     \{}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Dado_l00028}00028         \textcolor{keywordflow}{return} instance;}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Dado_l00029}00029     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcivitas_1_1Dado_a7ed26455a30faedfff9878177cf72861}\label{classcivitas_1_1Dado_a7ed26455a30faedfff9878177cf72861}} 
+\index{civitas.Dado@{civitas.Dado}!getUltimoResultado@{getUltimoResultado}}
+\index{getUltimoResultado@{getUltimoResultado}!civitas.Dado@{civitas.Dado}}
+\doxysubsubsection{\texorpdfstring{getUltimoResultado()}{getUltimoResultado()}}
+{\footnotesize\ttfamily int civitas.\+Dado.\+get\+Ultimo\+Resultado (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{Dado_8java_source_l00031}{31}} del archivo \mbox{\hyperlink{Dado_8java_source}{Dado.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Dado_l00031}00031                                    \{}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Dado_l00032}00032         \textcolor{keywordflow}{return} ultimoResultado;}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Dado_l00033}00033     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcivitas_1_1Dado_afac7574436f47c7a4d5f019b5a43c5bf}\label{classcivitas_1_1Dado_afac7574436f47c7a4d5f019b5a43c5bf}} 
+\index{civitas.Dado@{civitas.Dado}!quienEmpieza@{quienEmpieza}}
+\index{quienEmpieza@{quienEmpieza}!civitas.Dado@{civitas.Dado}}
+\doxysubsubsection{\texorpdfstring{quienEmpieza()}{quienEmpieza()}}
+{\footnotesize\ttfamily int civitas.\+Dado.\+quien\+Empieza (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{Dado_8java_source_l00035}{35}} del archivo \mbox{\hyperlink{Dado_8java_source}{Dado.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Dado_l00035}00035                                   \{}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Dado_l00036}00036         \textcolor{keywordflow}{return} random.nextInt(n);}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Dado_l00037}00037     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcivitas_1_1Dado_aa12af1adaeed10bfb47e314712bf3b7f}\label{classcivitas_1_1Dado_aa12af1adaeed10bfb47e314712bf3b7f}} 
+\index{civitas.Dado@{civitas.Dado}!setDebug@{setDebug}}
+\index{setDebug@{setDebug}!civitas.Dado@{civitas.Dado}}
+\doxysubsubsection{\texorpdfstring{setDebug()}{setDebug()}}
+{\footnotesize\ttfamily void civitas.\+Dado.\+set\+Debug (\begin{DoxyParamCaption}\item[{boolean}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{Dado_8java_source_l00039}{39}} del archivo \mbox{\hyperlink{Dado_8java_source}{Dado.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Dado_l00039}00039                                    \{}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Dado_l00040}00040         debug = d;}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Dado_l00041}00041         Diario.getInstance().ocurreEvento(\textcolor{stringliteral}{"{}El Dado ha cambiado debug a "{}} + debug);}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Dado_l00042}00042     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcivitas_1_1Dado_a178066d320c6cd7c79ac3a5863702fb8}\label{classcivitas_1_1Dado_a178066d320c6cd7c79ac3a5863702fb8}} 
+\index{civitas.Dado@{civitas.Dado}!tirar@{tirar}}
+\index{tirar@{tirar}!civitas.Dado@{civitas.Dado}}
+\doxysubsubsection{\texorpdfstring{tirar()}{tirar()}}
+{\footnotesize\ttfamily int civitas.\+Dado.\+tirar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definición en la línea \mbox{\hyperlink{Dado_8java_source_l00044}{44}} del archivo \mbox{\hyperlink{Dado_8java_source}{Dado.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Dado_l00044}00044                       \{}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Dado_l00045}00045         \textcolor{keywordtype}{int} resultado = VALORESDEBUG;}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Dado_l00046}00046         \textcolor{keywordflow}{if}(!debug)}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Dado_l00047}00047             resultado = random.nextInt(VALORESDADO)+1;}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Dado_l00048}00048         }
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Dado_l00049}00049         ultimoResultado = resultado; }
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Dado_l00050}00050         \textcolor{keywordflow}{return} resultado;}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Dado_l00051}00051     \}}
+
+\end{DoxyCode}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+src/civitas/Dado.\+java\end{DoxyCompactItemize}

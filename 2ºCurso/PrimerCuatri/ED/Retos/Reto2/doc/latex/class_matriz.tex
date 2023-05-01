@@ -1,0 +1,175 @@
+\hypertarget{class_matriz}{}\doxysection{Matriz\texorpdfstring{$<$}{<} M \texorpdfstring{$>$}{>} Class Template Reference}
+\label{class_matriz}\index{Matriz$<$ M $>$@{Matriz$<$ M $>$}}
+
+
+\mbox{\hyperlink{class_matriz}{Matriz}} Un template para el tipo de datos abstracto \mbox{\hyperlink{class_matriz}{Matriz}}, se utiliza para las clases \mbox{\hyperlink{class_bloques_sudoku}{Bloques\+Sudoku}}, \mbox{\hyperlink{class_sudoku_killer}{Sudoku\+Killer}} y \mbox{\hyperlink{class_resolver_sudoku_killer}{Resolver\+Sudoku\+Killer}}.  
+
+
+
+
+{\ttfamily \#include $<$Matriz.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_matriz_a9ad64ecab6f8a0c2301a89b4c7beb7ae}\label{class_matriz_a9ad64ecab6f8a0c2301a89b4c7beb7ae}} 
+{\bfseries Matriz} ()
+\begin{DoxyCompactList}\small\item\em Constructor sin parametros. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_matriz_a7e5c0a023386840d6f7ba5aec04c3b89}{Matriz}} (int f, int c)
+\begin{DoxyCompactList}\small\item\em Constructor de dos parámetros\+: filas y columnas. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_matriz_ae48fc849cd65458e0c05f56adc703aa1}\label{class_matriz_ae48fc849cd65458e0c05f56adc703aa1}} 
+{\bfseries $\sim$\+Matriz} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase \mbox{\hyperlink{class_matriz}{Matriz}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_matriz_ac4cca651c0a870aca012c1e054740f17}{get\+Casilla}} (int fil, int col)
+\begin{DoxyCompactList}\small\item\em Obtiene el valor que almacena la matriz en la fila y columna que se pasan como parametro. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_matriz_ab260a23eef7110b19c528803b7a53387}{get\+Fila}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene el numero de filas. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_matriz_a657030701ac4f09d8530673af7ed9ae0}{get\+Columna}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene el numero de columnas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_matriz_a57ba84bbbe515c1c540efa92f15ef6a3}{insertar\+Valor}} (int fil, int col, const M \&valor)
+\begin{DoxyCompactList}\small\item\em Inserta un nuevo valor en una casilla de la \mbox{\hyperlink{class_matriz}{Matriz}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_matriz_a1470942513f585a8a9e111de13d6e767}{eliminar\+Valor}} (int fil, int col)
+\begin{DoxyCompactList}\small\item\em Borrar un valor dentro de la matriz. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class M$>$\newline
+class Matriz$<$ M $>$}
+\mbox{\hyperlink{class_matriz}{Matriz}} Un template para el tipo de datos abstracto \mbox{\hyperlink{class_matriz}{Matriz}}, se utiliza para las clases \mbox{\hyperlink{class_bloques_sudoku}{Bloques\+Sudoku}}, \mbox{\hyperlink{class_sudoku_killer}{Sudoku\+Killer}} y \mbox{\hyperlink{class_resolver_sudoku_killer}{Resolver\+Sudoku\+Killer}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_matriz_a7e5c0a023386840d6f7ba5aec04c3b89}\label{class_matriz_a7e5c0a023386840d6f7ba5aec04c3b89}} 
+\index{Matriz$<$ M $>$@{Matriz$<$ M $>$}!Matriz@{Matriz}}
+\index{Matriz@{Matriz}!Matriz$<$ M $>$@{Matriz$<$ M $>$}}
+\doxysubsubsection{\texorpdfstring{Matriz()}{Matriz()}}
+{\footnotesize\ttfamily template$<$class M $>$ \\
+\mbox{\hyperlink{class_matriz}{Matriz}}$<$ M $>$\+::\mbox{\hyperlink{class_matriz}{Matriz}} (\begin{DoxyParamCaption}\item[{int}]{f,  }\item[{int}]{c }\end{DoxyParamCaption})}
+
+
+
+Constructor de dos parámetros\+: filas y columnas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & \+: int, Numero de filas \\
+\hline
+{\em c} & \+: int, Numero de columnas \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+f \texorpdfstring{$>$}{>} 0 \&\& f != null 
+
+c \texorpdfstring{$>$}{>} 0 \&\& c != null 
+\end{DoxyPrecond}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_matriz_a1470942513f585a8a9e111de13d6e767}\label{class_matriz_a1470942513f585a8a9e111de13d6e767}} 
+\index{Matriz$<$ M $>$@{Matriz$<$ M $>$}!eliminarValor@{eliminarValor}}
+\index{eliminarValor@{eliminarValor}!Matriz$<$ M $>$@{Matriz$<$ M $>$}}
+\doxysubsubsection{\texorpdfstring{eliminarValor()}{eliminarValor()}}
+{\footnotesize\ttfamily template$<$class M $>$ \\
+void \mbox{\hyperlink{class_matriz}{Matriz}}$<$ M $>$\+::eliminar\+Valor (\begin{DoxyParamCaption}\item[{int}]{fil,  }\item[{int}]{col }\end{DoxyParamCaption})}
+
+
+
+Borrar un valor dentro de la matriz. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & \+: int Posicion de la fila \\
+\hline
+{\em c} & \+: int Posicion de la columna \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+fil \texorpdfstring{$>$}{>} 0 \&\& fil \texorpdfstring{$<$}{<} filas 
+
+col \texorpdfstring{$>$}{>} 0 \&\& col \texorpdfstring{$<$}{<} columnas 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{class_matriz_ac4cca651c0a870aca012c1e054740f17}\label{class_matriz_ac4cca651c0a870aca012c1e054740f17}} 
+\index{Matriz$<$ M $>$@{Matriz$<$ M $>$}!getCasilla@{getCasilla}}
+\index{getCasilla@{getCasilla}!Matriz$<$ M $>$@{Matriz$<$ M $>$}}
+\doxysubsubsection{\texorpdfstring{getCasilla()}{getCasilla()}}
+{\footnotesize\ttfamily template$<$class M $>$ \\
+int \mbox{\hyperlink{class_matriz}{Matriz}}$<$ M $>$\+::get\+Casilla (\begin{DoxyParamCaption}\item[{int}]{fil,  }\item[{int}]{col }\end{DoxyParamCaption})}
+
+
+
+Obtiene el valor que almacena la matriz en la fila y columna que se pasan como parametro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & \+: int, Numero de filas \\
+\hline
+{\em c} & \+: int, Numero de columnas \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+fil \texorpdfstring{$>$}{>} 0 \&\& fil != null 
+
+col \texorpdfstring{$>$}{>} 0 \&\& col != null 
+\end{DoxyPrecond}
+\begin{DoxyReturn}{Returns}
+La casilla en la fila y columana dadas 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_matriz_a657030701ac4f09d8530673af7ed9ae0}\label{class_matriz_a657030701ac4f09d8530673af7ed9ae0}} 
+\index{Matriz$<$ M $>$@{Matriz$<$ M $>$}!getColumna@{getColumna}}
+\index{getColumna@{getColumna}!Matriz$<$ M $>$@{Matriz$<$ M $>$}}
+\doxysubsubsection{\texorpdfstring{getColumna()}{getColumna()}}
+{\footnotesize\ttfamily template$<$class M $>$ \\
+int \mbox{\hyperlink{class_matriz}{Matriz}}$<$ M $>$\+::get\+Columna (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Obtiene el numero de columnas. 
+
+\begin{DoxyReturn}{Returns}
+El numero de columnas de la \mbox{\hyperlink{class_matriz}{Matriz}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_matriz_ab260a23eef7110b19c528803b7a53387}\label{class_matriz_ab260a23eef7110b19c528803b7a53387}} 
+\index{Matriz$<$ M $>$@{Matriz$<$ M $>$}!getFila@{getFila}}
+\index{getFila@{getFila}!Matriz$<$ M $>$@{Matriz$<$ M $>$}}
+\doxysubsubsection{\texorpdfstring{getFila()}{getFila()}}
+{\footnotesize\ttfamily template$<$class M $>$ \\
+int \mbox{\hyperlink{class_matriz}{Matriz}}$<$ M $>$\+::get\+Fila (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Obtiene el numero de filas. 
+
+\begin{DoxyReturn}{Returns}
+El numero de filas de la \mbox{\hyperlink{class_matriz}{Matriz}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_matriz_a57ba84bbbe515c1c540efa92f15ef6a3}\label{class_matriz_a57ba84bbbe515c1c540efa92f15ef6a3}} 
+\index{Matriz$<$ M $>$@{Matriz$<$ M $>$}!insertarValor@{insertarValor}}
+\index{insertarValor@{insertarValor}!Matriz$<$ M $>$@{Matriz$<$ M $>$}}
+\doxysubsubsection{\texorpdfstring{insertarValor()}{insertarValor()}}
+{\footnotesize\ttfamily template$<$class M $>$ \\
+void \mbox{\hyperlink{class_matriz}{Matriz}}$<$ M $>$\+::insertar\+Valor (\begin{DoxyParamCaption}\item[{int}]{fil,  }\item[{int}]{col,  }\item[{const M \&}]{valor }\end{DoxyParamCaption})}
+
+
+
+Inserta un nuevo valor en una casilla de la \mbox{\hyperlink{class_matriz}{Matriz}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fil} & \+: int, Posicion de la fila \\
+\hline
+{\em col} & \+: int, Posicion de la columna \\
+\hline
+{\em valor} & \+: M, El valor que queremos insertar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+fil \texorpdfstring{$>$}{>} 0 \&\& fil \texorpdfstring{$<$}{<} filas 
+
+col \texorpdfstring{$>$}{>} 0 \&\& col \texorpdfstring{$<$}{<} columnas 
+
+valor != null 
+\end{DoxyPrecond}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_matriz_8h}{Matriz.\+h}}\end{DoxyCompactItemize}

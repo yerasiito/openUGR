@@ -1,0 +1,279 @@
+\hypertarget{classcivitas_1_1Jugador}{}\doxysection{civitas.\+Jugador Class Reference}
+\label{classcivitas_1_1Jugador}\index{civitas.Jugador@{civitas.Jugador}}
+
+
+Clase Padre \mbox{\hyperlink{classcivitas_1_1Jugador}{Jugador}} que gestiona sus atributos y propiedades. Un jugador puede\+: -\/Moverse por el tablero. -\/Comprar propiedades(\+Casilla calle) -\/Construir casas y hoteles dentro de las reglas del juego -\/Pagar o Cobrar dinero de sorpresas y/o hipotecas de calles de otro jugador -\/Convertirse en un Especulador(\+Clase hija) que modifica ciertos atributos.  
+
+
+
+
+Inheritance diagram for civitas.\+Jugador\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{classcivitas_1_1Jugador__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for civitas.\+Jugador\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{classcivitas_1_1Jugador__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classcivitas_1_1Jugador_af69663b6f05f80f3b673abc571c8cc8a}{get\+Casilla\+Actual}} ()
+\item 
+String \mbox{\hyperlink{classcivitas_1_1Jugador_a798c1fffaaf1dd8d12f36dd3d09b4f1b}{get\+Nombre}} ()
+\item 
+Array\+List$<$ \mbox{\hyperlink{classcivitas_1_1CasillaCalle}{Casilla\+Calle}} $>$ \mbox{\hyperlink{classcivitas_1_1Jugador_a5e4e2c4c377c23044d4f72e8a96d1f9d}{get\+Propiedades}} ()
+\item 
+float \mbox{\hyperlink{classcivitas_1_1Jugador_a3c9d02f7974457585c0e2a58ccad6c76}{get\+Saldo}} ()
+\item 
+int \mbox{\hyperlink{classcivitas_1_1Jugador_ad18fdf2b46d7146b458a77a919d66b58}{compare\+To}} (\mbox{\hyperlink{classcivitas_1_1Jugador}{Jugador}} otro)
+\item 
+String \mbox{\hyperlink{classcivitas_1_1Jugador_a102b4070dfc271c865fcd6ebe92d9c06}{to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classcivitas_1_1Jugador_a1bbf7800484061f7faa73ecc0b9d6800}{get\+Num\+Casas\+Por\+Hotel}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcivitas_1_1Jugador_ab6d7fb12843896b100653b7ad9d9bab8}{Jugador}} (\mbox{\hyperlink{classcivitas_1_1Jugador}{Jugador}} otro)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classcivitas_1_1Jugador_accf59fcd81d2ef278ff30ec2d94459f7}{Casas\+Max}} = 4
+\item 
+static int \mbox{\hyperlink{classcivitas_1_1Jugador_a58a742df083ab5154311eb24a9f336f7}{Hoteles\+Max}} = 4
+\item 
+static int \mbox{\hyperlink{classcivitas_1_1Jugador_a784c20415185896630b61dc4e32c2ad4}{Casas\+Por\+Hotel}} = 4
+\item 
+static float \mbox{\hyperlink{classcivitas_1_1Jugador_a9d83ffa5fec09fd4461496d10b3fa9b3}{Pasopor\+Salida}} = 1000f
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase Padre \mbox{\hyperlink{classcivitas_1_1Jugador}{Jugador}} que gestiona sus atributos y propiedades. Un jugador puede\+: -\/Moverse por el tablero. -\/Comprar propiedades(\+Casilla calle) -\/Construir casas y hoteles dentro de las reglas del juego -\/Pagar o Cobrar dinero de sorpresas y/o hipotecas de calles de otro jugador -\/Convertirse en un Especulador(\+Clase hija) que modifica ciertos atributos. 
+
+El implements Comparable es necesario para el método Compare\+To necesario para el ranking de jugadores por saldo(compara saldos)
+
+El jugador gana si el resto están en bancarrota y pierde si acaba en bancarrota 
+
+Definition at line \mbox{\hyperlink{Jugador_8java_source_l00025}{25}} of file \mbox{\hyperlink{Jugador_8java_source}{Jugador.\+java}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcivitas_1_1Jugador_ab6d7fb12843896b100653b7ad9d9bab8}\label{classcivitas_1_1Jugador_ab6d7fb12843896b100653b7ad9d9bab8}} 
+\index{civitas.Jugador@{civitas.Jugador}!Jugador@{Jugador}}
+\index{Jugador@{Jugador}!civitas.Jugador@{civitas.Jugador}}
+\doxysubsubsection{\texorpdfstring{Jugador()}{Jugador()}}
+{\footnotesize\ttfamily civitas.\+Jugador.\+Jugador (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcivitas_1_1Jugador}{Jugador}}}]{otro }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{Jugador_8java_source_l00052}{52}} of file \mbox{\hyperlink{Jugador_8java_source}{Jugador.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Jugador_l00052}00052                                    \{}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Jugador_l00053}00053         this.nombre = otro.nombre;}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Jugador_l00054}00054         this.casillaActual = otro.casillaActual;}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Jugador_l00055}00055         this.saldo = otro.saldo;}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Jugador_l00056}00056         this.puedeComprar = otro.puedeComprar;}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Jugador_l00057}00057         this.propiedades = otro.propiedades;}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Jugador_l00058}00058     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcivitas_1_1Jugador_ad18fdf2b46d7146b458a77a919d66b58}\label{classcivitas_1_1Jugador_ad18fdf2b46d7146b458a77a919d66b58}} 
+\index{civitas.Jugador@{civitas.Jugador}!compareTo@{compareTo}}
+\index{compareTo@{compareTo}!civitas.Jugador@{civitas.Jugador}}
+\doxysubsubsection{\texorpdfstring{compareTo()}{compareTo()}}
+{\footnotesize\ttfamily int civitas.\+Jugador.\+compare\+To (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcivitas_1_1Jugador}{Jugador}}}]{otro }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{Jugador_8java_source_l00111}{111}} of file \mbox{\hyperlink{Jugador_8java_source}{Jugador.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Jugador_l00111}00111                                       \{}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Jugador_l00112}00112         \textcolor{keywordflow}{return} Float.compare(otro.getSaldo(), saldo);}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Jugador_l00113}00113     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcivitas_1_1Jugador_af69663b6f05f80f3b673abc571c8cc8a}\label{classcivitas_1_1Jugador_af69663b6f05f80f3b673abc571c8cc8a}} 
+\index{civitas.Jugador@{civitas.Jugador}!getCasillaActual@{getCasillaActual}}
+\index{getCasillaActual@{getCasillaActual}!civitas.Jugador@{civitas.Jugador}}
+\doxysubsubsection{\texorpdfstring{getCasillaActual()}{getCasillaActual()}}
+{\footnotesize\ttfamily int civitas.\+Jugador.\+get\+Casilla\+Actual (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{Jugador_8java_source_l00080}{80}} of file \mbox{\hyperlink{Jugador_8java_source}{Jugador.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Jugador_l00080}00080                                  \{}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Jugador_l00081}00081         \textcolor{keywordflow}{return} casillaActual;}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Jugador_l00082}00082     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcivitas_1_1Jugador_a798c1fffaaf1dd8d12f36dd3d09b4f1b}\label{classcivitas_1_1Jugador_a798c1fffaaf1dd8d12f36dd3d09b4f1b}} 
+\index{civitas.Jugador@{civitas.Jugador}!getNombre@{getNombre}}
+\index{getNombre@{getNombre}!civitas.Jugador@{civitas.Jugador}}
+\doxysubsubsection{\texorpdfstring{getNombre()}{getNombre()}}
+{\footnotesize\ttfamily String civitas.\+Jugador.\+get\+Nombre (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{Jugador_8java_source_l00088}{88}} of file \mbox{\hyperlink{Jugador_8java_source}{Jugador.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Jugador_l00088}00088                              \{}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Jugador_l00089}00089         \textcolor{keywordflow}{return} nombre;}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Jugador_l00090}00090     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcivitas_1_1Jugador_a1bbf7800484061f7faa73ecc0b9d6800}\label{classcivitas_1_1Jugador_a1bbf7800484061f7faa73ecc0b9d6800}} 
+\index{civitas.Jugador@{civitas.Jugador}!getNumCasasPorHotel@{getNumCasasPorHotel}}
+\index{getNumCasasPorHotel@{getNumCasasPorHotel}!civitas.Jugador@{civitas.Jugador}}
+\doxysubsubsection{\texorpdfstring{getNumCasasPorHotel()}{getNumCasasPorHotel()}}
+{\footnotesize\ttfamily static int civitas.\+Jugador.\+get\+Num\+Casas\+Por\+Hotel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{Jugador_8java_source_l00076}{76}} of file \mbox{\hyperlink{Jugador_8java_source}{Jugador.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Jugador_l00076}00076                                            \{}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Jugador_l00077}00077         \textcolor{keywordflow}{return} CasasPorHotel;}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Jugador_l00078}00078     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcivitas_1_1Jugador_a5e4e2c4c377c23044d4f72e8a96d1f9d}\label{classcivitas_1_1Jugador_a5e4e2c4c377c23044d4f72e8a96d1f9d}} 
+\index{civitas.Jugador@{civitas.Jugador}!getPropiedades@{getPropiedades}}
+\index{getPropiedades@{getPropiedades}!civitas.Jugador@{civitas.Jugador}}
+\doxysubsubsection{\texorpdfstring{getPropiedades()}{getPropiedades()}}
+{\footnotesize\ttfamily Array\+List$<$ \mbox{\hyperlink{classcivitas_1_1CasillaCalle}{Casilla\+Calle}} $>$ civitas.\+Jugador.\+get\+Propiedades (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{Jugador_8java_source_l00097}{97}} of file \mbox{\hyperlink{Jugador_8java_source}{Jugador.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Jugador_l00097}00097                                                     \{}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Jugador_l00098}00098         \textcolor{keywordflow}{return} propiedades;}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Jugador_l00099}00099     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcivitas_1_1Jugador_a3c9d02f7974457585c0e2a58ccad6c76}\label{classcivitas_1_1Jugador_a3c9d02f7974457585c0e2a58ccad6c76}} 
+\index{civitas.Jugador@{civitas.Jugador}!getSaldo@{getSaldo}}
+\index{getSaldo@{getSaldo}!civitas.Jugador@{civitas.Jugador}}
+\doxysubsubsection{\texorpdfstring{getSaldo()}{getSaldo()}}
+{\footnotesize\ttfamily float civitas.\+Jugador.\+get\+Saldo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{Jugador_8java_source_l00106}{106}} of file \mbox{\hyperlink{Jugador_8java_source}{Jugador.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Jugador_l00106}00106                            \{}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Jugador_l00107}00107         \textcolor{keywordflow}{return} saldo;}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Jugador_l00108}00108     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcivitas_1_1Jugador_a102b4070dfc271c865fcd6ebe92d9c06}\label{classcivitas_1_1Jugador_a102b4070dfc271c865fcd6ebe92d9c06}} 
+\index{civitas.Jugador@{civitas.Jugador}!toString@{toString}}
+\index{toString@{toString}!civitas.Jugador@{civitas.Jugador}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily String civitas.\+Jugador.\+to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{Jugador_8java_source_l00271}{271}} of file \mbox{\hyperlink{Jugador_8java_source}{Jugador.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Jugador_l00271}00271                             \{}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Jugador_l00272}00272         String cadena = \textcolor{stringliteral}{"{}Jugador: "{}} +nombre}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Jugador_l00273}00273                 + \textcolor{stringliteral}{"{}, Casilla Actual: "{}} + casillaActual}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Jugador_l00274}00274                 + \textcolor{stringliteral}{"{}, Saldo: "{}} + saldo + \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Jugador_l00275}00275         \textcolor{keywordflow}{if}(!propiedades.isEmpty())\{}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Jugador_l00276}00276             cadena += \textcolor{stringliteral}{"{}Propiedades de "{}} + this.nombre + \textcolor{stringliteral}{"{}:\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Jugador_l00277}00277             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < propiedades.size(); i++)}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Jugador_l00278}00278                 cadena += \textcolor{stringliteral}{"{} -\/"{}} + propiedades.get(i).toString();}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Jugador_l00279}00279         \}}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Jugador_l00280}00280         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Jugador_l00281}00281             cadena += \textcolor{stringliteral}{"{}No tiene propiedades aún."{}};}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Jugador_l00282}00282         }
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Jugador_l00283}00283         \textcolor{keywordflow}{return} cadena;}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Jugador_l00284}00284     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classcivitas_1_1Jugador_accf59fcd81d2ef278ff30ec2d94459f7}\label{classcivitas_1_1Jugador_accf59fcd81d2ef278ff30ec2d94459f7}} 
+\index{civitas.Jugador@{civitas.Jugador}!CasasMax@{CasasMax}}
+\index{CasasMax@{CasasMax}!civitas.Jugador@{civitas.Jugador}}
+\doxysubsubsection{\texorpdfstring{CasasMax}{CasasMax}}
+{\footnotesize\ttfamily int civitas.\+Jugador.\+Casas\+Max = 4\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{Jugador_8java_source_l00026}{26}} of file \mbox{\hyperlink{Jugador_8java_source}{Jugador.\+java}}.
+
+\mbox{\Hypertarget{classcivitas_1_1Jugador_a784c20415185896630b61dc4e32c2ad4}\label{classcivitas_1_1Jugador_a784c20415185896630b61dc4e32c2ad4}} 
+\index{civitas.Jugador@{civitas.Jugador}!CasasPorHotel@{CasasPorHotel}}
+\index{CasasPorHotel@{CasasPorHotel}!civitas.Jugador@{civitas.Jugador}}
+\doxysubsubsection{\texorpdfstring{CasasPorHotel}{CasasPorHotel}}
+{\footnotesize\ttfamily int civitas.\+Jugador.\+Casas\+Por\+Hotel = 4\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{Jugador_8java_source_l00028}{28}} of file \mbox{\hyperlink{Jugador_8java_source}{Jugador.\+java}}.
+
+\mbox{\Hypertarget{classcivitas_1_1Jugador_a58a742df083ab5154311eb24a9f336f7}\label{classcivitas_1_1Jugador_a58a742df083ab5154311eb24a9f336f7}} 
+\index{civitas.Jugador@{civitas.Jugador}!HotelesMax@{HotelesMax}}
+\index{HotelesMax@{HotelesMax}!civitas.Jugador@{civitas.Jugador}}
+\doxysubsubsection{\texorpdfstring{HotelesMax}{HotelesMax}}
+{\footnotesize\ttfamily int civitas.\+Jugador.\+Hoteles\+Max = 4\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{Jugador_8java_source_l00027}{27}} of file \mbox{\hyperlink{Jugador_8java_source}{Jugador.\+java}}.
+
+\mbox{\Hypertarget{classcivitas_1_1Jugador_a9d83ffa5fec09fd4461496d10b3fa9b3}\label{classcivitas_1_1Jugador_a9d83ffa5fec09fd4461496d10b3fa9b3}} 
+\index{civitas.Jugador@{civitas.Jugador}!PasoporSalida@{PasoporSalida}}
+\index{PasoporSalida@{PasoporSalida}!civitas.Jugador@{civitas.Jugador}}
+\doxysubsubsection{\texorpdfstring{PasoporSalida}{PasoporSalida}}
+{\footnotesize\ttfamily float civitas.\+Jugador.\+Pasopor\+Salida = 1000f\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{Jugador_8java_source_l00029}{29}} of file \mbox{\hyperlink{Jugador_8java_source}{Jugador.\+java}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/civitas/\mbox{\hyperlink{Jugador_8java}{Jugador.\+java}}\end{DoxyCompactItemize}

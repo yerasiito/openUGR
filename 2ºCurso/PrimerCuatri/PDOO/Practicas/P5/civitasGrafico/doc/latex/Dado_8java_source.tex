@@ -1,0 +1,51 @@
+\hypertarget{Dado_8java_source}{}\doxysection{Dado.\+java}
+\label{Dado_8java_source}\index{src/civitas/Dado.java@{src/civitas/Dado.java}}
+\mbox{\hyperlink{Dado_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00007}00007 \textcolor{keyword}{package }civitas;}
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00008}00008 \textcolor{keyword}{import} java.util.Random;}
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00017}\mbox{\hyperlink{classcivitas_1_1Dado}{00017}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{classcivitas_1_1Dado}{Dado}} \{}
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00018}00018     \textcolor{keyword}{private} \textcolor{keyword}{static} \textcolor{keyword}{final} \textcolor{keywordtype}{int} VALORESDADO = 6;}
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00019}00019     \textcolor{keyword}{private} \textcolor{keyword}{static} \textcolor{keyword}{final} \textcolor{keywordtype}{int} VALORESDEBUG = 1;}
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00020}00020     }
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00021}00021     \textcolor{keyword}{private} \textcolor{keyword}{final} Random random;}
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00022}00022     \textcolor{keyword}{private} \textcolor{keywordtype}{int} ultimoResultado;}
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00023}00023     \textcolor{keyword}{private} \textcolor{keywordtype}{boolean} debug;}
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00024}00024     \textcolor{keyword}{private} \textcolor{keyword}{static} \textcolor{keyword}{final} \mbox{\hyperlink{classcivitas_1_1Dado}{Dado}} instance = \textcolor{keyword}{new} \mbox{\hyperlink{classcivitas_1_1Dado}{Dado}}();}
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00026}00026     \textcolor{keyword}{private} \mbox{\hyperlink{classcivitas_1_1Dado}{Dado}}()\{}
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00027}00027         random = \textcolor{keyword}{new} Random();}
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00028}00028         ultimoResultado = 0;}
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00029}00029         debug = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00030}00030     \}}
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00031}00031     }
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00032}00032     \textcolor{keyword}{public} \textcolor{keyword}{static} \mbox{\hyperlink{classcivitas_1_1Dado}{Dado}} getInstance()\{}
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00033}00033         \textcolor{keywordflow}{return} instance;}
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00034}00034     \}}
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00035}00035     }
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00036}00036     \textcolor{keywordtype}{int} getUltimoResultado()\{}
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00037}00037         \textcolor{keywordflow}{return} ultimoResultado;}
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00038}00038     \}}
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00039}00039     }
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00040}00040     \textcolor{keywordtype}{int} quienEmpieza(\textcolor{keywordtype}{int} n)\{}
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00041}00041         \textcolor{keywordflow}{return} random.nextInt(n);}
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00042}00042     \}}
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00043}00043      }
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00044}00044     \textcolor{keyword}{public} \textcolor{keywordtype}{void} setDebug(\textcolor{keywordtype}{boolean} d)\{}
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00045}00045         debug = d;}
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00046}00046         \mbox{\hyperlink{classcivitas_1_1Diario}{Diario}}.getInstance().ocurreEvento(\textcolor{stringliteral}{"{}El Dado ha cambiado debug a "{}} + debug);}
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00047}00047     \}}
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00048}00048         }
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00049}00049     \textcolor{keywordtype}{int} tirar()\{}
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00050}00050         \textcolor{keywordtype}{int} resultado = VALORESDEBUG;}
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00051}00051         \textcolor{keywordflow}{if}(!debug)}
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00052}00052             resultado = random.nextInt(VALORESDADO)+1;}
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00053}00053         }
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00054}00054         ultimoResultado = resultado; }
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00055}00055         \textcolor{keywordflow}{return} resultado;}
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00056}00056     \}}
+\DoxyCodeLine{\Hypertarget{Dado_8java_source_l00057}00057 \}}
+
+\end{DoxyCode}

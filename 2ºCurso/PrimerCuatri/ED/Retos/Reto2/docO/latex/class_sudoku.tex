@@ -1,0 +1,100 @@
+\hypertarget{class_sudoku}{}\doxysection{Sudoku Class Reference}
+\label{class_sudoku}\index{Sudoku@{Sudoku}}
+
+
+\mbox{\hyperlink{class_sudoku}{Sudoku}} Clase basica del cual se creará la version killer del sudoku.  
+
+
+
+
+{\ttfamily \#include $<$Sudoku\+Killer.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_sudoku_a5fc6547fe577e8eca24a7e86d2fa0ff8}\label{class_sudoku_a5fc6547fe577e8eca24a7e86d2fa0ff8}} 
+{\bfseries Sudoku} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. Genera un sudoku aleatorio con el metodo Generar\+Sudoku. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_sudoku_aabbce9609c3d4d191b2e491b632108a3}{Sudoku}} (\mbox{\hyperlink{class_matriz}{Matriz}} m)
+\begin{DoxyCompactList}\small\item\em Constructor con parámetros. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_sudoku_a40b8afb9d16d2c7c91057cdcdfe83519}{get\+Valor\+Casilla}} (int fil, int col)
+\begin{DoxyCompactList}\small\item\em Obtiene el valor en la casilla dada. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_matriz}{Matriz}} \mbox{\hyperlink{class_sudoku_a5b15728b3ec21aa6937f4494e7a010fe}{get\+Sudoku}} ()
+\begin{DoxyCompactList}\small\item\em Devuelve la matriz sudoku. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_matriz}{Matriz}} \mbox{\hyperlink{class_sudoku_a7e36e3e9934527815797935629842a7a}{Generar\+Sudoku}} ()
+\begin{DoxyCompactList}\small\item\em Genera un sudoku normal terminado a partir de un algoritmo aleatorio y llama a Sudoku\+Valido para comprobar si es correcto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_sudoku}{Sudoku}} Clase basica del cual se creará la version killer del sudoku. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_sudoku_aabbce9609c3d4d191b2e491b632108a3}\label{class_sudoku_aabbce9609c3d4d191b2e491b632108a3}} 
+\index{Sudoku@{Sudoku}!Sudoku@{Sudoku}}
+\index{Sudoku@{Sudoku}!Sudoku@{Sudoku}}
+\doxysubsubsection{\texorpdfstring{Sudoku()}{Sudoku()}}
+{\footnotesize\ttfamily Sudoku\+::\+Sudoku (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_matriz}{Matriz}}}]{m }\end{DoxyParamCaption})}
+
+
+
+Constructor con parámetros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & \+: \mbox{\hyperlink{class_matriz}{Matriz}}, La matriz a partir se crea el sudoku, se verifica con el metodo Sudoku\+Valido \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_sudoku_a7e36e3e9934527815797935629842a7a}\label{class_sudoku_a7e36e3e9934527815797935629842a7a}} 
+\index{Sudoku@{Sudoku}!GenerarSudoku@{GenerarSudoku}}
+\index{GenerarSudoku@{GenerarSudoku}!Sudoku@{Sudoku}}
+\doxysubsubsection{\texorpdfstring{GenerarSudoku()}{GenerarSudoku()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_matriz}{Matriz}} Sudoku\+::\+Generar\+Sudoku (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Genera un sudoku normal terminado a partir de un algoritmo aleatorio y llama a Sudoku\+Valido para comprobar si es correcto. 
+
+\begin{DoxyReturn}{Returns}
+La matriz \mbox{\hyperlink{class_sudoku}{Sudoku}} generada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sudoku_a5b15728b3ec21aa6937f4494e7a010fe}\label{class_sudoku_a5b15728b3ec21aa6937f4494e7a010fe}} 
+\index{Sudoku@{Sudoku}!getSudoku@{getSudoku}}
+\index{getSudoku@{getSudoku}!Sudoku@{Sudoku}}
+\doxysubsubsection{\texorpdfstring{getSudoku()}{getSudoku()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_matriz}{Matriz}} Sudoku\+::get\+Sudoku (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Devuelve la matriz sudoku. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_sudoku_a40b8afb9d16d2c7c91057cdcdfe83519}\label{class_sudoku_a40b8afb9d16d2c7c91057cdcdfe83519}} 
+\index{Sudoku@{Sudoku}!getValorCasilla@{getValorCasilla}}
+\index{getValorCasilla@{getValorCasilla}!Sudoku@{Sudoku}}
+\doxysubsubsection{\texorpdfstring{getValorCasilla()}{getValorCasilla()}}
+{\footnotesize\ttfamily int Sudoku\+::get\+Valor\+Casilla (\begin{DoxyParamCaption}\item[{int}]{fil,  }\item[{int}]{col }\end{DoxyParamCaption})}
+
+
+
+Obtiene el valor en la casilla dada. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fil} & \+: int, Posicion en la fila \\
+\hline
+{\em col} & \+: int, Posicion en la columna \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+El valor de la casilla 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_sudoku_killer_8h}{Sudoku\+Killer.\+h}}\end{DoxyCompactItemize}

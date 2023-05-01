@@ -1,0 +1,96 @@
+\hypertarget{ejercicio20_8cpp}{}\doxysection{src/ejercicio20.cpp File Reference}
+\label{ejercicio20_8cpp}\index{src/ejercicio20.cpp@{src/ejercicio20.cpp}}
+
+
+Ejercicio 20 de la relacion del reto 3.  
+
+
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$queue$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{ejercicio20_8cpp_a21309d22988e3f2f48d4962667b29e28}\label{ejercicio20_8cpp_a21309d22988e3f2f48d4962667b29e28}} 
+void {\bfseries enunciado} ()
+\begin{DoxyCompactList}\small\item\em El enunciado del problema a resolver, para tenerlo a la vista sin tener que abrir el documento. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ejercicio20_8cpp_a4e61e44881057081dc1ec03f926a4fd0}{introduce}} (queue$<$ int $>$ \&C)
+\begin{DoxyCompactList}\small\item\em Pide los datos al usuario para crear la cola a su antojo. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ejercicio20_8cpp_a55950f2ff6853d2f29af860961c65d42}{rotacion}} (queue$<$ int $>$ \&C)
+\begin{DoxyCompactList}\small\item\em Busca un elemento PAR en la cola y mueve todos los elementos a su izquierda al final(a la derecha) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ejercicio20_8cpp_a48cdc9926a37d052f111af2d69a583eb}{imprimir}} (const queue$<$ int $>$ \&C)
+\begin{DoxyCompactList}\small\item\em Imprime la cola sin destruir la original. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{ejercicio20_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Programa principal donde realizar las pruebas y probar los métodos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Ejercicio 20 de la relacion del reto 3. 
+
+\begin{DoxyAuthor}{Author}
+López Ramírez, Yeray 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+23 de Noviembre de 2021 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{ejercicio20_8cpp_a48cdc9926a37d052f111af2d69a583eb}\label{ejercicio20_8cpp_a48cdc9926a37d052f111af2d69a583eb}} 
+\index{ejercicio20.cpp@{ejercicio20.cpp}!imprimir@{imprimir}}
+\index{imprimir@{imprimir}!ejercicio20.cpp@{ejercicio20.cpp}}
+\doxysubsubsection{\texorpdfstring{imprimir()}{imprimir()}}
+{\footnotesize\ttfamily void imprimir (\begin{DoxyParamCaption}\item[{const queue$<$ int $>$ \&}]{C }\end{DoxyParamCaption})}
+
+
+
+Imprime la cola sin destruir la original. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em C} & \+: queue La cola a imprimir \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ejercicio20_8cpp_a4e61e44881057081dc1ec03f926a4fd0}\label{ejercicio20_8cpp_a4e61e44881057081dc1ec03f926a4fd0}} 
+\index{ejercicio20.cpp@{ejercicio20.cpp}!introduce@{introduce}}
+\index{introduce@{introduce}!ejercicio20.cpp@{ejercicio20.cpp}}
+\doxysubsubsection{\texorpdfstring{introduce()}{introduce()}}
+{\footnotesize\ttfamily void introduce (\begin{DoxyParamCaption}\item[{queue$<$ int $>$ \&}]{C }\end{DoxyParamCaption})}
+
+
+
+Pide los datos al usuario para crear la cola a su antojo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em C} & \+: queue La cola a crear/inicializar por el usuario \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{ejercicio20_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{ejercicio20_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{ejercicio20.cpp@{ejercicio20.cpp}!main@{main}}
+\index{main@{main}!ejercicio20.cpp@{ejercicio20.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Programa principal donde realizar las pruebas y probar los métodos. 
+
+\begin{DoxyReturn}{Returns}
+0 si todo funciona bien, otro numero en caso de error 
+\end{DoxyReturn}
+\mbox{\Hypertarget{ejercicio20_8cpp_a55950f2ff6853d2f29af860961c65d42}\label{ejercicio20_8cpp_a55950f2ff6853d2f29af860961c65d42}} 
+\index{ejercicio20.cpp@{ejercicio20.cpp}!rotacion@{rotacion}}
+\index{rotacion@{rotacion}!ejercicio20.cpp@{ejercicio20.cpp}}
+\doxysubsubsection{\texorpdfstring{rotacion()}{rotacion()}}
+{\footnotesize\ttfamily void rotacion (\begin{DoxyParamCaption}\item[{queue$<$ int $>$ \&}]{C }\end{DoxyParamCaption})}
+
+
+
+Busca un elemento PAR en la cola y mueve todos los elementos a su izquierda al final(a la derecha) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em C} & \+: queue La cola a rotar \\
+\hline
+\end{DoxyParams}

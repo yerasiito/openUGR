@@ -1,0 +1,45 @@
+\hypertarget{Diario_8java_source}{}\doxysection{Diario.\+java}
+\label{Diario_8java_source}\index{src/civitas/Diario.java@{src/civitas/Diario.java}}
+\mbox{\hyperlink{Diario_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{Diario_8java_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{Diario_8java_source_l00007}00007 \textcolor{keyword}{package }civitas;}
+\DoxyCodeLine{\Hypertarget{Diario_8java_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{Diario_8java_source_l00009}00009 \textcolor{keyword}{import} java.util.ArrayList;}
+\DoxyCodeLine{\Hypertarget{Diario_8java_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{Diario_8java_source_l00016}\mbox{\hyperlink{classcivitas_1_1Diario}{00016}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{classcivitas_1_1Diario}{Diario}} \{}
+\DoxyCodeLine{\Hypertarget{Diario_8java_source_l00017}00017   \textcolor{keyword}{static} \textcolor{keyword}{final} \textcolor{keyword}{private} \mbox{\hyperlink{classcivitas_1_1Diario}{Diario}} instance = \textcolor{keyword}{new} \mbox{\hyperlink{classcivitas_1_1Diario}{Diario}}(); \textcolor{comment}{//Declaracion Singleton}}
+\DoxyCodeLine{\Hypertarget{Diario_8java_source_l00018}00018   }
+\DoxyCodeLine{\Hypertarget{Diario_8java_source_l00019}00019   \textcolor{keyword}{private} \textcolor{keyword}{final} ArrayList<String> eventos;}
+\DoxyCodeLine{\Hypertarget{Diario_8java_source_l00020}00020   }
+\DoxyCodeLine{\Hypertarget{Diario_8java_source_l00021}00021   \textcolor{keyword}{static} \textcolor{keyword}{public} \mbox{\hyperlink{classcivitas_1_1Diario}{Diario}} getInstance() \{}
+\DoxyCodeLine{\Hypertarget{Diario_8java_source_l00022}00022     \textcolor{keywordflow}{return} instance;}
+\DoxyCodeLine{\Hypertarget{Diario_8java_source_l00023}00023   \}}
+\DoxyCodeLine{\Hypertarget{Diario_8java_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{Diario_8java_source_l00025}00025   \textcolor{keyword}{public} ArrayList<String> getEventos() \{}
+\DoxyCodeLine{\Hypertarget{Diario_8java_source_l00026}00026       \textcolor{keywordflow}{return} eventos;}
+\DoxyCodeLine{\Hypertarget{Diario_8java_source_l00027}00027   \}}
+\DoxyCodeLine{\Hypertarget{Diario_8java_source_l00028}00028   }
+\DoxyCodeLine{\Hypertarget{Diario_8java_source_l00029}00029   \textcolor{keyword}{private} \mbox{\hyperlink{classcivitas_1_1Diario}{Diario}} () \{}
+\DoxyCodeLine{\Hypertarget{Diario_8java_source_l00030}00030       eventos = \textcolor{keyword}{new} ArrayList<>();}
+\DoxyCodeLine{\Hypertarget{Diario_8java_source_l00031}00031   \}}
+\DoxyCodeLine{\Hypertarget{Diario_8java_source_l00032}00032   }
+\DoxyCodeLine{\Hypertarget{Diario_8java_source_l00033}00033   \textcolor{keywordtype}{void} ocurreEvento (String e) \{}
+\DoxyCodeLine{\Hypertarget{Diario_8java_source_l00034}00034       eventos.add (e);}
+\DoxyCodeLine{\Hypertarget{Diario_8java_source_l00035}00035   \}}
+\DoxyCodeLine{\Hypertarget{Diario_8java_source_l00036}00036   }
+\DoxyCodeLine{\Hypertarget{Diario_8java_source_l00037}00037   \textcolor{comment}{//Visibilidad modificada, antes era de Paquete}}
+\DoxyCodeLine{\Hypertarget{Diario_8java_source_l00038}00038   \textcolor{keyword}{public} \textcolor{keywordtype}{boolean} eventosPendientes () \{}
+\DoxyCodeLine{\Hypertarget{Diario_8java_source_l00039}00039       \textcolor{keywordflow}{return} !eventos.isEmpty();}
+\DoxyCodeLine{\Hypertarget{Diario_8java_source_l00040}00040   \}}
+\DoxyCodeLine{\Hypertarget{Diario_8java_source_l00041}00041   }
+\DoxyCodeLine{\Hypertarget{Diario_8java_source_l00042}00042   \textcolor{keyword}{public} String leerEvento () \{}
+\DoxyCodeLine{\Hypertarget{Diario_8java_source_l00043}00043       String salida = \textcolor{stringliteral}{"{}"{}};}
+\DoxyCodeLine{\Hypertarget{Diario_8java_source_l00044}00044       \textcolor{keywordflow}{if} (!eventos.isEmpty())}
+\DoxyCodeLine{\Hypertarget{Diario_8java_source_l00045}00045           salida = eventos.remove(0);}
+\DoxyCodeLine{\Hypertarget{Diario_8java_source_l00046}00046       }
+\DoxyCodeLine{\Hypertarget{Diario_8java_source_l00047}00047       \textcolor{keywordflow}{return} salida;}
+\DoxyCodeLine{\Hypertarget{Diario_8java_source_l00048}00048   \}}
+\DoxyCodeLine{\Hypertarget{Diario_8java_source_l00049}00049 \}}
+
+\end{DoxyCode}

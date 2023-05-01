@@ -1,0 +1,45 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Class Index}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Class List}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}File Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}File List}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Class Documentation}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}My\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Lista\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pila Class Reference}{5}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Detailed Description}{5}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Member Function Documentation}{5}{subsection.3.1.2}%
+\contentsline {subsubsection}{\numberline {3.1.2.1}borrar()}{5}{subsubsection.3.1.2.1}%
+\contentsline {subsubsection}{\numberline {3.1.2.2}insertar()}{6}{subsubsection.3.1.2.2}%
+\contentsline {chapter}{\numberline {4}File Documentation}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}src/ejercicio16.cpp File Reference}{7}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Detailed Description}{7}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Function Documentation}{8}{subsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.1}main()}{8}{subsubsection.4.1.2.1}%
+\contentsline {section}{\numberline {4.2}src/ejercicio19.cpp File Reference}{8}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Detailed Description}{8}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Function Documentation}{9}{subsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.2.1}imprimir()}{9}{subsubsection.4.2.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2.2}introduce()}{10}{subsubsection.4.2.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.2.3}main()}{10}{subsubsection.4.2.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.2.4}transformarpila()}{10}{subsubsection.4.2.2.4}%
+\contentsline {section}{\numberline {4.3}src/ejercicio20.cpp File Reference}{10}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Detailed Description}{11}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Function Documentation}{11}{subsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.1}imprimir()}{11}{subsubsection.4.3.2.1}%
+\contentsline {subsubsection}{\numberline {4.3.2.2}introduce()}{12}{subsubsection.4.3.2.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.3}main()}{12}{subsubsection.4.3.2.3}%
+\contentsline {subsubsection}{\numberline {4.3.2.4}rotacion()}{12}{subsubsection.4.3.2.4}%
+\contentsline {section}{\numberline {4.4}src/ejercicio21.cpp File Reference}{12}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Detailed Description}{13}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Function Documentation}{13}{subsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.1}esmatrizbiordenada()}{13}{subsubsection.4.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.4.2.2}imprimir()}{14}{subsubsection.4.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.3}introduce()}{14}{subsubsection.4.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.4.2.4}main()}{14}{subsubsection.4.4.2.4}%
+\contentsline {section}{\numberline {4.5}src/ejercicio24.cpp File Reference}{14}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Detailed Description}{15}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Function Documentation}{15}{subsection.4.5.2}%
+\contentsline {subsubsection}{\numberline {4.5.2.1}imprimir()}{15}{subsubsection.4.5.2.1}%
+\contentsline {subsubsection}{\numberline {4.5.2.2}introduce()}{15}{subsubsection.4.5.2.2}%
+\contentsline {subsubsection}{\numberline {4.5.2.3}main()}{16}{subsubsection.4.5.2.3}%
+\contentsline {subsubsection}{\numberline {4.5.2.4}posintercalar()}{16}{subsubsection.4.5.2.4}%
+\contentsline {chapter}{Index}{17}{section*.8}%

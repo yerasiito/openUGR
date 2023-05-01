@@ -1,0 +1,40 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+************************************************************************
+Mon Mar 21 15:30:04 2022
+
+
+FIT:	data read from \PYGZdq{}floyd.dat\PYGZdq{}
+    	format = z
+    	\PYGZsh{}datapoints = 25
+    	residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+    f(x) = a0*x*x*x+a1*x*x+a2*x+a3
+fitted parameters initialized with current variable values
+
+iter  	chisq   	delta/lim  lambda   a0
+   0 1.5636145726e+19   0.00e+00  3.95e+08	1.000000e+00
+  12 1.3210841975e\PYGZhy{}01  \PYGZhy{}1.85e\PYGZhy{}02  3.95e\PYGZhy{}04	5.093144e\PYGZhy{}09
+
+After 12 iterations the fit converged.
+final sum of squares of residuals : 0.132108
+rel. change during last iteration : \PYGZhy{}1.85173e\PYGZhy{}07
+
+degrees of freedom	(FIT\PYGZus{}NDF)                    	: 21
+rms of residuals  	(FIT\PYGZus{}STDFIT) = sqrt(WSSR/ndf)	: 0.079315
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00629088
+
+Final set of parameters        	Asymptotic Standard Error
+=======================        	==========================
+a0          	= 5.09314e\PYGZhy{}09  	+/\PYGZhy{} 4.346e\PYGZhy{}10	(8.534\PYGZpc{})
+a1          	= 9.66697e\PYGZhy{}07  	+/\PYGZhy{} 8.585e\PYGZhy{}07	(88.81\PYGZpc{})
+a2          	= \PYGZhy{}0.000409019 	+/\PYGZhy{} 0.0004853	(118.6\PYGZpc{})
+a3          	= 0.0393051    	+/\PYGZhy{} 0.0743   	(189\PYGZpc{})
+
+correlation matrix of the fit parameters:
+            	a0     a1      a2      a3
+a0          	1.000
+a1         	\PYGZhy{}0.987  1.000
+a2          	0.926 \PYGZhy{}0.973  1.000
+a3         	\PYGZhy{}0.719  0.795 \PYGZhy{}0.898  1.000
+\end{Verbatim}

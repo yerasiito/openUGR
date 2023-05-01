@@ -1,0 +1,146 @@
+\hypertarget{class_bloques_killer}{}\doxysection{Bloques\+Killer Class Reference}
+\label{class_bloques_killer}\index{BloquesKiller@{BloquesKiller}}
+
+
+\mbox{\hyperlink{class_bloques_killer}{Bloques\+Killer}} Una clase que contiene los bloques del Sudoku, se utiliza para la clase {\ttfamily \mbox{\hyperlink{class_sudoku_killer}{Sudoku\+Killer}}} y {\ttfamily \mbox{\hyperlink{class_resolver_sudoku_killer}{Resolver\+Sudoku\+Killer}}}.  
+
+
+
+
+{\ttfamily \#include $<$Bloques\+Killer.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_bloques_killer_a1497acf5aed31855d1d981621d4ea0b8}\label{class_bloques_killer_a1497acf5aed31855d1d981621d4ea0b8}} 
+{\bfseries Bloques\+Killer} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_bloques_killer_a4eeebe6455134eff5b0191e58ff867af}{Bloques\+Killer}} (int num)
+\begin{DoxyCompactList}\small\item\em Constructor con parametros. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_bloque}{Bloque}} \mbox{\hyperlink{class_bloques_killer_a79e042712c86c91dec9aab10a5312fad}{get\+Bloque\+Killer}} (int i)
+\begin{DoxyCompactList}\small\item\em Obtiene un objeto \mbox{\hyperlink{class_bloque}{Bloque}} del vector bloques\+Killer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bloques_killer_a00c8c59b19abd1abdc3036b33134549f}{set\+Bloque\+Killer}} (int i, \mbox{\hyperlink{class_bloque}{Bloque}} b)
+\begin{DoxyCompactList}\small\item\em Modifica un bloque a partir de otro. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bloques_killer_a23e3b55cb171750816d418a2916a716b}{set\+Bloque\+Killer}} (int i, vector$<$ \mbox{\hyperlink{class_casilla}{Casilla}} $>$)
+\begin{DoxyCompactList}\small\item\em Modifica un bloque a partir de un vector de casillas. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_bloques_killer_a2e9bab28063d99a2ac7fc3ffd22c98b5}{aniadir\+Bloque}} (\mbox{\hyperlink{class_bloque}{Bloque}} b)
+\begin{DoxyCompactList}\small\item\em Añade un bloque al vector de bloqueskiller. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_bloques_killer_a57b8875b01d84188fa4b979b1a3196d6}{eliminar\+Bloque}} (int i)
+\begin{DoxyCompactList}\small\item\em elimina un bloque del vector \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_bloques_killer}{Bloques\+Killer}} Una clase que contiene los bloques del Sudoku, se utiliza para la clase {\ttfamily \mbox{\hyperlink{class_sudoku_killer}{Sudoku\+Killer}}} y {\ttfamily \mbox{\hyperlink{class_resolver_sudoku_killer}{Resolver\+Sudoku\+Killer}}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_bloques_killer_a4eeebe6455134eff5b0191e58ff867af}\label{class_bloques_killer_a4eeebe6455134eff5b0191e58ff867af}} 
+\index{BloquesKiller@{BloquesKiller}!BloquesKiller@{BloquesKiller}}
+\index{BloquesKiller@{BloquesKiller}!BloquesKiller@{BloquesKiller}}
+\doxysubsubsection{\texorpdfstring{BloquesKiller()}{BloquesKiller()}}
+{\footnotesize\ttfamily Bloques\+Killer\+::\+Bloques\+Killer (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})}
+
+
+
+Constructor con parametros. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & \+: int, Numero de bloques a crear \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_bloques_killer_a2e9bab28063d99a2ac7fc3ffd22c98b5}\label{class_bloques_killer_a2e9bab28063d99a2ac7fc3ffd22c98b5}} 
+\index{BloquesKiller@{BloquesKiller}!aniadirBloque@{aniadirBloque}}
+\index{aniadirBloque@{aniadirBloque}!BloquesKiller@{BloquesKiller}}
+\doxysubsubsection{\texorpdfstring{aniadirBloque()}{aniadirBloque()}}
+{\footnotesize\ttfamily bool Bloques\+Killer\+::aniadir\+Bloque (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_bloque}{Bloque}}}]{b }\end{DoxyParamCaption})}
+
+
+
+Añade un bloque al vector de bloqueskiller. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & \+: \mbox{\hyperlink{class_bloque}{Bloque}}, El bloque a añadir \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si se inserta correctamente, false en otro caso 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bloques_killer_a57b8875b01d84188fa4b979b1a3196d6}\label{class_bloques_killer_a57b8875b01d84188fa4b979b1a3196d6}} 
+\index{BloquesKiller@{BloquesKiller}!eliminarBloque@{eliminarBloque}}
+\index{eliminarBloque@{eliminarBloque}!BloquesKiller@{BloquesKiller}}
+\doxysubsubsection{\texorpdfstring{eliminarBloque()}{eliminarBloque()}}
+{\footnotesize\ttfamily bool Bloques\+Killer\+::eliminar\+Bloque (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+elimina un bloque del vector 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \+: int, Posicion del bloque a eliminar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si se borra correctamente, false en otro caso 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bloques_killer_a79e042712c86c91dec9aab10a5312fad}\label{class_bloques_killer_a79e042712c86c91dec9aab10a5312fad}} 
+\index{BloquesKiller@{BloquesKiller}!getBloqueKiller@{getBloqueKiller}}
+\index{getBloqueKiller@{getBloqueKiller}!BloquesKiller@{BloquesKiller}}
+\doxysubsubsection{\texorpdfstring{getBloqueKiller()}{getBloqueKiller()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_bloque}{Bloque}} Bloques\+Killer\+::get\+Bloque\+Killer (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Obtiene un objeto \mbox{\hyperlink{class_bloque}{Bloque}} del vector bloques\+Killer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \+: int, Posicion del objeto a obtener en el vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un objeto \mbox{\hyperlink{class_bloque}{Bloque}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bloques_killer_a00c8c59b19abd1abdc3036b33134549f}\label{class_bloques_killer_a00c8c59b19abd1abdc3036b33134549f}} 
+\index{BloquesKiller@{BloquesKiller}!setBloqueKiller@{setBloqueKiller}}
+\index{setBloqueKiller@{setBloqueKiller}!BloquesKiller@{BloquesKiller}}
+\doxysubsubsection{\texorpdfstring{setBloqueKiller()}{setBloqueKiller()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Bloques\+Killer\+::set\+Bloque\+Killer (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{\mbox{\hyperlink{class_bloque}{Bloque}}}]{b }\end{DoxyParamCaption})}
+
+
+
+Modifica un bloque a partir de otro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \+: int, La posicion del bloque a modificar \\
+\hline
+{\em b} & \+: \mbox{\hyperlink{class_bloque}{Bloque}}, El bloque de copia \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bloques_killer_a23e3b55cb171750816d418a2916a716b}\label{class_bloques_killer_a23e3b55cb171750816d418a2916a716b}} 
+\index{BloquesKiller@{BloquesKiller}!setBloqueKiller@{setBloqueKiller}}
+\index{setBloqueKiller@{setBloqueKiller}!BloquesKiller@{BloquesKiller}}
+\doxysubsubsection{\texorpdfstring{setBloqueKiller()}{setBloqueKiller()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Bloques\+Killer\+::set\+Bloque\+Killer (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{vector$<$ \mbox{\hyperlink{class_casilla}{Casilla}} $>$}]{ }\end{DoxyParamCaption})}
+
+
+
+Modifica un bloque a partir de un vector de casillas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & \+: int, La posicion del bloque a modificar \\
+\hline
+{\em $<$\+Casilla$>$} & \+: Vector, Las casillas a copiar \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_bloques_killer_8h}{Bloques\+Killer.\+h}}\end{DoxyCompactItemize}

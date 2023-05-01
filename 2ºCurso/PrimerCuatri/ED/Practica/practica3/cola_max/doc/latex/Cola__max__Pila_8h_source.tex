@@ -1,0 +1,50 @@
+\hypertarget{Cola__max__Pila_8h_source}{}\doxysection{Cola\+\_\+max\+\_\+\+Pila.\+h}
+\label{Cola__max__Pila_8h_source}\index{src/Cola\_max\_Pila.h@{src/Cola\_max\_Pila.h}}
+\mbox{\hyperlink{Cola__max__Pila_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00009}00009 \textcolor{preprocessor}{\#ifndef \_\_COLA\_MAX\_PILA\_\_}}
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00010}00010 \textcolor{preprocessor}{\#define \_\_COLA\_MAX\_PILA\_\_}}
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00012}00012 \textcolor{preprocessor}{\#include <cassert>}}
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00013}00013 \textcolor{preprocessor}{\#include <stack>}}
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00014}00014 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00015}00015 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{pila_8h}{pila.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00018}00018 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00037}\mbox{\hyperlink{structElemento}{00037}} \textcolor{keyword}{struct }\mbox{\hyperlink{structElemento}{Elemento}}\{}
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00038}00038     \textcolor{keywordtype}{int} elemento;}
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00039}00039     \textcolor{keywordtype}{int} maximo;}
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00046}\mbox{\hyperlink{structElemento_a837bcdc92b6224f11e4cd3ca0c9d336a}{00046}}         \textcolor{keyword}{friend} ostream\& \mbox{\hyperlink{structElemento_a837bcdc92b6224f11e4cd3ca0c9d336a}{operator<<}}(ostream \&os, \textcolor{keyword}{const}  \mbox{\hyperlink{structElemento}{Elemento}}\& elem)\{}
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00047}00047                 os << elem.elemento << \textcolor{stringliteral}{"{} ("{}} << elem.maximo << \textcolor{stringliteral}{"{})"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00048}00048                 \textcolor{keywordflow}{return} os;}
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00049}00049             \};}
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00050}00050     \};}
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00052}\mbox{\hyperlink{classCola__max}{00052}} \textcolor{keyword}{class }\mbox{\hyperlink{classCola__max}{Cola\_max}}\{}
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00053}00053 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00054}00054     }
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00055}00055     \mbox{\hyperlink{classPila}{Pila<Elemento>}} cola;}
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00056}00056 \textcolor{keyword}{public}: }
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00057}00057     }
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00063}00063    \mbox{\hyperlink{structElemento}{Elemento}} \mbox{\hyperlink{classCola__max_a6285d796501acd3e9909fd5a7b5d6211}{frente}}();}
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00064}00064 }
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00069}00069    \textcolor{keywordtype}{int} \mbox{\hyperlink{classCola__max_a44609381a7ba92d5e11e1bae9328e1df}{elementos\_size}}();}
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00070}00070 }
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00075}00075    \textcolor{keywordtype}{bool} \mbox{\hyperlink{classCola__max_a6a21a7234cbc76aae5a7eb9853df4c4c}{empty}}();}
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00076}00076 }
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00081}00081    \textcolor{keywordtype}{void} \mbox{\hyperlink{classCola__max_a58c9f9ac66155d527e17ec0e48244245}{quitar}}();}
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00082}00082 }
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00087}00087    \textcolor{keywordtype}{void} \mbox{\hyperlink{classCola__max_a6279bf0ab35bc907e7ad55c203b9abcf}{poner}}(\textcolor{keywordtype}{int} elemento);}
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00088}00088 }
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00089}00089 \};}
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00090}00090 }
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00091}00091 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00092}00092 }
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00093}00093 }
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00094}00094 }
+\DoxyCodeLine{\Hypertarget{Cola__max__Pila_8h_source_l00095}00095 }
+
+\end{DoxyCode}

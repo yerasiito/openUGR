@@ -1,0 +1,89 @@
+\hypertarget{_sudoku_killer_8h}{}\doxysection{include/\+Sudoku\+Killer.h File Reference}
+\label{_sudoku_killer_8h}\index{include/SudokuKiller.h@{include/SudokuKiller.h}}
+
+
+Fichero cabecera de la clase {\ttfamily \mbox{\hyperlink{class_sudoku_killer}{Sudoku\+Killer}}}.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}Matriz.\+h\char`\"{}}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_sudoku}{Sudoku}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_sudoku}{Sudoku}} Clase basica del cual se creará la version killer del sudoku. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_sudoku_killer}{Sudoku\+Killer}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_sudoku_killer}{Sudoku\+Killer}} Una clase para crear y gestionar el sudoku killer completo, se utiliza la clase \mbox{\hyperlink{class_matriz}{Matriz}} y la utiliza \mbox{\hyperlink{class_resolver_sudoku_killer}{Resolver\+Sudoku\+Killer}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{_sudoku_killer_8h_a66a57b58427a008030ab6b81349afb9b}{Sudoku\+Valido}} (\mbox{\hyperlink{class_matriz}{Matriz}} M)
+\begin{DoxyCompactList}\small\item\em Comprueba que la matriz dada cumple las reglas del sudoku. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_sudoku_killer_8h_a3545a7e5b10674ee1f41950fd1571b11}{Bloques\+Valido}} (\mbox{\hyperlink{class_sudoku_killer}{Sudoku\+Killer}} sudoku)
+\begin{DoxyCompactList}\small\item\em verifica que los numeros de la matriz sudoku coinciden con el valor suma de los bloques killer \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_sudoku_killer_8h_ae9f3fe34c7f019fa9fba0c3dab72ded7}{Sudoku\+Killer\+Valido}} (\mbox{\hyperlink{class_sudoku_killer}{Sudoku\+Killer}} sudoku)
+\begin{DoxyCompactList}\small\item\em Verifica que el sudoku dado es un killer y que todo está correcto. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Fichero cabecera de la clase {\ttfamily \mbox{\hyperlink{class_sudoku_killer}{Sudoku\+Killer}}}. 
+
+\begin{DoxyAuthor}{Author}
+López Ramírez, Yeray 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+Octubre 2021 
+\end{DoxyDate}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_sudoku_killer_8h_a3545a7e5b10674ee1f41950fd1571b11}\label{_sudoku_killer_8h_a3545a7e5b10674ee1f41950fd1571b11}} 
+\index{SudokuKiller.h@{SudokuKiller.h}!BloquesValido@{BloquesValido}}
+\index{BloquesValido@{BloquesValido}!SudokuKiller.h@{SudokuKiller.h}}
+\doxysubsubsection{\texorpdfstring{BloquesValido()}{BloquesValido()}}
+{\footnotesize\ttfamily bool Bloques\+Valido (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sudoku_killer}{Sudoku\+Killer}}}]{sudoku }\end{DoxyParamCaption})}
+
+
+
+verifica que los numeros de la matriz sudoku coinciden con el valor suma de los bloques killer 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sudoku} & \+: \mbox{\hyperlink{class_sudoku_killer}{Sudoku\+Killer}}, \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si suma==suma\+Valores(), false en otro caso 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_sudoku_killer_8h_ae9f3fe34c7f019fa9fba0c3dab72ded7}\label{_sudoku_killer_8h_ae9f3fe34c7f019fa9fba0c3dab72ded7}} 
+\index{SudokuKiller.h@{SudokuKiller.h}!SudokuKillerValido@{SudokuKillerValido}}
+\index{SudokuKillerValido@{SudokuKillerValido}!SudokuKiller.h@{SudokuKiller.h}}
+\doxysubsubsection{\texorpdfstring{SudokuKillerValido()}{SudokuKillerValido()}}
+{\footnotesize\ttfamily bool Sudoku\+Killer\+Valido (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_sudoku_killer}{Sudoku\+Killer}}}]{sudoku }\end{DoxyParamCaption})}
+
+
+
+Verifica que el sudoku dado es un killer y que todo está correcto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sudoku} & \+: \mbox{\hyperlink{class_sudoku_killer}{Sudoku\+Killer}}, El sudoku a verificar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si cumple las condiciones del killer y los metodos Sudoku\+Valido y Bloques valido dan true, false en otro caso 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_sudoku_killer_8h_a66a57b58427a008030ab6b81349afb9b}\label{_sudoku_killer_8h_a66a57b58427a008030ab6b81349afb9b}} 
+\index{SudokuKiller.h@{SudokuKiller.h}!SudokuValido@{SudokuValido}}
+\index{SudokuValido@{SudokuValido}!SudokuKiller.h@{SudokuKiller.h}}
+\doxysubsubsection{\texorpdfstring{SudokuValido()}{SudokuValido()}}
+{\footnotesize\ttfamily bool Sudoku\+Valido (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_matriz}{Matriz}}}]{M }\end{DoxyParamCaption})}
+
+
+
+Comprueba que la matriz dada cumple las reglas del sudoku. 
+
+\begin{DoxyReturn}{Returns}
+true si los valores cumplen las reglas del sudoku, false en otro caso -\/No se repiten numeros de la misma fila o columna o caja(3x3) 
+\end{DoxyReturn}

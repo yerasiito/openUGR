@@ -1,0 +1,76 @@
+\hypertarget{Controlador_8java_source}{}\doxysection{Controlador.\+java}
+\label{Controlador_8java_source}\index{src/controladorCivitas/Controlador.java@{src/controladorCivitas/Controlador.java}}
+\mbox{\hyperlink{Controlador_8java}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00007}00007 \textcolor{keyword}{package }controladorCivitas;}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00009}00009 \textcolor{keyword}{import} civitas.CivitasJuego;}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00010}00010 \textcolor{keyword}{import} civitas.GestionInmobiliaria;}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00011}00011 \textcolor{keyword}{import} civitas.OperacionInmobiliaria;}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00012}00012 \textcolor{keyword}{import} civitas.OperacionJuego;}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00013}00013 \textcolor{keyword}{import} vistaTextualCivitas.VistaTextual;}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00019}\mbox{\hyperlink{classcontroladorCivitas_1_1Controlador}{00019}} \textcolor{keyword}{public} \textcolor{keyword}{class }\mbox{\hyperlink{classcontroladorCivitas_1_1Controlador}{Controlador}} \{}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00020}00020     \textcolor{keyword}{private} \textcolor{keyword}{final} \mbox{\hyperlink{classcivitas_1_1CivitasJuego}{CivitasJuego}} juego;}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00021}00021     \textcolor{keyword}{private} \textcolor{keyword}{final} \mbox{\hyperlink{classvistaTextualCivitas_1_1VistaTextual}{VistaTextual}} vista;}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00022}00022     }
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00023}00023     \textcolor{comment}{//Visibilidad Modificada , antes era de paquete}}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00024}00024     \textcolor{keyword}{public} \mbox{\hyperlink{classcontroladorCivitas_1_1Controlador}{Controlador}}(\mbox{\hyperlink{classcivitas_1_1CivitasJuego}{CivitasJuego}} juego, \mbox{\hyperlink{classvistaTextualCivitas_1_1VistaTextual}{VistaTextual}} vista)\{}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00025}00025         this.juego = juego;}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00026}00026         this.vista = vista;}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00027}00027     \}}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00028}00028     }
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00029}00029     \textcolor{keyword}{public} \textcolor{keywordtype}{void} juega()\{}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00030}00030         \mbox{\hyperlink{enumcivitas_1_1OperacionJuego}{OperacionJuego}} opcionJuego;}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00031}00031         vista.mostrarEventos();}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00032}00032         \textcolor{keywordflow}{while}(!juego.finalDelJuego())\{                }
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00033}00033             vista.actualiza();}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00034}00034             vista.pausa();}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00035}00035             opcionJuego = juego.siguientePaso();}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00036}00036             vista.mostrarSiguienteOperacion(opcionJuego);}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00037}00037             \textcolor{keywordflow}{if}(opcionJuego != \mbox{\hyperlink{enumcivitas_1_1OperacionJuego}{OperacionJuego}}.PASAR\_TURNO)\{}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00038}00038                 vista.mostrarEventos();}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00039}00039             \}}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00040}00040             }
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00041}00041             \textcolor{keywordflow}{if}(!juego.finalDelJuego())\{}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00042}00042                 \textcolor{keywordflow}{switch}(opcionJuego)\{}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00043}00043                     }
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00044}00044                     \textcolor{keywordflow}{case} COMPRAR:}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00045}00045                             \textcolor{keywordflow}{if}(vista.comprar() == \mbox{\hyperlink{enumcontroladorCivitas_1_1Respuesta}{Respuesta}}.SI)}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00046}00046                                 juego.comprar();}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00047}00047                         juego.siguientePasoCompletado(opcionJuego);}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00048}00048                         vista.mostrarEventos();}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00049}00049                         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00050}00050                     \textcolor{keywordflow}{case} GESTIONAR:}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00051}00051                         \textcolor{keywordtype}{int} numPropiedad;}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00052}00052                         \mbox{\hyperlink{enumcivitas_1_1OperacionInmobiliaria}{OperacionInmobiliaria}} opcion = vista.elegirOperacion();}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00053}00053                         \textcolor{keywordflow}{if}( opcion != \mbox{\hyperlink{enumcivitas_1_1OperacionInmobiliaria}{OperacionInmobiliaria}}.TERMINAR)\{}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00054}00054                             numPropiedad = vista.elegirPropiedad();}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00055}00055                             \mbox{\hyperlink{classcivitas_1_1GestionInmobiliaria}{GestionInmobiliaria}} gestion = \textcolor{keyword}{new} \mbox{\hyperlink{classcivitas_1_1GestionInmobiliaria}{GestionInmobiliaria}}(opcion, numPropiedad);}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00056}00056                             }
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00057}00057                             \textcolor{keywordflow}{switch}(gestion.getOperacion())\{}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00058}00058                                 }
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00059}00059                                 \textcolor{keywordflow}{case} CONSTRUIR\_CASA:}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00060}00060                                     juego.construirCasa(numPropiedad);}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00061}00061                                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00062}00062                                     }
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00063}00063                                 \textcolor{keywordflow}{case} CONSTRUIR\_HOTEL: }
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00064}00064                                     juego.construirHotel(numPropiedad);}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00065}00065                                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00066}00066                             \}}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00067}00067                         \}     }
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00068}00068                         juego.siguientePasoCompletado(opcionJuego);}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00069}00069                         vista.mostrarEventos();}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00070}00070                         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00071}00071                 \}}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00072}00072             \}}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00073}00073             \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00074}00074                 System.out.println(\textcolor{stringliteral}{"{}Un jugador entró en bancarrota! Esto son los resultados:"{}});}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00075}00075                 vista.actualiza();}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00076}00076             \}}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00077}00077         \}}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00078}00078     \}}
+\DoxyCodeLine{\Hypertarget{Controlador_8java_source_l00079}00079 \}}
+
+\end{DoxyCode}

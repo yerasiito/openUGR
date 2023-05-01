@@ -1,0 +1,67 @@
+\hypertarget{classcivitas_1_1Civitas}{}\doxysection{Referencia de la Clase civitas.\+Civitas}
+\label{classcivitas_1_1Civitas}\index{civitas.Civitas@{civitas.Civitas}}
+\doxysubsection*{Métodos públicos estáticos}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classcivitas_1_1Civitas_aafbfc82fe65ead98cdfa0fecd0e38bfc}{main}} (String\mbox{[}$\,$\mbox{]} args)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripción detallada}
+\begin{DoxyAuthor}{Autor}
+ylope 
+\end{DoxyAuthor}
+
+
+Definición en la línea \mbox{\hyperlink{Civitas_8java_source_l00013}{13}} del archivo \mbox{\hyperlink{Civitas_8java_source}{Civitas.\+java}}.
+
+
+
+\doxysubsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classcivitas_1_1Civitas_aafbfc82fe65ead98cdfa0fecd0e38bfc}\label{classcivitas_1_1Civitas_aafbfc82fe65ead98cdfa0fecd0e38bfc}} 
+\index{civitas.Civitas@{civitas.Civitas}!main@{main}}
+\index{main@{main}!civitas.Civitas@{civitas.Civitas}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void civitas.\+Civitas.\+main (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parámetros}
+{\em args} & the command line arguments \\
+\hline
+\end{DoxyParams}
+
+
+Definición en la línea \mbox{\hyperlink{Civitas_8java_source_l00017}{17}} del archivo \mbox{\hyperlink{Civitas_8java_source}{Civitas.\+java}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Civitas_l00017}00017                                            \{}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Civitas_l00018}00018         ArrayList<String> jugadores = \textcolor{keyword}{new} ArrayList<String>()\{}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Civitas_l00019}00019             \{}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Civitas_l00020}00020                 add(\textcolor{stringliteral}{"{}Juan"{}});}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Civitas_l00021}00021                 add(\textcolor{stringliteral}{"{}Maria"{}});}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Civitas_l00022}00022                 add(\textcolor{stringliteral}{"{}Alberto"{}});}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Civitas_l00023}00023                 add(\textcolor{stringliteral}{"{}Eva"{}});}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Civitas_l00024}00024             \}}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Civitas_l00025}00025         \};}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Civitas_l00026}00026         }
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Civitas_l00027}00027         Dado.getInstance().getUltimoResultado();}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Civitas_l00028}00028         CivitasJuego juego = \textcolor{keyword}{new} CivitasJuego(jugadores, \textcolor{keyword}{false});}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Civitas_l00029}00029         }
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Civitas_l00030}00030         System.out.println(\textcolor{stringliteral}{"{}\(\backslash\)nTablero"{}});}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Civitas_l00031}00031         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < juego.getTablero().getCasillas().size(); i++)}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Civitas_l00032}00032             System.out.println(\textcolor{stringliteral}{"{}Casilla "{}} + i + \textcolor{stringliteral}{"{}: "{}} + juego.getTablero().getCasilla(i).toString());}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Civitas_l00033}00033         }
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Civitas_l00034}00034         System.out.println(\textcolor{stringliteral}{"{}\(\backslash\)nCartas Sorpresa"{}});}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Civitas_l00035}00035         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < juego.getMazo().getMazoSorpresas().size(); i++)}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Civitas_l00036}00036             System.out.println(\textcolor{stringliteral}{"{}Sorpresa "{}} + i + \textcolor{stringliteral}{"{}: "{}} + juego.getMazo().getMazoSorpresas().get(i).toString());}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Civitas_l00037}00037         }
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Civitas_l00038}00038         System.out.println(\textcolor{stringliteral}{"{}\(\backslash\)nRanking jugadores:\(\backslash\)n"{}} + juego.Ranking().toString());}
+\DoxyCodeLine{\Hypertarget{classcivitas_1_1Civitas_l00039}00039     \}}
+
+\end{DoxyCode}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+src/civitas/Civitas.\+java\end{DoxyCompactItemize}

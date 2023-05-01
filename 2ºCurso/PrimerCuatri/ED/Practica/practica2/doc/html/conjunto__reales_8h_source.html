@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TDA_SudokuKiller: Fichero Fuente racional-mas-vd/vdinamico/claselab/conjuntoreales/conjunto_reales.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">TDA_SudokuKiller
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Buscar','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_033eff30c7d01b9ecda983ce140f21db.html">racional-mas-vd</a></li><li class="navelem"><a class="el" href="dir_b3ca8083e5ab824e541dc0dcee8dbcfc.html">vdinamico</a></li><li class="navelem"><a class="el" href="dir_56f4562bac80078da3530d6e401fca8a.html">claselab</a></li><li class="navelem"><a class="el" href="dir_8f9890d2f82e9db017cabc6318258dd4.html">conjuntoreales</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">conjunto_reales.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="conjunto__reales_8h.html">Ir a la documentaciÃ³n de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef _conjunto_reales_h</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define _conjunto_reales_h</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;<a class="code" href="vector__dinamico_8h.html">vector_dinamico.h</a>&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;cassert&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_conjunto___reales.html">   34</a></span><span class="keyword">class </span><a class="code hl_class" href="class_conjunto___reales.html">Conjunto_Reales</a> {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <a class="code hl_class" href="class_vector___dinamico.html">Vector_Dinamico</a> v; </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">int</span> nelementos;  </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordtype">bool</span> posicion_elemento(<span class="keywordtype">int</span>&amp; pos, <span class="keywordtype">float</span> val) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <a class="code hl_class" href="class_conjunto___reales.html">Conjunto_Reales</a>(): nelementos(0) {}</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="comment">// Conjunto_Reales(const Conjunto_Reales&amp; c);</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="comment">// ~Conjunto_Reales();</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="comment">// Conjunto_Reales&amp; operator= (const Conjunto_Reales&amp; c);</span></div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span><span class="comment"></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_conjunto___reales.html#aed1485ad5799eb1662d5ee49a0b62772">Insertar</a>(<span class="keywordtype">float</span> f);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_conjunto___reales.html#ab52fefbe5e399f98a0ec67ef48008616">Borrar</a>(<span class="keywordtype">float</span> f);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="class_conjunto___reales.html#aa4e1c080cf2c90e9b4451b87ce11bbf3">   93</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_conjunto___reales.html#aa4e1c080cf2c90e9b4451b87ce11bbf3">Pertenece</a>(<span class="keywordtype">float</span> f)<span class="keyword"> const </span>{ <span class="keywordtype">int</span> pos; <span class="keywordflow">return</span> posicion_elemento(pos,f); }</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="class_conjunto___reales.html#aa31c562605e4711c7755a5df24a2755c">  101</a></span>    <span class="keywordtype">float</span> <a class="code hl_function" href="class_conjunto___reales.html#aa31c562605e4711c7755a5df24a2755c">Elemento</a>(<span class="keywordtype">int</span> i)<span class="keyword"> const </span>{ assert(0&lt;=i &amp;&amp; i&lt;v.<a class="code hl_function" href="class_vector___dinamico.html#aec00b03f566e1cc6a2bacbed695f8037">size</a>()); <span class="keywordflow">return</span> v[i]; }</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="class_conjunto___reales.html#af173f1a2579c2845e6b44ee86cfef0aa">  106</a></span>    <span class="keywordtype">int</span> <a class="code hl_function" href="class_conjunto___reales.html#af173f1a2579c2845e6b44ee86cfef0aa">size</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> nelementos; }</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>};</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="preprocessor">#endif </span><span class="comment">/* _conjunto_reales_h */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aclass_conjunto___reales_html"><div class="ttname"><a href="class_conjunto___reales.html">Conjunto_Reales</a></div><div class="ttdoc">T.D.A. Conjunto_Reales.</div><div class="ttdef"><b>Definition:</b> conjunto_reales.h:34</div></div>
+<div class="ttc" id="aclass_conjunto___reales_html_aa31c562605e4711c7755a5df24a2755c"><div class="ttname"><a href="class_conjunto___reales.html#aa31c562605e4711c7755a5df24a2755c">Conjunto_Reales::Elemento</a></div><div class="ttdeci">float Elemento(int i) const</div><div class="ttdoc">Valor del i-ésimo elemento.</div><div class="ttdef"><b>Definition:</b> conjunto_reales.h:101</div></div>
+<div class="ttc" id="aclass_conjunto___reales_html_aa4e1c080cf2c90e9b4451b87ce11bbf3"><div class="ttname"><a href="class_conjunto___reales.html#aa4e1c080cf2c90e9b4451b87ce11bbf3">Conjunto_Reales::Pertenece</a></div><div class="ttdeci">bool Pertenece(float f) const</div><div class="ttdoc">Consultar la existencia de un elemento.</div><div class="ttdef"><b>Definition:</b> conjunto_reales.h:93</div></div>
+<div class="ttc" id="aclass_conjunto___reales_html_ab52fefbe5e399f98a0ec67ef48008616"><div class="ttname"><a href="class_conjunto___reales.html#ab52fefbe5e399f98a0ec67ef48008616">Conjunto_Reales::Borrar</a></div><div class="ttdeci">bool Borrar(float f)</div><div class="ttdoc">Eliminar un elemento.</div><div class="ttdef"><b>Definition:</b> conjunto_reales.cpp:53</div></div>
+<div class="ttc" id="aclass_conjunto___reales_html_aed1485ad5799eb1662d5ee49a0b62772"><div class="ttname"><a href="class_conjunto___reales.html#aed1485ad5799eb1662d5ee49a0b62772">Conjunto_Reales::Insertar</a></div><div class="ttdeci">bool Insertar(float f)</div><div class="ttdoc">Añadir un elemento.</div><div class="ttdef"><b>Definition:</b> conjunto_reales.cpp:34</div></div>
+<div class="ttc" id="aclass_conjunto___reales_html_af173f1a2579c2845e6b44ee86cfef0aa"><div class="ttname"><a href="class_conjunto___reales.html#af173f1a2579c2845e6b44ee86cfef0aa">Conjunto_Reales::size</a></div><div class="ttdeci">int size() const</div><div class="ttdoc">Cardinal del conjunto.</div><div class="ttdef"><b>Definition:</b> conjunto_reales.h:106</div></div>
+<div class="ttc" id="aclass_vector___dinamico_html"><div class="ttname"><a href="class_vector___dinamico.html">Vector_Dinamico</a></div><div class="ttdoc">T.D.A. Vector_Dinamico.</div><div class="ttdef"><b>Definition:</b> vector_dinamico.h:30</div></div>
+<div class="ttc" id="aclass_vector___dinamico_html_aec00b03f566e1cc6a2bacbed695f8037"><div class="ttname"><a href="class_vector___dinamico.html#aec00b03f566e1cc6a2bacbed695f8037">Vector_Dinamico::size</a></div><div class="ttdeci">int size() const</div><div class="ttdoc">Número de componentes del vector.</div><div class="ttdef"><b>Definition:</b> vector_dinamico.cpp:38</div></div>
+<div class="ttc" id="avector__dinamico_8h_html"><div class="ttname"><a href="vector__dinamico_8h.html">vector_dinamico.h</a></div><div class="ttdoc">Fichero cabecera del TDA Vector Dinamico.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+</small></address>
+</body>
+</html>

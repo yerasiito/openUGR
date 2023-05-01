@@ -1,0 +1,37 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+
+*************************************************************************
+Sun Mar 20 21:44:24 2022
+
+
+FIT:    data read from \PYGZsq{}fibonacci.dat\PYGZsq{}
+        format = z
+        \PYGZsh{}datapoints = 25
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a*1.618**x + b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b
+   0 9.2543992530e+20   0.00e+00  4.30e+09    1.000000e+00   1.000000e+00
+   5 2.1871058673e+01  \PYGZhy{}2.44e\PYGZhy{}05  4.30e+04    9.139440e\PYGZhy{}09   1.000000e+00
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 21.8711
+rel. change during last iteration : \PYGZhy{}2.44244e\PYGZhy{}10
+
+degrees of freedom    (FIT\PYGZus{}NDF)                        : 23
+rms of residuals      (FIT\PYGZus{}STDFIT) = sqrt(WSSR/ndf)    : 0.975149
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.950916
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 9.13944e\PYGZhy{}09      +/\PYGZhy{} 3.359e\PYGZhy{}11    (0.3676\PYGZpc{})
+b               = 1                +/\PYGZhy{} 0.2044       (20.44\PYGZpc{})
+
+correlation matrix of the fit parameters:
+                a      b
+a               1.000
+b              \PYGZhy{}0.299  1.000
+\end{Verbatim}

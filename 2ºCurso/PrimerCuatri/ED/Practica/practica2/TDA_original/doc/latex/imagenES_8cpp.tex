@@ -1,0 +1,159 @@
+\doxysection{Referencia del Archivo imagen\+ES/imagen\+ES.cpp}
+\label{imagenES_8cpp}\index{imagenES/imagenES.cpp@{imagenES/imagenES.cpp}}
+
+
+Fichero con definiciones para la E/S de im·genes.  
+
+
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$imagen\+ES.\+h$>$}\newline
+\doxysubsection*{Funciones}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{imagenES_8cpp_a16834dd3756f7baf1e5ef710ad7b0e3b}} 
+\textbf{ Tipo\+Imagen} {\bfseries Leer\+Tipo} (ifstream \&f)
+\item 
+\textbf{ Tipo\+Imagen} \textbf{ Leer\+Tipo\+Imagen} (const char $\ast$nombre)
+\begin{DoxyCompactList}\small\item\em Devuelve el tipo de imagen del archivo. \end{DoxyCompactList}\item 
+\mbox{\label{imagenES_8cpp_ab090ad072f47dc1ffcfcb900c3334936}} 
+char {\bfseries Saltar\+Separadores} (ifstream \&f)
+\item 
+\mbox{\label{imagenES_8cpp_a0e193b2477b18f021255d69362992859}} 
+bool {\bfseries Leer\+Cabecera} (ifstream \&f, int \&fils, int \&cols)
+\item 
+unsigned char $\ast$ \textbf{ Leer\+Imagen\+PPM} (const char $\ast$nombre, int \&fils, int \&cols)
+\begin{DoxyCompactList}\small\item\em Lee una imagen de tipo PPM. \end{DoxyCompactList}\item 
+unsigned char $\ast$ \textbf{ Leer\+Imagen\+PGM} (const char $\ast$nombre, int \&fils, int \&cols)
+\begin{DoxyCompactList}\small\item\em Lee una imagen de tipo PGM. \end{DoxyCompactList}\item 
+bool \textbf{ Escribir\+Imagen\+PPM} (const char $\ast$nombre, const unsigned char $\ast$datos, const int fils, const int cols)
+\begin{DoxyCompactList}\small\item\em Escribe una imagen de tipo PPM. \end{DoxyCompactList}\item 
+bool \textbf{ Escribir\+Imagen\+PGM} (const char $\ast$nombre, const unsigned char $\ast$datos, const int fils, const int cols)
+\begin{DoxyCompactList}\small\item\em Escribe una imagen de tipo PGM. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Descripci√≥n detallada}
+Fichero con definiciones para la E/S de im·genes. 
+
+Permite la E/S de archivos de tipo PGM,PPM 
+
+\doxysubsection{Documentaci√≥n de las funciones}
+\mbox{\label{imagenES_8cpp_a4b649cc272f02649563791d5ed75b557}} 
+\index{imagenES.cpp@{imagenES.cpp}!EscribirImagenPGM@{EscribirImagenPGM}}
+\index{EscribirImagenPGM@{EscribirImagenPGM}!imagenES.cpp@{imagenES.cpp}}
+\doxysubsubsection{EscribirImagenPGM()}
+{\footnotesize\ttfamily bool Escribir\+Imagen\+PGM (\begin{DoxyParamCaption}\item[{const char $\ast$}]{nombre,  }\item[{const unsigned char $\ast$}]{datos,  }\item[{const int}]{fils,  }\item[{const int}]{cols }\end{DoxyParamCaption})}
+
+
+
+Escribe una imagen de tipo PGM. 
+
+
+\begin{DoxyParams}{Par√°metros}
+{\em nombre} & archivo a escribir \\
+\hline
+{\em datos} & punteros a los {\itshape f} x {\itshape c} bytes que corresponden a los valores de los pÌxeles de la imagen de grises. \\
+\hline
+{\em f} & filas de la imagen \\
+\hline
+{\em c} & columnas de la imagen \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+si ha tenido Èxito en la escritura. 
+\end{DoxyReturn}
+\mbox{\label{imagenES_8cpp_ae149be8653b9f8c7321ac40577e7518c}} 
+\index{imagenES.cpp@{imagenES.cpp}!EscribirImagenPPM@{EscribirImagenPPM}}
+\index{EscribirImagenPPM@{EscribirImagenPPM}!imagenES.cpp@{imagenES.cpp}}
+\doxysubsubsection{EscribirImagenPPM()}
+{\footnotesize\ttfamily bool Escribir\+Imagen\+PPM (\begin{DoxyParamCaption}\item[{const char $\ast$}]{nombre,  }\item[{const unsigned char $\ast$}]{datos,  }\item[{const int}]{fils,  }\item[{const int}]{cols }\end{DoxyParamCaption})}
+
+
+
+Escribe una imagen de tipo PPM. 
+
+
+\begin{DoxyParams}{Par√°metros}
+{\em nombre} & archivo a escribir \\
+\hline
+{\em datos} & punteros a los {\itshape f} x {\itshape c} x 3 bytes que corresponden a los valores de los pÌxeles de la imagen en formato RGB. \\
+\hline
+{\em f} & filas de la imagen \\
+\hline
+{\em c} & columnas de la imagen \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+si ha tenido Èxito en la escritura. 
+\end{DoxyReturn}
+\mbox{\label{imagenES_8cpp_aa7e94c3d2c12a257eac86852b6ad9828}} 
+\index{imagenES.cpp@{imagenES.cpp}!LeerImagenPGM@{LeerImagenPGM}}
+\index{LeerImagenPGM@{LeerImagenPGM}!imagenES.cpp@{imagenES.cpp}}
+\doxysubsubsection{LeerImagenPGM()}
+{\footnotesize\ttfamily unsigned char $\ast$ Leer\+Imagen\+PGM (\begin{DoxyParamCaption}\item[{const char $\ast$}]{nombre,  }\item[{int \&}]{fils,  }\item[{int \&}]{cols }\end{DoxyParamCaption})}
+
+
+
+Lee una imagen de tipo PGM. 
+
+
+\begin{DoxyParams}{Par√°metros}
+{\em nombre} & archivo a leer \\
+\hline
+{\em filas} & Par·metro de salida con las filas de la imagen. \\
+\hline
+{\em columnas} & Par·metro de salida con las columnas de la imagen. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+puntero a una nueva zona de memoria que contiene {\itshape filas} x {\itshape columnas} bytes que corresponden a los grises de todos los pÌxeles (desde la esquina superior izqda a la inferior drcha). En caso de que no no se pueda leer, se devuelve cero. (0). 
+\end{DoxyReturn}
+\begin{DoxyPostcond}{Postcondici√≥n}
+En caso de Èxito, el puntero apunta a una zona de memoria reservada en memoria din·mica. Ser· el usuario el responsable de liberarla. 
+\end{DoxyPostcond}
+\mbox{\label{imagenES_8cpp_a536bb743ba4947e88db343fc8145a646}} 
+\index{imagenES.cpp@{imagenES.cpp}!LeerImagenPPM@{LeerImagenPPM}}
+\index{LeerImagenPPM@{LeerImagenPPM}!imagenES.cpp@{imagenES.cpp}}
+\doxysubsubsection{LeerImagenPPM()}
+{\footnotesize\ttfamily unsigned char $\ast$ Leer\+Imagen\+PPM (\begin{DoxyParamCaption}\item[{const char $\ast$}]{nombre,  }\item[{int \&}]{fils,  }\item[{int \&}]{cols }\end{DoxyParamCaption})}
+
+
+
+Lee una imagen de tipo PPM. 
+
+
+\begin{DoxyParams}{Par√°metros}
+{\em nombre} & archivo a leer \\
+\hline
+{\em filas} & Par·metro de salida con las filas de la imagen. \\
+\hline
+{\em columnas} & Par·metro de salida con las columnas de la imagen. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+puntero a una nueva zona de memoria que contiene {\itshape filas} x {\itshape columnas} x 3 bytes que corresponden a los colores de todos los pÌxeles en formato RGB (desde la esquina superior izqda a la inferior drcha). En caso de que no no se pueda leer, se devuelve cero. (0). 
+\end{DoxyReturn}
+\begin{DoxyPostcond}{Postcondici√≥n}
+En caso de Èxito, el puntero apunta a una zona de memoria reservada en memoria din·mica. Ser· el usuario el responsable de liberarla. 
+\end{DoxyPostcond}
+\mbox{\label{imagenES_8cpp_acaa5fb277940aceed29f86c093a3d89c}} 
+\index{imagenES.cpp@{imagenES.cpp}!LeerTipoImagen@{LeerTipoImagen}}
+\index{LeerTipoImagen@{LeerTipoImagen}!imagenES.cpp@{imagenES.cpp}}
+\doxysubsubsection{LeerTipoImagen()}
+{\footnotesize\ttfamily \textbf{ Tipo\+Imagen} Leer\+Tipo\+Imagen (\begin{DoxyParamCaption}\item[{const char $\ast$}]{nombre }\end{DoxyParamCaption})}
+
+
+
+Devuelve el tipo de imagen del archivo. 
+
+
+\begin{DoxyParams}{Par√°metros}
+{\em nombre} & indica el archivo de disco que consultar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+Devuelve el tipo de la imagen en el archivo
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{Ver tambi√©n}
+\doxyref{Tipo\+Imagen}{p.}{imagenES_8h_a8914f6544a484741b05c092d9e7522ed} 
+\end{DoxySeeAlso}
