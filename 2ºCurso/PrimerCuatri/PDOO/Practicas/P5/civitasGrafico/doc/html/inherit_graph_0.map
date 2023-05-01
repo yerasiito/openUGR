@@ -1,5 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classcivitas_1_1Casilla.html" title="Clase Padre Casilla por las que está formada Tablero. Los Descansos pertenecen a esta clase." alt="" coords="5,31,109,57"/>
-<area shape="rect" id="node2" href="$classcivitas_1_1CasillaCalle.html" title="Clase Hija de Casilla que gestiona las calles del Tablero. Las Calles pertenecen a esta clase." alt="" coords="168,5,303,32"/>
-<area shape="rect" id="node3" href="$classcivitas_1_1CasillaSorpresa.html" title="Clase Hija de Casilla que gestiona las Casillas sorpresas del Tablero. Las Casillas de Sorpresa perte..." alt="" coords="157,56,313,83"/>
-</map>

@@ -1,8 +1,0 @@
-<map id="src/Pila_max_Cola.h" name="src/Pila_max_Cola.h">
-<area shape="rect" id="node1" title="Fichero cabecera del T.D.A Pila con máximo." alt="" coords="22,5,165,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="122,229,188,256"/>
-<area shape="rect" id="node3" title=" " alt="" coords="21,80,78,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="103,80,175,107"/>
-<area shape="rect" id="node5" href="$cola_8h.html" title="Fichero cabecera del TDA Cola." alt="" coords="200,80,257,107"/>
-<area shape="rect" id="node6" href="$cola_8cpp.html" title="Implementación del TDA Cola." alt="" coords="193,155,264,181"/>
-</map>

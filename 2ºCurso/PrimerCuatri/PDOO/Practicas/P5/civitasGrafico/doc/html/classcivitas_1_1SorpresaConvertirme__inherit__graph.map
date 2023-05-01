@@ -1,4 +1,0 @@
-<map id="civitas.SorpresaConvertirme" name="civitas.SorpresaConvertirme">
-<area shape="rect" id="node1" title="Clase Hija de Sorpresa que gestiona la Sorpresa de conversion del jugador en Especulador." alt="" coords="5,80,192,107"/>
-<area shape="rect" id="node2" href="$classcivitas_1_1Sorpresa.html" title="Clase ABSTRACTA sorpresa que hace de base para los 3 tipos de sorpresa. Hay 3 tipos de sorpresas hast..." alt="" coords="41,5,157,32"/>
-</map>

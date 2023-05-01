@@ -1,6 +1,0 @@
-<map id="Pila_max::poner" name="Pila_max::poner">
-<area shape="rect" id="node1" title="Función poner, añade un nuevo elemento a la pila y actualiza el máximo." alt="" coords="5,56,121,83"/>
-<area shape="rect" id="node2" href="$classPila__max.html#a194ea495b04487a300c9edb5a923123b" title="Función empty." alt="" coords="169,5,289,32"/>
-<area shape="rect" id="node3" href="$classPila__max.html#a3dc117c7738903c47b3e01b7c47c6464" title="Función frente." alt="" coords="171,56,288,83"/>
-<area shape="rect" id="node4" href="$classPila__max.html#ac4615eccf7d95bf4433e3da16c9aa2a2" title="Función quitar, elimina el elemento que se encuentra en el frente de la pila y su máximo correpondien..." alt="" coords="171,107,287,133"/>
-</map>

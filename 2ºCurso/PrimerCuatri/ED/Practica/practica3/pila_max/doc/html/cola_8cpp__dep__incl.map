@@ -1,8 +1,0 @@
-<map id="src/cola.cpp" name="src/cola.cpp">
-<area shape="rect" id="node1" title="Implementación del TDA Cola." alt="" coords="200,5,293,32"/>
-<area shape="rect" id="node2" href="$cola_8h.html" title="Fichero cabecera del TDA Cola." alt="" coords="207,80,286,107"/>
-<area shape="rect" id="node3" href="$Pila__max__Cola_8h.html" title="Fichero cabecera del T.D.A Pila con máximo." alt="" coords="175,155,318,181"/>
-<area shape="rect" id="node5" href="$pila__teclado_8cpp_source.html" title=" " alt="" coords="5,229,144,256"/>
-<area shape="rect" id="node6" href="$usopilas__max_8cpp_source.html" title=" " alt="" coords="349,229,499,256"/>
-<area shape="rect" id="node4" href="$Pila__max__Cola_8cpp.html" title="Implementación del T.D.A Pila con máximo." alt="" coords="168,229,325,256"/>
-</map>

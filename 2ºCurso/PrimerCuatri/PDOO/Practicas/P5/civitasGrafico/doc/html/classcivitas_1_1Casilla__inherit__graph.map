@@ -1,5 +1,0 @@
-<map id="civitas.Casilla" name="civitas.Casilla">
-<area shape="rect" id="node1" title="Clase Padre Casilla por las que está formada Tablero. Los Descansos pertenecen a esta clase." alt="" coords="105,5,209,32"/>
-<area shape="rect" id="node2" href="$classcivitas_1_1CasillaCalle.html" title="Clase Hija de Casilla que gestiona las calles del Tablero. Las Calles pertenecen a esta clase." alt="" coords="5,80,140,107"/>
-<area shape="rect" id="node3" href="$classcivitas_1_1CasillaSorpresa.html" title="Clase Hija de Casilla que gestiona las Casillas sorpresas del Tablero. Las Casillas de Sorpresa perte..." alt="" coords="164,80,320,107"/>
-</map>

@@ -1,6 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classcivitas_1_1Sorpresa.html" title="Clase ABSTRACTA sorpresa que hace de base para los 3 tipos de sorpresa. Hay 3 tipos de sorpresas hast..." alt="" coords="5,56,121,83"/>
-<area shape="rect" id="node2" href="$classcivitas_1_1SorpresaConvertirme.html" title="Clase Hija de Sorpresa que gestiona la Sorpresa de conversion del jugador en Especulador." alt="" coords="175,5,362,32"/>
-<area shape="rect" id="node3" href="$classcivitas_1_1SorpresaPagarCobrar.html" title="Clase Hija de Sorpresa que gestiona la Sorpresa de PAGARCOBRAR." alt="" coords="174,56,363,83"/>
-<area shape="rect" id="node4" href="$classcivitas_1_1SorpresaPorCasaHotel.html" title="Clase Hija de Sorpresa que gestiona la Sorpresa de PORCASAHOTEL." alt="" coords="169,107,368,133"/>
-</map>
